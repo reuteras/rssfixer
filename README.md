@@ -26,7 +26,7 @@ $ rssfixer --title nccgroup --output nccgroup.xml --quiet https://research.nccgr
 The resulting file is available [here][exa] as an example.
 
 
-  [exa]: example/nccgroup.xml
+  [exa]: https://github.com/reuteras/rssfixer/blob/main/example/nccgroup.xml
   [ncc]: https://research.nccgroup.com/
   [rss]: https://www.rssboard.org/
   [wor]: https://wordpress.org/
