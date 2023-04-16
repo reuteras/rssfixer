@@ -1,4 +1,5 @@
 .venv/*
 build/*
+dist/*
 src/rssfixer.egg-info/*
 *.xml
