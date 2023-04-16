@@ -1,1 +1,4 @@
-.venv
+.venv/*
+build/*
+src/rssfixer.egg-info/*
+*.xml
