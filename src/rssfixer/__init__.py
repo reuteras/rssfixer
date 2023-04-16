@@ -1,4 +1,4 @@
-from . import rss
+from .rss import main
 
 if __name__ == '__main__':
-    rss.main()
+    main()
