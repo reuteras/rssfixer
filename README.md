@@ -1,5 +1,8 @@
 # rssfixer
 
+[![GitHub Super-Linter](https://github.com/reuteras/rssfixer/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
+![PyPI](https://img.shields.io/pypi/v/rssfixer?color=green)
+
 A small tool to generate an [RSS][rss] feed from some [Wordpress][wor] blogs that for some reason don't generate their own feeds.
 
 ## Installation
