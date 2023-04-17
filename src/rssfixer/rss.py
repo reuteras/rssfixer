@@ -6,6 +6,7 @@ import json
 import requests
 import sys
 
+
 def fetch_html(url):
     """Fetch HTML content from a URL."""
     try:
@@ -14,6 +15,7 @@ def fetch_html(url):
         print("ERROR: Request timed out")
         sys.exit(1)
     return response.text
+
 
 def find_entries(json_object, entries_key):
     """Find the entries in a JSON object with key "entries_key"."""
@@ -38,16 +40,16 @@ def extract_links(soup):
     unique_links = set()
 
     # Iterate through all the <ul> elements in the page
-    for links_list in soup.find_all('ul', class_=None):
-        for li in links_list.find_all('li'):
-            link = li.find('a')
+    for links_list in soup.find_all("ul", class_=None):
+        for li in links_list.find_all("li"):
+            link = li.find("a")
             if link:
-                url = link['href']
+                url = link["href"]
                 title = link.text.strip()
                 description = link.text.strip()
 
-                # Exclude URLs containing '/category/' or '/author/'
-                if '/category/' not in url and '/author/' not in url:
+                # Exclude URLs containing "/category/" or "/author/"
+                if "/category/" not in url and "/author/" not in url:
                     # Check if the URL is unique
                     if url not in unique_links:
                         unique_links.add(url)
@@ -64,7 +66,7 @@ def extract_links_json(soup, arguments):
     unique_links = set()
 
     # Find the JSON string in the page
-    for json_text in soup.find_all('script', type="application/json"):
+    for json_text in soup.find_all("script", type="application/json"):
         json_object = json.loads(json_text.text)
         entries = find_entries(json_object, arguments.json_entries)
         if entries is not None:
@@ -86,11 +88,12 @@ def extract_links_json(soup, arguments):
         if url not in unique_links:
             unique_links.add(url)
             links.append((url, title, description))
-    
+
     if links == []:
         print("ERROR: No links found")
         sys.exit(1)
     return links
+
 
 def create_rss_feed(links, html_url, feed_title, feed_description):
     """Create an RSS feed from a list of links."""
@@ -109,6 +112,7 @@ def create_rss_feed(links, html_url, feed_title, feed_description):
 
     return fg.rss_str(pretty=True).decode("utf-8")
 
+
 def main():
     """Main function."""
     parser = argparse.ArgumentParser(description="Generate RSS feed for blog that don't publish a feed")
@@ -117,7 +121,7 @@ def main():
     parser.add_argument("--json-entries", default="entries", help="JSON key for entries (default: 'entries')")
     parser.add_argument("--json-url", default="url", help="JSON key for URL (default: 'url')")
     parser.add_argument("--json-title", default="title", help="JSON key for title (default: 'title')")
-    parser.add_argument("--json-description", default="preamble", help="JSON key for description (default: 'preamble')")
+    parser.add_argument("--json-description", default="preamble", help='JSON key for description (default: "preamble")')
     parser.add_argument("--output", default="rss_feed.xml", help='Name of the output file (default: "rss_feed.xml")')
     parser.add_argument("--title", default="My RSS Feed", help='Title of the RSS feed (default: "My RSS Feed")')
     parser.add_argument("-q", "--quiet", action="store_true", help="Suppress output")
@@ -143,5 +147,7 @@ def main():
     if not args.quiet:
         print(f"RSS feed created: {args.output}")
 
+
 if __name__ == "__main__":
     main()
+

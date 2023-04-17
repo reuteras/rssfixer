@@ -3,7 +3,7 @@
 [![GitHub Super-Linter](https://github.com/reuteras/rssfixer/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)
 ![PyPI](https://img.shields.io/pypi/v/rssfixer?color=green)
 
-A small tool to generate an [RSS][rss] feed from some [Wordpress][wor] blogs that for some reason don't generate their own feeds.
+A small tool to generate an [RSS][rss] feed from some [WordPress][wor] blogs that for some reason don't generate their own feeds.
 
 ## Installation
 
@@ -29,7 +29,7 @@ RSS feed created: rss_feed.xml
 You can specify a filename and silence output:
 
 ```bash
-$ rssfixer --title nccgroup --output nccgroup.xml --quiet https://research.nccgroup.com/
+rssfixer --title nccgroup --output nccgroup.xml --quiet https://research.nccgroup.com/
 ```
 
 The resulting file is available [here][exa] as an example.
