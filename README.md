@@ -40,7 +40,7 @@ Most times you would run the script from crontab to have an updated feed. Here i
 An example for [truesec.com][tru]:
 
 ```bash
-rssfixer --json --quiet --output truesex.xml https://www.truesec.com/hub/blog
+rssfixer --json --quiet --output truesec.xml https://www.truesec.com/hub/blog
 ```
 
 ### Usage
