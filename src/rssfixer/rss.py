@@ -122,10 +122,7 @@ def main():
         description="Generate RSS feed for blog that don't publish a feed"
     )
     parser.add_argument("url", help="URL for the blog")
-    parser.add_argument(
-        "--json",
-        action="store_true",
-        help="Find entries in JSON"
+    parser.add_argument("--json", action="store_true", help="Find entries in JSON"
     )
     parser.add_argument(
         "--json-entries",
@@ -133,14 +130,10 @@ def main():
         help="JSON key for entries (default: 'entries')"
     )
     parser.add_argument(
-        "--json-url",
-        default="url",
-        help="JSON key for URL (default: 'url')"
+        "--json-url", default="url", help="JSON key for URL (default: 'url')"
     )
     parser.add_argument(
-        "--json-title",
-        default="title",
-        help="JSON key for title (default: 'title')"
+        "--json-title", default="title", help="JSON key for title (default: 'title')"
     )
     parser.add_argument(
         "--json-description",
@@ -183,4 +176,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
