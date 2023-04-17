@@ -126,7 +126,7 @@ def main():
     parser.add_argument(
         "--json-entries",
         default="entries",
-        help="JSON key for entries (default: 'entries'),"
+        help="JSON key for entries (default: 'entries')",
     )
     parser.add_argument(
         "--json-url", default="url", help="JSON key for URL (default: 'url')"
