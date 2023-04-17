@@ -5,7 +5,9 @@ A small tool to generate an [RSS][rss] feed from some [Wordpress][wor] blogs tha
 ## Installation
 
 ```bash
-pip install rssfixer
+python3 -m venv venv
+source venv/bin/activate
+python3 -m pip install rssfixer
 ```
 
 ## Example
