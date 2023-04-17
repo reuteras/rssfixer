@@ -4,6 +4,8 @@
         "nccgroup",
         "Reuterås",
         "rssfixer",
+        "tru",
+        "truesec",
         "venv"
     ],
     "python.linting.enabled": true,
