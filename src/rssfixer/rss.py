@@ -36,7 +36,7 @@ def find_entries(json_object, entries_key):
     return None
 
 
-def extract_links(soup):
+def extract_links_ul(soup):
     """Extract links from an HTML page with links in <ul>-lists."""
     links = []
     unique_links = set()
@@ -157,7 +157,7 @@ def main():
     if args.json:
         links = extract_links_json(soup, args)
     else:
-        links = extract_links(soup)
+        links = extract_links_ul(soup)
 
     feed_description = f"RSS feed generated from the links at {args.url}"
     rss_feed = create_rss_feed(links, args.url, args.title, feed_description)
