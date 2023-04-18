@@ -3,7 +3,6 @@ import json
 
 import rssfixer.rss as rss
 
-
 json_string = {
     "foo": "bar",
     "baz": {
@@ -32,6 +31,7 @@ html = """
 </html>
 """
 
+
 def test_find_entries():
     """Test find_entries()."""
 
@@ -44,6 +44,7 @@ def test_find_entries():
         "thud": "thud",
     }
 
+
 def test_find_entries_not_found():
     """Test find_entries() when the entry is not found."""
 
@@ -55,7 +56,7 @@ def test_find_entries_not_found():
 
 def test_extract_links_ul():
     """Test extract_links_html()."""
-   
+
     soup = rss.BeautifulSoup(html, "html.parser")
     links = rss.extract_links_ul(soup)
     assert links == [
