@@ -3,6 +3,7 @@ import pytest
 import rssfixer.rss as rss
 from bs4 import BeautifulSoup
 
+
 @pytest.fixture(name="example_json_object")
 def fixture_example_json_object():
     """Example JSON string."""
@@ -19,6 +20,7 @@ def fixture_example_json_object():
         },
     }
     return json_string
+
 
 @pytest.fixture(name="example_html_string")
 def fixture_example_html_string():
