@@ -51,7 +51,7 @@ rssfixer --json --quiet --output truesec.xml https://www.truesec.com/hub/blog
 
 ### Usage
 
-```
+```Text
 usage: rssfixer [-h] [--json] [--json-entries JSON_ENTRIES] [--json-url JSON_URL] [--json-title JSON_TITLE] [--json-description JSON_DESCRIPTION] [--output OUTPUT]
                 [--title TITLE] [-q]
                 url
