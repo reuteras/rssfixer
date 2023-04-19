@@ -163,15 +163,21 @@ def parse_arguments():
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(
         description="""Generate RSS feed for blog that don't publish a feed.
-        Default is to find links in a simple <ul>-list. 
+        Default is to find links in a simple <ul>-list.
         Options are available to find links in other HTML elements or JSON strings."""
     )
-    parser.add_argument("--version", action="version", version="%(prog)s " + pkg_resources.get_distribution("rssfixer").version)
+    parser.add_argument(
+        "--version",
+        action="version",
+        version="%(prog)s " + pkg_resources.get_distribution("rssfixer").version
+    )
     parser.add_argument("url", help="URL for the blog")
     parser.add_argument("--atom", action="store_true", help="Generate Atom feed")
     parser.add_argument("--base-url", help="Base URL for the blog")
     parser.add_argument("--html", action="store_true", help="Find entries in HTML")
-    parser.add_argument("--html-entries", default="article", help="HTML selector for entries")
+    parser.add_argument(
+        "--html-entries", default="article", help="HTML selector for entries"
+    )
     parser.add_argument("--html-url", default="a", help="HTML selector for URL")
     parser.add_argument("--html-title", default="h3", help="HTML selector for title")
     parser.add_argument(
@@ -198,7 +204,11 @@ def parse_arguments():
     parser.add_argument(
         "--json-url", default="url", help="JSON key for URL (default: 'url')"
     )
-    parser.add_argument("--json-title", default="title", help="JSON key for title",)
+    parser.add_argument(
+        "--json-title",
+        default="title",
+        help="JSON key for title",
+    )
     parser.add_argument(
         "--json-description",
         default="preamble",
