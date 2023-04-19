@@ -169,7 +169,7 @@ def parse_arguments():
     parser.add_argument(
         "--version",
         action="version",
-        version="%(prog)s " + pkg_resources.get_distribution("rssfixer").version
+        version="%(prog)s " + pkg_resources.get_distribution("rssfixer").version,
     )
     parser.add_argument("url", help="URL for the blog")
     parser.add_argument("--atom", action="store_true", help="Generate Atom feed")
