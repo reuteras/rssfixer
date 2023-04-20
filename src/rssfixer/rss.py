@@ -109,22 +109,22 @@ def extract_links_json(soup, arguments):
         if entries is not None:
             break
 
-        # Extract the links from the JSON object
-        for entry in entries:
-            try:
-                url = entry[arguments.json_url]
-                title = entry[arguments.json_title]
-            except KeyError:
-                print("ERROR: Unable to find URL or title in JSON object")
-                sys.exit(1)
-            try:
-                description = entry[arguments.json_description]
-            except KeyError:
-                # Ignore description if it's not found
-                description = ""
-            if url not in unique_links:
-                unique_links.add(url)
-                links.append((url, title, description))
+    # Extract the links from the JSON object
+    for entry in entries:
+        try:
+            url = entry[arguments.json_url]
+            title = entry[arguments.json_title]
+        except KeyError:
+            print("ERROR: Unable to find URL or title in JSON object")
+            sys.exit(1)
+        try:
+            description = entry[arguments.json_description]
+        except KeyError:
+            # Ignore description if it's not found
+            description = ""
+        if url not in unique_links:
+            unique_links.add(url)
+            links.append((url, title, description))
 
     if links == []:
         print("ERROR: No links found")

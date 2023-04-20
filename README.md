@@ -4,7 +4,7 @@
 ![PyPI](https://img.shields.io/pypi/v/rssfixer?color=green)
 [![CodeQL](https://github.com/reuteras/rssfixer/workflows/CodeQL/badge.svg)](https://github.com/reuteras/rssfixer/actions?query=workflow%3ACodeQL)
 
-A small tool to generate an [RSS][rss] feed from some [WordPress][wor] blogs that for some reason don't generate their own feeds.
+A small tool to generate an [RSS][rss] feed from some [WordPress][wor] blogs that for some reason don't generate their own feeds. This tool uses [BeautifulSoup][bso] to parse the HTML and [feedgen][fge] to generate the feed.
 
 ## Installation
 
@@ -94,7 +94,9 @@ options:
 ```
 
 
+  [bso]: https://www.crummy.com/software/BeautifulSoup/
   [exa]: https://github.com/reuteras/rssfixer/blob/main/example/nccgroup.xml
+  [fge]: https://feedgen.kiesow.be/ 
   [ncc]: https://research.nccgroup.com/
   [rss]: https://www.rssboard.org/
   [tru]: https://www.truesec.com/hub/blog

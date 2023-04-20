@@ -9,5 +9,5 @@ python3 -m build
 ## Uploading
 
 ```bash
-python3 -m twine upload dist/*
+python3 -m twine upload dist/* --repository rssfixer
 ```
