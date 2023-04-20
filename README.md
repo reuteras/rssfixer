@@ -96,7 +96,7 @@ options:
 
   [bso]: https://www.crummy.com/software/BeautifulSoup/
   [exa]: https://github.com/reuteras/rssfixer/blob/main/example/nccgroup.xml
-  [fge]: https://feedgen.kiesow.be/ 
+  [fge]: https://feedgen.kiesow.be/
   [ncc]: https://research.nccgroup.com/
   [rss]: https://www.rssboard.org/
   [tru]: https://www.truesec.com/hub/blog
