@@ -159,7 +159,7 @@ def create_rss_feed(links, arguments):
         return fg.rss_str(pretty=True).decode("utf-8")
 
 
-def parse_arguments():
+def parse_arguments(arguments):
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(
         description="""Generate RSS feed for blog that don't publish a feed.
@@ -229,7 +229,7 @@ def parse_arguments():
         "--list", action="store_true", help="Find entries in HTML <ul>-list (default)"
     )
 
-    return parser
+    return parser.parse_args(arguments)
 
 
 def save_rss_feed(rss_feed, arguments):
@@ -250,8 +250,7 @@ def save_rss_feed(rss_feed, arguments):
 
 def main():
     """Main function."""
-    parsed_args = parse_arguments()
-    args = parsed_args.parse_args()
+    args = parse_arguments(sys.argv[1:])
 
     if vars(args).get("version"):
         print(pkg_resources.require("rssfixer")[0].version)
