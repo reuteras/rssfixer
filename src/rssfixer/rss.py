@@ -4,17 +4,23 @@ import json
 import re
 import sys
 
-import pkg_resources
+import importlib.metadata
 import requests
 from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
+
+
+try:
+    __version__ = importlib.metadata.version(__package__ or __name__)
+except importlib.metadata.PackageNotFoundError: # pragma: no cover
+    __version__ = "0.0.0"
 
 
 def fetch_html(url):
     """Fetch HTML content from a URL."""
     try:
         response = requests.get(url, timeout=10)
-    except requests.exceptions.Timeout:
+    except requests.exceptions.Timeout: # pragma: no cover
         print("ERROR: Request timed out")
         sys.exit(1)
     return response.text
@@ -34,7 +40,7 @@ def find_entries(json_object, entries_key):
         for item in json_object:
             result = find_entries(item, entries_key)
             if result is not None:
-                return result
+                return result # pragma: no cover
     return None
 
 
@@ -59,7 +65,7 @@ def extract_links_ul(soup):
                         unique_links.add(url)
                         links.append((url, title, description))
 
-    if not links:
+    if not links: # pragma: no cover
         print("ERROR: No links found")
         sys.exit(1)
     return links
@@ -77,21 +83,21 @@ def extract_links_html(soup, arguments):
             title = entry.find(
                 arguments.html_title, re.compile(arguments.html_title_class)
             ).text.strip()
-        except (KeyError, AttributeError):
+        except (KeyError, AttributeError): # pragma: no cover
             print("ERROR: Unable to find URL or title in HTML element")
             sys.exit(1)
         try:
             description = entry.find(
                 arguments.html_description, re.compile(arguments.html_description_class)
             ).text.strip()
-        except (KeyError, AttributeError):
+        except (KeyError, AttributeError): # pragma: no cover
             # Ignore description if it's not found
             description = ""
         if url not in unique_links:
             unique_links.add(url)
             links.append((url, title, description))
 
-    if not links:
+    if not links: # pragma: no cover
         print("ERROR: No links found")
         sys.exit(1)
     return links
@@ -114,7 +120,7 @@ def extract_links_json(soup, arguments):
         try:
             url = entry[arguments.json_url]
             title = entry[arguments.json_title]
-        except KeyError:
+        except KeyError: # pragma: no cover
             print("ERROR: Unable to find URL or title in JSON object")
             sys.exit(1)
         try:
@@ -126,7 +132,7 @@ def extract_links_json(soup, arguments):
             unique_links.add(url)
             links.append((url, title, description))
 
-    if links == []:
+    if links == []: # pragma: no cover
         print("ERROR: No links found")
         sys.exit(1)
     return links
@@ -169,7 +175,7 @@ def parse_arguments(arguments):
     parser.add_argument(
         "--version",
         action="version",
-        version="%(prog)s " + pkg_resources.get_distribution("rssfixer").version,
+        version="%(prog)s " + __version__,
     )
     parser.add_argument("url", help="URL for the blog")
     parser.add_argument("--atom", action="store_true", help="Generate Atom feed")
@@ -253,7 +259,7 @@ def main():
     args = parse_arguments(sys.argv[1:])
 
     if vars(args).get("version"):
-        print(pkg_resources.require("rssfixer")[0].version)
+        print(__version__)
         sys.exit(0)
 
     # Get HTML content from URL
@@ -276,4 +282,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    main() # pragma: no cover
