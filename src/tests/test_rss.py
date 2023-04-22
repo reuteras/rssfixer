@@ -127,12 +127,12 @@ def test_create_rss_feed():
     with open("src/tests/data/output/nccgroup.xml", "r", encoding="utf-8") as f:
         correct_rss_feed = f.read()
     arguments = rss.parse_arguments(
-        ['--title', 'nccgroup', '--list', 'https://research.nccgroup.com/']
+        ["--title", "nccgroup", "--list", "https://research.nccgroup.com/"]
     )
     rss_feed = rss.create_rss_feed(links, arguments)
     rss_feed = re.sub(
         r"<lastBuildDate>.*</lastBuildDate>",
         "<lastBuildDate>Fri, 21 Apr 2023 12:15:48 +0000</lastBuildDate>",
-        rss_feed
+        rss_feed,
     )
     assert rss_feed == correct_rss_feed
