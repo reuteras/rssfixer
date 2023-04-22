@@ -3,8 +3,9 @@ import pickle
 import re
 
 import pytest
-import rssfixer.rss as rss
 from bs4 import BeautifulSoup
+
+import rssfixer.rss as rss
 
 
 @pytest.fixture(name="example_json_object")
