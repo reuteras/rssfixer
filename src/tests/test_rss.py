@@ -100,7 +100,7 @@ def test_extract_links_html():
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
     arguments = rss.parse_arguments(
-        ["--html", "http://www.tripwire.com/state-of-securit"]
+        ["--html", "http://www.tripwire.com/state-of-security"]
     )
     links = rss.extract_links_html(soup, arguments)
     with open("src/tests/data/output/tripwire", "rb") as f:
