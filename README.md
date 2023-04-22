@@ -18,7 +18,7 @@ python3 -m pip install rssfixer
 
 Format for storing the links varies but I'll try and add more formats as I find them.
 
-### List
+### Simple list
 
 An example to generate a feed for [nccgroup][ncc] that have the links in a list:
 
@@ -49,15 +49,28 @@ An example for [truesec.com][tru]:
 rssfixer --json --quiet --output truesec.xml https://www.truesec.com/hub/blog
 ```
 
+### General HTML
+
+An example for [tripwire.com][tri]:
+
+```bash
+rssfixer --title Tripwire --output tripwire.xml --quiet --html --base-url https://www.tripwire.com http://www.tripwire.com/state-of-security
+
+```
+
+
 ### Usage
 
 ```Text
-usage: rssfixer [-h] [--version] [--atom] [--base-url BASE_URL] [--html] [--html-entries HTML_ENTRIES] [--html-url HTML_URL] [--html-title HTML_TITLE]
-                [--html-title-class HTML_TITLE_CLASS] [--html-description HTML_DESCRIPTION] [--html-description-class HTML_DESCRIPTION_CLASS] [--json] [--json-entries JSON_ENTRIES]
-                [--json-url JSON_URL] [--json-title JSON_TITLE] [--json-description JSON_DESCRIPTION] [--output OUTPUT] [--title TITLE] [-q] [--list]
+usage: rssfixer [-h] [--version] [--atom] [--base-url BASE_URL] [--html] [--html-entries HTML_ENTRIES]
+                [--html-url HTML_URL] [--html-title HTML_TITLE] [--html-title-class HTML_TITLE_CLASS]
+                [--html-description HTML_DESCRIPTION] [--html-description-class HTML_DESCRIPTION_CLASS]
+                [--json] [--json-entries JSON_ENTRIES] [--json-url JSON_URL] [--json-title JSON_TITLE]
+                [--json-description JSON_DESCRIPTION] [--output OUTPUT] [--title TITLE] [-q] [--list]
                 url
 
-Generate RSS feed for blog that don't publish a feed. Default is to find links in a simple <ul>-list. Options are available to find links in other HTML elements or JSON strings.
+Generate RSS feed for blog that don't publish a feed. Default is to find links in a simple <ul>-list.
+Options are available to find links in other HTML elements or JSON strings.
 
 positional arguments:
   url                   URL for the blog
@@ -99,5 +112,6 @@ options:
   [fge]: https://feedgen.kiesow.be/
   [ncc]: https://research.nccgroup.com/
   [rss]: https://www.rssboard.org/
+  [tri]: https://www.tripwire.com/state-of-security
   [tru]: https://www.truesec.com/hub/blog
   [wor]: https://wordpress.org/
