@@ -11,6 +11,10 @@ classifiers = [
     "Programming Language :: Python :: 3",
     "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Intended Audience :: Information Technology",
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
 ]
 
 dependencies = [
@@ -24,12 +28,11 @@ requires = ["setuptools>=61.0"]
 build-backend = "setuptools.build_meta"
 
 [project.optional-dependencies]
-dev = [
-    "build",
-    "pytest",
-    "pylint",
-    "twine",
-]
+audit = ["bandit"]
+build = ["build", "twine"]
+lint = ["pylint"]
+test = ["pytest", "requests-mock"]
+dev = ["rssfixer[audit, lint, test, build]"]
 
 [project.urls]
 "Homepage" = "https://github.com/reuteras/rssfixer"
