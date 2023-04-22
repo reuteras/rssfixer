@@ -31,7 +31,7 @@ build-backend = "setuptools.build_meta"
 audit = ["bandit"]
 build = ["build", "twine"]
 lint = ["pylint"]
-test = ["pytest", "requests-mock"]
+test = ["pytest", "requests-mock", "coverage"]
 dev = ["rssfixer[audit, lint, test, build]"]
 
 [project.urls]
