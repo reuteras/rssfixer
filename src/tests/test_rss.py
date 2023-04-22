@@ -1,7 +1,8 @@
 """Tests for rss.py."""
 import pickle
-import pytest
 import re
+
+import pytest
 import rssfixer.rss as rss
 from bs4 import BeautifulSoup
 
@@ -98,7 +99,9 @@ def test_extract_links_html():
     with open("src/tests/data/input/tripwire.html", "r", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
-    arguments = rss.parse_arguments(['--html', 'http://www.tripwire.com/state-of-securit'])
+    arguments = rss.parse_arguments(
+        ["--html", "http://www.tripwire.com/state-of-securit"]
+    )
     links = rss.extract_links_html(soup, arguments)
     with open("src/tests/data/output/tripwire", "rb") as f:
         correct_links = pickle.load(f)
@@ -110,11 +113,12 @@ def test_extract_links_json():
     with open("src/tests/data/input/truesec.html", "r", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
-    arguments = rss.parse_arguments(['--json', 'https://www.truesec.com/hub/blog'])
+    arguments = rss.parse_arguments(["--json", "https://www.truesec.com/hub/blog"])
     links = rss.extract_links_json(soup, arguments)
     with open("src/tests/data/output/truesec", "rb") as f:
         correct_links = pickle.load(f)
     assert links == correct_links
+
 
 def test_create_rss_feed():
     """Test create_rss_feed()."""
@@ -122,7 +126,13 @@ def test_create_rss_feed():
         links = pickle.load(f)
     with open("src/tests/data/output/nccgroup.xml", "r", encoding="utf-8") as f:
         correct_rss_feed = f.read()
-    arguments = rss.parse_arguments(['--title', 'nccgroup', '--list', 'https://research.nccgroup.com/'])
+    arguments = rss.parse_arguments(
+        ['--title', 'nccgroup', '--list', 'https://research.nccgroup.com/']
+    )
     rss_feed = rss.create_rss_feed(links, arguments)
-    rss_feed = re.sub(r"<lastBuildDate>.*</lastBuildDate>", "<lastBuildDate>Fri, 21 Apr 2023 12:15:48 +0000</lastBuildDate>", rss_feed)
+    rss_feed = re.sub(
+        r"<lastBuildDate>.*</lastBuildDate>",
+        "<lastBuildDate>Fri, 21 Apr 2023 12:15:48 +0000</lastBuildDate>",
+        rss_feed
+    )
     assert rss_feed == correct_rss_feed
