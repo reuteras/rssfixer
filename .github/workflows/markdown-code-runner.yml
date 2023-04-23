@@ -37,6 +37,7 @@ jobs:
       - name: Run update-readme.py
         run: markdown-code-runner --verbose README.md
 
+      # yamllint disable rule:colons
       - name: Commit updated README.md
         id: commit
         run: |
@@ -45,11 +46,12 @@ jobs:
           git config --local user.name "github-actions[bot]"
           if git diff --quiet && git diff --staged --quiet; then
             echo "No changes in README.md, skipping commit."
-            echo "commit_status=skipped" >> $GITHUB_ENV
+            echo "commit_status=skipped" >> "$GITHUB_ENV"
           else
             git commit -m "Update README.md"
-            echo "commit_status=committed" >> $GITHUB_ENV
+            echo "commit_status=committed" >> "$GITHUB_ENV"
           fi
+      # yamllint enable
 
       - name: Push changes
         if: env.commit_status == 'committed'
