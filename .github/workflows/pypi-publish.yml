@@ -1,4 +1,7 @@
 ---
+# Yaml file for GitHub Actions to publish to PyPI on tagged commit
+name: Publish to PyPI on tagged commit
+
 on:
   release:
     types:
@@ -25,6 +28,5 @@ jobs:
       - name: build
         run: python -m build
 
-	  - name: Publish package distributions to PyPI
+      - name: Publish package distributions to PyPI
         uses: pypa/gh-action-pypi-publish@release/v1
-
