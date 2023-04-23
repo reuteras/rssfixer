@@ -113,7 +113,7 @@ def test_extract_links_json():
     with open("src/tests/data/input/truesec.html", "r", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
-    arguments = rss.parse_arguments(["--json", "https://www.truesec.com/hub/blog"])
+    arguments = rss.parse_arguments(["--json", "--json-description", "preamble", "https://www.truesec.com/hub/blog"])
     links = rss.extract_links_json(soup, arguments)
     with open("src/tests/data/output/truesec", "rb") as f:
         correct_links = pickle.load(f)
