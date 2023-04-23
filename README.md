@@ -62,52 +62,64 @@ rssfixer --title Tripwire --output tripwire.xml --quiet --html --base-url https:
 
 ### Usage
 
-```Text
-usage: rssfixer [-h] [--version] [--atom] [--base-url BASE_URL] [--html] [--html-entries HTML_ENTRIES]
-                [--html-url HTML_URL] [--html-title HTML_TITLE] [--html-title-class HTML_TITLE_CLASS]
-                [--html-description HTML_DESCRIPTION] [--html-description-class HTML_DESCRIPTION_CLASS]
-                [--json] [--json-entries JSON_ENTRIES] [--json-url JSON_URL] [--json-title JSON_TITLE]
-                [--json-description JSON_DESCRIPTION] [--output OUTPUT] [--title TITLE] [-q] [--list]
-                url
+Command line options:
 
-Generate RSS feed for blog that don't publish a feed. Default is to find links in a simple <ul>-list.
-Options are available to find links in other HTML elements or JSON strings.
-
-positional arguments:
-  url                   URL for the blog
-
-options:
-  -h, --help            show this help message and exit
-  --version             show program's version number and exit
-  --atom                Generate Atom feed
-  --base-url BASE_URL   Base URL for the blog
-  --html                Find entries in HTML
-  --html-entries HTML_ENTRIES
-                        HTML selector for entries
-  --html-url HTML_URL   HTML selector for URL
-  --html-title HTML_TITLE
-                        HTML selector for title
-  --html-title-class HTML_TITLE_CLASS
-                        Flag to specify title class (regex)
-  --html-description HTML_DESCRIPTION
-                        HTML selector for description
-  --html-description-class HTML_DESCRIPTION_CLASS
-                        Flag to specify description class (regex)
-  --json                Find entries in JSON
-  --json-entries JSON_ENTRIES
-                        JSON key for entries (default: 'entries')
-  --json-url JSON_URL   JSON key for URL (default: 'url')
-  --json-title JSON_TITLE
-                        JSON key for title
-  --json-description JSON_DESCRIPTION
-                        JSON key for description
-  --output OUTPUT       Name of the output file
-  --title TITLE         Title of the RSS feed (default: "My RSS Feed")
-  -q, --quiet           Suppress output
-  --list                Find entries in HTML <ul>-list (default)
+```Text markdown-code-runner
+echo '```bash'
+rssfixer --help
+echo '```'
 ```
 
+<!-- OUTPUT:START -->
+This content will be replaced by the output of the code block above.
+<!-- OUTPUT:END -->
 
+## Command line examples for some blogs
+
+### Apple Security Blog
+
+Url: [https://security.apple.com/blog/][app]
+
+```bash
+rssfixer --title "Apple Security" --output apple.xml --quiet --json --json-entries blogs --json-url slug --base-url https://security.apple.com/blog/ https://security.apple.com/blog
+```
+
+### nccgroup
+
+Url: [https://research.nccgroup.com/][ncc]
+
+```bash
+rssfixer --title nccgroup --output nccgroup.xml --quiet https://research.nccgroup.com
+```
+
+or you can specify _--list__ to find the links in a list which is the default:
+
+```bash
+rssfixer --title nccgroup --output nccgroup.xml --quiet --list https://research.nccgroup.com
+```
+
+### Tripwire
+
+Url: [https://www.tripwire.com/state-of-security][tri]
+
+```bash
+rssfixer --title Tripwire --output tripwire.xml --quiet --html --base-url https://www.tripwire.com http://www.tripwire.com/state-of-security
+```
+
+### TrueSec
+
+Url: [https://www.truesec.com/hub/blog][tru]
+
+```bash
+rssfixer --title Truesec --output truesec.xml --quiet --json --json-description preamble https://www.truesec.com/hub/blog
+```
+
+## Setup blogs
+
+During testing it is useful to use --stdout to see the generated feed. 
+
+
+  [app]: https://security.apple.com/blog/
   [bso]: https://www.crummy.com/software/BeautifulSoup/
   [exa]: https://github.com/reuteras/rssfixer/blob/main/src/tests/data/output/nccgroup.xml
   [fge]: https://feedgen.kiesow.be/
