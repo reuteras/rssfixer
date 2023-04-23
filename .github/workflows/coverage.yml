@@ -39,7 +39,7 @@ jobs:
           coverage report -m > resources/coverage.txt
           coverage-badge -f -q -o resources/coverage.svg
 
-      # yamllint disable rule:colons
+      # yamllint disable rule:line
       - name: Commit updated resources/coverage.txt resources/coverage.svg
         id: commit
         run: |
