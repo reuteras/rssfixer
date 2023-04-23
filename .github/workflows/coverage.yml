@@ -24,10 +24,10 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install coverage and coverage-badge
+      - name: Install coverage and tools
         run: |
           python -m pip install --upgrade pip
-          python -m pip install coverage coverage-badge
+          python -m pip install coverage coverage-badge pytest requests-mock
 
       - name: Install rssfixer
         run: |
