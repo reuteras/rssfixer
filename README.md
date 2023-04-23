@@ -4,6 +4,13 @@
 ![PyPI](https://img.shields.io/pypi/v/rssfixer?color=green)
 [![CodeQL](https://github.com/reuteras/rssfixer/workflows/CodeQL/badge.svg)](https://github.com/reuteras/rssfixer/actions?query=workflow%3ACodeQL)
 [![Coverage](https://raw.githubusercontent.com/reuteras/rssfixer/main/resources/coverage.svg)](https://github.com/reuteras/rssfixer/)
+<!-- CODE:BASH:START -->
+<!-- if jq '.metrics._totals | ."SEVERITY.HIGH"' resources/bandit.json | grep -vE '^0' > /dev/null ; then echo '[![security: bandit](https://img.shields.io/badge/security-bandit-red.svg)](https://github.com/PyCQA/bandit)' ; elif jq '.metrics._totals' resources/bandit.json | grep "SEVERITY" | grep -E ' 0,' | wc -l | grep -vE ' 4$' > /dev/null ; then echo '[![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)'; else echo '[![security: bandit](https://img.shields.io/badge/security-bandit-green.svg)](https://github.com/PyCQA/bandit)' ;fi -->
+<!-- CODE:END -->
+<!-- OUTPUT:START -->
+<!-- OUTPUT:END -->
+[![PyPI - Python Version](https://img.shields.io/pypi/pyversions/rssfixer)](https://pypi.org/project/rssfixer/)
+[![PyPI - License](https://img.shields.io/pypi/l/rssfixer)](
 
 A small tool to generate an [RSS][rss] feed from some [WordPress][wor] blogs that for some reason don't generate their own feeds. This tool uses [BeautifulSoup][bso] to parse the HTML and [feedgen][fge] to generate the feed.
 

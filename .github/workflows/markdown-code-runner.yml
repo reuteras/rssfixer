@@ -1,5 +1,6 @@
 ---
 # Update README.md with the latest output from rssfixer --help
+# and the current status of the bandit check.
 
 name: Update README.md
 
@@ -24,20 +25,24 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install markdown-code-runner
+      - name: Install markdown-code-runner and bandit
         run: |
           python -m pip install --upgrade pip
-          python -m pip install markdown-code-runner
+          python -m pip install markdown-code-runner bandit
 
       # Install rssfixer
       - name: Install other Python dependencies
         run: |
           python -m pip install -e .
 
+      # Run bandit
+      - name: Run bandit
+        run: bandit -l -f json -o resources/bandit.json -r src/rssfixer
+
       - name: Run update-readme.py
         run: markdown-code-runner --verbose README.md
 
-      # yamllint disable rule:colons
+      # yamllint disable rule:line
       - name: Commit updated README.md
         id: commit
         run: |
