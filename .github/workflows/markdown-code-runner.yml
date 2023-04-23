@@ -39,7 +39,7 @@ jobs:
       - name: Run bandit
         run: bandit -l -f json -o resources/bandit.json -r src/rssfixer
 
-      # yamllint disable rule:line
+      # yamllint disable rule:line-length
       - name: Commit updated bandit.json
         id: commit_bandit
         run: |
@@ -65,7 +65,7 @@ jobs:
       - name: Run update-readme.py
         run: markdown-code-runner --verbose README.md
 
-      # yamllint disable rule:line
+      # yamllint disable rule:line-length
       - name: Commit updated README.md
         id: commit_readme
         run: |
