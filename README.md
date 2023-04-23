@@ -64,11 +64,11 @@ rssfixer --title Tripwire --output tripwire.xml --quiet --html --base-url https:
 
 Command line options:
 
-```bash markdown-code-runner
+<!-- CODE:START -->
 echo '```Text'
 rssfixer --help
 echo '```'
-```
+<!-- CODE:END -->
 
 <!-- OUTPUT:START -->
 This content will be replaced by the output of the code block above.
