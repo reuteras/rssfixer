@@ -39,12 +39,35 @@ jobs:
       - name: Run bandit
         run: bandit -l -f json -o resources/bandit.json -r src/rssfixer
 
+      # yamllint disable rule:line
+      - name: Commit updated bandit.json
+        id: commit_bandit
+        run: |
+          git add bandit.json
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          if git diff --quiet && git diff --staged --quiet; then
+            echo "No changes in bandit.json, skipping commit."
+            echo "commit_status=skipped" >> "$GITHUB_ENV"
+          else
+            git commit -m "Update bandit.json"
+            echo "commit_status=committed" >> "$GITHUB_ENV"
+          fi
+      # yamllint enable
+
+      - name: Push changes
+        if: env.commit_status == 'committed'
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.head_ref }}
+
       - name: Run update-readme.py
         run: markdown-code-runner --verbose README.md
 
       # yamllint disable rule:line
       - name: Commit updated README.md
-        id: commit
+        id: commit_readme
         run: |
           git add README.md
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
