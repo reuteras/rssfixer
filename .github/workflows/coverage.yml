@@ -1,7 +1,7 @@
 ---
-# Update README.md with the latest output from rssfixer --help
+# Run coverage and create badge
 
-name: Update README.md
+name: Run coverage and update coverage badge
 
 on:
   push:
@@ -10,7 +10,7 @@ on:
   pull_request:
 
 jobs:
-  update_readme:
+  update_coverage:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
@@ -24,31 +24,33 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install markdown-code-runner
+      - name: Install coverage and coverage-badge
         run: |
           python -m pip install --upgrade pip
-          python -m pip install markdown-code-runner
+          python -m pip install coverage coverage-badge
 
-      # Install rssfixer
-      - name: Install other Python dependencies
+      - name: Install rssfixer
         run: |
           python -m pip install -e .
 
-      - name: Run update-readme.py
-        run: markdown-code-runner --verbose README.md
+      - name: Run coverage and create badge
+        run: |
+          coverage run -m pytest
+          coverage report -m > resources/coverage.txt
+          coverage-badge -f -q -o resources/coverage.svg
 
       # yamllint disable rule:colons
-      - name: Commit updated README.md
+      - name: Commit updated resources/coverage.txt resources/coverage.svg
         id: commit
         run: |
-          git add README.md
+          git add resources/coverage.txt resources/coverage.svg
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes in README.md, skipping commit."
+            echo "No changes in resources/coverage.txt or resources/coverage.svg, skipping commit."
             echo "commit_status=skipped" >> "$GITHUB_ENV"
           else
-            git commit -m "Update README.md"
+            git commit -m "Update resources/coverage.txt resources/coverage.svg"
             echo "commit_status=committed" >> "$GITHUB_ENV"
           fi
       # yamllint enable
