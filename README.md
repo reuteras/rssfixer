@@ -62,7 +62,7 @@ rssfixer --title Tripwire --output tripwire.xml --quiet --html --base-url https:
 
 ### Usage
 
-Command line options:
+Command-line options:
 
 <!-- CODE:BASH:START -->
 <!-- echo '```Text' -->
@@ -126,7 +126,7 @@ options:
 
 <!-- OUTPUT:END -->
 
-## Command line examples for some blogs
+## Command-line examples for some blogs
 
 ### Apple Security Blog
 
@@ -168,7 +168,7 @@ rssfixer --title Truesec --output truesec.xml --quiet --json --json-description 
 
 ## Setup blogs
 
-During testing it is useful to use --stdout to see the generated feed. 
+During testing it is useful to use --stdout to see the generated feed.
 
 
   [app]: https://security.apple.com/blog/
