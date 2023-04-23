@@ -117,7 +117,7 @@ def extract_links_json(soup, arguments):
     if entries is None:  # pragma: no cover
         print("ERROR: Unable to find JSON object")
         sys.exit(1)
-    
+
     # Extract the links from the JSON object
     for entry in entries:
         try:
