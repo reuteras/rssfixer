@@ -114,6 +114,10 @@ def extract_links_json(soup, arguments):
         if entries is not None:
             break
 
+    if entries is None:  # pragma: no cover
+        print("ERROR: Unable to find JSON object")
+        sys.exit(1)
+    
     # Extract the links from the JSON object
     for entry in entries:
         try:
@@ -216,7 +220,7 @@ def parse_arguments(arguments):
     )
     parser.add_argument(
         "--json-description",
-        default="preamble",
+        default="description",
         help="JSON key for description",
     )
     parser.add_argument(
@@ -233,6 +237,7 @@ def parse_arguments(arguments):
     parser.add_argument(
         "--list", action="store_true", help="Find entries in HTML <ul>-list (default)"
     )
+    parser.add_argument("--stdout", action="store_true", help="Print to stdout")
 
     return parser.parse_args(arguments)
 
@@ -277,7 +282,10 @@ def main():
 
     # Create RSS feed and save to file
     rss_feed = create_rss_feed(links, args)
-    save_rss_feed(rss_feed, args)
+    if args.stdout:
+        print(rss_feed)
+    else:
+        save_rss_feed(rss_feed, args)
 
 
 if __name__ == "__main__":
