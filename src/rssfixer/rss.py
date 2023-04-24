@@ -22,6 +22,9 @@ def fetch_html(url):
     except requests.exceptions.Timeout:  # pragma: no cover
         print("ERROR: Request timed out")
         sys.exit(1)
+    except requests.exceptions.ConnectionError:  # pragma: no cover
+        print("ERROR: Unable to connect to server")
+        sys.exit(1)
     return response.text
 
 
@@ -64,7 +67,7 @@ def extract_links_ul(soup):
                         unique_links.add(url)
                         links.append((url, title, description))
 
-    if not links:  # pragma: no cover
+    if not links:
         print("ERROR: No links found")
         sys.exit(1)
     return links
@@ -82,21 +85,21 @@ def extract_links_html(soup, arguments):
             title = entry.find(
                 arguments.html_title, re.compile(arguments.html_title_class)
             ).text.strip()
-        except (KeyError, AttributeError):  # pragma: no cover
+        except (KeyError, AttributeError):
             print("ERROR: Unable to find URL or title in HTML element")
             sys.exit(1)
         try:
             description = entry.find(
                 arguments.html_description, re.compile(arguments.html_description_class)
             ).text.strip()
-        except (KeyError, AttributeError):  # pragma: no cover
+        except (KeyError, AttributeError):
             # Ignore description if it's not found
             description = ""
         if url not in unique_links:
             unique_links.add(url)
             links.append((url, title, description))
 
-    if not links:  # pragma: no cover
+    if not links:
         print("ERROR: No links found")
         sys.exit(1)
     return links
@@ -104,6 +107,7 @@ def extract_links_html(soup, arguments):
 
 def extract_links_json(soup, arguments):
     """Extract links from JSON strings in an HTML page."""
+    entries = None
     links = []
     unique_links = set()
 
@@ -114,7 +118,7 @@ def extract_links_json(soup, arguments):
         if entries is not None:
             break
 
-    if entries is None:  # pragma: no cover
+    if entries is None:
         print("ERROR: Unable to find JSON object")
         sys.exit(1)
 
@@ -123,7 +127,7 @@ def extract_links_json(soup, arguments):
         try:
             url = entry[arguments.json_url]
             title = entry[arguments.json_title]
-        except KeyError:  # pragma: no cover
+        except KeyError:
             print("ERROR: Unable to find URL or title in JSON object")
             sys.exit(1)
         try:
@@ -135,9 +139,6 @@ def extract_links_json(soup, arguments):
             unique_links.add(url)
             links.append((url, title, description))
 
-    if links == []:  # pragma: no cover
-        print("ERROR: No links found")
-        sys.exit(1)
     return links
 
 
