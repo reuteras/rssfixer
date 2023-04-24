@@ -45,6 +45,7 @@ def fixture_example_html_string():
     """
     return html
 
+
 @pytest.fixture(name="example_html_string_no_match")
 def fixture_example_html_string_no_match():
     """Example HTML string without list."""
@@ -259,6 +260,7 @@ def test_create_rss_feed():
     )
     assert rss_feed == correct_rss_feed
 
+
 def test_create_rss_feed_atom():
     """Test create_rss_feed() with Atom output format."""
     with open("src/tests/data/output/apple.xml", "r", encoding="utf-8") as f:
@@ -275,7 +277,7 @@ def test_create_rss_feed_atom():
             "slug",
             "--base-url",
             "https://security.apple.com/blog/",
-            "https://security.apple.com/blog"
+            "https://security.apple.com/blog",
         ]
     )
     soup = BeautifulSoup(rss.fetch_html("https://security.apple.com/blog"), "html.parser")
@@ -310,7 +312,7 @@ def test_create_rss_feed_with_base_url():
             "--html",
             "--base-url",
             "https://www.tripwire.com",
-            "http://www.tripwire.com/state-of-security"
+            "http://www.tripwire.com/state-of-security",
         ]
     )
     rss_feed = rss.create_rss_feed(links, arguments)
@@ -332,7 +334,7 @@ def test_save_rss_feed_working(tmpdir):
             "--html",
             "--base-url",
             "https://www.tripwire.com",
-            "http://www.tripwire.com/state-of-security"
+            "http://www.tripwire.com/state-of-security",
         ]
     )
     with open("src/tests/data/output/tripwire.xml", "r", encoding="utf-8") as f:
@@ -347,14 +349,18 @@ def test_save_atom_feed_working(tmpdir):
     test_output = tmpdir.mkdir("sub").join("apple.xml")
     arguments = rss.parse_arguments(
         [
-            "--title", "Apple Security",
+            "--title", 
+            "Apple Security",
             "--atom",
             "--output", str(test_output),
             "--json",
-            "--json-entries", "blogs",
-            "--json-url", "slug",
-            "--base-url", "https://security.apple.com/blog/",
-            "https://security.apple.com/blog"
+            "--json-entries",
+            "blogs",
+            "--json-url",
+            "slug",
+            "--base-url",
+            "https://security.apple.com/blog/",
+            "https://security.apple.com/blog",
         ]
     )
     with open("src/tests/data/output/apple.xml", "r", encoding="utf-8") as f:
