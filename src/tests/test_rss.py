@@ -47,7 +47,7 @@ def fixture_example_html_string():
 
 @pytest.fixture(name="example_html_string_no_match")
 def fixture_example_html_string_no_match():
-    """Example HTML string."""
+    """Example HTML string without list."""
     html = """
     <html>
         <head>
@@ -70,7 +70,7 @@ def test_fetch_html(requests_mock):
     assert content == rss.fetch_html(url)
 
 def test_fetch_html_no_url(requests_mock):
-    """Test the fetch_html function."""
+    """Test the fetch_html function that should not work."""
     wrong_url = "https://not.nccgroup.com/"
     with open("src/tests/data/input/nccgroup.html", "r", encoding="utf-8") as f:
         content = f.read()
@@ -79,7 +79,7 @@ def test_fetch_html_no_url(requests_mock):
 
 
 def test_find_json_entries(example_json_object):
-    """Test find_entries()."""
+    """Test find_entries() with match."""
     json_object = example_json_object
     entries = rss.find_entries(json_object, "home")
     assert entries == {
@@ -97,7 +97,7 @@ def test_find_json_entries_not_found(example_json_object):
 
 
 def test_extract_links_ul_simple(example_html_string):
-    """Test extract_links_html()."""
+    """Test extract_links_html() with working structure."""
     soup = BeautifulSoup(example_html_string, "html.parser")
     links = rss.extract_links_ul(soup)
     assert links == [
@@ -108,7 +108,7 @@ def test_extract_links_ul_simple(example_html_string):
 
 
 def test_extract_links_ul_simple_no_match(example_html_string_no_match):
-    """Test extract_links_html()."""
+    """Test extract_links_html() without match."""
     soup = BeautifulSoup(example_html_string_no_match, "html.parser")
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.extract_links_ul(soup)
@@ -117,7 +117,7 @@ def test_extract_links_ul_simple_no_match(example_html_string_no_match):
 
 
 def test_extract_links_ul_standard():
-    """Test extract_links_html()."""
+    """Test extract_links_html() working."""
     with open("src/tests/data/input/nccgroup.html", "r", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
@@ -128,7 +128,7 @@ def test_extract_links_ul_standard():
 
 
 def test_extract_links_html():
-    """Test extract_links_html()."""
+    """Test extract_links_html() working."""
     with open("src/tests/data/input/tripwire.html", "r", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
@@ -142,7 +142,7 @@ def test_extract_links_html():
 
 
 def test_extract_links_html_no_match_title():
-    """Test extract_links_html() with not match for title."""
+    """Test extract_links_html() with no match for title."""
     with open("src/tests/data/input/tripwire.html", "r", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
@@ -156,7 +156,7 @@ def test_extract_links_html_no_match_title():
 
 
 def test_extract_links_html_no_match_links():
-    """Test extract_links_html() with not match for title."""
+    """Test extract_links_html() with no match for links."""
     with open("src/tests/data/input/tripwire.html", "r", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
@@ -170,7 +170,7 @@ def test_extract_links_html_no_match_links():
 
 
 def test_extract_links_html_no_match_description():
-    """Test extract_links_html()."""
+    """Test extract_links_html() with no match for description."""
     with open("src/tests/data/input/tripwire.html", "r", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
@@ -184,7 +184,7 @@ def test_extract_links_html_no_match_description():
 
 
 def test_extract_links_json():
-    """Test extract_links_json()."""
+    """Test extract_links_json() working."""
     with open("src/tests/data/input/truesec.html", "r", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
@@ -198,7 +198,7 @@ def test_extract_links_json():
 
 
 def test_extract_links_json_no_match_description():
-    """Test extract_links_json()."""
+    """Test extract_links_json() working."""
     with open("src/tests/data/input/truesec.html", "r", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
@@ -212,7 +212,7 @@ def test_extract_links_json_no_match_description():
 
 
 def test_extract_links_json_no_json(example_html_string):
-    """Test extract_links_json() no json."""
+    """Test extract_links_json() with no json."""
     soup = BeautifulSoup(example_html_string, "html.parser")
     arguments = rss.parse_arguments(
         ["--json", "https://www.truesec.com/hub/blog"]
@@ -224,7 +224,7 @@ def test_extract_links_json_no_json(example_html_string):
 
 
 def test_extract_links_json_no_title():
-    """Test extract_links_json() no title found."""
+    """Test extract_links_json() with no title."""
     with open("src/tests/data/input/truesec.html", "r", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
@@ -238,7 +238,7 @@ def test_extract_links_json_no_title():
 
 
 def test_create_rss_feed():
-    """Test create_rss_feed()."""
+    """Test create_rss_feed() in RSS format working."""
     with open("src/tests/data/output/nccgroup", "rb") as f:
         links = pickle.load(f)
     with open("src/tests/data/output/nccgroup.xml", "r", encoding="utf-8") as f:
@@ -255,7 +255,7 @@ def test_create_rss_feed():
     assert rss_feed == correct_rss_feed
 
 def test_create_rss_feed_atom():
-    """Test create_rss_feed() with atom output format."""
+    """Test create_rss_feed() with Atom output format."""
     with open("src/tests/data/output/apple.xml", "r", encoding="utf-8") as f:
         correct_rss_feed = f.read()
     arguments = rss.parse_arguments(
@@ -318,7 +318,7 @@ def test_save_rss_feed_working(tmpdir):
 
 
 def test_save_atom_feed_working(tmpdir):
-    """Test save_rss_feed() in atom format."""
+    """Test save_rss_feed() in Atom format."""
     test_output = tmpdir.mkdir("sub").join("apple.xml")
     arguments = rss.parse_arguments(
         ["--title", "Apple Security",
