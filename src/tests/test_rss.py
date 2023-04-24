@@ -203,7 +203,12 @@ def test_extract_links_json_no_match_description():
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
     arguments = rss.parse_arguments(
-        ["--json", "--json-description", "description", "https://www.truesec.com/hub/blog"]
+        [
+            "--json",
+            "--json-description",
+            "description",
+            "https://www.truesec.com/hub/blog"
+        ]
     )
     links = rss.extract_links_json(soup, arguments)
     with open("src/tests/data/output/truesec_no_desc", "rb") as f:
@@ -214,9 +219,7 @@ def test_extract_links_json_no_match_description():
 def test_extract_links_json_no_json(example_html_string):
     """Test extract_links_json() with no json."""
     soup = BeautifulSoup(example_html_string, "html.parser")
-    arguments = rss.parse_arguments(
-        ["--json", "https://www.truesec.com/hub/blog"]
-    )
+    arguments = rss.parse_arguments(["--json", "https://www.truesec.com/hub/blog"])
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.extract_links_json(soup, arguments)
     assert pytest_wrapped_e.type == SystemExit
@@ -259,13 +262,19 @@ def test_create_rss_feed_atom():
     with open("src/tests/data/output/apple.xml", "r", encoding="utf-8") as f:
         correct_rss_feed = f.read()
     arguments = rss.parse_arguments(
-        ["--title", "Apple Security",
-         "--atom",
-         "--json",
-         "--json-entries", "blogs",
-         "--json-url", "slug",
-         "--base-url", "https://security.apple.com/blog/",
-         "https://security.apple.com/blog"]
+        [
+            "--title",
+            "Apple Security",
+            "--atom",
+            "--json",
+            "--json-entries",
+            "blogs",
+            "--json-url",
+            "slug",
+            "--base-url",
+            "https://security.apple.com/blog/",
+            "https://security.apple.com/blog"
+        ]
     )
     soup = BeautifulSoup(rss.fetch_html("https://security.apple.com/blog"), "html.parser")
     links = rss.extract_links_json(soup, arguments)
@@ -293,7 +302,14 @@ def test_create_rss_feed_with_base_url():
     with open("src/tests/data/output/tripwire.xml", "r", encoding="utf-8") as f:
         correct_rss_feed = f.read()
     arguments = rss.parse_arguments(
-        ["--title", "Tripwire", "--html", "--base-url", "https://www.tripwire.com", "http://www.tripwire.com/state-of-security"]
+        [
+            "--title",
+            "Tripwire",
+            "--html",
+            "--base-url",
+            "https://www.tripwire.com",
+            "http://www.tripwire.com/state-of-security"
+        ]
     )
     rss_feed = rss.create_rss_feed(links, arguments)
     rss_feed = re.sub(
@@ -308,7 +324,14 @@ def test_save_rss_feed_working(tmpdir):
     """Test save_rss_feed() in RSS format."""
     test_output = tmpdir.mkdir("sub").join("tripwire.xml")
     arguments = rss.parse_arguments(
-        ["--output", str(test_output), "--html", "--base-url", "https://www.tripwire.com", "http://www.tripwire.com/state-of-security"]
+        [
+            "--output",
+            str(test_output),
+            "--html",
+            "--base-url",
+            "https://www.tripwire.com",
+            "http://www.tripwire.com/state-of-security"
+        ]
     )
     with open("src/tests/data/output/tripwire.xml", "r", encoding="utf-8") as f:
         rss_feed = f.read()
@@ -321,14 +344,16 @@ def test_save_atom_feed_working(tmpdir):
     """Test save_rss_feed() in Atom format."""
     test_output = tmpdir.mkdir("sub").join("apple.xml")
     arguments = rss.parse_arguments(
-        ["--title", "Apple Security",
-         "--atom",
-         "--output", str(test_output),
-         "--json",
-         "--json-entries", "blogs",
-         "--json-url", "slug",
-         "--base-url", "https://security.apple.com/blog/",
-         "https://security.apple.com/blog"]
+        [
+            "--title", "Apple Security",
+            "--atom",
+            "--output", str(test_output),
+            "--json",
+            "--json-entries", "blogs",
+            "--json-url", "slug",
+            "--base-url", "https://security.apple.com/blog/",
+            "https://security.apple.com/blog"
+        ]
     )
     with open("src/tests/data/output/apple.xml", "r", encoding="utf-8") as f:
         rss_feed = f.read()
@@ -341,13 +366,19 @@ def test_save_rss_feed_not_working():
     """Test save_rss_feed() and check that it fails."""
     test_output = "/root/tripwire.xml"
     arguments = rss.parse_arguments(
-        ["--output", test_output, "--html", "--base-url", "https://www.tripwire.com", "http://www.tripwire.com/state-of-security"]
+        [
+            "--output",
+            test_output,
+            "--html",
+            "--base-url",
+            "https://www.tripwire.com",
+            "http://www.tripwire.com/state-of-security"
+        ]
     )
     with open("src/tests/data/output/tripwire.xml", "r", encoding="utf-8") as f:
         rss_feed = f.read()
-    
+
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.save_rss_feed(rss_feed, arguments)
     assert pytest_wrapped_e.type == SystemExit
     assert pytest_wrapped_e.value.code == 1
-
