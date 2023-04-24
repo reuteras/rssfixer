@@ -1,10 +1,10 @@
 # rssfixer
 
 <!-- CODE:BASH:START -->
-<!-- echo '[![GitHub Super-Linter](https://github.com/reuteras/rssfixer/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter) -->
-<!-- echo '![PyPI](https://img.shields.io/pypi/v/rssfixer?color=green) -->
-<!-- echo '[![CodeQL](https://github.com/reuteras/rssfixer/workflows/CodeQL/badge.svg)](https://github.com/reuteras/rssfixer/actions?query=workflow%3ACodeQL) -->
-<!-- echo '[![Coverage](https://raw.githubusercontent.com/reuteras/rssfixer/main/resources/coverage.svg)](https://github.com/reuteras/rssfixer/) -->
+<!-- echo '[![GitHub Super-Linter](https://github.com/reuteras/rssfixer/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)' -->
+<!-- echo '![PyPI](https://img.shields.io/pypi/v/rssfixer?color=green)' -->
+<!-- echo '[![CodeQL](https://github.com/reuteras/rssfixer/workflows/CodeQL/badge.svg)](https://github.com/reuteras/rssfixer/actions?query=workflow%3ACodeQL)' -->
+<!-- echo '[![Coverage](https://raw.githubusercontent.com/reuteras/rssfixer/main/resources/coverage.svg)](https://github.com/reuteras/rssfixer/)' -->
 <!-- if jq '.metrics._totals | ."SEVERITY.HIGH"' resources/bandit.json | grep -vE '^0' > /dev/null ; then echo -n '[![security: bandit](https://img.shields.io/badge/security-bandit-red.svg)](https://github.com/PyCQA/bandit)' ; elif jq '.metrics._totals' resources/bandit.json | grep "SEVERITY" | grep -E ' 0,' | wc -l | grep -vE '4$' > /dev/null ; then echo -n '[![security: bandit](https://img.shields.io/badge/security-bandit-yellow.svg)](https://github.com/PyCQA/bandit)'; else echo -n '[![security: bandit](https://img.shields.io/badge/security-bandit-green.svg)](https://github.com/PyCQA/bandit)' ;fi -->
 <!-- CODE:END -->
 <!-- OUTPUT:START -->
