@@ -61,6 +61,7 @@ def fixture_example_html_string_no_match():
     """
     return html
 
+
 def test_fetch_html(requests_mock):
     """Test the fetch_html function."""
     url = "https://research.nccgroup.com/"
@@ -68,6 +69,7 @@ def test_fetch_html(requests_mock):
         content = f.read()
     requests_mock.get(url, text=content)
     assert content == rss.fetch_html(url)
+
 
 def test_fetch_html_no_url(requests_mock):
     """Test the fetch_html function that should not work."""
