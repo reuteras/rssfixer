@@ -4,4 +4,4 @@ __pycache__
 build/*
 dist/*
 src/rssfixer.egg-info/*
-*.xml
+/*.xml

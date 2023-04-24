@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>Tripwire</title>
+    <link>http://www.tripwire.com/state-of-security</link>
+    <description>RSS feed generated from the links at http://www.tripwire.com/state-of-security</description>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <lastBuildDate>Sun, 23 Apr 2023 13:33:02 +0000</lastBuildDate>
+    <item>
+      <title>Distributed Energy Resources and Grid Security</title>
+      <link>https://www.tripwire.com/state-of-security/distributed-energy-resources-and-grid-security</link>
+      <description>As the United States government, the energy industry, and individual consumers work toward cleaner and more sustainable energy solutions, it is crucial to consider how new and advancing technologies affect, and are affected by, cybersecurity concerns. ­­­­Increasing use of smart energy devices can be useful for consumers to have more control over their energy consumption, but can also pose a...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/distributed-energy-resources-and-grid-security</guid>
+    </item>
+    <item>
+      <title>Tripwire Patch Priority Index for March 2023</title>
+      <link>https://www.tripwire.com/state-of-security/tripwire-patch-priority-index-march-2023</link>
+      <description>Tripwire's March 2023 Patch Priority Index (PPI) brings together important vulnerabilities for Google and Microsoft. First on the patch priority list this month is a patch for Microsoft Office Outlook that resolves a critical elevation of privilege vulnerability (CVE-2023-23397) that should be patched as soon as possible. This vulnerability has seen exploitation in the wild and allows attackers to...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/tripwire-patch-priority-index-march-2023</guid>
+    </item>
+    <item>
+      <title>Securing your Digital Life: MFA, Password Managers and Risk</title>
+      <link>https://www.tripwire.com/state-of-security/securing-your-digital-life-mfa-password-managers-and-risk</link>
+      <description>In security, there are always tensions; the balancing act between security, convenience, and functionality. While these three, often competing interests cause many people to become frustrated, there are some simple steps that can ease the security struggle: Any Multi-Factor Authentication (MFA) is better than no MFA. Any password manager is better than not using one. Determine your current level...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/securing-your-digital-life-mfa-password-managers-and-risk</guid>
+    </item>
+    <item>
+      <title>Tripwire and Fortra: Helping Secure IT and OT Environments Better than Ever</title>
+      <link>https://www.tripwire.com/state-of-security/tripwire-and-fortra-helping-secure-it-and-ot-environments-better-ever</link>
+      <description>When I was younger, you could add a second processor to a computer, but it didn’t double the workload it handled. Natural inefficiencies meant that 1+1 was approximately 1.5 or maybe 1.75 times the workload. Today, multiprocessing and multithreading is so common that even the Windows calculator takes advantage of the benefits. So, when I look at the recent acquisition of Tripwire by Fortra, how do...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/tripwire-and-fortra-helping-secure-it-and-ot-environments-better-ever</guid>
+    </item>
+    <item>
+      <title>We’re All in this Together: Thoughts on the PwC 2023 Global Digital Trust Insights Report</title>
+      <link>https://www.tripwire.com/state-of-security/were-all-together-pwc-global-digital-trust-insights-report</link>
+      <description>What do you need to know from PwC’s 2023 Global Digital Trust Insights report? The short answer: Teamwork. If you don’t have a lot of time today, just remember that. Based on the recommendations in this report, if you want your business to make progress in cybersecurity, C-suite executives need to come together and unitedly work towards a more secure future. Who was included in this Survey? The...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/were-all-together-pwc-global-digital-trust-insights-report</guid>
+    </item>
+    <item>
+      <title>30 Ransomware Prevention Tips</title>
+      <link>https://www.tripwire.com/state-of-security/22-ransomware-prevention-tips</link>
+      <description>Dealing with the aftermath of ransomware attacks is like Russian roulette. Submitting the ransom might seem like it’s the sole option for recovering locked data. Ransomware also continues to evolve as a threat category within the past year, with old names like REvil rearing their heads and new players like Black Basta emerging in 2022. Malicious actors employ ransomware to extort money (at least...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/22-ransomware-prevention-tips</guid>
+    </item>
+    <item>
+      <title>VERT Threat Alert: April 2023 Patch Tuesday Analysis</title>
+      <link>https://www.tripwire.com/state-of-security/vert-threat-alert-april-2023-patch-tuesday-analysis</link>
+      <description>Today’s VERT Alert addresses Microsoft’s April 2023 Security Updates. VERT is actively working on coverage for these vulnerabilities and expects to ship ASPL-1050 on Wednesday, April 12th. In-The-Wild &amp; Disclosed CVEs CVE-2023-28252 A vulnerability in the Common Log File System (CLFS) Driver has been exploited in-the-wild. CLFS provides a general-purpose logging service to other software via the...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/vert-threat-alert-april-2023-patch-tuesday-analysis</guid>
+    </item>
+    <item>
+      <title>CISA Publishes Advisory on Improving Network Monitoring and Hardening</title>
+      <link>https://www.tripwire.com/state-of-security/cisa-publishes-advisory-improving-network-monitoring-and-hardening</link>
+      <description>CISA released in late February a cybersecurity advisory on the key findings from a recent Cybersecurity and Infrastructure Security Agency (CISA) red team assessment to provide organizations recommendations for improving their cyber posture. According to the Agency, the necessary actions to harden their environments include monitoring network activity to spot abnormal behavior, conducting regular...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/cisa-publishes-advisory-improving-network-monitoring-and-hardening</guid>
+    </item>
+    <item>
+      <title>Tripwire’s Vulnerability Exposure Research Team (VERT): What you need to know</title>
+      <link>https://www.tripwire.com/state-of-security/tripwires-vulnerability-exposure-research-team-vert-what-you-need-know</link>
+      <description>Each month, at the State of Security, we publish a range of content provided by VERT. Whether it’s a round-up of all the latest cybersecurity news, our Patch Priority Index that helps guide administrators on what they should be patching , a book review, general musings from the team, or most notability our Patch Tuesday round-up. VERT is helping organizations stay abreast of the cybersecurity...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/tripwires-vulnerability-exposure-research-team-vert-what-you-need-know</guid>
+    </item>
+    <item>
+      <title>The U.S. Army Is Revamping Its Cybersecurity Approach</title>
+      <link>https://www.tripwire.com/state-of-security/us-army-revamping-its-cybersecurity-approach</link>
+      <description>Military cybersecurity operations are shifting to a digital battlefield, where tools and technology work to save lives and increase efficiency. With these advancements comes the increased need for resilient measures to meet the needs of soldiers, leadership, and civilians alike. A ransomware attack rocked the U.S. Marshals Service in February 2023, compromising critical state data on everything...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/us-army-revamping-its-cybersecurity-approach</guid>
+    </item>
+    <item>
+      <title>Glamourizing fraudsters hurts victims of fraud, and society</title>
+      <link>https://www.tripwire.com/state-of-security/glamourizing-fraudsters-hurts-victims-fraud-and-society</link>
+      <description>We seem to be fascinated by fraudsters, and recent documentaries prove this. The documentary landscape is populated with many fraud-centered stories, such as The Tinder Swindler, Fyre, The Con, Fake Heiress, The Inventor, and many others. Some have even been made into series, such as the story of Elisabeth Holmes in The Dropout, and the story of Anna Delvey in Inventing Anna. We just can’t get...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/glamourizing-fraudsters-hurts-victims-fraud-and-society</guid>
+    </item>
+    <item>
+      <title>Microsoft warns accounting firms of targeted attacks as Tax Day approaches</title>
+      <link>https://www.tripwire.com/state-of-security/microsoft-warns-accounting-firms-targeted-attacks-tax-day-approaches</link>
+      <description>Accountants are being warned to be on their guard from malicious hackers, as cybercriminals exploit the rush to prepare tax returns for clients before the deadline of US Tax Day. US Tax Day, which falls on Tuesday April 18 this year, is the day on which income tax returns for individuals are due to be submitted to the government. Inevitably it's a busy time for accounting firms and bookkeepers who...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/microsoft-warns-accounting-firms-targeted-attacks-tax-day-approaches</guid>
+    </item>
+    <item>
+      <title>Cybersecurity in the Energy Sector: Risks and Mitigation Strategies</title>
+      <link>https://www.tripwire.com/state-of-security/cybersecurity-energy-sector-risks-and-mitigation-strategies</link>
+      <description>The demand for cybersecurity in the energy sector is often understated. There is a misconception that very little IT is involved, and much of it does not impact operations. But 97% of surveyed ICS security professionals in the energy, oil, and gas sector believe cybersecurity is a growing concern. No industry has been untouched by digital transformation. With the Industrial Internet of Things (IoT...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/cybersecurity-energy-sector-risks-and-mitigation-strategies</guid>
+    </item>
+    <item>
+      <title>What Is Microsegmentation and 5 Compelling Security Use Cases</title>
+      <link>https://www.tripwire.com/state-of-security/what-microsegmentation-compelling-security-use-cases</link>
+      <description>What Is Microsegmentation? Microsegmentation is a security technique that partitions a network into small, isolated sections to reduce the attack surface and reduce an organizations risk. Each microsegment is typically defined by specific security policies, accessible only to authorized users and devices. Microsegmentation is often seen as a more effective security strategy than traditional...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/what-microsegmentation-compelling-security-use-cases</guid>
+    </item>
+    <item>
+      <title>Fortra: Your Cybersecurity Ally</title>
+      <link>https://www.tripwire.com/state-of-security/fortra-your-cybersecurity-ally</link>
+      <description>It was just a short time ago that Fortra came into being, as the new face of HelpSystems. Fortra is a company that combines a group of cybersecurity products and services into one portfolio. As with all acquisitions, many customers wondered what benefits this would bring to the Tripwire product line. We took the opportunity to speak with Fortra’s Principal Evangelist, Antonio Sanchez, who sheds...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/fortra-your-cybersecurity-ally</guid>
+    </item>
+    <item>
+      <title>A Day in the Life of a SOC Team</title>
+      <link>https://www.tripwire.com/state-of-security/day-life-soc-team</link>
+      <description>This piece was originally published on Fortra’s AlertLogic.com Blog. Managed detection and response (MDR) would be nothing without a SOC (security operations center). They’re on the frontline of our clients’ defenses — a living, breathing layer of intelligence and protection to complement our automated cybersecurity features. These are the people who make our MDR services best in class so...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/day-life-soc-team</guid>
+    </item>
+    <item>
+      <title>EPA Has ‘New Rules’ for Protecting Public Drinking Water</title>
+      <link>https://www.tripwire.com/state-of-security/epa-has-new-rules-protecting-public-drinking-water</link>
+      <description>The EPA isn't mincing words when it comes to protecting public drinking water. Earlier this month they released a memorandum putting specifics into the general advice to maintain cybersecurity at public water systems (PWSs). Per the report, “[The] EPA clarifies with this memorandum that states must evaluate the cybersecurity of operational technology used by a PWS when conducting PWS sanitary...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/epa-has-new-rules-protecting-public-drinking-water</guid>
+    </item>
+    <item>
+      <title>Electrical Grid Security: NERC CIP, Cyber Threats and Key Challenges</title>
+      <link>https://www.tripwire.com/state-of-security/electrical-grid-security-nerc-cip-cyber-threats-and-key-challenges</link>
+      <description>Electrical grid security has been getting a lot of attention recently. It started fairly quietly, and then when it was a featured story on a news program, it rose to the top of the collective consciousness. However, the news stories that followed were focused entirely on the physical vulnerabilities of the US power grids. Few, if any stories covered the cybersecurity angle of securing the grids...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/electrical-grid-security-nerc-cip-cyber-threats-and-key-challenges</guid>
+    </item>
+    <item>
+      <title>FTC accuses payments firm of knowingly assisting tech support scammers</title>
+      <link>https://www.tripwire.com/state-of-security/ftc-accuses-payments-firm-knowingly-assisting-tech-support-scammers</link>
+      <description>Multinational payment processing firm Nexway has been rapped across the knuckles by the US authorities, who claim that the firm knowingly processed fraudulent credit card payments on behalf of tech support scammers. A Federal Trade Commission (FTC) complaint argues that Nexway and its subsidiaries broke the law by helping scammers cheat money from unsuspecting consumers. Victims were tricked into...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/ftc-accuses-payments-firm-knowingly-assisting-tech-support-scammers</guid>
+    </item>
+    <item>
+      <title>US charges three men with six million dollar business email compromise plot</title>
+      <link>https://www.tripwire.com/state-of-security/us-charges-three-men-six-million-dollar-business-email-compromise-plot</link>
+      <description>Three Nigerian nationals face charges in a US federal court related to a business email compromise (BEC) scam that is said to have stolen more than US $6 million from victims. 29-year-old Kosi Goodness Simon-Ebo was extradited from Canada to the United States earlier this month, according to a Department of Justice press release, and will appear before a federal court on Friday. Two of Simon-Ebo's...</description>
+      <guid isPermaLink="false">https://www.tripwire.com/state-of-security/us-charges-three-men-six-million-dollar-business-email-compromise-plot</guid>
+    </item>
+  </channel>
+</rss>
