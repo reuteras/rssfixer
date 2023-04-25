@@ -187,7 +187,8 @@ def test_extract_links_html_no_match_description():
             "--html",
             "--html-description",
             "fail",
-            "http://www.tripwire.com/state-of-security"],
+            "http://www.tripwire.com/state-of-security",
+        ]
     )
     links = rss.extract_links_html(soup, arguments)
     with open("src/tests/data/output/tripwire_no_description", "rb") as f:
