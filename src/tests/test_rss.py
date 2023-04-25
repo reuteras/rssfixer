@@ -411,6 +411,6 @@ def test_init():
     """Test init() function."""
     with patch.object(rss, "main", return_value=42):
         with patch.object(rss, "__name__", "__main__"):
-            with patch.object(rss.sys,'exit') as mock_exit:
+            with patch.object(rss.sys, "exit") as mock_exit:
                 rss.init()
                 assert mock_exit.call_args[0][0] == 42
