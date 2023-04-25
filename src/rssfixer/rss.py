@@ -42,7 +42,7 @@ def find_entries(json_object, entries_key):
         for item in json_object:
             result = find_entries(item, entries_key)
             if result is not None:
-                return result  # pragma: no cover
+                return result
     return None
 
 
@@ -290,4 +290,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()  # pragma: no cover
+    main()
