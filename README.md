@@ -152,12 +152,6 @@ rssfixer --title "Apple Security" --output apple.xml --quiet --json --json-entri
 Url: [https://research.nccgroup.com/][ncc]
 
 ```bash
-rssfixer --title nccgroup --output nccgroup.xml --quiet https://research.nccgroup.com
-```
-
-or you can specify _--list__ to find the links in a list which is the default:
-
-```bash
 rssfixer --title nccgroup --output nccgroup.xml --quiet --list https://research.nccgroup.com
 ```
 
