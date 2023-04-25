@@ -295,12 +295,8 @@ def test_create_rss_feed_atom():
             "https://security.apple.com/blog",
         ]
     )
-    soup = BeautifulSoup(
-        rss.fetch_html("https://security.apple.com/blog"), "html.parser"
-    )
-    links = rss.extract_links_json(soup, arguments)
-    with open("src/tests/data/output/apple", "wb") as f:
-        pickle.dump(links, f)
+    with open("src/tests/data/output/apple", "rb") as f:
+        links = pickle.load(f)
     rss_feed = rss.create_rss_feed(links, arguments)
 
     rss_feed = re.sub(
