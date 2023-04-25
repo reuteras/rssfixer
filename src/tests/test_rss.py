@@ -187,7 +187,7 @@ def test_extract_links_html_no_match_description():
             "--html",
             "--html-description",
             "fail",
-            "http://www.tripwire.com/state-of-security"]
+            "http://www.tripwire.com/state-of-security"],
     )
     links = rss.extract_links_html(soup, arguments)
     with open("src/tests/data/output/tripwire_no_description", "rb") as f:
@@ -295,8 +295,8 @@ def test_create_rss_feed_atom():
         ]
     )
     soup = BeautifulSoup(
-        rss.fetch_html("https://security.apple.com/blog"
-    ), "html.parser")
+        rss.fetch_html("https://security.apple.com/blog"), "html.parser"
+    )
     links = rss.extract_links_json(soup, arguments)
     with open("src/tests/data/output/apple", "wb") as f:
         pickle.dump(links, f)
@@ -397,7 +397,7 @@ def test_save_rss_feed_not_working():
             "--html",
             "--base-url",
             "https://www.tripwire.com",
-            "http://www.tripwire.com/state-of-security"
+            "http://www.tripwire.com/state-of-security",
         ]
     )
     with open("src/tests/data/output/tripwire.xml", "r", encoding="utf-8") as f:
