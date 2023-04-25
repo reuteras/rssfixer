@@ -4,7 +4,7 @@ import re
 from unittest.mock import patch
 
 import pytest
-import rssfixer.rss as rss
+from rssfixer import rss
 from bs4 import BeautifulSoup
 from requests_mock import NoMockAddress
 
@@ -64,6 +64,47 @@ def fixture_example_html_string_no_match():
     return html
 
 
+json_data_1 = {
+    "a": 1,
+    "b": 2,
+    "entries_key": [{"id": 1, "value": "A"}, {"id": 2, "value": "B"}],
+}
+
+json_data_2 = {
+    "a": 1,
+    "b": 2,
+    "c": {
+        "d": 3,
+        "entries_key": [{"id": 1, "value": "A"}, {"id": 2, "value": "B"}],
+    },
+}
+
+json_data_3 = [
+    {"a": 1, "b": 2},
+    {"c": 3, "entries_key": [{"id": 1, "value": "A"}, {"id": 2, "value": "B"}]},
+]
+
+json_data_4 = {
+    "a": [
+        {"b": 1},
+        {"entries_key": [{"id": 1, "value": "A"}, {"id": 2, "value": "B"}]},
+    ]
+}
+
+json_data_5 = {
+    "a": 1,
+    "b": 2,
+}
+
+test_cases = [
+    (json_data_1, "entries_key", [{"id": 1, "value": "A"}, {"id": 2, "value": "B"}]),
+    (json_data_2, "entries_key", [{"id": 1, "value": "A"}, {"id": 2, "value": "B"}]),
+    (json_data_3, "entries_key", [{"id": 1, "value": "A"}, {"id": 2, "value": "B"}]),
+    (json_data_4, "entries_key", [{"id": 1, "value": "A"}, {"id": 2, "value": "B"}]),
+    (json_data_5, "entries_key", None),
+]
+
+
 def test_fetch_html(requests_mock):
     """Test the fetch_html function."""
     url = "https://research.nccgroup.com/"
@@ -98,6 +139,12 @@ def test_find_json_entries_not_found(example_json_object):
     json_object = example_json_object
     entries = rss.find_entries(json_object, "xyzzy")
     assert entries is None
+
+
+@pytest.mark.parametrize("json_object,entries_key,expected", test_cases)
+def test_find_entries(json_object, entries_key, expected):
+    result = rss.find_entries(json_object, entries_key)
+    assert result == expected
 
 
 def test_extract_links_ul_simple(example_html_string):

@@ -15,6 +15,20 @@ except importlib.metadata.PackageNotFoundError:  # pragma: no cover
     __version__ = "0.0.0"
 
 
+class CheckHtmlAction(argparse.Action):
+    def __call__(self, parser, namespace, values, option_string=None):
+        if not namespace.html:
+            parser.error(f"{option_string} requires --html to be specified.")
+        setattr(namespace, self.dest, values)
+
+
+class CheckJsonAction(argparse.Action):
+    def __call__(self, parser, namespace, values, option_string=None):
+        if not namespace.json:
+            parser.error(f"{option_string} requires --json to be specified.")
+        setattr(namespace, self.dest, values)
+
+
 def fetch_html(url):
     """Fetch HTML content from a URL."""
     try:
@@ -34,10 +48,9 @@ def find_entries(json_object, entries_key):
         for key, value in json_object.items():
             if key == entries_key:
                 return value
-            else:
-                result = find_entries(value, entries_key)
-                if result is not None:
-                    return result
+            result = find_entries(value, entries_key)
+            if result is not None:
+                return result
     elif isinstance(json_object, list):
         for item in json_object:
             result = find_entries(item, entries_key)
@@ -165,8 +178,7 @@ def create_rss_feed(links, arguments):
 
     if vars(arguments).get("atom", False):
         return fg.atom_str(pretty=True).decode("utf-8")
-    else:
-        return fg.rss_str(pretty=True).decode("utf-8")
+    return fg.rss_str(pretty=True).decode("utf-8")
 
 
 def parse_arguments(arguments):
@@ -176,6 +188,14 @@ def parse_arguments(arguments):
         Default is to find links in a simple <ul>-list.
         Options are available to find links in other HTML elements or JSON strings."""
     )
+
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("--html", action="store_true", help="Find entries in HTML")
+    group.add_argument("--json", action="store_true", help="Find entries in JSON")
+    group.add_argument(
+        "--list", action="store_true", help="Find entries in HTML <ul>-list (default)"
+    )
+
     parser.add_argument(
         "--version",
         action="version",
@@ -184,43 +204,60 @@ def parse_arguments(arguments):
     parser.add_argument("url", help="URL for the blog")
     parser.add_argument("--atom", action="store_true", help="Generate Atom feed")
     parser.add_argument("--base-url", help="Base URL for the blog")
-    parser.add_argument("--html", action="store_true", help="Find entries in HTML")
     parser.add_argument(
-        "--html-entries", default="article", help="HTML selector for entries"
+        "--html-entries",
+        action=CheckHtmlAction,
+        default="article",
+        help="HTML selector for entries",
     )
-    parser.add_argument("--html-url", default="a", help="HTML selector for URL")
-    parser.add_argument("--html-title", default="h3", help="HTML selector for title")
+    parser.add_argument(
+        "--html-url", action=CheckHtmlAction, default="a", help="HTML selector for URL"
+    )
+    parser.add_argument(
+        "--html-title",
+        action=CheckHtmlAction,
+        default="h3",
+        help="HTML selector for title",
+    )
     parser.add_argument(
         "--html-title-class",
+        action=CheckHtmlAction,
         default="title",
         help="Flag to specify title class (regex)",
     )
     parser.add_argument(
         "--html-description",
+        action=CheckHtmlAction,
         default="div",
         help="HTML selector for description",
     )
     parser.add_argument(
         "--html-description-class",
+        action=CheckHtmlAction,
         default="summary",
         help="Flag to specify description class (regex)",
     )
-    parser.add_argument("--json", action="store_true", help="Find entries in JSON")
     parser.add_argument(
         "--json-entries",
+        action=CheckJsonAction,
         default="entries",
         help="JSON key for entries (default: 'entries')",
     )
     parser.add_argument(
-        "--json-url", default="url", help="JSON key for URL (default: 'url')"
+        "--json-url",
+        action=CheckJsonAction,
+        default="url",
+        help="JSON key for URL (default: 'url')",
     )
     parser.add_argument(
         "--json-title",
+        action=CheckJsonAction,
         default="title",
         help="JSON key for title",
     )
     parser.add_argument(
         "--json-description",
+        action=CheckJsonAction,
         default="description",
         help="JSON key for description",
     )
@@ -235,9 +272,6 @@ def parse_arguments(arguments):
         help='Title of the RSS feed (default: "My RSS Feed")',
     )
     parser.add_argument("-q", "--quiet", action="store_true", help="Suppress output")
-    parser.add_argument(
-        "--list", action="store_true", help="Find entries in HTML <ul>-list (default)"
-    )
     parser.add_argument("--stdout", action="store_true", help="Print to stdout")
 
     return parser.parse_args(arguments)
