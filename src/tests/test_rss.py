@@ -164,7 +164,12 @@ def test_extract_links_html_no_match_links():
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
     arguments = rss.parse_arguments(
-        ["--html", "--html-entries", "fail", "http://www.tripwire.com/state-of-security"]
+        [
+            "--html",
+            "--html-entries",
+            "fail",
+            "http://www.tripwire.com/state-of-security",
+        ]
     )
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.extract_links_html(soup, arguments)
@@ -178,7 +183,11 @@ def test_extract_links_html_no_match_description():
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
     arguments = rss.parse_arguments(
-        ["--html", "--html-description", "fail", "http://www.tripwire.com/state-of-security"]
+        [
+            "--html",
+            "--html-description",
+            "fail",
+            "http://www.tripwire.com/state-of-security"]
     )
     links = rss.extract_links_html(soup, arguments)
     with open("src/tests/data/output/tripwire_no_description", "rb") as f:
@@ -192,7 +201,12 @@ def test_extract_links_json():
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
     arguments = rss.parse_arguments(
-        ["--json", "--json-description", "preamble", "https://www.truesec.com/hub/blog"]
+        [
+            "--json",
+            "--json-description",
+            "preamble",
+            "https://www.truesec.com/hub/blog",
+        ]
     )
     links = rss.extract_links_json(soup, arguments)
     with open("src/tests/data/output/truesec", "rb") as f:
@@ -210,7 +224,7 @@ def test_extract_links_json_no_match_description():
             "--json",
             "--json-description",
             "description",
-            "https://www.truesec.com/hub/blog"
+            "https://www.truesec.com/hub/blog",
         ]
     )
     links = rss.extract_links_json(soup, arguments)
@@ -280,7 +294,9 @@ def test_create_rss_feed_atom():
             "https://security.apple.com/blog",
         ]
     )
-    soup = BeautifulSoup(rss.fetch_html("https://security.apple.com/blog"), "html.parser")
+    soup = BeautifulSoup(
+        rss.fetch_html("https://security.apple.com/blog"
+    ), "html.parser")
     links = rss.extract_links_json(soup, arguments)
     with open("src/tests/data/output/apple", "wb") as f:
         pickle.dump(links, f)
@@ -349,10 +365,11 @@ def test_save_atom_feed_working(tmpdir):
     test_output = tmpdir.mkdir("sub").join("apple.xml")
     arguments = rss.parse_arguments(
         [
-            "--title", 
+            "--title",
             "Apple Security",
             "--atom",
-            "--output", str(test_output),
+            "--output",
+            str(test_output),
             "--json",
             "--json-entries",
             "blogs",
