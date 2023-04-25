@@ -289,5 +289,10 @@ def main():
         save_rss_feed(rss_feed, args)
 
 
-if __name__ == "__main__":
-    main()
+def init():
+    """Initialize the script."""
+    if __name__ == "__main__":
+        sys.exit(main())
+
+
+init()

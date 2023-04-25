@@ -1,6 +1,7 @@
 """Tests for rss.py."""
 import pickle
 import re
+from unittest.mock import patch
 
 import pytest
 import rssfixer.rss as rss
@@ -404,3 +405,12 @@ def test_save_rss_feed_not_working():
         rss.save_rss_feed(rss_feed, arguments)
     assert pytest_wrapped_e.type == SystemExit
     assert pytest_wrapped_e.value.code == 1
+
+
+def test_init():
+    """Test init() function."""
+    with patch.object(rss, "main", return_value=42):
+        with patch.object(rss, "__name__", "__main__"):
+            with patch.object(rss.sys,'exit') as mock_exit:
+                rss.init()
+                assert mock_exit.call_args[0][0] == 42
