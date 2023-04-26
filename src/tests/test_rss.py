@@ -4,9 +4,9 @@ import re
 from unittest.mock import patch
 
 import pytest
-from rssfixer import rss
 from bs4 import BeautifulSoup
 from requests_mock import NoMockAddress
+from rssfixer import rss
 
 
 @pytest.fixture(name="example_json_object")

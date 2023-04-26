@@ -1,6 +1,7 @@
 import pytest
 from rssfixer import rss
 
+
 def test_rss_args_html_json_entries():
     """Test rss_args function"""
     with pytest.raises(SystemExit) as pytest_wrapped_e:
