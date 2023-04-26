@@ -28,6 +28,18 @@ class CheckJsonAction(argparse.Action):
             parser.error(f"{option_string} requires --json to be specified.")
         setattr(namespace, self.dest, values)
 
+class CheckListAction(argparse.Action):
+    def __call__(self, parser, namespace, values, option_string=None):
+        if not namespace.list:
+            parser.error(f"{option_string} requires --list to be specified.")
+        setattr(namespace, self.dest, values)
+
+class CheckReleaseAction(argparse.Action):
+    def __call__(self, parser, namespace, values, option_string=None):
+        if not namespace.release:
+            parser.error(f"{option_string} requires --release to be specified.")
+        setattr(namespace, self.dest, values)
+
 
 def fetch_html(url):
     """Fetch HTML content from a URL."""
@@ -155,6 +167,29 @@ def extract_links_json(soup, arguments):
     return links
 
 
+def extract_links_release(soup, arguments):
+    """Extract links from an html page with one type of html entries."""
+    links = []
+    unique_titles = set()
+
+    # Iterate through all the elements of type html_entries in the page
+    for entry in soup.find_all(arguments.release_entries):
+        try:
+            title = entry.text.strip()
+            url = arguments.release_url
+        except (KeyError, AttributeError):
+            print("ERROR: Unable to title in HTML element")
+            sys.exit(1)
+        description = ""  
+        if title not in unique_titles:
+            unique_titles.add(title)
+            links.append((url, title, description))
+
+    if not links:
+        print("ERROR: No titles found")
+        sys.exit(1)
+    return links
+
 def create_rss_feed(links, arguments):
     """Create an RSS feed from a list of links."""
     feed_description = f"RSS feed generated from the links at {arguments.url}"
@@ -199,6 +234,7 @@ def parse_arguments(arguments):
     group.add_argument(
         "--list", action="store_true", help="Find entries in HTML <ul>-list (default)"
     )
+    group.add_argument("--release", action="store_true", help="Find releases in HTML")
 
     parser.add_argument(
         "--version",
@@ -208,6 +244,8 @@ def parse_arguments(arguments):
     parser.add_argument("url", help="URL for the blog")
     parser.add_argument("--atom", action="store_true", help="Generate Atom feed")
     parser.add_argument("--base-url", help="Base URL for the blog")
+    parser.add_argument("--release-url", action=CheckReleaseAction, help="Release URL for downloads")
+    parser.add_argument("--release-entries", action=CheckReleaseAction, help="Release selector for entries")
     parser.add_argument(
         "--html-entries",
         action=CheckHtmlAction,
@@ -319,8 +357,14 @@ def main(args=None):
         links = extract_links_html(soup, args)
     elif args.list:
         links = extract_links_ul(soup)
+    elif args.release:
+        if not vars(args).get("release_url", False):
+            print("ERROR: Release URL not specified")
+            sys.exit(1)
+        links = extract_links_release(soup, args)
     else:
-        links = extract_links_ul(soup)
+        print("ERROR: No valid blog type specified")
+        sys.exit(1)
 
     # Create RSS feed and save to file
     rss_feed = create_rss_feed(links, args)

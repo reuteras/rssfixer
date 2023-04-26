@@ -32,7 +32,7 @@ Format for storing the links varies but I'll try and add more formats as I find 
 
 ### Simple list
 
-An example to generate a feed for [nccgroup][ncc] that have the links in a list:
+An example to generate a feed for [nccgroup][ncc] that have the links in a simple ul-list:
 
 ```bash
 $ rssfixer --title nccgroup https://research.nccgroup.com/
@@ -55,6 +55,8 @@ Most times you would run the script from crontab to have an updated feed. Here i
 
 ### JSON
 
+Some blogs like [truesec.com][tru] have the links in a JSON object. You can use the `--json` option to parse the JSON object and generate a feed. The same is true for Apple's [security blog][app] page.
+
 An example for [truesec.com][tru]:
 
 ```bash
@@ -63,6 +65,8 @@ rssfixer --json --quiet --output truesec.xml https://www.truesec.com/hub/blog
 
 ### General HTML
 
+Pages with a more general HTML structure can be parsed with the `--html` option. You can specify the HTML tag for the entries, the URL to the page and the title of the feed.
+
 An example for [tripwire.com][tri]:
 
 ```bash
@@ -70,6 +74,13 @@ rssfixer --title Tripwire --output tripwire.xml --quiet --html --base-url https:
 
 ```
 
+### Release
+
+Check for one entity on release pages like SQLite (h3) and generate RSS feed with links to the download page (required argument `--release-url`). Easy way to get notified when a new version is released.
+
+```bash
+rssfixer --release --output sqlite.xml --release-entries h3 --release-url https://sqlite.org/download.html https://sqlite.org/changes.html
+```
 
 ### Usage
 
@@ -171,6 +182,14 @@ Url: [https://www.truesec.com/hub/blog][tru]
 rssfixer --title Truesec --output truesec.xml --quiet --json --json-description preamble https://www.truesec.com/hub/blog
 ```
 
+### Sqlite
+
+Url: [https://sqlite.org/changes.html][sql]
+
+```bash
+rssfixer --release --release-entries h3 --release-url https://sqlite.org/download.html https://sqlite.org/changes.html
+```
+
 ## Setup blogs
 
 During testing it is useful to use --stdout to see the generated feed.
@@ -182,6 +201,7 @@ During testing it is useful to use --stdout to see the generated feed.
   [fge]: https://feedgen.kiesow.be/
   [ncc]: https://research.nccgroup.com/
   [rss]: https://www.rssboard.org/
+  [sql]: https://sqlite.org/changes.html
   [tri]: https://www.tripwire.com/state-of-security
   [tru]: https://www.truesec.com/hub/blog
   [wor]: https://wordpress.org/
