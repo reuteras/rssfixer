@@ -1,6 +1,6 @@
 ---
 # Run all dev tools and update README.md
-name: Dev tools and pdate README.md
+name: Run dev tools and update README.md
 
 on:
   push:
