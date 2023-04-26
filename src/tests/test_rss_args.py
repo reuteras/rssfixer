@@ -71,6 +71,7 @@ def test_rss_args_list_optional_list_args():
     assert args.html_description_class == "custom-description"
     assert args.url == "https://example.com"
 
+
 def test_rss_args_json_release_entries():
     """Test rss_args function"""
     with pytest.raises(SystemExit) as pytest_wrapped_e:
@@ -83,7 +84,7 @@ def test_rss_args_json_release_entries():
             ]
         )
     assert pytest_wrapped_e.value.code == 2
-    
+
 
 def test_rss_args_release_html_entries():
     """Test rss_args function"""
@@ -170,6 +171,7 @@ def test_parse_arguments_release_args():
     assert args.release_entries == "items"
     assert args.release_url == "https://example.com/download"
     assert args.url == "https://example.com"
+
 
 def test_parse_arguments_invalid_args():
     with pytest.raises(SystemExit):

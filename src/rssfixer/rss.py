@@ -28,11 +28,13 @@ class CheckJsonAction(argparse.Action):
             parser.error(f"{option_string} requires --json to be specified.")
         setattr(namespace, self.dest, values)
 
+
 class CheckListAction(argparse.Action):
     def __call__(self, parser, namespace, values, option_string=None):
         if not namespace.list:
             parser.error(f"{option_string} requires --list to be specified.")
         setattr(namespace, self.dest, values)
+
 
 class CheckReleaseAction(argparse.Action):
     def __call__(self, parser, namespace, values, option_string=None):
@@ -180,7 +182,7 @@ def extract_links_release(soup, arguments):
         except (KeyError, AttributeError):
             print("ERROR: Unable to title in HTML element")
             sys.exit(1)
-        description = ""  
+        description = ""
         if title not in unique_titles:
             unique_titles.add(title)
             links.append((url, title, description))
@@ -189,6 +191,7 @@ def extract_links_release(soup, arguments):
         print("ERROR: No titles found")
         sys.exit(1)
     return links
+
 
 def create_rss_feed(links, arguments):
     """Create an RSS feed from a list of links."""
@@ -244,8 +247,14 @@ def parse_arguments(arguments):
     parser.add_argument("url", help="URL for the blog")
     parser.add_argument("--atom", action="store_true", help="Generate Atom feed")
     parser.add_argument("--base-url", help="Base URL for the blog")
-    parser.add_argument("--release-url", action=CheckReleaseAction, help="Release URL for downloads")
-    parser.add_argument("--release-entries", action=CheckReleaseAction, help="Release selector for entries")
+    parser.add_argument(
+        "--release-url", action=CheckReleaseAction, help="Release URL for downloads"
+    )
+    parser.add_argument(
+        "--release-entries",
+        action=CheckReleaseAction,
+        help="Release selector for entries",
+    )
     parser.add_argument(
         "--html-entries",
         action=CheckHtmlAction,
