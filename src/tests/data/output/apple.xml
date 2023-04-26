@@ -2,22 +2,22 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>https://security.apple.com/blog</id>
   <title>Apple Security</title>
-  <updated>2023-04-23T14:10:07.505651+00:00</updated>
+  <updated>2023-04-26T09:52:34.113447+00:00</updated>
   <link href="https://security.apple.com/blog" rel="alternate"/>
   <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
   <subtitle>RSS feed generated from the links at https://security.apple.com/blog</subtitle>
   <entry>
     <id>https://security.apple.com/blog/towards-the-next-generation-of-xnu-memory-safety</id>
     <title>Towards the next generation of XNU memory safety: kalloc_type</title>
-    <updated>2023-04-23T14:10:07.505746+00:00</updated>
+    <updated>2023-04-26T09:52:34.113473+00:00</updated>
     <content>Improving software memory safety is a key security objective for engineering teams across the industry. Here we begin a journey into the XNU kernel at the core of iOS and explore the intricate work our engineering teams have done to harden the memory allocator and make our software much more difficult to exploit.</content>
     <link href="https://security.apple.com/blog/towards-the-next-generation-of-xnu-memory-safety" rel="alternate"/>
   </entry>
   <entry>
     <id>https://security.apple.com/blog/apple-security-bounty-upgraded</id>
     <title>Apple Security Bounty. Upgraded.</title>
-    <updated>2023-04-23T14:10:07.505723+00:00</updated>
-    <content>Appleâs Security Bounty program has paid nearly $20 million in rewards to security researchers in just two and a half years. Our new site makes it easier than ever for researchers to submit reports on the web, get real-time updates from Apple engineering, and earn recognition for helping to improve security for the users of over 1.8 billion devices worldwide.</content>
+    <updated>2023-04-26T09:52:34.113463+00:00</updated>
+    <content>Apple’s Security Bounty program has paid nearly $20 million in rewards to security researchers in just two and a half years. Our new site makes it easier than ever for researchers to submit reports on the web, get real-time updates from Apple engineering, and earn recognition for helping to improve security for the users of over 1.8 billion devices worldwide.</content>
     <link href="https://security.apple.com/blog/apple-security-bounty-upgraded" rel="alternate"/>
   </entry>
 </feed>
