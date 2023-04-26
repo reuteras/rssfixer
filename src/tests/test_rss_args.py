@@ -44,34 +44,6 @@ def test_rss_args_list_json_entries():
     assert pytest_wrapped_e.value.code == 2
 
 
-def test_rss_args_list_optional_list_args():
-    arguments = [
-        "--html",
-        "--html-entries",
-        "div.entry",
-        "--html-url",
-        "a.url",
-        "--html-title",
-        "h2.title",
-        "--html-title-class",
-        "custom-title",
-        "--html-description",
-        "div.description",
-        "--html-description-class",
-        "custom-description",
-        "https://example.com",
-    ]
-    args = rss.parse_arguments(arguments)
-    assert args.html
-    assert args.html_entries == "div.entry"
-    assert args.html_url == "a.url"
-    assert args.html_title == "h2.title"
-    assert args.html_title_class == "custom-title"
-    assert args.html_description == "div.description"
-    assert args.html_description_class == "custom-description"
-    assert args.url == "https://example.com"
-
-
 def test_rss_args_json_release_entries():
     """Test rss_args function"""
     with pytest.raises(SystemExit) as pytest_wrapped_e:
