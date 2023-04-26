@@ -11,7 +11,13 @@ def test_main_link(capsys, requests_mock):
     with open("src/tests/data/output/nccgroup.xml", "r", encoding="utf-8") as f:
         result = f.read()
     requests_mock.get(url, text=source)
-    args = ["--title", "nccgroup", "--stdout", "--list", "https://research.nccgroup.com/"]
+    args = [
+        "--title",
+        "nccgroup",
+        "--stdout",
+        "--list",
+        "https://research.nccgroup.com/",
+    ]
 
     rss.main(args)
     captured = re.sub(
@@ -31,20 +37,20 @@ def test_main_json(capsys, requests_mock):
         result = f.read()
     requests_mock.get(url, text=source)
     arguments = [
-                "--title",
-                "Apple Security",
-                "--atom",
-                "--json",
-                "--json-entries",
-                "blogs",
-                "--json-url",
-                "slug",
-                "--stdout",
-                "--quiet",
-                "--base-url",
-                "https://security.apple.com/blog/",
-                "https://security.apple.com/blog",
-            ]
+        "--title",
+        "Apple Security",
+        "--atom",
+        "--json",
+        "--json-entries",
+        "blogs",
+        "--json-url",
+        "slug",
+        "--stdout",
+        "--quiet",
+        "--base-url",
+        "https://security.apple.com/blog/",
+        "https://security.apple.com/blog",
+    ]
     rss.main(arguments)
     captured = re.sub(
         r"<updated>.*</updated>",

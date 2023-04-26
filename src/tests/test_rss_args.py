@@ -36,15 +36,22 @@ def test_parse_arguments_required_args():
     assert args.list
     assert args.url == "https://example.com"
 
+
 def test_parse_arguments_optional_args():
     arguments = [
         "--html",
-        "--html-entries", "div.entry",
-        "--html-url", "a.url",
-        "--html-title", "h2.title",
-        "--html-title-class", "custom-title",
-        "--html-description", "div.description",
-        "--html-description-class", "custom-description",
+        "--html-entries",
+        "div.entry",
+        "--html-url",
+        "a.url",
+        "--html-title",
+        "h2.title",
+        "--html-title-class",
+        "custom-title",
+        "--html-description",
+        "div.description",
+        "--html-description-class",
+        "custom-description",
         "https://example.com",
     ]
     args = rss.parse_arguments(arguments)
@@ -57,13 +64,18 @@ def test_parse_arguments_optional_args():
     assert args.html_description_class == "custom-description"
     assert args.url == "https://example.com"
 
+
 def test_parse_arguments_json_args():
     arguments = [
         "--json",
-        "--json-entries", "items",
-        "--json-url", "link",
-        "--json-title", "name",
-        "--json-description", "summary",
+        "--json-entries",
+        "items",
+        "--json-url",
+        "link",
+        "--json-title",
+        "name",
+        "--json-description",
+        "summary",
         "https://example.com",
     ]
     args = rss.parse_arguments(arguments)
@@ -73,6 +85,7 @@ def test_parse_arguments_json_args():
     assert args.json_title == "name"
     assert args.json_description == "summary"
     assert args.url == "https://example.com"
+
 
 def test_parse_arguments_invalid_args():
     with pytest.raises(SystemExit):

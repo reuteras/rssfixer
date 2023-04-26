@@ -293,11 +293,11 @@ def save_rss_feed(rss_feed, arguments):
             print(f"RSS feed created: {arguments.output}")
 
 
-def main(args = None):
+def main(args=None):
     """Main function."""
     if args is None:
         args = sys.argv[1:]
-        
+
     args = parse_arguments(args)
 
     if vars(args).get("version"):
