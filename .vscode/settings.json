@@ -1,5 +1,7 @@
 {
     "cSpell.words": [
+        "autouse",
+        "capsys",
         "elif",
         "feedgen",
         "moch",
