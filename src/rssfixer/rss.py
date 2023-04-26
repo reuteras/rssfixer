@@ -174,7 +174,11 @@ def create_rss_feed(links, arguments):
         fe.id(url)
         fe.title(title)
         fe.link(href=url)
-        fe.description(description)
+        if vars(arguments).get("atom", False):
+            fe.summary(description)
+            fe.content(content=description, src=url)
+        else:
+            fe.description(description)
 
     if vars(arguments).get("atom", False):
         return fg.atom_str(pretty=True).decode("utf-8")
