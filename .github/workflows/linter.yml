@@ -33,4 +33,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BRANCH: main
           VALIDATE_ALL_CODEBASE: true
-          FILTER_REGEX_EXCLUDE: .*/(apple|nccgroup|tripwire)\.xml|.*/(apple|nccgroup|tripwire|truesec)\.html
+          FILTER_REGEX_EXCLUDE: .*/(apple|nccgroup|tripwire|truesec)\.(xml|html)
