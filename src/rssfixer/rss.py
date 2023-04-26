@@ -1,5 +1,6 @@
 """Generate rss feed for "blogs" without rss feed."""
 import argparse
+import hashlib
 import importlib.metadata
 import json
 import re
@@ -178,7 +179,10 @@ def extract_links_release(soup, arguments):
     for entry in soup.find_all(arguments.release_entries):
         try:
             title = entry.text.strip()
-            url = arguments.release_url
+            title_bytes = title.encode("utf-8")
+            title_hash = hashlib.sha256(title_bytes)
+            title_sha256 = title_hash.hexdigest()
+            url = arguments.release_url + "?" + title_sha256
         except (KeyError, AttributeError):
             print("ERROR: Unable to title in HTML element")
             sys.exit(1)
