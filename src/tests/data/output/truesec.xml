@@ -1,0 +1,1163 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <id>https://www.truesec.com/hub/blog</id>
+  <title>Truesec</title>
+  <updated>2023-04-26T16:28:54.041321+00:00</updated>
+  <link href="https://www.truesec.com/hub/blog" rel="alternate"/>
+  <generator uri="https://lkiesow.github.io/python-feedgen" version="0.9.0">python-feedgen</generator>
+  <subtitle>RSS feed generated from the links at https://www.truesec.com/hub/blog</subtitle>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/powershell-dot-sourcing</id>
+    <title>PowerShell Dot Sourcing</title>
+    <updated>2023-04-26T16:28:54.041720+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/powershell-dot-sourcing"/>
+    <link href="https://www.truesec.com/hub/blog/powershell-dot-sourcing" rel="alternate"/>
+    <summary>How and why you might want to use DOT Sourcing in PowerShell.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/lets-hack-a-mainframe</id>
+    <title>Let’s Hack a Mainframe!</title>
+    <updated>2023-04-26T16:28:54.041718+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/lets-hack-a-mainframe"/>
+    <link href="https://www.truesec.com/hub/blog/lets-hack-a-mainframe" rel="alternate"/>
+    <summary>A mainframe is just another computer. It simply has way more toys for a hacker to play with!</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/is-multi-factor-authentication-being-defeated</id>
+    <title>Is Multi-Factor Authentication Being Defeated?</title>
+    <updated>2023-04-26T16:28:54.041716+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/is-multi-factor-authentication-being-defeated"/>
+    <link href="https://www.truesec.com/hub/blog/is-multi-factor-authentication-being-defeated" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/deployment-logs-with-centralized-collection</id>
+    <title>Deployment Logs With Centralized Collection</title>
+    <updated>2023-04-26T16:28:54.041714+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/deployment-logs-with-centralized-collection"/>
+    <link href="https://www.truesec.com/hub/blog/deployment-logs-with-centralized-collection" rel="alternate"/>
+    <summary>With the release of ConfigMgr Technical Preview 1912, the ability to quickly collect log files for specific devices is now available.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/introducing-laps-web-ui</id>
+    <title>Introducing LAPS Web UI</title>
+    <updated>2023-04-26T16:28:54.041711+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/introducing-laps-web-ui"/>
+    <link href="https://www.truesec.com/hub/blog/introducing-laps-web-ui" rel="alternate"/>
+    <summary>Removal of Local Administrator rights is everyone's favorite topic, right?</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/reverse-shell-through-a-node-js-math-parser</id>
+    <title>Reverse Shell Through a Node.js Math Parser</title>
+    <updated>2023-04-26T16:28:54.041709+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/reverse-shell-through-a-node-js-math-parser"/>
+    <link href="https://www.truesec.com/hub/blog/reverse-shell-through-a-node-js-math-parser" rel="alternate"/>
+    <summary>This article details how I discovered and exploited a critical vulnerability (now known as CVE-2020-6836) that allowed unauthenticated arbitrary remote code execution.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/configuring-vscode-todo-tree</id>
+    <title>Configuring VSCode - ToDo Tree</title>
+    <updated>2023-04-26T16:28:54.041706+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/configuring-vscode-todo-tree"/>
+    <link href="https://www.truesec.com/hub/blog/configuring-vscode-todo-tree" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/from-s3-bucket-to-laravel-unserialize-rce</id>
+    <title>From S3 Bucket to Laravel Unserialize RCE</title>
+    <updated>2023-04-26T16:28:54.041704+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/from-s3-bucket-to-laravel-unserialize-rce"/>
+    <link href="https://www.truesec.com/hub/blog/from-s3-bucket-to-laravel-unserialize-rce" rel="alternate"/>
+    <summary>Insecure deserialization is a common vulnerability (OWASP TOP10) that very often leads to arbitrary code execution. Today, I'm going to explain how to turn a seemingly harmless deserialization into code execution.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/microsoft-exchange-server-remote-code-execution</id>
+    <title>Microsoft Exchange Server Remote Code Execution</title>
+    <updated>2023-04-26T16:28:54.041702+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/microsoft-exchange-server-remote-code-execution"/>
+    <link href="https://www.truesec.com/hub/blog/microsoft-exchange-server-remote-code-execution" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/bypassing-modern-xss-mitigations-with-code-reuse-attacks</id>
+    <title>Bypassing Modern XSS Mitigations With Code-Reuse Attacks</title>
+    <updated>2023-04-26T16:28:54.041699+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/bypassing-modern-xss-mitigations-with-code-reuse-attacks"/>
+    <link href="https://www.truesec.com/hub/blog/bypassing-modern-xss-mitigations-with-code-reuse-attacks" rel="alternate"/>
+    <summary>How to mitigate the impact of the seemingly endless flow of new vulnerabilities.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/giving-forensics-a-log-trail-to-follow</id>
+    <title>Giving Forensics a Log Trail to Follow</title>
+    <updated>2023-04-26T16:28:54.041697+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/giving-forensics-a-log-trail-to-follow"/>
+    <link href="https://www.truesec.com/hub/blog/giving-forensics-a-log-trail-to-follow" rel="alternate"/>
+    <summary>Three steps that will help you track down and recover from ransomware or other malicious attacks.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/the-importance-of-protecting-your-service-accounts</id>
+    <title>The Importance of Protecting Your Service Accounts</title>
+    <updated>2023-04-26T16:28:54.041695+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/the-importance-of-protecting-your-service-accounts"/>
+    <link href="https://www.truesec.com/hub/blog/the-importance-of-protecting-your-service-accounts" rel="alternate"/>
+    <summary>Service accounts have always been an attractive target for hackers and red teamers. It is commonly used to escalate privileges and getting access to sensitive data.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/building-a-secure-digital-workplace-the-importance-of-hardware-lifecycle-management</id>
+    <title>Building a Secure Digital Workplace</title>
+    <updated>2023-04-26T16:28:54.041692+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/building-a-secure-digital-workplace-the-importance-of-hardware-lifecycle-management"/>
+    <link href="https://www.truesec.com/hub/blog/building-a-secure-digital-workplace-the-importance-of-hardware-lifecycle-management" rel="alternate"/>
+    <summary>This blog post will focus on computers and mobile devices, but the recommendations are applicable on data center- and networking-hardware as well.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/the-ruthless-world-of-cyber-crime</id>
+    <title>The Ruthless World of Cybercrime</title>
+    <updated>2023-04-26T16:28:54.041690+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/the-ruthless-world-of-cyber-crime"/>
+    <link href="https://www.truesec.com/hub/blog/the-ruthless-world-of-cyber-crime" rel="alternate"/>
+    <summary>We live in a world where you can run advanced criminal operations with the click of a button.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/c-to-powershell-an-introduction</id>
+    <title>C# to PowerShell: An Introduction</title>
+    <updated>2023-04-26T16:28:54.041688+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/c-to-powershell-an-introduction"/>
+    <link href="https://www.truesec.com/hub/blog/c-to-powershell-an-introduction" rel="alternate"/>
+    <summary>PowerShell was designed to help automate IT tasks, and does it very well! PowerShell handles those mundane tasks that we as developers absolutely loathe. This article isn't meant as a course on PowerShell, so I challenge you to start learning more and using it.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/case-of-the-non-working-memcm-agent</id>
+    <title>Case of the Non-working MEMCM Agent</title>
+    <updated>2023-04-26T16:28:54.041685+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/case-of-the-non-working-memcm-agent"/>
+    <link href="https://www.truesec.com/hub/blog/case-of-the-non-working-memcm-agent" rel="alternate"/>
+    <summary>Recent work with a customer revealed a strange issue with Microsoft Endpoint Manager Configuration Manager.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/memcm-recovery</id>
+    <title>MEMCM - Recovery</title>
+    <updated>2023-04-26T16:28:54.041683+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/memcm-recovery"/>
+    <link href="https://www.truesec.com/hub/blog/memcm-recovery" rel="alternate"/>
+    <summary>The minimum requirements to bring configuration manager back online and how you successfully plan and execute recovery.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/recommended-advanced-audit-logging</id>
+    <title>Recommended Advanced Audit Logging</title>
+    <updated>2023-04-26T16:28:54.041681+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/recommended-advanced-audit-logging"/>
+    <link href="https://www.truesec.com/hub/blog/recommended-advanced-audit-logging" rel="alternate"/>
+    <summary>This post will focus on how to accomplish this using GPO. You can, of course, accomplish the same thing using desired state configuration or other tools.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/c-to-powershell-part2</id>
+    <title>C# to PowerShell: Part Two</title>
+    <updated>2023-04-26T16:28:54.041678+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/c-to-powershell-part2"/>
+    <link href="https://www.truesec.com/hub/blog/c-to-powershell-part2" rel="alternate"/>
+    <summary>This article will focus on Casing, Error Handling, and some of the minor oddities that PowerShell has.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/a-short-story-of-a-targeted-attack</id>
+    <title>A Short Story of a Targeted Attack</title>
+    <updated>2023-04-26T16:28:54.041676+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/a-short-story-of-a-targeted-attack"/>
+    <link href="https://www.truesec.com/hub/blog/a-short-story-of-a-targeted-attack" rel="alternate"/>
+    <summary>Social engineering techniques are amongst the most effective means for an attacker to breach into a company’s perimeter and gather access.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/choosing-a-windows-release-branch</id>
+    <title>Choosing a Windows Release Branch</title>
+    <updated>2023-04-26T16:28:54.041673+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/choosing-a-windows-release-branch"/>
+    <link href="https://www.truesec.com/hub/blog/choosing-a-windows-release-branch" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/c-to-powershell-finale</id>
+    <title>C# to PowerShell: Finale</title>
+    <updated>2023-04-26T16:28:54.041671+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/c-to-powershell-finale"/>
+    <link href="https://www.truesec.com/hub/blog/c-to-powershell-finale" rel="alternate"/>
+    <summary>Welcome to the third and final C# to PowerShell article.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/powershell-logging</id>
+    <title>PowerShell - Logging</title>
+    <updated>2023-04-26T16:28:54.041669+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/powershell-logging"/>
+    <link href="https://www.truesec.com/hub/blog/powershell-logging" rel="alternate"/>
+    <summary>Something overlooked in scripting is the value of logging your result. Typically when most system administrators write something in PowerShell they are attempting to achieve a desired result. When the desired result is achieved, why log the steps taken?</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/why-your-organization-needs-mdm-to-protect-what-matters</id>
+    <title>Why Your Organization Needs MDM to Protect What Matters</title>
+    <updated>2023-04-26T16:28:54.041666+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/why-your-organization-needs-mdm-to-protect-what-matters"/>
+    <link href="https://www.truesec.com/hub/blog/why-your-organization-needs-mdm-to-protect-what-matters" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/special-summer-edition-2020</id>
+    <title>Special Summer Edition 2020 [SWE]</title>
+    <updated>2023-04-26T16:28:54.041664+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/special-summer-edition-2020"/>
+    <link href="https://www.truesec.com/hub/techtalk/special-summer-edition-2020" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/administrativa-rättigheter</id>
+    <title>Administrativa Rättigheter</title>
+    <updated>2023-04-26T16:28:54.041662+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/administrativa-rättigheter"/>
+    <link href="https://www.truesec.com/hub/techtalk/administrativa-rättigheter" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/remote-work-a-whole-new-world</id>
+    <title>Remote Work: A Whole New World</title>
+    <updated>2023-04-26T16:28:54.041659+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/remote-work-a-whole-new-world"/>
+    <link href="https://www.truesec.com/hub/techtalk/remote-work-a-whole-new-world" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/användare-och-mjuk-säkerhet</id>
+    <title>Användare och mjuk säkerhet</title>
+    <updated>2023-04-26T16:28:54.041657+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/användare-och-mjuk-säkerhet"/>
+    <link href="https://www.truesec.com/hub/techtalk/användare-och-mjuk-säkerhet" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/uppsäkring-av-system</id>
+    <title>Uppsäkring av system</title>
+    <updated>2023-04-26T16:28:54.041655+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/uppsäkring-av-system"/>
+    <link href="https://www.truesec.com/hub/techtalk/uppsäkring-av-system" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/loggning-och-övervakning</id>
+    <title>Loggning och övervakning</title>
+    <updated>2023-04-26T16:28:54.041653+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/loggning-och-övervakning"/>
+    <link href="https://www.truesec.com/hub/techtalk/loggning-och-övervakning" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/skydda-dig-mot-skadlig-kod</id>
+    <title>Protect Yourself From Harmful Code [SWE]</title>
+    <updated>2023-04-26T16:28:54.041651+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/skydda-dig-mot-skadlig-kod"/>
+    <link href="https://www.truesec.com/hub/techtalk/skydda-dig-mot-skadlig-kod" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/swedish-cyber-threat-landscape</id>
+    <title>Swedish Cyber Threat Landscape</title>
+    <updated>2023-04-26T16:28:54.041649+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/swedish-cyber-threat-landscape"/>
+    <link href="https://www.truesec.com/hub/techtalk/swedish-cyber-threat-landscape" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/embracing-remote-work-configmgr-cloud-value</id>
+    <title>Embracing Remote Work: ConfigMgr Cloud Value  </title>
+    <updated>2023-04-26T16:28:54.041646+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/embracing-remote-work-configmgr-cloud-value"/>
+    <link href="https://www.truesec.com/hub/techtalk/embracing-remote-work-configmgr-cloud-value" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/remoteapp-and-the-missing-onedrive-client</id>
+    <title>RemoteApp and the Missing OneDrive Client</title>
+    <updated>2023-04-26T16:28:54.041644+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/remoteapp-and-the-missing-onedrive-client"/>
+    <link href="https://www.truesec.com/hub/blog/remoteapp-and-the-missing-onedrive-client" rel="alternate"/>
+    <summary>When more organizations are shifting to OneDrive and remote work, things like Remote Desktop Services and RemoteApps offer a great way of publishing applications without the need for VPN.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/sigred-cve-2020-1350-affects-all-windows-dns-servers-and-leads-to-full-domain-compromise</id>
+    <title>SIGRed (CVE-2020-1350) Affects ALL Windows DNS Servers</title>
+    <updated>2023-04-26T16:28:54.041642+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/sigred-cve-2020-1350-affects-all-windows-dns-servers-and-leads-to-full-domain-compromise"/>
+    <link href="https://www.truesec.com/hub/blog/sigred-cve-2020-1350-affects-all-windows-dns-servers-and-leads-to-full-domain-compromise" rel="alternate"/>
+    <summary>Organizations are strongly recommended and encouraged to apply this workaround as soon as possible in order to avoid catastrophic events.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/finding-dns-servers</id>
+    <title>Finding DNS Servers</title>
+    <updated>2023-04-26T16:28:54.041640+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/finding-dns-servers"/>
+    <link href="https://www.truesec.com/hub/blog/finding-dns-servers" rel="alternate"/>
+    <summary>If you work at a large organization with multiple locations across the globe, it is likely to have scattered DNS servers. So how do we go about finding them?</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/invoke-webrequest-or-invoke-restmethod</id>
+    <title>Invoke-WebRequest or Invoke-RestMethod?</title>
+    <updated>2023-04-26T16:28:54.041638+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/invoke-webrequest-or-invoke-restmethod"/>
+    <link href="https://www.truesec.com/hub/blog/invoke-webrequest-or-invoke-restmethod" rel="alternate"/>
+    <summary>When to Use Invoke-WebRequest or Invoke-RestMethod.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/configmgr-patch-reporting-challenges</id>
+    <title>ConfigMgr Patch Reporting</title>
+    <updated>2023-04-26T16:28:54.041635+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/configmgr-patch-reporting-challenges"/>
+    <link href="https://www.truesec.com/hub/blog/configmgr-patch-reporting-challenges" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/skydda-och-hantera-mobila-enheter</id>
+    <title>Skydda och hantera mobila enheter</title>
+    <updated>2023-04-26T16:28:54.041633+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/skydda-och-hantera-mobila-enheter"/>
+    <link href="https://www.truesec.com/hub/techtalk/skydda-och-hantera-mobila-enheter" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/stop-giving-your-admin-credentials-away</id>
+    <title>Stop Giving Your Admin Credentials Away</title>
+    <updated>2023-04-26T16:28:54.041612+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/stop-giving-your-admin-credentials-away"/>
+    <link href="https://www.truesec.com/hub/techtalk/stop-giving-your-admin-credentials-away" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/tiber-improving-the-financial-stability-of-sweden</id>
+    <title>TIBER - Improving the Financial Stability of Sweden</title>
+    <updated>2023-04-26T16:28:54.041610+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/tiber-improving-the-financial-stability-of-sweden"/>
+    <link href="https://www.truesec.com/hub/blog/tiber-improving-the-financial-stability-of-sweden" rel="alternate"/>
+    <summary>Do you know what TIBER is? Have you read the public TIBER framework documents and feel overwhelmed? Then read on as I explain how to prepare for and implement the TIBER framework.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/bygg-och-hantera-ditt-hybrida-moln</id>
+    <title>Bygg och hantera ditt hybrida moln</title>
+    <updated>2023-04-26T16:28:54.041608+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/bygg-och-hantera-ditt-hybrida-moln"/>
+    <link href="https://www.truesec.com/hub/techtalk/bygg-och-hantera-ditt-hybrida-moln" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/azure-stack-hci-tech-talk-day</id>
+    <title>Azure Stack HCI - Tech Talk Day</title>
+    <updated>2023-04-26T16:28:54.041605+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/azure-stack-hci-tech-talk-day"/>
+    <link href="https://www.truesec.com/hub/techtalk/azure-stack-hci-tech-talk-day" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/installera-windows-över-internet-utan-lokal-infrastruktur</id>
+    <title>[SWE] Install Windows Over the Internet Without Local Infrastructure</title>
+    <updated>2023-04-26T16:28:54.041603+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/installera-windows-över-internet-utan-lokal-infrastruktur"/>
+    <link href="https://www.truesec.com/hub/techtalk/installera-windows-över-internet-utan-lokal-infrastruktur" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/containersäkerhet-i-kubernetes-och-stordatorer</id>
+    <title>Container Security in Kubernetes and Mainframes</title>
+    <updated>2023-04-26T16:28:54.041601+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/containersäkerhet-i-kubernetes-och-stordatorer"/>
+    <link href="https://www.truesec.com/hub/techtalk/containersäkerhet-i-kubernetes-och-stordatorer" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/your-business-is-under-attack-who-you-gonna-call</id>
+    <title>Your Business Is Under Attack – Who You Gonna Call?</title>
+    <updated>2023-04-26T16:28:54.041599+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/your-business-is-under-attack-who-you-gonna-call"/>
+    <link href="https://www.truesec.com/hub/techtalk/your-business-is-under-attack-who-you-gonna-call" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/juridiken-inom-incidentrespons</id>
+    <title>[SWE] The Law in Incident Response</title>
+    <updated>2023-04-26T16:28:54.041597+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/juridiken-inom-incidentrespons"/>
+    <link href="https://www.truesec.com/hub/techtalk/juridiken-inom-incidentrespons" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/skydda-och-hantera-identiteter</id>
+    <title>[SWE] Protect and Manage Identities</title>
+    <updated>2023-04-26T16:28:54.041595+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/skydda-och-hantera-identiteter"/>
+    <link href="https://www.truesec.com/hub/techtalk/skydda-och-hantera-identiteter" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/client-management-in-a-modern-workplace-where-have-all-my-users-gone</id>
+    <title>Client Management in a Modern Workplace – Where Have All My Users Gone?</title>
+    <updated>2023-04-26T16:28:54.041592+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/client-management-in-a-modern-workplace-where-have-all-my-users-gone"/>
+    <link href="https://www.truesec.com/hub/techtalk/client-management-in-a-modern-workplace-where-have-all-my-users-gone" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/its-time-to-stop-being-defensive-and-go-on-the-offensive</id>
+    <title>Time To Stop Being Defensive and Go on the Offensive!</title>
+    <updated>2023-04-26T16:28:54.041590+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/its-time-to-stop-being-defensive-and-go-on-the-offensive"/>
+    <link href="https://www.truesec.com/hub/blog/its-time-to-stop-being-defensive-and-go-on-the-offensive" rel="alternate"/>
+    <summary>Once data is stolen, it’s too late, and whatever you do, you can’t stop the spread of the information. So take action now before it’s too late.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/lets-automate-things-securely</id>
+    <title>Let's Automate Things Securely!</title>
+    <updated>2023-04-26T16:28:54.041588+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/lets-automate-things-securely"/>
+    <link href="https://www.truesec.com/hub/blog/lets-automate-things-securely" rel="alternate"/>
+    <summary>Learn how automation can increase security when done right, but also introduce new security issues if rushed and decisions are made in a haste.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/säker-distansåtkomst</id>
+    <title>[SWE] Secure Remote Access</title>
+    <updated>2023-04-26T16:28:54.041586+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/säker-distansåtkomst"/>
+    <link href="https://www.truesec.com/hub/techtalk/säker-distansåtkomst" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/så-säkerställer-du-datasäkerhet-och-efterlevnad</id>
+    <title>[SWE] How to Ensure Data Security and Compliance</title>
+    <updated>2023-04-26T16:28:54.041584+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/så-säkerställer-du-datasäkerhet-och-efterlevnad"/>
+    <link href="https://www.truesec.com/hub/techtalk/så-säkerställer-du-datasäkerhet-och-efterlevnad" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/extra-edition-solarwinds-breached-and-how-nation-state-hackers-operate</id>
+    <title>SolarWinds Breached and How Nation-State Hackers Operate</title>
+    <updated>2023-04-26T16:28:54.041582+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/extra-edition-solarwinds-breached-and-how-nation-state-hackers-operate"/>
+    <link href="https://www.truesec.com/hub/techtalk/extra-edition-solarwinds-breached-and-how-nation-state-hackers-operate" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/the-solarwinds-orion-sunburst-supply-chain-attack</id>
+    <title>The SolarWinds Orion SUNBURST Supply Chain Attack</title>
+    <updated>2023-04-26T16:28:54.041580+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/the-solarwinds-orion-sunburst-supply-chain-attack"/>
+    <link href="https://www.truesec.com/hub/blog/the-solarwinds-orion-sunburst-supply-chain-attack" rel="alternate"/>
+    <summary>The recent SolarWinds Orion hack is part of a cyber attack that is one of the most severe in history. This is a preliminary analysis of the SolarWinds Orion supply chain nation-state attack.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/truesec-tech-talk-nyårsupplagan</id>
+    <title>[SWE] New Year's Edition 2020</title>
+    <updated>2023-04-26T16:28:54.041577+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/truesec-tech-talk-nyårsupplagan"/>
+    <link href="https://www.truesec.com/hub/techtalk/truesec-tech-talk-nyårsupplagan" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/collaboration-between-fin7-and-the-ryuk-group-a-truesec-investigation</id>
+    <title>Collaboration Between FIN7 and the RYUK Group</title>
+    <updated>2023-04-26T16:28:54.041575+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/collaboration-between-fin7-and-the-ryuk-group-a-truesec-investigation"/>
+    <link href="https://www.truesec.com/hub/blog/collaboration-between-fin7-and-the-ryuk-group-a-truesec-investigation" rel="alternate"/>
+    <summary>This is an analysis of part of the network of Russian organized crime hacking groups.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/avoiding-supply-chain-attacks-similar-to-solarwinds-orions-sunburst</id>
+    <title>Avoid Supply Chain Attacks Similar to SolarWinds Orion</title>
+    <updated>2023-04-26T16:28:54.041573+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/avoiding-supply-chain-attacks-similar-to-solarwinds-orions-sunburst"/>
+    <link href="https://www.truesec.com/hub/blog/avoiding-supply-chain-attacks-similar-to-solarwinds-orions-sunburst" rel="alternate"/>
+    <summary>Few have missed the spectacular supply chain attack leveraged against the network infrastructure software company SolarWinds. The attack in question, or rather the malware in question has been dubbed SUNBURST.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/truesec-tech-talk-s2e1-get-the-most-out-of-a-red-team-exercise</id>
+    <title>Get the Most Out of a Red Team Exercise</title>
+    <updated>2023-04-26T16:28:54.041571+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/truesec-tech-talk-s2e1-get-the-most-out-of-a-red-team-exercise"/>
+    <link href="https://www.truesec.com/hub/techtalk/truesec-tech-talk-s2e1-get-the-most-out-of-a-red-team-exercise" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/truesec-tech-talk-s2e2-security-therapy-for-software-teams</id>
+    <title>Security Therapy for Software Teams</title>
+    <updated>2023-04-26T16:28:54.041568+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/truesec-tech-talk-s2e2-security-therapy-for-software-teams"/>
+    <link href="https://www.truesec.com/hub/techtalk/truesec-tech-talk-s2e2-security-therapy-for-software-teams" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/truesec-tech-talk-s2e3-the-rise-of-leakware</id>
+    <title>The Rise of Leakware</title>
+    <updated>2023-04-26T16:28:54.041566+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/truesec-tech-talk-s2e3-the-rise-of-leakware"/>
+    <link href="https://www.truesec.com/hub/techtalk/truesec-tech-talk-s2e3-the-rise-of-leakware" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/everything-about-security-operations-centers-soc-s2e4</id>
+    <title>Everything About Security Operations Centers (SOC)</title>
+    <updated>2023-04-26T16:28:54.041564+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/everything-about-security-operations-centers-soc-s2e4"/>
+    <link href="https://www.truesec.com/hub/techtalk/everything-about-security-operations-centers-soc-s2e4" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/tracking-microsoft-exchange-zero-day-proxylogon-and-hafnium</id>
+    <title>Tracking Microsoft Exchange Zero-Day ProxyLogon and HAFNIUM</title>
+    <updated>2023-04-26T16:28:54.041562+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/tracking-microsoft-exchange-zero-day-proxylogon-and-hafnium"/>
+    <link href="https://www.truesec.com/hub/blog/tracking-microsoft-exchange-zero-day-proxylogon-and-hafnium" rel="alternate"/>
+    <summary>Truesec is investigating many cases of breaches related to the massive Microsoft Exchange Zero-Day ProxyLogon exploit campaign.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/russia-is-part-of-the-ransomware-problem</id>
+    <title>Russia Is Part of the Ransomware Problem</title>
+    <updated>2023-04-26T16:28:54.041560+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/russia-is-part-of-the-ransomware-problem"/>
+    <link href="https://www.truesec.com/hub/blog/russia-is-part-of-the-ransomware-problem" rel="alternate"/>
+    <summary>There are clear indications that the majority of the big ransomware gangs are based in Russia – and have relative freedom to operate and turn their criminal business into big enterprises.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/why-you-need-to-understand-supply-chain-and-cyber-crime-s2e6</id>
+    <title>Why You Need to Understand Supply Chain Attacks and Cybercrime</title>
+    <updated>2023-04-26T16:28:54.041558+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/why-you-need-to-understand-supply-chain-and-cyber-crime-s2e6"/>
+    <link href="https://www.truesec.com/hub/techtalk/why-you-need-to-understand-supply-chain-and-cyber-crime-s2e6" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/secure-your-vmware-esxi-hosts-against-ransomware</id>
+    <title>Secure Your VMware ESXi Hosts Against Ransomware</title>
+    <updated>2023-04-26T16:28:54.041556+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/secure-your-vmware-esxi-hosts-against-ransomware"/>
+    <link href="https://www.truesec.com/hub/blog/secure-your-vmware-esxi-hosts-against-ransomware" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/cyber-security-from-a-non-tech-aspect-s2e7</id>
+    <title>Cybersecurity From a Non-Tech Perspective </title>
+    <updated>2023-04-26T16:28:54.041554+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/cyber-security-from-a-non-tech-aspect-s2e7"/>
+    <link href="https://www.truesec.com/hub/techtalk/cyber-security-from-a-non-tech-aspect-s2e7" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/tech-talk-s2e8-is-the-notorious-cyber-crime-gang-evil-corp-actually-russian-spies</id>
+    <title>Are the Notorious Evil Corp Actually Russian Spies?</title>
+    <updated>2023-04-26T16:28:54.041551+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/tech-talk-s2e8-is-the-notorious-cyber-crime-gang-evil-corp-actually-russian-spies"/>
+    <link href="https://www.truesec.com/hub/techtalk/tech-talk-s2e8-is-the-notorious-cyber-crime-gang-evil-corp-actually-russian-spies" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/are-the-notorious-cyber-criminals-evil-corp-actually-russian-spies</id>
+    <title>Are Evil Corp Actually Russian Spies?</title>
+    <updated>2023-04-26T16:28:54.041549+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/are-the-notorious-cyber-criminals-evil-corp-actually-russian-spies"/>
+    <link href="https://www.truesec.com/hub/blog/are-the-notorious-cyber-criminals-evil-corp-actually-russian-spies" rel="alternate"/>
+    <summary>Do the activities of cybercriminal gangs serve as a smokescreen to conceal Russian espionage?  Truesecs Threat Intelligence team has monitored the activities of Russian ransomware leagues and intelligence operations, and the connections seem to go deep.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/getting-started-with-microsoft-security-baselines</id>
+    <title>Getting Started With Microsoft Security Baselines</title>
+    <updated>2023-04-26T16:28:54.041547+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/getting-started-with-microsoft-security-baselines"/>
+    <link href="https://www.truesec.com/hub/blog/getting-started-with-microsoft-security-baselines" rel="alternate"/>
+    <summary>Ensuring your organization is secure has to start someplace. For most administrators this is a daunting task. This is where Microsoft Security Baselines come in.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/managing-threats-and-vulnerabilities-from-third-party-dependencies-in-software-development-projects</id>
+    <title>Managing Threats and Vulnerabilities From Third-Party Dependencies</title>
+    <updated>2023-04-26T16:28:54.041545+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/managing-threats-and-vulnerabilities-from-third-party-dependencies-in-software-development-projects"/>
+    <link href="https://www.truesec.com/hub/techtalk/managing-threats-and-vulnerabilities-from-third-party-dependencies-in-software-development-projects" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/guide/truesec-and-wtw-announce-joint-guidelines-to-help-companies-strengthen-their-cybersecurity</id>
+    <title>Guidelines to Help Companies Strengthen Their Cybersecurity</title>
+    <updated>2023-04-26T16:28:54.041542+00:00</updated>
+    <content src="https://www.truesec.com/hub/guide/truesec-and-wtw-announce-joint-guidelines-to-help-companies-strengthen-their-cybersecurity"/>
+    <link href="https://www.truesec.com/hub/guide/truesec-and-wtw-announce-joint-guidelines-to-help-companies-strengthen-their-cybersecurity" rel="alternate"/>
+    <summary>To help clients ensure a healthy cybersecurity baseline, Truesec and Willis Tower Watson have developed clear guidelines that outline the baseline recommendations on cybersecurity.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/tech-talk-stories-from-the-csirt-front-lines</id>
+    <title>Stories From the CSIRT Front Lines</title>
+    <updated>2023-04-26T16:28:54.041540+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/tech-talk-stories-from-the-csirt-front-lines"/>
+    <link href="https://www.truesec.com/hub/techtalk/tech-talk-stories-from-the-csirt-front-lines" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/mitigating-ntlm-relay-attacks-on-active-directory-certificate-services-ad-cs-adv210003-kb5005413-petitpotam</id>
+    <title>Mitigating NTLM Relay Attacks on Active Directory Certificate Services (AD CS) – ADV210003 – KB5005413 – PetitPotam</title>
+    <updated>2023-04-26T16:28:54.041538+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/mitigating-ntlm-relay-attacks-on-active-directory-certificate-services-ad-cs-adv210003-kb5005413-petitpotam"/>
+    <link href="https://www.truesec.com/hub/blog/mitigating-ntlm-relay-attacks-on-active-directory-certificate-services-ad-cs-adv210003-kb5005413-petitpotam" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/exploitable-critical-rce-vulnerability-allows-regular-users-to-fully-compromise-active-directory-printnightmare-cve-2021-1675</id>
+    <title>Exploitable Critical RCE Vulnerability Allows Regular Users to Fully Compromise Active Directory – PrintNightmare CVE-2021-1675 and CVE-2021-34527</title>
+    <updated>2023-04-26T16:28:54.041536+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/exploitable-critical-rce-vulnerability-allows-regular-users-to-fully-compromise-active-directory-printnightmare-cve-2021-1675"/>
+    <link href="https://www.truesec.com/hub/blog/exploitable-critical-rce-vulnerability-allows-regular-users-to-fully-compromise-active-directory-printnightmare-cve-2021-1675" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/fix-for-printnightmare-cve-2021-1675-exploit-to-keep-your-print-servers-running-while-a-patch-is-not-available</id>
+    <title>Fix for PrintNightmare CVE-2021-34527 Exploit to Keep Your Print Servers Running While a Patch Is Not Available</title>
+    <updated>2023-04-26T16:28:54.041534+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/fix-for-printnightmare-cve-2021-1675-exploit-to-keep-your-print-servers-running-while-a-patch-is-not-available"/>
+    <link href="https://www.truesec.com/hub/blog/fix-for-printnightmare-cve-2021-1675-exploit-to-keep-your-print-servers-running-while-a-patch-is-not-available" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/secure-your-software-supply-chain-threats-and-mitigations</id>
+    <title>Secure Your Software Supply Chain  – Threats and Mitigations</title>
+    <updated>2023-04-26T16:28:54.041532+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/secure-your-software-supply-chain-threats-and-mitigations"/>
+    <link href="https://www.truesec.com/hub/blog/secure-your-software-supply-chain-threats-and-mitigations" rel="alternate"/>
+    <summary>This is part two of a two-part blog series on third-party code usage in software development. In this blog post we aim to weigh threats and mitigations that are relevant when working with third-party components.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/secure-your-software-supply-chain-trusting-3rd-parties</id>
+    <title>Secure Your Software Supply Chain – Trusting Third Parties</title>
+    <updated>2023-04-26T16:28:54.041530+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/secure-your-software-supply-chain-trusting-3rd-parties"/>
+    <link href="https://www.truesec.com/hub/blog/secure-your-software-supply-chain-trusting-3rd-parties" rel="alternate"/>
+    <summary>In this first post we discuss publishers, trust, and measurements. In part two the focus is on technical threats and mitigations surrounding third-party components.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/origin-of-the-kaseya-breach</id>
+    <title>Origin of the Kaseya Breach</title>
+    <updated>2023-04-26T16:28:54.041528+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/origin-of-the-kaseya-breach"/>
+    <link href="https://www.truesec.com/hub/blog/origin-of-the-kaseya-breach" rel="alternate"/>
+    <summary>The Fourth of July weekend REvil ransomware attack that crippled hundred of organizations.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/kaseya-vsa-zero-day-exploit</id>
+    <title>How the Kaseya VSA Zero-Day Exploit Worked</title>
+    <updated>2023-04-26T16:28:54.041526+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/kaseya-vsa-zero-day-exploit"/>
+    <link href="https://www.truesec.com/hub/blog/kaseya-vsa-zero-day-exploit" rel="alternate"/>
+    <summary>This article explains the pre-auth remote code execution exploit against Kaseya VSA Server that was used in the mass Revil ransomware attack on July 2, 2021.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/hivenightmare-a-k-a-serioussam-local-privilege-escalation-in-windows-cve-2021-36934</id>
+    <title>HiveNightmare aka SeriousSam Local Privilege Escalation in Windows - CVE-2021-36934</title>
+    <updated>2023-04-26T16:28:54.041524+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/hivenightmare-a-k-a-serioussam-local-privilege-escalation-in-windows-cve-2021-36934"/>
+    <link href="https://www.truesec.com/hub/blog/hivenightmare-a-k-a-serioussam-local-privilege-escalation-in-windows-cve-2021-36934" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/article/why-safeguarding-your-digital-assets-is-a-must</id>
+    <title>Why Safeguarding Your Digital Assets Is a Must</title>
+    <updated>2023-04-26T16:28:54.041521+00:00</updated>
+    <content src="https://www.truesec.com/hub/article/why-safeguarding-your-digital-assets-is-a-must"/>
+    <link href="https://www.truesec.com/hub/article/why-safeguarding-your-digital-assets-is-a-must" rel="alternate"/>
+    <summary>Threat actors operate at all times, even outside business hours. Once in, it takes less than a few hours for a threat actor to take control of an entire IT environment.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/from-stranger-to-da-using-petitpotam-to-ntlm-relay-to-active-directory</id>
+    <title>Using PetitPotam to NTLM Relay to Domain Administrator</title>
+    <updated>2023-04-26T16:28:54.041519+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/from-stranger-to-da-using-petitpotam-to-ntlm-relay-to-active-directory"/>
+    <link href="https://www.truesec.com/hub/blog/from-stranger-to-da-using-petitpotam-to-ntlm-relay-to-active-directory" rel="alternate"/>
+    <summary>Knock knock, who's there? Your new DA!</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/when-the-cyberthreat-comes-from-the-inside</id>
+    <title>When the Cyber Threat Comes From the Inside</title>
+    <updated>2023-04-26T16:28:54.041517+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/when-the-cyberthreat-comes-from-the-inside"/>
+    <link href="https://www.truesec.com/hub/blog/when-the-cyberthreat-comes-from-the-inside" rel="alternate"/>
+    <summary>Would you like to earn millions of dollars? The LockBit 2.0 ransomware is now trying to recruit insiders – and there is no reason to believe that your company wouldn’t be targeted.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/article/time-to-battle-test-your-it-defense</id>
+    <title>Test Your Company's IT Defenses: Conduct a Cyber Threat Assessment</title>
+    <updated>2023-04-26T16:28:54.041515+00:00</updated>
+    <content src="https://www.truesec.com/hub/article/time-to-battle-test-your-it-defense"/>
+    <link href="https://www.truesec.com/hub/article/time-to-battle-test-your-it-defense" rel="alternate"/>
+    <summary>How well can your organization detect, defend, and respond to a cyber attack? Find out with a Red Team exercise.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/report/threat-intelligence-report-2021</id>
+    <title>Threat Intelligence Report 2021</title>
+    <updated>2023-04-26T16:28:54.041513+00:00</updated>
+    <content src="https://www.truesec.com/hub/report/threat-intelligence-report-2021"/>
+    <link href="https://www.truesec.com/hub/report/threat-intelligence-report-2021" rel="alternate"/>
+    <summary>The number of ransom attacks has tripled during 2020, and the cost of cybercrime in Sweden is now exceeding 30 billion SEK per year.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/guide/a-cisos-guide-to-incident-readiness</id>
+    <title>A Ciso's Guide to Incident Readiness</title>
+    <updated>2023-04-26T16:28:54.041510+00:00</updated>
+    <content src="https://www.truesec.com/hub/guide/a-cisos-guide-to-incident-readiness"/>
+    <link href="https://www.truesec.com/hub/guide/a-cisos-guide-to-incident-readiness" rel="alternate"/>
+    <summary>Did you know that a majority of Swedish companies don’t have a strategy for handling a cyber attack? Prepare for the real threats and stay ahead with a contingency plan – download our checklist for incident readiness.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/kaseya-supply-chain-attack-targeting-msps-to-deliver-revil-ransomware</id>
+    <title>Kaseya Supply Chain Attack Targeting MSPs to Deliver REvil Ransomware</title>
+    <updated>2023-04-26T16:28:54.041508+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/kaseya-supply-chain-attack-targeting-msps-to-deliver-revil-ransomware"/>
+    <link href="https://www.truesec.com/hub/blog/kaseya-supply-chain-attack-targeting-msps-to-deliver-revil-ransomware" rel="alternate"/>
+    <summary>Kaseya VSA, a product commonly used by MSPs to manage their clients' IT environments, It was used as part of a supply chain attack delivering REvil ransomware to thousands of organizations.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/uaparser-js-npm-package-supply-chain-attack-impact-and-response</id>
+    <title>UAParser.js npm Package Supply Chain Attack: Impact and Response</title>
+    <updated>2023-04-26T16:28:54.041506+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/uaparser-js-npm-package-supply-chain-attack-impact-and-response"/>
+    <link href="https://www.truesec.com/hub/blog/uaparser-js-npm-package-supply-chain-attack-impact-and-response" rel="alternate"/>
+    <summary>UAParser.js, a popular project with 7 million downloads weekly, was hijacked to deliver malware in a supply chain attack. This article describes the key elements of the attack, and how to determine if you were affected.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/proxyshell-qbot-and-conti-ransomware-combined-in-a-series-of-cyber-attacks</id>
+    <title>ProxyShell, QBot, and Conti Ransomware Combined in a Series of Cyber Attacks</title>
+    <updated>2023-04-26T16:28:54.041504+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/proxyshell-qbot-and-conti-ransomware-combined-in-a-series-of-cyber-attacks"/>
+    <link href="https://www.truesec.com/hub/blog/proxyshell-qbot-and-conti-ransomware-combined-in-a-series-of-cyber-attacks" rel="alternate"/>
+    <summary>We are investigating a series of cyber attacks that result in encryption with the Conti ransomware. This post describes some of the indicators that can be used to detect these attacks.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/common-active-directory-misconfiguration</id>
+    <title>Common Active Directory Misconfiguration</title>
+    <updated>2023-04-26T16:28:54.041502+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/common-active-directory-misconfiguration"/>
+    <link href="https://www.truesec.com/hub/techtalk/common-active-directory-misconfiguration" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/apache-log4j-injection-vulnerability-cve-2021-44228-impact-and-response</id>
+    <title>Log4Shell / Apache Log4j Injection Vulnerability CVE-2021-44228: Impact and Response</title>
+    <updated>2023-04-26T16:28:54.041499+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/apache-log4j-injection-vulnerability-cve-2021-44228-impact-and-response"/>
+    <link href="https://www.truesec.com/hub/blog/apache-log4j-injection-vulnerability-cve-2021-44228-impact-and-response" rel="alternate"/>
+    <summary>Apache Log4j is a very popular logging framework used in all sorts of Java applications including servers, clients, appliances, and network monitoring software. Logging attacker-controlled data can under common circumstances lead to Remote Code Execution, giving the attacker access to the running environment, as well as other attack vectors.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/how-to-secure-your-vmware-horizon-servers-against-log4shell-cve-2021-44228</id>
+    <title>Log4j - How To Secure Your VMware Horizon, UAG and vCenter Servers Against the Log4Shell Vulnerability (CVE-2021-44228)</title>
+    <updated>2023-04-26T16:28:54.041497+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/how-to-secure-your-vmware-horizon-servers-against-log4shell-cve-2021-44228"/>
+    <link href="https://www.truesec.com/hub/blog/how-to-secure-your-vmware-horizon-servers-against-log4shell-cve-2021-44228" rel="alternate"/>
+    <summary>Log4Shell is a critical (10.0 CVSS) vulnerability that affects thousands of products running Apache Log4j. VMware vCenter Server, Horizon and VMware UAG (Unified Access Gateway) are some of them and since Horizon/UAG are sometimes reachable from the entire internet, they will most likely get attacked if they're not urgently secured.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/using-a-legitimate-application-to-create-persistence-and-initiate-email-campaigns</id>
+    <title>Using a Legitimate Application to Create Persistence in Your Azure Active Directory</title>
+    <updated>2023-04-26T16:28:54.041495+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/using-a-legitimate-application-to-create-persistence-and-initiate-email-campaigns"/>
+    <link href="https://www.truesec.com/hub/blog/using-a-legitimate-application-to-create-persistence-and-initiate-email-campaigns" rel="alternate"/>
+    <summary>﻿﻿In a recent incident response engagement, we identified a threat actor using a legitimate enterprise application to perform malicious email campaigns towards the affected environment.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/log4j-log4shell-explained-all-you-need-to-know</id>
+    <title>Log4j/Log4Shell Explained - All You Need to Know</title>
+    <updated>2023-04-26T16:28:54.041493+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/log4j-log4shell-explained-all-you-need-to-know"/>
+    <link href="https://www.truesec.com/hub/blog/log4j-log4shell-explained-all-you-need-to-know" rel="alternate"/>
+    <summary>On the December 9, 2021, a vulnerability, CVE-2021-44228, was disclosed concerning Apache Log4j, a popular open-source library. The vulnerability allows remote code execution and has been assigned the highest possible severity of 10.0.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/vulnerability-analysis-cve-2022-21907</id>
+    <title>Vulnerability Analysis of CVE-2022-21907 - HTTP Protocol Stack RCE</title>
+    <updated>2023-04-26T16:28:54.041490+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/vulnerability-analysis-cve-2022-21907"/>
+    <link href="https://www.truesec.com/hub/blog/vulnerability-analysis-cve-2022-21907" rel="alternate"/>
+    <summary>A potentially very serious vulnerability has been discovered (and patched) in HTTP.sys, a kernel mode device driver in Microsoft Windows responsible for managing HTTP-requests to and from various system services and subsystems.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/state-sponsored-cyber-attacks-against-ukraine</id>
+    <title>State-Sponsored Cyber Attacks Against Ukraine</title>
+    <updated>2023-04-26T16:28:54.041488+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/state-sponsored-cyber-attacks-against-ukraine"/>
+    <link href="https://www.truesec.com/hub/blog/state-sponsored-cyber-attacks-against-ukraine" rel="alternate"/>
+    <summary>In this investigation, Truesec Threat Intelligence Unit have analyzed the cyber attacks against Ukraine January 13-16, 2022, and the events surrounding them.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/what-do-drones-have-to-do-with-social-engineering-and-recruited-spies</id>
+    <title>What Do Drones Have To Do With Social Engineering and Recruited Spies?</title>
+    <updated>2023-04-26T16:28:54.041486+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/what-do-drones-have-to-do-with-social-engineering-and-recruited-spies"/>
+    <link href="https://www.truesec.com/hub/blog/what-do-drones-have-to-do-with-social-engineering-and-recruited-spies" rel="alternate"/>
+    <summary>In this blog, we reflect on the recent news of drones observed flying in restricted areas across Sweden, and how this might be connected to the deteriorating security situation in Europe. But also, the growing challenges of hybrid warfare, using methods including both technical and human intelligence.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/report/current-cyber-threat-situation-in-sweden</id>
+    <title>Current cyber threat situation in Sweden</title>
+    <updated>2023-04-26T16:28:54.041484+00:00</updated>
+    <content src="https://www.truesec.com/hub/report/current-cyber-threat-situation-in-sweden"/>
+    <link href="https://www.truesec.com/hub/report/current-cyber-threat-situation-in-sweden" rel="alternate"/>
+    <summary>Together, we will provide Swedish organizations the conditions to prevent data breaches by working data-driven with the risks linked to cyber threats.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/report/threats-to-the-swedish-financial-sector-in-2021</id>
+    <title>Threats to the Swedish Financial Sector in 2021</title>
+    <updated>2023-04-26T16:28:54.041482+00:00</updated>
+    <content src="https://www.truesec.com/hub/report/threats-to-the-swedish-financial-sector-in-2021"/>
+    <link href="https://www.truesec.com/hub/report/threats-to-the-swedish-financial-sector-in-2021" rel="alternate"/>
+    <summary>Get in the driver's seat of preparing your organization against the cyber threats most likely to hit the financial industry. Learn from the analysis and follow our recommendations.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/report/threat-intelligence-report-2022</id>
+    <title>Threat Intelligence Report 2022</title>
+    <updated>2023-04-26T16:28:54.041479+00:00</updated>
+    <content src="https://www.truesec.com/hub/report/threat-intelligence-report-2022"/>
+    <link href="https://www.truesec.com/hub/report/threat-intelligence-report-2022" rel="alternate"/>
+    <summary>A shift in tactics has led to an enormous upswing for cybercrime, and it's not going away any time soon. In our 2022 Threat Intelligence Report, you'll gain firsthand insight into the evolving cyber threat landscape and how to prioritize your cybersecurity efforts in the coming year.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/a-first-step-towards-building-a-cyber-threat-intelligence-capability</id>
+    <title>A First Step Towards Building a Cyber Threat Intelligence Capability</title>
+    <updated>2023-04-26T16:28:54.041477+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/a-first-step-towards-building-a-cyber-threat-intelligence-capability"/>
+    <link href="https://www.truesec.com/hub/blog/a-first-step-towards-building-a-cyber-threat-intelligence-capability" rel="alternate"/>
+    <summary>Threat intelligence is, at its core, about providing you with a knowledge advantage, which enables you to direct your resources where they are most effective. Use threat intelligence to guide your cyber security program and enable a more responsive and adaptable cyber defense.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/increased-cyber-threat-to-critical-infrastructure</id>
+    <title>Increased Cyber Threat to Critical Infrastructure</title>
+    <updated>2023-04-26T16:28:54.041475+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/increased-cyber-threat-to-critical-infrastructure"/>
+    <link href="https://www.truesec.com/hub/blog/increased-cyber-threat-to-critical-infrastructure" rel="alternate"/>
+    <summary>With the appalling Russian invasion of Ukraine, the risk of an economic war between Russia and the West has increased dramatically. Such a conflict could involve cyber attacks on critical infrastructure in Western countries.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/increased-risk-of-ddos-attacks</id>
+    <title>Increased Risk of DDoS Attacks</title>
+    <updated>2023-04-26T16:28:54.041473+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/increased-risk-of-ddos-attacks"/>
+    <link href="https://www.truesec.com/hub/blog/increased-risk-of-ddos-attacks" rel="alternate"/>
+    <summary>There have been many DDoS attacks in conjunction with the war in Ukraine. As the risk of widening cyber conflict increases, it is important to know how to defend your organization.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/teamtnt-gang-is-part-of-fin12-conti-syndicate-a-truesec-investigation</id>
+    <title>FIN12/Conti Syndicate Use TeamTNT Tools in Ransomware Attacks</title>
+    <updated>2023-04-26T16:28:54.041470+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/teamtnt-gang-is-part-of-fin12-conti-syndicate-a-truesec-investigation"/>
+    <link href="https://www.truesec.com/hub/blog/teamtnt-gang-is-part-of-fin12-conti-syndicate-a-truesec-investigation" rel="alternate"/>
+    <summary>Truesec can now confirm that a ransomware syndicate known as FIN12/Conti TeamTNT is using malware normally used in cryptojacking in their attacks.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/understanding-the-value-and-use-of-threat-profiles</id>
+    <title>Understanding the Value and Use of Threat Profiles</title>
+    <updated>2023-04-26T16:28:54.041468+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/understanding-the-value-and-use-of-threat-profiles"/>
+    <link href="https://www.truesec.com/hub/blog/understanding-the-value-and-use-of-threat-profiles" rel="alternate"/>
+    <summary>Defending your organization requires an understanding of who your attackers are, their most likely course of action, and what attacking techniques and methods they would use. Threat profiles are about establishing this context, the parameters and variables that affect your ability to defend effectively.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/10-recommendations-to-prepare-for-an-escalating-cyber-conflict</id>
+    <title>10 Recommendations To Prepare for an Escalating Cyber Conflict</title>
+    <updated>2023-04-26T16:28:54.041466+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/10-recommendations-to-prepare-for-an-escalating-cyber-conflict"/>
+    <link href="https://www.truesec.com/hub/blog/10-recommendations-to-prepare-for-an-escalating-cyber-conflict" rel="alternate"/>
+    <summary>A list of the Top 10 tips to help organizations protect their IT environment from cyber conflicts related to the war in Ukraine.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/anticipating-a-russian-cyber-response-to-economic-sanctions</id>
+    <title>Anticipating a Russian Cyber Response to Economic Sanctions</title>
+    <updated>2023-04-26T16:28:54.041464+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/anticipating-a-russian-cyber-response-to-economic-sanctions"/>
+    <link href="https://www.truesec.com/hub/blog/anticipating-a-russian-cyber-response-to-economic-sanctions" rel="alternate"/>
+    <summary>A report on how the unprecedented economic sanctions and export controls on Russia, can lead to massive Russian cyber attacks on targets in the West - how and why it could happen.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/analysis-of-caddywiper-wiper-targeting-ukraine</id>
+    <title>Analysis of CaddyWiper - Wiper Targeting Ukraine</title>
+    <updated>2023-04-26T16:28:54.041461+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/analysis-of-caddywiper-wiper-targeting-ukraine"/>
+    <link href="https://www.truesec.com/hub/blog/analysis-of-caddywiper-wiper-targeting-ukraine" rel="alternate"/>
+    <summary>Leading up to and after the war broke out in Ukraine, many destructive cyber attacks have been conducted to disrupt the country's digital infrastructure. This blog post will analyze the latest malware targeting Ukraine.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/techtalk/what-happens-when-a-red-team-hacks-a-bank</id>
+    <title>How Do Red Teams Legally Hack Into Banks?</title>
+    <updated>2023-04-26T16:28:54.041459+00:00</updated>
+    <content src="https://www.truesec.com/hub/techtalk/what-happens-when-a-red-team-hacks-a-bank"/>
+    <link href="https://www.truesec.com/hub/techtalk/what-happens-when-a-red-team-hacks-a-bank" rel="alternate"/>
+    <summary/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/spring4shell-springshell-spring-remote-code-execution-vulnerability-impact-and-response</id>
+    <title>Spring4Shell/SpringShell Spring Remote Code Execution Vulnerability: Impact and Response</title>
+    <updated>2023-04-26T16:28:54.041457+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/spring4shell-springshell-spring-remote-code-execution-vulnerability-impact-and-response"/>
+    <link href="https://www.truesec.com/hub/blog/spring4shell-springshell-spring-remote-code-execution-vulnerability-impact-and-response" rel="alternate"/>
+    <summary>Spring Framework is a hugely popular Java application framework, often used in self-contained Spring boot applications, but traditionally often deployed as an application in a servlet container such as Tomcat. A critical vulnerability exists in Spring framework for endpoints that uses data binding to bind requests to Java objects (“POJOs”). This has the potential to lead to remote code execution by passing malicious request parameters to the application. There are publicly available exploits for certain conditions and reports of attacks being performed. Truesec believes other malicious payloads with different behavior will be developed in the near future. A patch has been released by Spring</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/ransomware-attacks-linked-to-russian-sanctions</id>
+    <title>Ransomware Attacks Linked to Russian Sanctions</title>
+    <updated>2023-04-26T16:28:54.041454+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/ransomware-attacks-linked-to-russian-sanctions"/>
+    <link href="https://www.truesec.com/hub/blog/ransomware-attacks-linked-to-russian-sanctions" rel="alternate"/>
+    <summary>Truesec has determined that it’s possible that some ransomware gangs are now coordinating their efforts with the Russian government.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/article/the-importance-of-a-holistic-cybersecurity-approach</id>
+    <title>The Importance of a Holistic Cybersecurity Approach</title>
+    <updated>2023-04-26T16:28:54.041452+00:00</updated>
+    <content src="https://www.truesec.com/hub/article/the-importance-of-a-holistic-cybersecurity-approach"/>
+    <link href="https://www.truesec.com/hub/article/the-importance-of-a-holistic-cybersecurity-approach" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/article/take-immediate-action-to-mitigate-cyber-incidents</id>
+    <title>Take Immediate Action to Mitigate Cyber Incidents</title>
+    <updated>2023-04-26T16:28:54.041450+00:00</updated>
+    <content src="https://www.truesec.com/hub/article/take-immediate-action-to-mitigate-cyber-incidents"/>
+    <link href="https://www.truesec.com/hub/article/take-immediate-action-to-mitigate-cyber-incidents" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/article/the-importance-of-detecting-cyber-threats-before-operations-are-impacted</id>
+    <title>The Importance of Detecting Cyber Threats Before Operations are Impacted</title>
+    <updated>2023-04-26T16:28:54.041447+00:00</updated>
+    <content src="https://www.truesec.com/hub/article/the-importance-of-detecting-cyber-threats-before-operations-are-impacted"/>
+    <link href="https://www.truesec.com/hub/article/the-importance-of-detecting-cyber-threats-before-operations-are-impacted" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/how-to-stop-an-insider-threat-within-your-organization</id>
+    <title>Stopping the Insider Threat at the Gate</title>
+    <updated>2023-04-26T16:28:54.041445+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/how-to-stop-an-insider-threat-within-your-organization"/>
+    <link href="https://www.truesec.com/hub/blog/how-to-stop-an-insider-threat-within-your-organization" rel="alternate"/>
+    <summary>Understand how insiders are recruited and learn which insider threat indicators to look for to detect insider threats in time.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/russian-hacktivism</id>
+    <title>Russian Hacktivism</title>
+    <updated>2023-04-26T16:28:54.041443+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/russian-hacktivism"/>
+    <link href="https://www.truesec.com/hub/blog/russian-hacktivism" rel="alternate"/>
+    <summary>The Russian invasion of Ukraine has led to a rise in Russian hacktivism, essentially a form of crowdfunded cyber terrorism.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/article/hybrid-warfare-and-cyber-security</id>
+    <title>Hybrid Warfare and the Effects of Hybrid Threats on Cybersecurity</title>
+    <updated>2023-04-26T16:28:54.041441+00:00</updated>
+    <content src="https://www.truesec.com/hub/article/hybrid-warfare-and-cyber-security"/>
+    <link href="https://www.truesec.com/hub/article/hybrid-warfare-and-cyber-security" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/the-beautiful-peruvian-jeweller-that-turned-out-to-be-a-russian-spy</id>
+    <title>The Beautiful Peruvian Jeweller That Turned Out to Be a Russian Spy</title>
+    <updated>2023-04-26T16:28:54.041438+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/the-beautiful-peruvian-jeweller-that-turned-out-to-be-a-russian-spy"/>
+    <link href="https://www.truesec.com/hub/blog/the-beautiful-peruvian-jeweller-that-turned-out-to-be-a-russian-spy" rel="alternate"/>
+    <summary>Recently several Russian so-called “illegals” have been exposed. Intelligence officers working under deep cover for many years, sometimes for decades. People close to them have had no idea that their life stories have been falsified.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/article/prevent-insider-threats-from-getting-a-foothold-with-security-vetting</id>
+    <title>Prevent Insider Threats From Getting a Foothold With Security Vetting</title>
+    <updated>2023-04-26T16:28:54.041436+00:00</updated>
+    <content src="https://www.truesec.com/hub/article/prevent-insider-threats-from-getting-a-foothold-with-security-vetting"/>
+    <link href="https://www.truesec.com/hub/article/prevent-insider-threats-from-getting-a-foothold-with-security-vetting" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/article/espionage-in-the-21st-century</id>
+    <title>Espionage in the 21st Century – How Do We Predict and Prevent This Growing Threat?</title>
+    <updated>2023-04-26T16:28:54.041434+00:00</updated>
+    <content src="https://www.truesec.com/hub/article/espionage-in-the-21st-century"/>
+    <link href="https://www.truesec.com/hub/article/espionage-in-the-21st-century" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/how-to-protect-your-vmware-esxi-hosts-against-persistant-threats-virtualpita-and-virtualpie</id>
+    <title>How Secure Boot Protects Your VMware ESXi Hosts Against Persistant VIB Threats VIRTUALPITA and VIRTUALPIE</title>
+    <updated>2023-04-26T16:28:54.041431+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/how-to-protect-your-vmware-esxi-hosts-against-persistant-threats-virtualpita-and-virtualpie"/>
+    <link href="https://www.truesec.com/hub/blog/how-to-protect-your-vmware-esxi-hosts-against-persistant-threats-virtualpita-and-virtualpie" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/threat-intelligence-notice-vulnerabilities-in-microsoft-exchange-cve-2022-41040-cve-2022-41082</id>
+    <title>Vulnerabilities in Microsoft Exchange (CVE-2022-41040, CVE-2022-41082)</title>
+    <updated>2023-04-26T16:28:54.041429+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/threat-intelligence-notice-vulnerabilities-in-microsoft-exchange-cve-2022-41040-cve-2022-41082"/>
+    <link href="https://www.truesec.com/hub/blog/threat-intelligence-notice-vulnerabilities-in-microsoft-exchange-cve-2022-41040-cve-2022-41082" rel="alternate"/>
+    <summary>Two zero-day vulnerabilities have been publicly disclosed in Microsoft Exchange; this is what we know.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/guide/this-nist-guide-will-help-organizations-to-better-manage-and-reduce-cybersecurity-risk</id>
+    <title>Manage and Reduce Cybersecurity Risk with NIST Cybersecurity Framework</title>
+    <updated>2023-04-26T16:28:54.041427+00:00</updated>
+    <content src="https://www.truesec.com/hub/guide/this-nist-guide-will-help-organizations-to-better-manage-and-reduce-cybersecurity-risk"/>
+    <link href="https://www.truesec.com/hub/guide/this-nist-guide-will-help-organizations-to-better-manage-and-reduce-cybersecurity-risk" rel="alternate"/>
+    <summary>NIST security framework helps secure and protect critical infrastructure from cyber attacks.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/article/people-change-over-time-so-does-the-human-threat-risk</id>
+    <title>People Change Over Time − So Does the Human Threat Risk</title>
+    <updated>2023-04-26T16:28:54.041424+00:00</updated>
+    <content src="https://www.truesec.com/hub/article/people-change-over-time-so-does-the-human-threat-risk"/>
+    <link href="https://www.truesec.com/hub/article/people-change-over-time-so-does-the-human-threat-risk" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/fortinet-cve-2022-40684-vulnerability-from-an-incident-response-perspective</id>
+    <title>Fortinet CVE-2022-40684 Vulnerability From an Incident Response Perspective</title>
+    <updated>2023-04-26T16:28:54.041422+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/fortinet-cve-2022-40684-vulnerability-from-an-incident-response-perspective"/>
+    <link href="https://www.truesec.com/hub/blog/fortinet-cve-2022-40684-vulnerability-from-an-incident-response-perspective" rel="alternate"/>
+    <summary>On October 7 a vulnerability (CVE-2022-40684) in various Fortinet products with a CVSSv3 score of 9.6 was disclosed. It enables an attacker to gain remote, unauthorized access to the management plane of the affected devices. Truesec have spent some time researching and exploring the vulnerability, consequences of exploitation and potential indicators of compromise.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/holistic-cybersecurity-from-assessment-to-strategy</id>
+    <title>Holistic Cybersecurity – From Assessment to Strategy</title>
+    <updated>2023-04-26T16:28:54.041419+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/holistic-cybersecurity-from-assessment-to-strategy"/>
+    <link href="https://www.truesec.com/hub/blog/holistic-cybersecurity-from-assessment-to-strategy" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/article/how-much-money-should-you-invest-in-preventive-cybersecurity</id>
+    <title>How Much Money Should You Invest in Preventive Cybersecurity?</title>
+    <updated>2023-04-26T16:28:54.041417+00:00</updated>
+    <content src="https://www.truesec.com/hub/article/how-much-money-should-you-invest-in-preventive-cybersecurity"/>
+    <link href="https://www.truesec.com/hub/article/how-much-money-should-you-invest-in-preventive-cybersecurity" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/report/swedish-manufacturing-industry-report</id>
+    <title>Swedish Manufacturing Industry Report - September</title>
+    <updated>2023-04-26T16:28:54.041415+00:00</updated>
+    <content src="https://www.truesec.com/hub/report/swedish-manufacturing-industry-report"/>
+    <link href="https://www.truesec.com/hub/report/swedish-manufacturing-industry-report" rel="alternate"/>
+    <summary>We want to give people who operate in Sweden the best possible conditions to be data-driven in their work regarding risks related to cyber threats so that they can prevent hacking.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/in-times-of-espionage-and-war-the-ethics-of-security-vetting</id>
+    <title>In Times of Espionage and War – The Ethics of Security Vetting</title>
+    <updated>2023-04-26T16:28:54.041412+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/in-times-of-espionage-and-war-the-ethics-of-security-vetting"/>
+    <link href="https://www.truesec.com/hub/blog/in-times-of-espionage-and-war-the-ethics-of-security-vetting" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/report/swedish-energy-sector</id>
+    <title>Swedish Energy Sector Report - October</title>
+    <updated>2023-04-26T16:28:54.041410+00:00</updated>
+    <content src="https://www.truesec.com/hub/report/swedish-energy-sector"/>
+    <link href="https://www.truesec.com/hub/report/swedish-energy-sector" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/chaos-ransomware</id>
+    <title>Cracking the Chaos Ransomware Family</title>
+    <updated>2023-04-26T16:28:54.041408+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/chaos-ransomware"/>
+    <link href="https://www.truesec.com/hub/blog/chaos-ransomware" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/report/public-sector-report</id>
+    <title>Public Sector Report - November</title>
+    <updated>2023-04-26T16:28:54.041406+00:00</updated>
+    <content src="https://www.truesec.com/hub/report/public-sector-report"/>
+    <link href="https://www.truesec.com/hub/report/public-sector-report" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/esxi-8-0-and-execinstalledonly-the-good-the-bad-and-the-ugly</id>
+    <title>VMware ESXi 8.0 and execInstalledOnly - The Good, the Bad and the Ugly</title>
+    <updated>2023-04-26T16:28:54.041403+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/esxi-8-0-and-execinstalledonly-the-good-the-bad-and-the-ugly"/>
+    <link href="https://www.truesec.com/hub/blog/esxi-8-0-and-execinstalledonly-the-good-the-bad-and-the-ugly" rel="alternate"/>
+    <summary>VMware vSphere 8.0 has execInstalledOnly enabled in ESXi by default, which is great. Unfortunately it's implemented in a way which makes it less effective in preventing ransomware attacks.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/article/5-hygiene-hacks-for-it-reduce-the-risk-of-ransomware</id>
+    <title>5 Hygiene Hacks for IT: Reduce the Risk of Ransomware</title>
+    <updated>2023-04-26T16:28:54.041401+00:00</updated>
+    <content src="https://www.truesec.com/hub/article/5-hygiene-hacks-for-it-reduce-the-risk-of-ransomware"/>
+    <link href="https://www.truesec.com/hub/article/5-hygiene-hacks-for-it-reduce-the-risk-of-ransomware" rel="alternate"/>
+    <summary>You don’t have to blame the lack of budget anymore. Here are steps you can take to quickly improve your security posture – by mostly using the functionality you already have.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/article/ransomware-attacks-and-the-skills-needed-for-an-efficient-and-successful-cyber-incident-response-team</id>
+    <title>Skills Needed for an Efficient Cyber Incident Response Team</title>
+    <updated>2023-04-26T16:28:54.041398+00:00</updated>
+    <content src="https://www.truesec.com/hub/article/ransomware-attacks-and-the-skills-needed-for-an-efficient-and-successful-cyber-incident-response-team"/>
+    <link href="https://www.truesec.com/hub/article/ransomware-attacks-and-the-skills-needed-for-an-efficient-and-successful-cyber-incident-response-team" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/article/find-vulnerabilities-in-your-it-infrastructure-before-the-threat-actor-does</id>
+    <title>Find Vulnerabilities in Your IT Infrastructure Before the Threat Actors Do</title>
+    <updated>2023-04-26T16:28:54.041396+00:00</updated>
+    <content src="https://www.truesec.com/hub/article/find-vulnerabilities-in-your-it-infrastructure-before-the-threat-actor-does"/>
+    <link href="https://www.truesec.com/hub/article/find-vulnerabilities-in-your-it-infrastructure-before-the-threat-actor-does" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/how-to-prevent-ransomware-attackers-from-taking-over-your-esxi-8-0-hosts</id>
+    <title>How To Prevent Ransomware Attackers From Taking Over Your ESXi 8.0 Hosts</title>
+    <updated>2023-04-26T16:28:54.041394+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/how-to-prevent-ransomware-attackers-from-taking-over-your-esxi-8-0-hosts"/>
+    <link href="https://www.truesec.com/hub/blog/how-to-prevent-ransomware-attackers-from-taking-over-your-esxi-8-0-hosts" rel="alternate"/>
+    <summary>This blog post describes a great new security feature in ESXi 8.0 that can prevent a ransomware attacker from moving laterally from your vCenter Server to the ESXi hosts. When implemented properly, this could completely stop one of the crucial steps of a ransomware attack against the vSphere platform.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/increased-risk-of-ddos-attacks-against-sweden</id>
+    <title>Increased Risk of DDoS Attacks</title>
+    <updated>2023-04-26T16:28:54.041392+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/increased-risk-of-ddos-attacks-against-sweden"/>
+    <link href="https://www.truesec.com/hub/blog/increased-risk-of-ddos-attacks-against-sweden" rel="alternate"/>
+    <summary>Recently, many DDoS attacks have been carried out against Nordic companies and authorities. What does the increased risk of being affected mean and how can you as an organization prepare and protect yourself against DDoS attacks?</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/what-is-anonymous-sudan</id>
+    <title>What Is Anonymous Sudan?</title>
+    <updated>2023-04-26T16:28:54.041388+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/what-is-anonymous-sudan"/>
+    <link href="https://www.truesec.com/hub/blog/what-is-anonymous-sudan" rel="alternate"/>
+    <summary>Truesec exposes a Russian information operation.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/report/anonymous-sudan-threat-intelligence-report</id>
+    <title>Anonymous Sudan: Threat Intelligence Report</title>
+    <updated>2023-04-26T16:28:54.041383+00:00</updated>
+    <content src="https://www.truesec.com/hub/report/anonymous-sudan-threat-intelligence-report"/>
+    <link href="https://www.truesec.com/hub/report/anonymous-sudan-threat-intelligence-report" rel="alternate"/>
+    <summary>Our threat intelligence report (published Feb 20, 2023) explains how the so-called "Anonymous Sudan" has nothing to do with the online activists collectively known as Anonymous. Instead, it was most likely created as part of a Russian information operation to harm and complicate Sweden's NATO application.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/aws-cognito-token-security-one-step-closer</id>
+    <title>Amazon Cognito - A Quick Look Into Token Security</title>
+    <updated>2023-04-26T16:28:54.041377+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/aws-cognito-token-security-one-step-closer"/>
+    <link href="https://www.truesec.com/hub/blog/aws-cognito-token-security-one-step-closer" rel="alternate"/>
+    <summary>If you're using Amazon Cognito to manage user authentication in your application, you should be aware of the permissions users have by default when issued an access token. These could be abused to overwrite user custom attributes, leading to privilege escalation within the application.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/report/threat-intelligence-report-2023</id>
+    <title>Threat Intelligence Report 2023</title>
+    <updated>2023-04-26T16:28:54.041373+00:00</updated>
+    <content src="https://www.truesec.com/hub/report/threat-intelligence-report-2023"/>
+    <link href="https://www.truesec.com/hub/report/threat-intelligence-report-2023" rel="alternate"/>
+    <summary>Cybercrime is still on the rise, and the geopolitical situation in Europe is affecting the cyber threat landscape. In our 2023 Threat Intelligence Report, you'll acquire an in-depth understanding of the evolving cyber threats and how to prioritize your cybersecurity investments to minimize your risk moving forward.</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/article/secure-development-might-seem-slow-but-it-often-pays-off-in-the-long-run</id>
+    <title>Secure Development Might Seem Slow, But It Often Pays Off in the Long Run</title>
+    <updated>2023-04-26T16:28:54.041369+00:00</updated>
+    <content src="https://www.truesec.com/hub/article/secure-development-might-seem-slow-but-it-often-pays-off-in-the-long-run"/>
+    <link href="https://www.truesec.com/hub/article/secure-development-might-seem-slow-but-it-often-pays-off-in-the-long-run" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/cyber-security-recruitment</id>
+    <title>How To Recruit Securely In the Cyber Age</title>
+    <updated>2023-04-26T16:28:54.041365+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/cyber-security-recruitment"/>
+    <link href="https://www.truesec.com/hub/blog/cyber-security-recruitment" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/article/secure-development-might-seem-slow-but-it-often-pays-off-in-the-long-run-2</id>
+    <title>Secure Development May Seem Slow but Usually Pays Off in the Long Run</title>
+    <updated>2023-04-26T16:28:54.041361+00:00</updated>
+    <content src="https://www.truesec.com/hub/article/secure-development-might-seem-slow-but-it-often-pays-off-in-the-long-run-2"/>
+    <link href="https://www.truesec.com/hub/article/secure-development-might-seem-slow-but-it-often-pays-off-in-the-long-run-2" rel="alternate"/>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/hacktivists-target-denmark-in-simultaneous-attacks</id>
+    <title>Hacktivists Target Denmark in Simultaneous Attacks</title>
+    <updated>2023-04-26T16:28:54.041355+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/hacktivists-target-denmark-in-simultaneous-attacks"/>
+    <link href="https://www.truesec.com/hub/blog/hacktivists-target-denmark-in-simultaneous-attacks" rel="alternate"/>
+    <summary>Update on Anonymous Sudan</summary>
+  </entry>
+  <entry>
+    <id>https://www.truesec.com/hub/blog/exporting-conditional-access-policies-as-an-end-user</id>
+    <title>Exporting Conditional Access Policies As an End User</title>
+    <updated>2023-04-26T16:28:54.041344+00:00</updated>
+    <content src="https://www.truesec.com/hub/blog/exporting-conditional-access-policies-as-an-end-user"/>
+    <link href="https://www.truesec.com/hub/blog/exporting-conditional-access-policies-as-an-end-user" rel="alternate"/>
+    <summary>Recently, We Discovered That There Are Possibilities to Export All Conditional Access Policies in a Tenant Using Nothing Other Than End User Permissions. Meaning, No Admin Privileges are Required to Perform This Operation At All.</summary>
+  </entry>
+</feed>
