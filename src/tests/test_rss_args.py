@@ -3,7 +3,7 @@ from rssfixer import rss
 
 
 def test_rss_args_html_json_entries():
-    """Test rss_args function"""
+    """Test combination of --html and --json-entries - should fail"""
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.parse_arguments(
             [
@@ -17,7 +17,7 @@ def test_rss_args_html_json_entries():
 
 
 def test_rss_args_json_html_entries():
-    """Test rss_args function"""
+    """Test combination of --json and --html-entries - should fail"""
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.parse_arguments(
             [
@@ -31,7 +31,7 @@ def test_rss_args_json_html_entries():
 
 
 def test_rss_args_list_json_entries():
-    """Test rss_args function"""
+    """Test combination of --list and --json-entries - should fail"""
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.parse_arguments(
             [
@@ -45,7 +45,7 @@ def test_rss_args_list_json_entries():
 
 
 def test_rss_args_json_release_entries():
-    """Test rss_args function"""
+    """Test combination of --json and --release-entries - should fail"""
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.parse_arguments(
             [
@@ -59,7 +59,7 @@ def test_rss_args_json_release_entries():
 
 
 def test_rss_args_release_html_entries():
-    """Test rss_args function"""
+    """Test combination of --release and --html-entries - should fail"""
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.parse_arguments(
             [
@@ -73,6 +73,7 @@ def test_rss_args_release_html_entries():
 
 
 def test_parse_arguments_required_args():
+    """Test argument parsing with --list and url - should succeed"""
     arguments = ["--list", "https://example.com"]
     args = rss.parse_arguments(arguments)
     assert args.list
@@ -80,6 +81,7 @@ def test_parse_arguments_required_args():
 
 
 def test_parse_arguments_optional_args():
+    """Test argument parsing with --html and related args - should succeed"""
     arguments = [
         "--html",
         "--html-entries",
@@ -108,6 +110,7 @@ def test_parse_arguments_optional_args():
 
 
 def test_parse_arguments_json_args():
+    """Test argument parsing with --json and related args - should succeed"""
     arguments = [
         "--json",
         "--json-entries",
@@ -130,6 +133,7 @@ def test_parse_arguments_json_args():
 
 
 def test_parse_arguments_release_args():
+    """Test argument parsing with --release and related args - should succeed"""
     arguments = [
         "--release",
         "--release-entries",
@@ -145,6 +149,13 @@ def test_parse_arguments_release_args():
     assert args.url == "https://example.com"
 
 
-def test_parse_arguments_invalid_args():
+def test_parse_arguments_invalid_args_html_json():
+    """Test argument parsing with invalid args --html and --json - should fail"""
     with pytest.raises(SystemExit):
         rss.parse_arguments(["--html", "--json", "https://example.com"])
+
+
+def test_parse_arguments_invalid_args_list_release():
+    """Test argument parsing with invalid args --list and --release - should fail"""
+    with pytest.raises(SystemExit):
+        rss.parse_arguments(["--list", "--release", "https://example.com"])

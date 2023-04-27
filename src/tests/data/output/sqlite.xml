@@ -1,0 +1,1806 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" version="2.0">
+  <channel>
+    <title>My RSS Feed</title>
+    <link>https://sqlite.org/changes.html</link>
+    <description>RSS feed generated from the links at https://sqlite.org/changes.html</description>
+    <docs>http://www.rssboard.org/rss-specification</docs>
+    <generator>python-feedgen</generator>
+    <lastBuildDate>Thu, 27 Apr 2023 09:43:52 +0000</lastBuildDate>
+    <item>
+      <title>2000-05-29</title>
+      <link>https://sqlite.org/download.html?1b0a12558688867745918217965e1bae0b0539412f7210f8d042b97deb02a94d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?1b0a12558688867745918217965e1bae0b0539412f7210f8d042b97deb02a94d</guid>
+    </item>
+    <item>
+      <title>2000-05-30</title>
+      <link>https://sqlite.org/download.html?76ac460fbc8765989e25010885b7131b0a385be4e45c05a36c6e7a97c3f3b1cb</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?76ac460fbc8765989e25010885b7131b0a385be4e45c05a36c6e7a97c3f3b1cb</guid>
+    </item>
+    <item>
+      <title>2000-05-31</title>
+      <link>https://sqlite.org/download.html?50063bc6c1df78348b7d8301d0ba135ef5fd33ec3bde735a7c3577d8e639bd6b</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?50063bc6c1df78348b7d8301d0ba135ef5fd33ec3bde735a7c3577d8e639bd6b</guid>
+    </item>
+    <item>
+      <title>2000-06-01</title>
+      <link>https://sqlite.org/download.html?576211cad741d673faf36aa19e40da5755f6dd426545ea831517df382fcafaa7</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?576211cad741d673faf36aa19e40da5755f6dd426545ea831517df382fcafaa7</guid>
+    </item>
+    <item>
+      <title>2000-06-02</title>
+      <link>https://sqlite.org/download.html?26a98d43868f838465fae110c998758d1f9c47c215095380492799bbe8d06343</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?26a98d43868f838465fae110c998758d1f9c47c215095380492799bbe8d06343</guid>
+    </item>
+    <item>
+      <title>2000-06-03</title>
+      <link>https://sqlite.org/download.html?b1bb49ceee36ec01d444c0afa5174ab5a6d1bc93db505235e5d010662f577aa7</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?b1bb49ceee36ec01d444c0afa5174ab5a6d1bc93db505235e5d010662f577aa7</guid>
+    </item>
+    <item>
+      <title>2000-06-06</title>
+      <link>https://sqlite.org/download.html?5fafb40f7e272776cc71eff8ae45114f5c095c9cb04f4fd5ddb49ef8ab4fad9e</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?5fafb40f7e272776cc71eff8ae45114f5c095c9cb04f4fd5ddb49ef8ab4fad9e</guid>
+    </item>
+    <item>
+      <title>2000-06-08</title>
+      <link>https://sqlite.org/download.html?26d2a8c839f5ea273059725ad7594fb60443c6a3ad6eb1f0a025f484e3172f3d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?26d2a8c839f5ea273059725ad7594fb60443c6a3ad6eb1f0a025f484e3172f3d</guid>
+    </item>
+    <item>
+      <title>2000-06-12</title>
+      <link>https://sqlite.org/download.html?e22c6e0030ec67ca5806dbc7bd276c6fe3f3d307796a29afc3c1b75318b7932e</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?e22c6e0030ec67ca5806dbc7bd276c6fe3f3d307796a29afc3c1b75318b7932e</guid>
+    </item>
+    <item>
+      <title>2000-06-18</title>
+      <link>https://sqlite.org/download.html?97b74d013c7e3c228efbf9c91dc9519316f5287a336e2b1d47af126b575c00cf</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?97b74d013c7e3c228efbf9c91dc9519316f5287a336e2b1d47af126b575c00cf</guid>
+    </item>
+    <item>
+      <title>2000-06-19</title>
+      <link>https://sqlite.org/download.html?1c98d0aaa4cecb7c5206c3930a4287f9771daa574bf14c1363fe21a678b3d013</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?1c98d0aaa4cecb7c5206c3930a4287f9771daa574bf14c1363fe21a678b3d013</guid>
+    </item>
+    <item>
+      <title>2000-06-21</title>
+      <link>https://sqlite.org/download.html?2475ef4bfd7fc61675466d43e9e525f336760427c7f3afe9f7a498313907a2b3</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?2475ef4bfd7fc61675466d43e9e525f336760427c7f3afe9f7a498313907a2b3</guid>
+    </item>
+    <item>
+      <title>2000-06-23</title>
+      <link>https://sqlite.org/download.html?ee8e7eba165af6e9cf664041ebbdf938c85222f6692a69349168f870e29a9b78</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?ee8e7eba165af6e9cf664041ebbdf938c85222f6692a69349168f870e29a9b78</guid>
+    </item>
+    <item>
+      <title>2000-07-28</title>
+      <link>https://sqlite.org/download.html?70613fd2f96d6410ab9670faca1d372d901ca4163fb4de99647e2b8ccd093be6</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?70613fd2f96d6410ab9670faca1d372d901ca4163fb4de99647e2b8ccd093be6</guid>
+    </item>
+    <item>
+      <title>2000-07-29</title>
+      <link>https://sqlite.org/download.html?b2aa749388db2899de31ab3cd90bf8d67e3b162606d5828b597002e933cc63c0</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?b2aa749388db2899de31ab3cd90bf8d67e3b162606d5828b597002e933cc63c0</guid>
+    </item>
+    <item>
+      <title>2000-07-31</title>
+      <link>https://sqlite.org/download.html?02ae1a3d1b61d94b63c798f8cab0cfb5c64fe1588c7b0a9d5f8c99806277722c</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?02ae1a3d1b61d94b63c798f8cab0cfb5c64fe1588c7b0a9d5f8c99806277722c</guid>
+    </item>
+    <item>
+      <title>2000-08-01</title>
+      <link>https://sqlite.org/download.html?5aa468cc6cc92f5185343b308abb97f15c739bdc18bdec39e646135ba064ec06</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?5aa468cc6cc92f5185343b308abb97f15c739bdc18bdec39e646135ba064ec06</guid>
+    </item>
+    <item>
+      <title>2000-08-02</title>
+      <link>https://sqlite.org/download.html?15fb669b20649fcbcf309f8ae8720eb6acfc137c9480ef859b1ce8b0204843ef</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?15fb669b20649fcbcf309f8ae8720eb6acfc137c9480ef859b1ce8b0204843ef</guid>
+    </item>
+    <item>
+      <title>2000-08-03</title>
+      <link>https://sqlite.org/download.html?979fd9fbda06701a3a0a646956e9d0d8241365b0a2ab94786a38942d12d8f165</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?979fd9fbda06701a3a0a646956e9d0d8241365b0a2ab94786a38942d12d8f165</guid>
+    </item>
+    <item>
+      <title>2000-08-04</title>
+      <link>https://sqlite.org/download.html?71a74204d5fa4108c3d3277a8ae080c49a2f1c5e58422d1f30ef6a999bebf687</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?71a74204d5fa4108c3d3277a8ae080c49a2f1c5e58422d1f30ef6a999bebf687</guid>
+    </item>
+    <item>
+      <title>2000-08-08</title>
+      <link>https://sqlite.org/download.html?676b232420cd829266456115411b7af82e95bc0bba75107855e29fa580581f39</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?676b232420cd829266456115411b7af82e95bc0bba75107855e29fa580581f39</guid>
+    </item>
+    <item>
+      <title>2000-08-09</title>
+      <link>https://sqlite.org/download.html?0139cb226bd6e6a26b1c99dd446409abee1f1050787390f158d971206b0b7ab7</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?0139cb226bd6e6a26b1c99dd446409abee1f1050787390f158d971206b0b7ab7</guid>
+    </item>
+    <item>
+      <title>2000-08-17 (1.0)</title>
+      <link>https://sqlite.org/download.html?3c13f276f8ac6f72c0cffbce4ca12184210fb525b5c04c2fb684c6bef4e2d87a</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?3c13f276f8ac6f72c0cffbce4ca12184210fb525b5c04c2fb684c6bef4e2d87a</guid>
+    </item>
+    <item>
+      <title>2000-08-18 (1.0.1)</title>
+      <link>https://sqlite.org/download.html?81308f9356fe739ed48e330007a3717f1a869a7089e4d714742a2d72ca67288b</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?81308f9356fe739ed48e330007a3717f1a869a7089e4d714742a2d72ca67288b</guid>
+    </item>
+    <item>
+      <title>2000-08-22 (1.0.3)</title>
+      <link>https://sqlite.org/download.html?63d8b963c6075a00b0cbca84547ed18fde47f29371a54e17d75c132676cda1d9</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?63d8b963c6075a00b0cbca84547ed18fde47f29371a54e17d75c132676cda1d9</guid>
+    </item>
+    <item>
+      <title>2000-08-28 (1.0.4)</title>
+      <link>https://sqlite.org/download.html?183a8bc5cf1f22fa0836a84a890a8abeeb3385afea1c1f53be5a8879c112efeb</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?183a8bc5cf1f22fa0836a84a890a8abeeb3385afea1c1f53be5a8879c112efeb</guid>
+    </item>
+    <item>
+      <title>2000-09-14 (1.0.5)</title>
+      <link>https://sqlite.org/download.html?9a0eacc520b8e4f61f72b7f8062d9b4d9bbfc35ba1d1b81bf622256b23aa1b8d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?9a0eacc520b8e4f61f72b7f8062d9b4d9bbfc35ba1d1b81bf622256b23aa1b8d</guid>
+    </item>
+    <item>
+      <title>2000-09-21 (Not Released)</title>
+      <link>https://sqlite.org/download.html?e6f74540d12001b3bf7d8f1d9f5b434ceb80284217af797dc8a701f770d19b31</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?e6f74540d12001b3bf7d8f1d9f5b434ceb80284217af797dc8a701f770d19b31</guid>
+    </item>
+    <item>
+      <title>2000-09-29 (Not Released)</title>
+      <link>https://sqlite.org/download.html?4eb44dd3360d0be7b72275e5edd5c32d240597300de809e88d9a813aac457653</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?4eb44dd3360d0be7b72275e5edd5c32d240597300de809e88d9a813aac457653</guid>
+    </item>
+    <item>
+      <title>2000-09-30 (1.0.8)</title>
+      <link>https://sqlite.org/download.html?b7d1d7f0ee24efc6b816688f091a2bc141641bff6784ba7bbbc82ed904d6e6d2</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?b7d1d7f0ee24efc6b816688f091a2bc141641bff6784ba7bbbc82ed904d6e6d2</guid>
+    </item>
+    <item>
+      <title>2000-10-09 (1.0.9)</title>
+      <link>https://sqlite.org/download.html?5cc997be58cc894759c7d221e6fec1820c8604d0acedf701807ae0351c66e164</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?5cc997be58cc894759c7d221e6fec1820c8604d0acedf701807ae0351c66e164</guid>
+    </item>
+    <item>
+      <title>2000-10-11 (1.0.10)</title>
+      <link>https://sqlite.org/download.html?355508acbbe5e7a1dcf3bf6af2d03b8b5a524fe48f4af2b5739f40536f0a7af7</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?355508acbbe5e7a1dcf3bf6af2d03b8b5a524fe48f4af2b5739f40536f0a7af7</guid>
+    </item>
+    <item>
+      <title>2000-10-17 (1.0.12)</title>
+      <link>https://sqlite.org/download.html?9e316381891f2ec1aaf2c6646a4f8a7ca1429e4fd4e1efe5cf00c62794b8b901</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?9e316381891f2ec1aaf2c6646a4f8a7ca1429e4fd4e1efe5cf00c62794b8b901</guid>
+    </item>
+    <item>
+      <title>2000-10-19 (1.0.13)</title>
+      <link>https://sqlite.org/download.html?8240176924beae17a1834b636bef7df38cc4bf2863cef6417076fa0982dde1e7</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?8240176924beae17a1834b636bef7df38cc4bf2863cef6417076fa0982dde1e7</guid>
+    </item>
+    <item>
+      <title>2000-10-19 (1.0.14)</title>
+      <link>https://sqlite.org/download.html?751356e906b362c272ff819d10c3438b5c210261304377b33db60f4416810949</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?751356e906b362c272ff819d10c3438b5c210261304377b33db60f4416810949</guid>
+    </item>
+    <item>
+      <title>2000-10-23 (1.0.15)</title>
+      <link>https://sqlite.org/download.html?579b808fcbd612b92fcc2c0d5bce9abf4ebf85f0081346f2a3db52cfb87f7959</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?579b808fcbd612b92fcc2c0d5bce9abf4ebf85f0081346f2a3db52cfb87f7959</guid>
+    </item>
+    <item>
+      <title>2000-11-28 (1.0.16)</title>
+      <link>https://sqlite.org/download.html?cbb6058d5975a48af41668329ef82f6b358f3cdae33e3b08b00817711ba68130</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?cbb6058d5975a48af41668329ef82f6b358f3cdae33e3b08b00817711ba68130</guid>
+    </item>
+    <item>
+      <title>2000-12-10 (1.0.17)</title>
+      <link>https://sqlite.org/download.html?475c389b989a2b895433c55c07895db189104de2593f788e2c204786410d6d78</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?475c389b989a2b895433c55c07895db189104de2593f788e2c204786410d6d78</guid>
+    </item>
+    <item>
+      <title>2001-01-04 (1.0.18)</title>
+      <link>https://sqlite.org/download.html?559cb1eec61c459904dccae4213756379a654a48bf294e2fca37522d3376d517</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?559cb1eec61c459904dccae4213756379a654a48bf294e2fca37522d3376d517</guid>
+    </item>
+    <item>
+      <title>2001-02-06 (1.0.19)</title>
+      <link>https://sqlite.org/download.html?43b3d4b9da1a721366cceed69a1d0db819613ee11da5dbd8d33ea180ec4710bb</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?43b3d4b9da1a721366cceed69a1d0db819613ee11da5dbd8d33ea180ec4710bb</guid>
+    </item>
+    <item>
+      <title>2001-02-11 (1.0.20)</title>
+      <link>https://sqlite.org/download.html?d61673fc37744dfcab2783245370d5fcce5d7383ce6a5fe0ea92278d40c20246</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d61673fc37744dfcab2783245370d5fcce5d7383ce6a5fe0ea92278d40c20246</guid>
+    </item>
+    <item>
+      <title>2001-02-19 (1.0.21)</title>
+      <link>https://sqlite.org/download.html?ffb344ef153939a966f8257a95318af05c7505958ab9596747ac2be36f13eae9</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?ffb344ef153939a966f8257a95318af05c7505958ab9596747ac2be36f13eae9</guid>
+    </item>
+    <item>
+      <title>2001-02-19 (1.0.22)</title>
+      <link>https://sqlite.org/download.html?9ee9cb994cee068d14325ce332a2bc571bc4888cceebd0e010297b19c37f9d40</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?9ee9cb994cee068d14325ce332a2bc571bc4888cceebd0e010297b19c37f9d40</guid>
+    </item>
+    <item>
+      <title>2001-02-20 (1.0.23)</title>
+      <link>https://sqlite.org/download.html?39aee4d6ca79350b781be67e9edf8683affc16ae803e1aff60de3abc0600dc07</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?39aee4d6ca79350b781be67e9edf8683affc16ae803e1aff60de3abc0600dc07</guid>
+    </item>
+    <item>
+      <title>2001-03-14 (1.0.24)</title>
+      <link>https://sqlite.org/download.html?edeb219ec896cc9d92d26895107a75a75f19a90f5c1e52be86b45e33e01fa793</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?edeb219ec896cc9d92d26895107a75a75f19a90f5c1e52be86b45e33e01fa793</guid>
+    </item>
+    <item>
+      <title>2001-03-15 (1.0.25)</title>
+      <link>https://sqlite.org/download.html?78e8ff2cc3ee5c905897e15c78dd292eece5a2667a3b4babbba3023d8d04bf95</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?78e8ff2cc3ee5c905897e15c78dd292eece5a2667a3b4babbba3023d8d04bf95</guid>
+    </item>
+    <item>
+      <title>2001-03-20 (1.0.26)</title>
+      <link>https://sqlite.org/download.html?7027cf11fd3932349b24fdb0e79cffb34c266d992d8949d64b4aaec5410e9a23</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?7027cf11fd3932349b24fdb0e79cffb34c266d992d8949d64b4aaec5410e9a23</guid>
+    </item>
+    <item>
+      <title>2001-03-20 (1.0.27)</title>
+      <link>https://sqlite.org/download.html?548c22b97fbd640fd9df30eaf9eaeddeaa5772df662837215f10ee8f8e690d7a</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?548c22b97fbd640fd9df30eaf9eaeddeaa5772df662837215f10ee8f8e690d7a</guid>
+    </item>
+    <item>
+      <title>2001-04-04 (1.0.28)</title>
+      <link>https://sqlite.org/download.html?5a78bcd53a7168de754da49bf488f1953f28a4bc1ae411cfffa207f1feaf6093</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?5a78bcd53a7168de754da49bf488f1953f28a4bc1ae411cfffa207f1feaf6093</guid>
+    </item>
+    <item>
+      <title>2001-04-05 (1.0.29)</title>
+      <link>https://sqlite.org/download.html?ea58bb015193bb2d103ad4f810e155113a02de9b6d770ba77ffeaa38df49e7dc</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?ea58bb015193bb2d103ad4f810e155113a02de9b6d770ba77ffeaa38df49e7dc</guid>
+    </item>
+    <item>
+      <title>2001-04-06 (1.0.30)</title>
+      <link>https://sqlite.org/download.html?54ffbf1cd32c95efdc930c514e0619203986a37cbe23b30e31663d2539fa3443</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?54ffbf1cd32c95efdc930c514e0619203986a37cbe23b30e31663d2539fa3443</guid>
+    </item>
+    <item>
+      <title>2001-04-15 (1.0.31)</title>
+      <link>https://sqlite.org/download.html?12b8540721b65fbb471e0016906c677c2680c5669bc1fce8d8600c9816eb75e9</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?12b8540721b65fbb471e0016906c677c2680c5669bc1fce8d8600c9816eb75e9</guid>
+    </item>
+    <item>
+      <title>2001-07-23 (1.0.32)</title>
+      <link>https://sqlite.org/download.html?7a465d729d9b36e8ef4bcfd78da0344a9e3243debda760ffd84602ec4317aa73</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?7a465d729d9b36e8ef4bcfd78da0344a9e3243debda760ffd84602ec4317aa73</guid>
+    </item>
+    <item>
+      <title>2001-09-20 (2.0-alpha-2)</title>
+      <link>https://sqlite.org/download.html?6abe4265e0e74ddbdf2015cf9ffa613164a5793df37db42514d36029cc95204b</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?6abe4265e0e74ddbdf2015cf9ffa613164a5793df37db42514d36029cc95204b</guid>
+    </item>
+    <item>
+      <title>2001-09-27 (2.0-alpha-3)</title>
+      <link>https://sqlite.org/download.html?b54370c33d3fa53421b4f731457dd5a1c71f3d4f518f14ae9131795928898d73</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?b54370c33d3fa53421b4f731457dd5a1c71f3d4f518f14ae9131795928898d73</guid>
+    </item>
+    <item>
+      <title>2001-09-28 (2.0-alpha-4)</title>
+      <link>https://sqlite.org/download.html?51644617e2618ce6e4c1d0160cbdff1030a55a43abe8f4acea02b5b8eaffc571</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?51644617e2618ce6e4c1d0160cbdff1030a55a43abe8f4acea02b5b8eaffc571</guid>
+    </item>
+    <item>
+      <title>2001-09-28 (2.0.0)</title>
+      <link>https://sqlite.org/download.html?6530f54030dbc1b7405b905d539be86b8e35483a9d5acd772f015a1573e988b9</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?6530f54030dbc1b7405b905d539be86b8e35483a9d5acd772f015a1573e988b9</guid>
+    </item>
+    <item>
+      <title>2001-10-02 (2.0.1)</title>
+      <link>https://sqlite.org/download.html?8ddcf521daaf2cbf39a551ed0fba5beacb96b4eba10c92481e59f4298437d04a</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?8ddcf521daaf2cbf39a551ed0fba5beacb96b4eba10c92481e59f4298437d04a</guid>
+    </item>
+    <item>
+      <title>2001-10-09 (2.0.2)</title>
+      <link>https://sqlite.org/download.html?b6526b27639cd10a94173de4fa8d6d56f62c9f479be3e79dd46eb5182284ae1d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?b6526b27639cd10a94173de4fa8d6d56f62c9f479be3e79dd46eb5182284ae1d</guid>
+    </item>
+    <item>
+      <title>2001-10-13 (2.0.3)</title>
+      <link>https://sqlite.org/download.html?1c3522e3017e24abad91f635d1c0b1e0212c82f4056d29203f0da9a7aef8dd29</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?1c3522e3017e24abad91f635d1c0b1e0212c82f4056d29203f0da9a7aef8dd29</guid>
+    </item>
+    <item>
+      <title>2001-10-13 (2.0.4)</title>
+      <link>https://sqlite.org/download.html?3ca49c0a60e668286f51aedd5c8335cc3bbf08168e1edce7f907ac7f9608b76f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?3ca49c0a60e668286f51aedd5c8335cc3bbf08168e1edce7f907ac7f9608b76f</guid>
+    </item>
+    <item>
+      <title>2001-10-15 (2.0.5)</title>
+      <link>https://sqlite.org/download.html?7bf6bcaf38fd6bd860d0df087d8e9b626a2e465ceb0494be9623035e253551c7</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?7bf6bcaf38fd6bd860d0df087d8e9b626a2e465ceb0494be9623035e253551c7</guid>
+    </item>
+    <item>
+      <title>2001-10-19 (2.0.6)</title>
+      <link>https://sqlite.org/download.html?ca897df5d479615cfe5667ae7cb781f45c7828680ac0026878318bfc075d73da</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?ca897df5d479615cfe5667ae7cb781f45c7828680ac0026878318bfc075d73da</guid>
+    </item>
+    <item>
+      <title>2001-10-22 (2.0.7)</title>
+      <link>https://sqlite.org/download.html?738cd8875b0f834b43c4d0207ee6699f6def800e30969c16c8bba8b53157be19</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?738cd8875b0f834b43c4d0207ee6699f6def800e30969c16c8bba8b53157be19</guid>
+    </item>
+    <item>
+      <title>2001-11-03 (2.0.8)</title>
+      <link>https://sqlite.org/download.html?8117fcf376785dcd3aa07acd0f23a8bbaffafbe72ee15477d3f5af67a654e979</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?8117fcf376785dcd3aa07acd0f23a8bbaffafbe72ee15477d3f5af67a654e979</guid>
+    </item>
+    <item>
+      <title>2001-11-12 (2.1.0)</title>
+      <link>https://sqlite.org/download.html?e3a0a7c2ec66abc815468cdfdfdb1b1def72e7b0a1febcad1d1750669c6d990f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?e3a0a7c2ec66abc815468cdfdfdb1b1def72e7b0a1febcad1d1750669c6d990f</guid>
+    </item>
+    <item>
+      <title>2001-11-13 (2.1.1)</title>
+      <link>https://sqlite.org/download.html?c1851ba6fd7a9e41f72bc5c1b41649157ae7f3a5943491cdc8c8a7fe60322470</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?c1851ba6fd7a9e41f72bc5c1b41649157ae7f3a5943491cdc8c8a7fe60322470</guid>
+    </item>
+    <item>
+      <title>2001-11-23 (2.1.2)</title>
+      <link>https://sqlite.org/download.html?d3e47ac5afa2dd6db3e5e3d3d684c3326f0dd716deb3c5e014a76645f4e166ba</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d3e47ac5afa2dd6db3e5e3d3d684c3326f0dd716deb3c5e014a76645f4e166ba</guid>
+    </item>
+    <item>
+      <title>2001-11-24 (2.1.3)</title>
+      <link>https://sqlite.org/download.html?e5d5d93287396a99a614ffcd5f1b001242e2c3741c6f4795328eb927464477a7</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?e5d5d93287396a99a614ffcd5f1b001242e2c3741c6f4795328eb927464477a7</guid>
+    </item>
+    <item>
+      <title>2001-12-05 (2.1.4)</title>
+      <link>https://sqlite.org/download.html?25881a93bb2b22ff48c75388c979f5dbc3c39f9586c90d6aa7b7cf4aad38f180</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?25881a93bb2b22ff48c75388c979f5dbc3c39f9586c90d6aa7b7cf4aad38f180</guid>
+    </item>
+    <item>
+      <title>2001-12-06 (2.1.5)</title>
+      <link>https://sqlite.org/download.html?2446edb6cb47d6e7bf010f27085c85b61b9629f97767289e7480eb23cc888636</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?2446edb6cb47d6e7bf010f27085c85b61b9629f97767289e7480eb23cc888636</guid>
+    </item>
+    <item>
+      <title>2001-12-14 (2.1.6)</title>
+      <link>https://sqlite.org/download.html?552c4310ddeda479c93bb6c2c71e77966bcf915ffcd70eea1f2b906d65450073</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?552c4310ddeda479c93bb6c2c71e77966bcf915ffcd70eea1f2b906d65450073</guid>
+    </item>
+    <item>
+      <title>2001-12-15 (2.1.7)</title>
+      <link>https://sqlite.org/download.html?e0375a567800e115221a663fb0ec0d708a0cc12dc0cef4d3dcf7c1f62de85153</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?e0375a567800e115221a663fb0ec0d708a0cc12dc0cef4d3dcf7c1f62de85153</guid>
+    </item>
+    <item>
+      <title>2001-12-22 (2.2.0)</title>
+      <link>https://sqlite.org/download.html?06bb67586daeec6aeeab7ca0ba9409d3a7eac8846d039950e4602fbc14dbc273</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?06bb67586daeec6aeeab7ca0ba9409d3a7eac8846d039950e4602fbc14dbc273</guid>
+    </item>
+    <item>
+      <title>2002-01-09 (2.2.1)</title>
+      <link>https://sqlite.org/download.html?32e9435fe95cb43e1aac2e6f5ac3e0d96da9d7ac24123460bb58580d78b6c75a</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?32e9435fe95cb43e1aac2e6f5ac3e0d96da9d7ac24123460bb58580d78b6c75a</guid>
+    </item>
+    <item>
+      <title>2002-01-14 (2.2.2)</title>
+      <link>https://sqlite.org/download.html?46487a581dd95ed65073e68e8edc75bf8806eab80aade39539e241b669739e8c</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?46487a581dd95ed65073e68e8edc75bf8806eab80aade39539e241b669739e8c</guid>
+    </item>
+    <item>
+      <title>2002-01-16 (2.2.3)</title>
+      <link>https://sqlite.org/download.html?66325a805c6cb655f5fc3e2b057669b8340f89cddb5ac3001cb2dab3e2005007</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?66325a805c6cb655f5fc3e2b057669b8340f89cddb5ac3001cb2dab3e2005007</guid>
+    </item>
+    <item>
+      <title>2002-01-22 (2.2.4)</title>
+      <link>https://sqlite.org/download.html?2477934dfbb402e4bed9b87b2f72dca6d5922dabd0d074e0d92388b58587e566</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?2477934dfbb402e4bed9b87b2f72dca6d5922dabd0d074e0d92388b58587e566</guid>
+    </item>
+    <item>
+      <title>2002-01-28 (2.2.5)</title>
+      <link>https://sqlite.org/download.html?dbd626407c032a4668a234632ad4fdbfe30037ace35957726e0a0ea5f17ba053</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?dbd626407c032a4668a234632ad4fdbfe30037ace35957726e0a0ea5f17ba053</guid>
+    </item>
+    <item>
+      <title>2002-02-03 (2.3.0)</title>
+      <link>https://sqlite.org/download.html?d8248bd1d98964242401803a9bb485b8945817b77057aea27ee105a93350a9ce</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d8248bd1d98964242401803a9bb485b8945817b77057aea27ee105a93350a9ce</guid>
+    </item>
+    <item>
+      <title>2002-02-13 (2.3.1)</title>
+      <link>https://sqlite.org/download.html?4c72e4e89922c8b1f25637143335ea45dfe9c6f9c58eb1e7bb82bd469859716a</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?4c72e4e89922c8b1f25637143335ea45dfe9c6f9c58eb1e7bb82bd469859716a</guid>
+    </item>
+    <item>
+      <title>2002-02-14 (2.3.2)</title>
+      <link>https://sqlite.org/download.html?3421ae30a7b3bbe94810e38f1b03590bc6664b1c7ee3d479de4a95db8977db84</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?3421ae30a7b3bbe94810e38f1b03590bc6664b1c7ee3d479de4a95db8977db84</guid>
+    </item>
+    <item>
+      <title>2002-02-19 (2.3.3)</title>
+      <link>https://sqlite.org/download.html?dd0330c56c6c38ef207c61f5f02a15e0209eb4428733742346899fb3f0d9721d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?dd0330c56c6c38ef207c61f5f02a15e0209eb4428733742346899fb3f0d9721d</guid>
+    </item>
+    <item>
+      <title>2002-03-11 (2.4.0)</title>
+      <link>https://sqlite.org/download.html?6eb3bf91d508e8d708f4b14447af109e082b3984df6f19cba3287a9313ad0a14</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?6eb3bf91d508e8d708f4b14447af109e082b3984df6f19cba3287a9313ad0a14</guid>
+    </item>
+    <item>
+      <title>2002-03-13 (2.4.1)</title>
+      <link>https://sqlite.org/download.html?cd1da93f12db99d1cc7ae353d665064ab4b18509bb403f41c76bbf8bba00fa2c</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?cd1da93f12db99d1cc7ae353d665064ab4b18509bb403f41c76bbf8bba00fa2c</guid>
+    </item>
+    <item>
+      <title>2002-03-20 (2.4.2)</title>
+      <link>https://sqlite.org/download.html?c6788566c91c30e113db0e33b16d2e6aa9f0ef043e475c83102084299d310345</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?c6788566c91c30e113db0e33b16d2e6aa9f0ef043e475c83102084299d310345</guid>
+    </item>
+    <item>
+      <title>2002-03-23 (2.4.3)</title>
+      <link>https://sqlite.org/download.html?192178d84e5c03c2713c71e403b24510daffae51db88770c47292a838b535038</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?192178d84e5c03c2713c71e403b24510daffae51db88770c47292a838b535038</guid>
+    </item>
+    <item>
+      <title>2002-03-30 (2.4.4)</title>
+      <link>https://sqlite.org/download.html?51c8fba8f62e99462376bac0732f7c0e095f1eacd296999106a7f5ad003cf241</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?51c8fba8f62e99462376bac0732f7c0e095f1eacd296999106a7f5ad003cf241</guid>
+    </item>
+    <item>
+      <title>2002-04-02 (2.4.5)</title>
+      <link>https://sqlite.org/download.html?84ca2e6cc716320026347f18db8f7e84638efdd0617b664e646b345435ca5b3d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?84ca2e6cc716320026347f18db8f7e84638efdd0617b664e646b345435ca5b3d</guid>
+    </item>
+    <item>
+      <title>2002-04-02 (2.4.6)</title>
+      <link>https://sqlite.org/download.html?b65abc9cc7be99008580770ea27211f44f19bf33543cc8a2123a8771e0ed779f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?b65abc9cc7be99008580770ea27211f44f19bf33543cc8a2123a8771e0ed779f</guid>
+    </item>
+    <item>
+      <title>2002-04-12 (2.4.7)</title>
+      <link>https://sqlite.org/download.html?d17f90bdc39827c4f035625ef032359956826cbf902b055e428cec192997fa7c</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d17f90bdc39827c4f035625ef032359956826cbf902b055e428cec192997fa7c</guid>
+    </item>
+    <item>
+      <title>2002-04-20 (2.4.8)</title>
+      <link>https://sqlite.org/download.html?76c4cb564f7afc0da7f698b72e44d1c91447279c7fe8489aefd035bc9d85b282</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?76c4cb564f7afc0da7f698b72e44d1c91447279c7fe8489aefd035bc9d85b282</guid>
+    </item>
+    <item>
+      <title>2002-04-22 (2.4.9)</title>
+      <link>https://sqlite.org/download.html?dae2a7ab14ca6681090792cdf8eb7afd69589413f0c9b3560248ea2a15177db9</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?dae2a7ab14ca6681090792cdf8eb7afd69589413f0c9b3560248ea2a15177db9</guid>
+    </item>
+    <item>
+      <title>2002-05-03 (2.4.10)</title>
+      <link>https://sqlite.org/download.html?e463d0295b061b2a1d7a50c4216dc27d4f1009c6d6ca24f6a1942be45e7c6958</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?e463d0295b061b2a1d7a50c4216dc27d4f1009c6d6ca24f6a1942be45e7c6958</guid>
+    </item>
+    <item>
+      <title>2002-05-08 (2.4.11)</title>
+      <link>https://sqlite.org/download.html?d8b64ab8c72ed63eae153b96f09c5c569b6e8f8b4e2071d91cd4cd51f949d4df</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d8b64ab8c72ed63eae153b96f09c5c569b6e8f8b4e2071d91cd4cd51f949d4df</guid>
+    </item>
+    <item>
+      <title>2002-05-10 (2.4.12)</title>
+      <link>https://sqlite.org/download.html?17e9108565a1fc47b12a87f48f0cd258b6872aa51cee7ad6f322d47cb5763266</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?17e9108565a1fc47b12a87f48f0cd258b6872aa51cee7ad6f322d47cb5763266</guid>
+    </item>
+    <item>
+      <title>2002-06-17 (2.5.0)</title>
+      <link>https://sqlite.org/download.html?cdf061a1839abafd01c48a58f94cf4d10002bb195d854ea506297467e383031c</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?cdf061a1839abafd01c48a58f94cf4d10002bb195d854ea506297467e383031c</guid>
+    </item>
+    <item>
+      <title>2002-06-19 (2.5.1)</title>
+      <link>https://sqlite.org/download.html?3e40a2f272309411a223c16fdee532ac5fb5a329355da45e77a6ec8b178482aa</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?3e40a2f272309411a223c16fdee532ac5fb5a329355da45e77a6ec8b178482aa</guid>
+    </item>
+    <item>
+      <title>2002-06-25 (2.5.2)</title>
+      <link>https://sqlite.org/download.html?0ed100301fb4132f30b17eb5ae46b5bfd7469b84b099a3d2dffeb1b2a30b2781</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?0ed100301fb4132f30b17eb5ae46b5bfd7469b84b099a3d2dffeb1b2a30b2781</guid>
+    </item>
+    <item>
+      <title>2002-06-25 (2.5.3)</title>
+      <link>https://sqlite.org/download.html?d1dd972ca1f676fbff26b4dfff088518fbfae58c7e29a9675834a5271739cc56</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d1dd972ca1f676fbff26b4dfff088518fbfae58c7e29a9675834a5271739cc56</guid>
+    </item>
+    <item>
+      <title>2002-07-01 (2.5.4)</title>
+      <link>https://sqlite.org/download.html?f36240e1cee48a121d1d907c9873373964f13a26c38cebb70203e687f1c4aa50</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?f36240e1cee48a121d1d907c9873373964f13a26c38cebb70203e687f1c4aa50</guid>
+    </item>
+    <item>
+      <title>2002-07-06 (2.5.5)</title>
+      <link>https://sqlite.org/download.html?df5cad12d657349e0cfac77b99441a09fcedec45a5611a7e5bbab984af51332e</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?df5cad12d657349e0cfac77b99441a09fcedec45a5611a7e5bbab984af51332e</guid>
+    </item>
+    <item>
+      <title>2002-07-07 (2.5.6)</title>
+      <link>https://sqlite.org/download.html?26c14a7a0af50cb83906f0943de1d96d8d60cd37b59278c0fb39301c5b511e62</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?26c14a7a0af50cb83906f0943de1d96d8d60cd37b59278c0fb39301c5b511e62</guid>
+    </item>
+    <item>
+      <title>2002-07-18 (2.6.0)</title>
+      <link>https://sqlite.org/download.html?6d1b1b4949e276b34c7096b5cd10c3580a4cb024c3866f9767315002ddc58759</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?6d1b1b4949e276b34c7096b5cd10c3580a4cb024c3866f9767315002ddc58759</guid>
+    </item>
+    <item>
+      <title>2002-07-19 (2.6.1)</title>
+      <link>https://sqlite.org/download.html?9310816bb56156a7212d007d02d840f138ee073f22109f393f43a82b60a9a497</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?9310816bb56156a7212d007d02d840f138ee073f22109f393f43a82b60a9a497</guid>
+    </item>
+    <item>
+      <title>2002-07-31 (2.6.2)</title>
+      <link>https://sqlite.org/download.html?fa4c3c6e92b880fc56c81b59fb259259fcacfc2ca20df2d0b214be3312ca25cd</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?fa4c3c6e92b880fc56c81b59fb259259fcacfc2ca20df2d0b214be3312ca25cd</guid>
+    </item>
+    <item>
+      <title>2002-08-13 (2.6.3)</title>
+      <link>https://sqlite.org/download.html?9ba51a77b253e72d4f6bd3ad9e41212f675b685d9192752ed5862f49f104cf23</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?9ba51a77b253e72d4f6bd3ad9e41212f675b685d9192752ed5862f49f104cf23</guid>
+    </item>
+    <item>
+      <title>2002-08-25 (2.7.0)</title>
+      <link>https://sqlite.org/download.html?6b1c4c27090b3b53a4268bbcecc0c6a6508c2582bbb524ea881735f592252935</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?6b1c4c27090b3b53a4268bbcecc0c6a6508c2582bbb524ea881735f592252935</guid>
+    </item>
+    <item>
+      <title>2002-08-31 (2.7.1)</title>
+      <link>https://sqlite.org/download.html?5c021e099ab98b6553622ada20da0cb41afce85b4085a665e8aa1118cbf7f7ce</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?5c021e099ab98b6553622ada20da0cb41afce85b4085a665e8aa1118cbf7f7ce</guid>
+    </item>
+    <item>
+      <title>2002-09-25 (2.7.2)</title>
+      <link>https://sqlite.org/download.html?c054ec92bd8539feb56e4f8ec4cad547be58e7db2630e5bc998726054996e75b</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?c054ec92bd8539feb56e4f8ec4cad547be58e7db2630e5bc998726054996e75b</guid>
+    </item>
+    <item>
+      <title>2002-10-31 (2.7.3)</title>
+      <link>https://sqlite.org/download.html?403d736ea90a42a395b76aa5de947e0c279d47e4cad75c0c58d911e4d45f072f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?403d736ea90a42a395b76aa5de947e0c279d47e4cad75c0c58d911e4d45f072f</guid>
+    </item>
+    <item>
+      <title>2002-12-17 (2.7.4)</title>
+      <link>https://sqlite.org/download.html?c5a4792c785dd60ce32167f468929dfa2674507ac51c6be8e77a16fe7023caa6</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?c5a4792c785dd60ce32167f468929dfa2674507ac51c6be8e77a16fe7023caa6</guid>
+    </item>
+    <item>
+      <title>2002-12-28 (2.7.5)</title>
+      <link>https://sqlite.org/download.html?994923d8365ab7d383331444b4b1636e46ecc605f2e044f8a82bc105dd40fb9e</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?994923d8365ab7d383331444b4b1636e46ecc605f2e044f8a82bc105dd40fb9e</guid>
+    </item>
+    <item>
+      <title>2003-01-25 (2.7.6)</title>
+      <link>https://sqlite.org/download.html?92669897fbb84198fe415ac3a2cf92ec7719b87af762c197f89176b11252ccee</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?92669897fbb84198fe415ac3a2cf92ec7719b87af762c197f89176b11252ccee</guid>
+    </item>
+    <item>
+      <title>2003-02-16 (2.8.0)</title>
+      <link>https://sqlite.org/download.html?b56dbd94be9d5b398fc8dd3a304ea1487cb873036e9b9310dc16b47d13756231</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?b56dbd94be9d5b398fc8dd3a304ea1487cb873036e9b9310dc16b47d13756231</guid>
+    </item>
+    <item>
+      <title>2003-05-17 (2.8.1)</title>
+      <link>https://sqlite.org/download.html?34d1d6002683c2118a2a6be0c1f0747e9302fd4a31be09634578d3c9e01557f3</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?34d1d6002683c2118a2a6be0c1f0747e9302fd4a31be09634578d3c9e01557f3</guid>
+    </item>
+    <item>
+      <title>2003-05-17 (2.8.2)</title>
+      <link>https://sqlite.org/download.html?11a571cc87a306b360bb562d7687a1e8b27b4aeaff60531be0659270a75b91bb</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?11a571cc87a306b360bb562d7687a1e8b27b4aeaff60531be0659270a75b91bb</guid>
+    </item>
+    <item>
+      <title>2003-06-04 (2.8.3)</title>
+      <link>https://sqlite.org/download.html?a15c736842acd652e381b60feb5800f2dba7bcaa9c085bb075eedf2b67c241db</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?a15c736842acd652e381b60feb5800f2dba7bcaa9c085bb075eedf2b67c241db</guid>
+    </item>
+    <item>
+      <title>2003-06-29 (2.8.4)</title>
+      <link>https://sqlite.org/download.html?7cf9a3fc664899a40f05002912345886293b0bc69f140e803614f869744cbf43</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?7cf9a3fc664899a40f05002912345886293b0bc69f140e803614f869744cbf43</guid>
+    </item>
+    <item>
+      <title>2003-07-22 (2.8.5)</title>
+      <link>https://sqlite.org/download.html?fd541995b978b6ca5373622d65a6ea9b3a3377b145f31c2cddee0988a2b38129</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?fd541995b978b6ca5373622d65a6ea9b3a3377b145f31c2cddee0988a2b38129</guid>
+    </item>
+    <item>
+      <title>2003-08-22 (2.8.6)</title>
+      <link>https://sqlite.org/download.html?a1a32ef19650904b8a585de6f9303d9cec082738cc389ae266fd7b24a8b2edbd</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?a1a32ef19650904b8a585de6f9303d9cec082738cc389ae266fd7b24a8b2edbd</guid>
+    </item>
+    <item>
+      <title>2003-12-04 (2.8.7)</title>
+      <link>https://sqlite.org/download.html?cfb6c0fbae686d884d8b1c042354905355a100587f2dbfad65900cc0455a86f2</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?cfb6c0fbae686d884d8b1c042354905355a100587f2dbfad65900cc0455a86f2</guid>
+    </item>
+    <item>
+      <title>2003-12-18 (2.8.8)</title>
+      <link>https://sqlite.org/download.html?0c3fcd79d91979808b82b6c4b65ac1a6015a9155278f2bab934597d0040d359e</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?0c3fcd79d91979808b82b6c4b65ac1a6015a9155278f2bab934597d0040d359e</guid>
+    </item>
+    <item>
+      <title>2004-01-06 (2.8.9)</title>
+      <link>https://sqlite.org/download.html?8ade064abfd0440dd29bb385d507c28dbad63cdb6ea02776f86fedbcc23ce38d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?8ade064abfd0440dd29bb385d507c28dbad63cdb6ea02776f86fedbcc23ce38d</guid>
+    </item>
+    <item>
+      <title>2004-01-14 (2.8.10)</title>
+      <link>https://sqlite.org/download.html?4c4695b06781f99d84ea3289e2b90f96ec26c90b12f0c2b2768d4e1b485e968f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?4c4695b06781f99d84ea3289e2b90f96ec26c90b12f0c2b2768d4e1b485e968f</guid>
+    </item>
+    <item>
+      <title>2004-01-14 (2.8.11)</title>
+      <link>https://sqlite.org/download.html?983e5af47c7be0ce097e874ca22231f979c5f3f590faac6ca3a5941b6b73847a</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?983e5af47c7be0ce097e874ca22231f979c5f3f590faac6ca3a5941b6b73847a</guid>
+    </item>
+    <item>
+      <title>2004-02-08 (2.8.12)</title>
+      <link>https://sqlite.org/download.html?62e1b91fa2aa3d00dc39aa6379ae4ec95916ce1bab2a9ccee6fa748eb841d7ea</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?62e1b91fa2aa3d00dc39aa6379ae4ec95916ce1bab2a9ccee6fa748eb841d7ea</guid>
+    </item>
+    <item>
+      <title>2004-03-08 (2.8.13)</title>
+      <link>https://sqlite.org/download.html?e0ea6f16227ca3bd55e934ccd2036684a06af21acd6835e89f4d081becf0c183</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?e0ea6f16227ca3bd55e934ccd2036684a06af21acd6835e89f4d081becf0c183</guid>
+    </item>
+    <item>
+      <title>2004-06-09 (2.8.14)</title>
+      <link>https://sqlite.org/download.html?a7effd72e153f5f59cd0922208d852ce723a9a9a60bdcbd676a65dabd8c8e46c</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?a7effd72e153f5f59cd0922208d852ce723a9a9a60bdcbd676a65dabd8c8e46c</guid>
+    </item>
+    <item>
+      <title>2004-06-18 (3.0.0 alpha)</title>
+      <link>https://sqlite.org/download.html?517af04da6dc5596157687bb0cfabf602a3d3823aee50b1a70fda46a1aec23b7</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?517af04da6dc5596157687bb0cfabf602a3d3823aee50b1a70fda46a1aec23b7</guid>
+    </item>
+    <item>
+      <title>2004-06-22 (3.0.1 alpha)</title>
+      <link>https://sqlite.org/download.html?d335e2da227ae18d6640c96d6e9d72c0b0914637ff8ba95f4e69c8190fab400a</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d335e2da227ae18d6640c96d6e9d72c0b0914637ff8ba95f4e69c8190fab400a</guid>
+    </item>
+    <item>
+      <title>2004-06-30 (3.0.2 beta)</title>
+      <link>https://sqlite.org/download.html?aa4caf466ad314120c165680c32981c4215cca541a39757c234d2e8ce6cf1839</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?aa4caf466ad314120c165680c32981c4215cca541a39757c234d2e8ce6cf1839</guid>
+    </item>
+    <item>
+      <title>2004-07-22 (3.0.3 beta)</title>
+      <link>https://sqlite.org/download.html?f276459f28749cc9451e5b54acde7caebc812aeaeca3567aedc409890cab9d31</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?f276459f28749cc9451e5b54acde7caebc812aeaeca3567aedc409890cab9d31</guid>
+    </item>
+    <item>
+      <title>2004-07-22 (2.8.15)</title>
+      <link>https://sqlite.org/download.html?3134329c6845404e466927a1c5f21af4bcad1d3681d34ff95ef7fbb30477b0d8</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?3134329c6845404e466927a1c5f21af4bcad1d3681d34ff95ef7fbb30477b0d8</guid>
+    </item>
+    <item>
+      <title>2004-08-09 (3.0.4 beta)</title>
+      <link>https://sqlite.org/download.html?bdf402d2ef99f943a7db47f8f5630d08868dde63c6cfdebc09535cde5503e29b</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?bdf402d2ef99f943a7db47f8f5630d08868dde63c6cfdebc09535cde5503e29b</guid>
+    </item>
+    <item>
+      <title>2004-08-29 (3.0.5 beta)</title>
+      <link>https://sqlite.org/download.html?8db6d81349eb36eec18b022acf0837cca188e17a7b8a0aff525f297e9f9df82e</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?8db6d81349eb36eec18b022acf0837cca188e17a7b8a0aff525f297e9f9df82e</guid>
+    </item>
+    <item>
+      <title>2004-09-02 (3.0.6 beta)</title>
+      <link>https://sqlite.org/download.html?7f7885a37305bc6f4e8f645973cc45edaf26cc7b788a3511259663344af496e5</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?7f7885a37305bc6f4e8f645973cc45edaf26cc7b788a3511259663344af496e5</guid>
+    </item>
+    <item>
+      <title>2004-09-18 (3.0.7)</title>
+      <link>https://sqlite.org/download.html?1511e05ab9cd69fe5f188f73ad2bec94c5bd521c3d737b0c4b6e5d3af7c14c9d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?1511e05ab9cd69fe5f188f73ad2bec94c5bd521c3d737b0c4b6e5d3af7c14c9d</guid>
+    </item>
+    <item>
+      <title>2004-10-12 (3.0.8)</title>
+      <link>https://sqlite.org/download.html?d2926f2f03973963e950c7084acc2d6a3f54629ddec990cec5805647aa2b96cd</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d2926f2f03973963e950c7084acc2d6a3f54629ddec990cec5805647aa2b96cd</guid>
+    </item>
+    <item>
+      <title>2005-01-21 (3.1.0 ALPHA)</title>
+      <link>https://sqlite.org/download.html?f37d58ad0675b7011fe9ec7724b1a0daa93ed14591ffc4084c872b8d6ff12c49</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?f37d58ad0675b7011fe9ec7724b1a0daa93ed14591ffc4084c872b8d6ff12c49</guid>
+    </item>
+    <item>
+      <title>2005-02-01 (3.1.1 BETA)</title>
+      <link>https://sqlite.org/download.html?52575589da10782901f88a2156dff216f52f71166b49b977b1ea744ba56c9e51</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?52575589da10782901f88a2156dff216f52f71166b49b977b1ea744ba56c9e51</guid>
+    </item>
+    <item>
+      <title>2005-02-15 (2.8.16)</title>
+      <link>https://sqlite.org/download.html?9b343676340d27786d58a24de0587c3fe91944d007b1a90ff85c028c5dd7eb90</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?9b343676340d27786d58a24de0587c3fe91944d007b1a90ff85c028c5dd7eb90</guid>
+    </item>
+    <item>
+      <title>2005-02-15 (3.1.2)</title>
+      <link>https://sqlite.org/download.html?6f0a452831c351005750d301aecebfd98529ca67948642d5ebe630917c058035</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?6f0a452831c351005750d301aecebfd98529ca67948642d5ebe630917c058035</guid>
+    </item>
+    <item>
+      <title>2005-02-19 (3.1.3)</title>
+      <link>https://sqlite.org/download.html?6b05472200dfbb6118dda1b5f4a02b1445053b8cc72f030ac685c76620dbff39</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?6b05472200dfbb6118dda1b5f4a02b1445053b8cc72f030ac685c76620dbff39</guid>
+    </item>
+    <item>
+      <title>2005-03-11 (3.1.4)</title>
+      <link>https://sqlite.org/download.html?096c6d49f678c54143d8f270f5688852b3762a9d939bb29bbb8f85917b0ffd4f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?096c6d49f678c54143d8f270f5688852b3762a9d939bb29bbb8f85917b0ffd4f</guid>
+    </item>
+    <item>
+      <title>2005-03-11 (3.1.5)</title>
+      <link>https://sqlite.org/download.html?5e92ee7c7439742d47e3df8fb22656ca7ce3907c67bf93b1f177f0f09bcaa951</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?5e92ee7c7439742d47e3df8fb22656ca7ce3907c67bf93b1f177f0f09bcaa951</guid>
+    </item>
+    <item>
+      <title>2005-03-17 (3.1.6)</title>
+      <link>https://sqlite.org/download.html?d5e0dd0d79253fb090912a00d4c80cc336b3a55a979d7e0a3d67c8ff5d3ee599</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d5e0dd0d79253fb090912a00d4c80cc336b3a55a979d7e0a3d67c8ff5d3ee599</guid>
+    </item>
+    <item>
+      <title>2005-03-21 (3.2.0)</title>
+      <link>https://sqlite.org/download.html?4ee76407d0eb94cfb1f4f07b3a79fc64b7c9eaa7f5323471e14d6bc490f7068d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?4ee76407d0eb94cfb1f4f07b3a79fc64b7c9eaa7f5323471e14d6bc490f7068d</guid>
+    </item>
+    <item>
+      <title>2005-03-29 (3.2.1)</title>
+      <link>https://sqlite.org/download.html?c37876910c23da51d227e6b40d8eb34a8d38f81a3ad342aa51829b1eafb9e672</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?c37876910c23da51d227e6b40d8eb34a8d38f81a3ad342aa51829b1eafb9e672</guid>
+    </item>
+    <item>
+      <title>2005-06-12 (3.2.2)</title>
+      <link>https://sqlite.org/download.html?6edd737ad540c5944e517841b20c9a46cab7bb45533383b4d4ee48a9a1cdaad7</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?6edd737ad540c5944e517841b20c9a46cab7bb45533383b4d4ee48a9a1cdaad7</guid>
+    </item>
+    <item>
+      <title>2005-08-21 (3.2.3)</title>
+      <link>https://sqlite.org/download.html?c6a094b1087516ac461fd05e603226d22d7bf5a67423142fdd92e2d3bcf4b1c4</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?c6a094b1087516ac461fd05e603226d22d7bf5a67423142fdd92e2d3bcf4b1c4</guid>
+    </item>
+    <item>
+      <title>2005-08-24 (3.2.4)</title>
+      <link>https://sqlite.org/download.html?4f97f3aedef6e688dfadc2d6a2600d50e9db5cb47de90bc9758ff009e241adec</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?4f97f3aedef6e688dfadc2d6a2600d50e9db5cb47de90bc9758ff009e241adec</guid>
+    </item>
+    <item>
+      <title>2005-08-27 (3.2.5)</title>
+      <link>https://sqlite.org/download.html?093e002ffdd31ed8ce06809716181a767090824874144654a6cd55507f6dc213</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?093e002ffdd31ed8ce06809716181a767090824874144654a6cd55507f6dc213</guid>
+    </item>
+    <item>
+      <title>2005-09-17 (3.2.6)</title>
+      <link>https://sqlite.org/download.html?c8c8609de4caa77f14daab3ed434863235cade3758f853cadca6544f8d2c827d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?c8c8609de4caa77f14daab3ed434863235cade3758f853cadca6544f8d2c827d</guid>
+    </item>
+    <item>
+      <title>2005-09-24 (3.2.7)</title>
+      <link>https://sqlite.org/download.html?497150a39421845ac5c5a454657425461c4ce2f3c67764cf1f7a71955ca885a6</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?497150a39421845ac5c5a454657425461c4ce2f3c67764cf1f7a71955ca885a6</guid>
+    </item>
+    <item>
+      <title>2005-12-19 (2.8.17)</title>
+      <link>https://sqlite.org/download.html?1631d19af0b244fc0edbef96d7bdc1240b4ef825f41e6637f45fdf196879eefd</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?1631d19af0b244fc0edbef96d7bdc1240b4ef825f41e6637f45fdf196879eefd</guid>
+    </item>
+    <item>
+      <title>2005-12-19 (3.2.8)</title>
+      <link>https://sqlite.org/download.html?81660503387588a0f16b6b6e8127d77faf160181f47bc5af47bff38bacb0ff32</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?81660503387588a0f16b6b6e8127d77faf160181f47bc5af47bff38bacb0ff32</guid>
+    </item>
+    <item>
+      <title>2006-01-11 (3.3.0 alpha)</title>
+      <link>https://sqlite.org/download.html?21ef01007bba120f2e5dc3e1e9284a189ed4865a080bd425fcab17eb38611b48</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?21ef01007bba120f2e5dc3e1e9284a189ed4865a080bd425fcab17eb38611b48</guid>
+    </item>
+    <item>
+      <title>2006-01-16 (3.3.1 alpha)</title>
+      <link>https://sqlite.org/download.html?5ea8cd39b19af6a209028e8e6cf963ce7c78ab4bfc73275f074696f492560e50</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?5ea8cd39b19af6a209028e8e6cf963ce7c78ab4bfc73275f074696f492560e50</guid>
+    </item>
+    <item>
+      <title>2006-01-24 (3.3.2 beta)</title>
+      <link>https://sqlite.org/download.html?0b0482757d901955877b2d98a1d65fa436ba0a77fc447d04e6d052db72aa3f9a</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?0b0482757d901955877b2d98a1d65fa436ba0a77fc447d04e6d052db72aa3f9a</guid>
+    </item>
+    <item>
+      <title>2006-01-31 (3.3.3)</title>
+      <link>https://sqlite.org/download.html?6c0d663cf4e983ea7427eae9805dc84cd44823185a5d36c8924c2ad52235c595</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?6c0d663cf4e983ea7427eae9805dc84cd44823185a5d36c8924c2ad52235c595</guid>
+    </item>
+    <item>
+      <title>2006-02-11 (3.3.4)</title>
+      <link>https://sqlite.org/download.html?1d565a1cf2b11d40341ff50ccf1175a709788fa6d79f2ada741313223d813926</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?1d565a1cf2b11d40341ff50ccf1175a709788fa6d79f2ada741313223d813926</guid>
+    </item>
+    <item>
+      <title>2006-04-05 (3.3.5)</title>
+      <link>https://sqlite.org/download.html?bad14991c864c6906e0e63ea3948a0e8ae9276bd6698bbdcf283f9055488d5a8</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?bad14991c864c6906e0e63ea3948a0e8ae9276bd6698bbdcf283f9055488d5a8</guid>
+    </item>
+    <item>
+      <title>2006-06-06 (3.3.6)</title>
+      <link>https://sqlite.org/download.html?772bb09011194b5e9f583e66354384c829af7cc0623d338d82106eefd6eb699f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?772bb09011194b5e9f583e66354384c829af7cc0623d338d82106eefd6eb699f</guid>
+    </item>
+    <item>
+      <title>2006-08-12 (3.3.7)</title>
+      <link>https://sqlite.org/download.html?9f1750f1d35718754b12bff9b9e50360080fdd2dd1b2fc631c5e52a15ae5672f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?9f1750f1d35718754b12bff9b9e50360080fdd2dd1b2fc631c5e52a15ae5672f</guid>
+    </item>
+    <item>
+      <title>2006-10-09 (3.3.8)</title>
+      <link>https://sqlite.org/download.html?cb0f310714067881a037fee04c23966a755e024c6c1c46be5533c708869d9bfb</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?cb0f310714067881a037fee04c23966a755e024c6c1c46be5533c708869d9bfb</guid>
+    </item>
+    <item>
+      <title>2007-01-04 (3.3.9)</title>
+      <link>https://sqlite.org/download.html?1c3f7de1db7e4a031a488d93bac47a9d1f8bc0a248ba39291f23d6179e3bb6c3</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?1c3f7de1db7e4a031a488d93bac47a9d1f8bc0a248ba39291f23d6179e3bb6c3</guid>
+    </item>
+    <item>
+      <title>2007-01-09 (3.3.10)</title>
+      <link>https://sqlite.org/download.html?be8d2bbc10214e907ea01be9efd043c6953e7ec3cb8bab44e43231f0b7f53bbe</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?be8d2bbc10214e907ea01be9efd043c6953e7ec3cb8bab44e43231f0b7f53bbe</guid>
+    </item>
+    <item>
+      <title>2007-01-22 (3.3.11)</title>
+      <link>https://sqlite.org/download.html?8f135c331c24295a937c984e6fbbc9fffb6d27bae229b66ffc758d714af5fdcd</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?8f135c331c24295a937c984e6fbbc9fffb6d27bae229b66ffc758d714af5fdcd</guid>
+    </item>
+    <item>
+      <title>2007-01-27 (3.3.12)</title>
+      <link>https://sqlite.org/download.html?8dd43b942cd3aa95c7b58da9c1b742ad0a8f7f1afebaee4c1e203f8ed1deb45f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?8dd43b942cd3aa95c7b58da9c1b742ad0a8f7f1afebaee4c1e203f8ed1deb45f</guid>
+    </item>
+    <item>
+      <title>2007-02-13 (3.3.13)</title>
+      <link>https://sqlite.org/download.html?c8fd65813b5e8de7caef21ab44b5e4950f6ee927371e376a5a10caba28b23e33</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?c8fd65813b5e8de7caef21ab44b5e4950f6ee927371e376a5a10caba28b23e33</guid>
+    </item>
+    <item>
+      <title>2007-04-02 (3.3.14)</title>
+      <link>https://sqlite.org/download.html?f9bcf3186ff871bbcae0e024cb2899661e0b68994aa17d0835b856abc2d4dd43</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?f9bcf3186ff871bbcae0e024cb2899661e0b68994aa17d0835b856abc2d4dd43</guid>
+    </item>
+    <item>
+      <title>2007-04-09 (3.3.15)</title>
+      <link>https://sqlite.org/download.html?94ae3fc624c11b5b05ba087a63b3f2363fff34e2f10db546405bca35fe19e2ea</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?94ae3fc624c11b5b05ba087a63b3f2363fff34e2f10db546405bca35fe19e2ea</guid>
+    </item>
+    <item>
+      <title>2007-04-18 (3.3.16)</title>
+      <link>https://sqlite.org/download.html?0fffa8e3419e09c09a3ae976519e8e38f9885589aee5e72330537f73d058950a</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?0fffa8e3419e09c09a3ae976519e8e38f9885589aee5e72330537f73d058950a</guid>
+    </item>
+    <item>
+      <title>2007-04-25 (3.3.17)</title>
+      <link>https://sqlite.org/download.html?d049ec5594a18e07cfeb9dcbde17e76bad4b7f3f83e6ce66790cf479927cf9c9</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d049ec5594a18e07cfeb9dcbde17e76bad4b7f3f83e6ce66790cf479927cf9c9</guid>
+    </item>
+    <item>
+      <title>2007-06-18 (3.4.0)</title>
+      <link>https://sqlite.org/download.html?a2df175c1869c0fd2f953fc28dc35554c26eb767bfc488efbc194ad36a9f4a53</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?a2df175c1869c0fd2f953fc28dc35554c26eb767bfc488efbc194ad36a9f4a53</guid>
+    </item>
+    <item>
+      <title>2007-07-20 (3.4.1)</title>
+      <link>https://sqlite.org/download.html?8825ac4ee65d988a9d521ecba72434d3ed94a9dd6418fe1d697ddb72c1a62032</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?8825ac4ee65d988a9d521ecba72434d3ed94a9dd6418fe1d697ddb72c1a62032</guid>
+    </item>
+    <item>
+      <title>2007-08-13 (3.4.2)</title>
+      <link>https://sqlite.org/download.html?58655f351774ada9da4b6eb32bfaf81384a0b6995f36a37207a39533b4d94767</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?58655f351774ada9da4b6eb32bfaf81384a0b6995f36a37207a39533b4d94767</guid>
+    </item>
+    <item>
+      <title>2007-09-04 (3.5.0) alpha</title>
+      <link>https://sqlite.org/download.html?ab7c842e3ae4a7aa995b45e1de622012ef7532a30f3d1a374f28c82e912f8d3c</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?ab7c842e3ae4a7aa995b45e1de622012ef7532a30f3d1a374f28c82e912f8d3c</guid>
+    </item>
+    <item>
+      <title>2007-10-04 (3.5.1)</title>
+      <link>https://sqlite.org/download.html?67ec8020014469003ff5936dbbd9fb4bc99fb06017a00ac77741e02e31691ea6</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?67ec8020014469003ff5936dbbd9fb4bc99fb06017a00ac77741e02e31691ea6</guid>
+    </item>
+    <item>
+      <title>2007-11-05 (3.5.2)</title>
+      <link>https://sqlite.org/download.html?37e3f4ea009c47709fe5ef220a8fd245a85b39b936766deb428c7c63824dfd58</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?37e3f4ea009c47709fe5ef220a8fd245a85b39b936766deb428c7c63824dfd58</guid>
+    </item>
+    <item>
+      <title>2007-11-27 (3.5.3)</title>
+      <link>https://sqlite.org/download.html?9df16b87a168a5e7d5d564dc3de5cacac035a248ef65956263ebd62605de4def</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?9df16b87a168a5e7d5d564dc3de5cacac035a248ef65956263ebd62605de4def</guid>
+    </item>
+    <item>
+      <title>2007-12-14 (3.5.4)</title>
+      <link>https://sqlite.org/download.html?a0e9f0b5964b51855f07f7fbcf06a3a6aff51a84a87f6ed423eba8664f91bfcb</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?a0e9f0b5964b51855f07f7fbcf06a3a6aff51a84a87f6ed423eba8664f91bfcb</guid>
+    </item>
+    <item>
+      <title>2008-01-31 (3.5.5)</title>
+      <link>https://sqlite.org/download.html?2d3bb877002f21eb105960591fda5e62207f48ee5fb71075f292e2289d521f09</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?2d3bb877002f21eb105960591fda5e62207f48ee5fb71075f292e2289d521f09</guid>
+    </item>
+    <item>
+      <title>2008-02-06 (3.5.6)</title>
+      <link>https://sqlite.org/download.html?b590bec96409dfc23a301006e9e261df4bd6c272c0ecd1f88503a7e111b82afb</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?b590bec96409dfc23a301006e9e261df4bd6c272c0ecd1f88503a7e111b82afb</guid>
+    </item>
+    <item>
+      <title>2008-03-17 (3.5.7)</title>
+      <link>https://sqlite.org/download.html?4c3df07a247a21b1c8d1d439fcbf5192b5bbb87ec8b24d019ccd3978eaadbb4e</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?4c3df07a247a21b1c8d1d439fcbf5192b5bbb87ec8b24d019ccd3978eaadbb4e</guid>
+    </item>
+    <item>
+      <title>2008-04-16 (3.5.8)</title>
+      <link>https://sqlite.org/download.html?b0ad167452614693867c3f94f53a3381de7ad1f413db9fc33e4ac8a7e1cae352</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?b0ad167452614693867c3f94f53a3381de7ad1f413db9fc33e4ac8a7e1cae352</guid>
+    </item>
+    <item>
+      <title>2008-05-14 (3.5.9)</title>
+      <link>https://sqlite.org/download.html?a35a240ed66d59793f0e1cda81948b48688e562d1b1582cab6a923eb70bda06e</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?a35a240ed66d59793f0e1cda81948b48688e562d1b1582cab6a923eb70bda06e</guid>
+    </item>
+    <item>
+      <title>2008-07-16 (3.6.0 beta)</title>
+      <link>https://sqlite.org/download.html?f4f3c018a155b1940f7b7c3ce6a17e46ce5851bb28023cf16082a5bed3ce0ffe</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?f4f3c018a155b1940f7b7c3ce6a17e46ce5851bb28023cf16082a5bed3ce0ffe</guid>
+    </item>
+    <item>
+      <title>2008-08-06 (3.6.1)</title>
+      <link>https://sqlite.org/download.html?3b271f56c0442341f2bf1ac9c622bf2cd3fa7c4d2d8cc1e2b258b15e25b51072</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?3b271f56c0442341f2bf1ac9c622bf2cd3fa7c4d2d8cc1e2b258b15e25b51072</guid>
+    </item>
+    <item>
+      <title>2008-08-30 (3.6.2)</title>
+      <link>https://sqlite.org/download.html?eef3670855aabe7b6d99988051f5944e185b91b04a2e0bcd750cc0e93190a22b</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?eef3670855aabe7b6d99988051f5944e185b91b04a2e0bcd750cc0e93190a22b</guid>
+    </item>
+    <item>
+      <title>2008-09-22 (3.6.3)</title>
+      <link>https://sqlite.org/download.html?91546ff6c05544fbca256a73cfc7360c80a34fa9b0d01a8fc0017501b84bf91c</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?91546ff6c05544fbca256a73cfc7360c80a34fa9b0d01a8fc0017501b84bf91c</guid>
+    </item>
+    <item>
+      <title>2008-10-15 (3.6.4)</title>
+      <link>https://sqlite.org/download.html?80c5037082af7b118a840c9cc2f634019aa292d4449d8acf5f83e1fed9321c6e</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?80c5037082af7b118a840c9cc2f634019aa292d4449d8acf5f83e1fed9321c6e</guid>
+    </item>
+    <item>
+      <title>2008-11-12 (3.6.5)</title>
+      <link>https://sqlite.org/download.html?4b3ba06a4ab2be245128acb7eab035e13ebddbeb7923279ecdf526786eea937c</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?4b3ba06a4ab2be245128acb7eab035e13ebddbeb7923279ecdf526786eea937c</guid>
+    </item>
+    <item>
+      <title>2008-11-19 (3.6.6)</title>
+      <link>https://sqlite.org/download.html?3f9c47b6e735e1307c6494c81e4ef8ede9590064e24e5acd6ca5e7012e91f17f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?3f9c47b6e735e1307c6494c81e4ef8ede9590064e24e5acd6ca5e7012e91f17f</guid>
+    </item>
+    <item>
+      <title>2008-11-22 (3.6.6.1)</title>
+      <link>https://sqlite.org/download.html?06fc053547169ce5f0af48b3d9ad5f674c652c732950a88e9dc60a907a997dbc</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?06fc053547169ce5f0af48b3d9ad5f674c652c732950a88e9dc60a907a997dbc</guid>
+    </item>
+    <item>
+      <title>2008-11-26 (3.6.6.2)</title>
+      <link>https://sqlite.org/download.html?eab7126891daac9b0fda59b71b496ed83cbd83a9152610836457c611b824d25c</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?eab7126891daac9b0fda59b71b496ed83cbd83a9152610836457c611b824d25c</guid>
+    </item>
+    <item>
+      <title>2008-12-16 (3.6.7)</title>
+      <link>https://sqlite.org/download.html?8955434afc25660ff83d1566f80423d55ea656ae10725620d9f7b0795d502ac3</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?8955434afc25660ff83d1566f80423d55ea656ae10725620d9f7b0795d502ac3</guid>
+    </item>
+    <item>
+      <title>2009-01-12 (3.6.8)</title>
+      <link>https://sqlite.org/download.html?996d3feefdab489d4b978f3f210b70d7307c61a8506a20ff31210c49c3600ba3</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?996d3feefdab489d4b978f3f210b70d7307c61a8506a20ff31210c49c3600ba3</guid>
+    </item>
+    <item>
+      <title>2009-01-14 (3.6.9)</title>
+      <link>https://sqlite.org/download.html?84caaf8ea7c8c749a95df3b3b1162d62f838fafe374d6b43bf20c637fc4d407b</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?84caaf8ea7c8c749a95df3b3b1162d62f838fafe374d6b43bf20c637fc4d407b</guid>
+    </item>
+    <item>
+      <title>2009-01-15 (3.6.10)</title>
+      <link>https://sqlite.org/download.html?66934d2d3f0e8e48bc05df6fd09c8d2a3ffe58ec53a497d8f221a313f33ab492</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?66934d2d3f0e8e48bc05df6fd09c8d2a3ffe58ec53a497d8f221a313f33ab492</guid>
+    </item>
+    <item>
+      <title>2009-02-18 (3.6.11)</title>
+      <link>https://sqlite.org/download.html?0133770dd7d1a110c292b249d98a8dd7f3480cb8f9c75dee4470ee70b9032f18</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?0133770dd7d1a110c292b249d98a8dd7f3480cb8f9c75dee4470ee70b9032f18</guid>
+    </item>
+    <item>
+      <title>2009-03-31 (3.6.12)</title>
+      <link>https://sqlite.org/download.html?214433bfb8ceb202b1d2f66ec9ac12aecd8460e7340449b0ab0a7ab49913a620</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?214433bfb8ceb202b1d2f66ec9ac12aecd8460e7340449b0ab0a7ab49913a620</guid>
+    </item>
+    <item>
+      <title>2009-04-13 (3.6.13)</title>
+      <link>https://sqlite.org/download.html?efde82fb98e8b5e549e0c0b4b075bc0e32482419fdccfb68349e0a69d201ace8</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?efde82fb98e8b5e549e0c0b4b075bc0e32482419fdccfb68349e0a69d201ace8</guid>
+    </item>
+    <item>
+      <title>2009-05-07 (3.6.14)</title>
+      <link>https://sqlite.org/download.html?fe13dfb624442e73fac6ccb8439282a81402c158bfa66a6300ad70fcc1832c25</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?fe13dfb624442e73fac6ccb8439282a81402c158bfa66a6300ad70fcc1832c25</guid>
+    </item>
+    <item>
+      <title>2009-05-19 (3.6.14.1)</title>
+      <link>https://sqlite.org/download.html?5c06ac409ef5fb6e58e2bc193ab077678267531b63e08a722819bea8d512c24f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?5c06ac409ef5fb6e58e2bc193ab077678267531b63e08a722819bea8d512c24f</guid>
+    </item>
+    <item>
+      <title>2009-05-25 (3.6.14.2)</title>
+      <link>https://sqlite.org/download.html?4605dd9a325bf22d650d3659145c2fdf5efddfddb6e8baeb9bcd8bfa3e126d00</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?4605dd9a325bf22d650d3659145c2fdf5efddfddb6e8baeb9bcd8bfa3e126d00</guid>
+    </item>
+    <item>
+      <title>2009-06-15 (3.6.15)</title>
+      <link>https://sqlite.org/download.html?95d858e217392674ce581fd8017070e62cde930d4bef96a4d3cc82b4aadd056a</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?95d858e217392674ce581fd8017070e62cde930d4bef96a4d3cc82b4aadd056a</guid>
+    </item>
+    <item>
+      <title>2009-06-27 (3.6.16)</title>
+      <link>https://sqlite.org/download.html?ee5fc728b82b40117d2b319157ec53082538a5846b87ee3d1ce3461c7204ec5d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?ee5fc728b82b40117d2b319157ec53082538a5846b87ee3d1ce3461c7204ec5d</guid>
+    </item>
+    <item>
+      <title>2009-08-10 (3.6.17)</title>
+      <link>https://sqlite.org/download.html?6c5fd227c167bc7679124be964989e1e9d42d2d784992756b688f67b755b3589</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?6c5fd227c167bc7679124be964989e1e9d42d2d784992756b688f67b755b3589</guid>
+    </item>
+    <item>
+      <title>2009-09-11 (3.6.18)</title>
+      <link>https://sqlite.org/download.html?d13b4487b6d8e2412489ac4f0d8b2937d86c00de60fc64c419d67d76ca02a2e0</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d13b4487b6d8e2412489ac4f0d8b2937d86c00de60fc64c419d67d76ca02a2e0</guid>
+    </item>
+    <item>
+      <title>2009-10-14 (3.6.19)</title>
+      <link>https://sqlite.org/download.html?f6e87232ddd9db7e7ccc36e10a5bd23506058bd42fbdfa470ede97e0adfc3b40</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?f6e87232ddd9db7e7ccc36e10a5bd23506058bd42fbdfa470ede97e0adfc3b40</guid>
+    </item>
+    <item>
+      <title>2009-10-30 (3.6.16.1)</title>
+      <link>https://sqlite.org/download.html?abb1a9684035dbbb3c433c11ae83968081b7c9ee89be56f7a11c160b7b05af11</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?abb1a9684035dbbb3c433c11ae83968081b7c9ee89be56f7a11c160b7b05af11</guid>
+    </item>
+    <item>
+      <title>2009-11-04 (3.6.20)</title>
+      <link>https://sqlite.org/download.html?6af1d77a00fda95526392a9b1879bada9c9de657e21d324eb50ebe3fd1119da1</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?6af1d77a00fda95526392a9b1879bada9c9de657e21d324eb50ebe3fd1119da1</guid>
+    </item>
+    <item>
+      <title>2009-12-07 (3.6.21)</title>
+      <link>https://sqlite.org/download.html?8ecd12b2752a2227a0cc5661445ecf7232e55a174ea121f927d01e8e3869d4ae</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?8ecd12b2752a2227a0cc5661445ecf7232e55a174ea121f927d01e8e3869d4ae</guid>
+    </item>
+    <item>
+      <title>2010-01-06 (3.6.22)</title>
+      <link>https://sqlite.org/download.html?11fff2668ebf46c7e723428dc8285170a6eb0869e4cd771e7f409b8719ec83de</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?11fff2668ebf46c7e723428dc8285170a6eb0869e4cd771e7f409b8719ec83de</guid>
+    </item>
+    <item>
+      <title>2010-03-09 (3.6.23)</title>
+      <link>https://sqlite.org/download.html?13c68882e1617bc2b850a869ad0657a74a6094ea59eb9d9cc77e10c7ffaa4628</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?13c68882e1617bc2b850a869ad0657a74a6094ea59eb9d9cc77e10c7ffaa4628</guid>
+    </item>
+    <item>
+      <title>2010-03-26 (3.6.23.1)</title>
+      <link>https://sqlite.org/download.html?89a1bfec0143c5ce6ec4718c65ccaa60cc61f69c66fae7e785c1b2e1b1c37af5</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?89a1bfec0143c5ce6ec4718c65ccaa60cc61f69c66fae7e785c1b2e1b1c37af5</guid>
+    </item>
+    <item>
+      <title>2010-07-21 (3.7.0)</title>
+      <link>https://sqlite.org/download.html?dc64129459839670f649e53c6223340acf9afa1d45a928fd35bd9490e8e51c42</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?dc64129459839670f649e53c6223340acf9afa1d45a928fd35bd9490e8e51c42</guid>
+    </item>
+    <item>
+      <title>2010-08-04 (3.7.0.1)</title>
+      <link>https://sqlite.org/download.html?84bf9424b10bcc1cca6c551fc0726258f223cdfa998d11029215a8c8dd8ddd71</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?84bf9424b10bcc1cca6c551fc0726258f223cdfa998d11029215a8c8dd8ddd71</guid>
+    </item>
+    <item>
+      <title>2010-08-23 (3.7.1)</title>
+      <link>https://sqlite.org/download.html?a7c566b3b75e826a1729939e39a53acd57eab5dff2ff445e4d4e2017057879ea</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?a7c566b3b75e826a1729939e39a53acd57eab5dff2ff445e4d4e2017057879ea</guid>
+    </item>
+    <item>
+      <title>2010-08-24 (3.7.2)</title>
+      <link>https://sqlite.org/download.html?21819352edda1b0eaabba8114abec4a79b4c8db3ca6f1ed3796b81f026a5d86b</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?21819352edda1b0eaabba8114abec4a79b4c8db3ca6f1ed3796b81f026a5d86b</guid>
+    </item>
+    <item>
+      <title>2010-10-08 (3.7.3)</title>
+      <link>https://sqlite.org/download.html?de2a1ca24a8ebae2e8931d189baec0b7dc942e798589a64d1045f29eb3a8471a</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?de2a1ca24a8ebae2e8931d189baec0b7dc942e798589a64d1045f29eb3a8471a</guid>
+    </item>
+    <item>
+      <title>2010-12-07 (3.7.4)</title>
+      <link>https://sqlite.org/download.html?c5b881b25d61bf844a3cae1300d7c3cb2468b8e409998af5cc307796a78a285f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?c5b881b25d61bf844a3cae1300d7c3cb2468b8e409998af5cc307796a78a285f</guid>
+    </item>
+    <item>
+      <title>2011-02-01 (3.7.5)</title>
+      <link>https://sqlite.org/download.html?1c173ae4da877d8cb96d5d0a688117942df442229f9417a73b2692315815e5cf</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?1c173ae4da877d8cb96d5d0a688117942df442229f9417a73b2692315815e5cf</guid>
+    </item>
+    <item>
+      <title>2011-04-12 (3.7.6)</title>
+      <link>https://sqlite.org/download.html?87c47606e2a8830a9254910950bc1b8f5a78ba1af795b3e9f383f9d766bc43c7</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?87c47606e2a8830a9254910950bc1b8f5a78ba1af795b3e9f383f9d766bc43c7</guid>
+    </item>
+    <item>
+      <title>2011-04-13 (3.7.6.1)</title>
+      <link>https://sqlite.org/download.html?6c243b0df465f8c345429bf2afdd2dbcfb7854845c34b670122a07c131ecfb67</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?6c243b0df465f8c345429bf2afdd2dbcfb7854845c34b670122a07c131ecfb67</guid>
+    </item>
+    <item>
+      <title>2011-04-17 (3.7.6.2)</title>
+      <link>https://sqlite.org/download.html?d9a43401a27ac376b78ed7dbe6151b9fb1321187eeb5c48c02ffe5c36737dcee</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d9a43401a27ac376b78ed7dbe6151b9fb1321187eeb5c48c02ffe5c36737dcee</guid>
+    </item>
+    <item>
+      <title>2011-05-19 (3.7.6.3)</title>
+      <link>https://sqlite.org/download.html?793887f51118f326f8ddcd6743003070b580a42d863b0c10c7a1e79c34fcaef6</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?793887f51118f326f8ddcd6743003070b580a42d863b0c10c7a1e79c34fcaef6</guid>
+    </item>
+    <item>
+      <title>2011-06-23 (3.7.7)</title>
+      <link>https://sqlite.org/download.html?b3543b2d128bf889cf41d4c70161cc5afd64e7935e84c111d267df610358bc1f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?b3543b2d128bf889cf41d4c70161cc5afd64e7935e84c111d267df610358bc1f</guid>
+    </item>
+    <item>
+      <title>2011-06-28 (3.7.7.1)</title>
+      <link>https://sqlite.org/download.html?4e5edf5992d50c8a3ac0dda5b22d0c45951ba6c98530ec2b38c83f9da2d23ec1</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?4e5edf5992d50c8a3ac0dda5b22d0c45951ba6c98530ec2b38c83f9da2d23ec1</guid>
+    </item>
+    <item>
+      <title>2011-09-19 (3.7.8)</title>
+      <link>https://sqlite.org/download.html?ace94020dfbb39921a1c0d32837bfd89babf59c132f969fa00662f706ef5b76e</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?ace94020dfbb39921a1c0d32837bfd89babf59c132f969fa00662f706ef5b76e</guid>
+    </item>
+    <item>
+      <title>2011-11-01 (3.7.9)</title>
+      <link>https://sqlite.org/download.html?a0facdb2d6081672a948226116ce75ce45b2a04e3155e18c7f5e0b0b6ab939af</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?a0facdb2d6081672a948226116ce75ce45b2a04e3155e18c7f5e0b0b6ab939af</guid>
+    </item>
+    <item>
+      <title>2012-01-16 (3.7.10)</title>
+      <link>https://sqlite.org/download.html?ff5f92fbd31119aaecea232b546dee1fbb3ce54e13831dccf16e7d3eb0c09341</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?ff5f92fbd31119aaecea232b546dee1fbb3ce54e13831dccf16e7d3eb0c09341</guid>
+    </item>
+    <item>
+      <title>2012-03-20 (3.7.11)</title>
+      <link>https://sqlite.org/download.html?261f4cc9af481ca9e342da3d9a40cfab7e8970cc156f5e2bb7fb158fbdb69c74</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?261f4cc9af481ca9e342da3d9a40cfab7e8970cc156f5e2bb7fb158fbdb69c74</guid>
+    </item>
+    <item>
+      <title>2012-05-14 (3.7.12)</title>
+      <link>https://sqlite.org/download.html?3d23b6332de96763b030e3e9d76d6ef73515eae50880e029a2474035f0ef1315</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?3d23b6332de96763b030e3e9d76d6ef73515eae50880e029a2474035f0ef1315</guid>
+    </item>
+    <item>
+      <title>2012-05-22 (3.7.12.1)</title>
+      <link>https://sqlite.org/download.html?b2fd081fca32ca5e94919e24b18faf0e7eacd3e4718ba195de2f6af7671f5993</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?b2fd081fca32ca5e94919e24b18faf0e7eacd3e4718ba195de2f6af7671f5993</guid>
+    </item>
+    <item>
+      <title>2012-06-11 (3.7.13)</title>
+      <link>https://sqlite.org/download.html?e0731cf427d942a339ce3d7c4508042c67af2b97289764cc6ba80ea32c4b85bf</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?e0731cf427d942a339ce3d7c4508042c67af2b97289764cc6ba80ea32c4b85bf</guid>
+    </item>
+    <item>
+      <title>2012-09-03 (3.7.14)</title>
+      <link>https://sqlite.org/download.html?01ece5b39c10fd629ff4ab67613054c613ed536071ac239c15ebdf9a63160234</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?01ece5b39c10fd629ff4ab67613054c613ed536071ac239c15ebdf9a63160234</guid>
+    </item>
+    <item>
+      <title>2012-10-04 (3.7.14.1)</title>
+      <link>https://sqlite.org/download.html?00b25a7d2aaabc48987610d56440dd821f1ebd2369a8a1b907fdd54691675992</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?00b25a7d2aaabc48987610d56440dd821f1ebd2369a8a1b907fdd54691675992</guid>
+    </item>
+    <item>
+      <title>2012-12-12 (3.7.15)</title>
+      <link>https://sqlite.org/download.html?b0e3aac70aef762894fcc2e30efb301db5c3c6e1fbdc3ec985926d2b5349156a</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?b0e3aac70aef762894fcc2e30efb301db5c3c6e1fbdc3ec985926d2b5349156a</guid>
+    </item>
+    <item>
+      <title>2012-12-19 (3.7.15.1)</title>
+      <link>https://sqlite.org/download.html?8833ad686579b02f706eaa1a75e639f12e8e240977ba1078c0bc914c533024b6</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?8833ad686579b02f706eaa1a75e639f12e8e240977ba1078c0bc914c533024b6</guid>
+    </item>
+    <item>
+      <title>2013-01-09 (3.7.15.2)</title>
+      <link>https://sqlite.org/download.html?30db0efa11588fedc7960fe873a662b09254d295972afed418a436c0e2a9d52b</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?30db0efa11588fedc7960fe873a662b09254d295972afed418a436c0e2a9d52b</guid>
+    </item>
+    <item>
+      <title>2013-03-18 (3.7.16)</title>
+      <link>https://sqlite.org/download.html?1efbb84961c9ace5ae74118527c2b120b27a36d42cce52908e791c1c79a084fa</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?1efbb84961c9ace5ae74118527c2b120b27a36d42cce52908e791c1c79a084fa</guid>
+    </item>
+    <item>
+      <title>2013-03-29 (3.7.16.1)</title>
+      <link>https://sqlite.org/download.html?21f07fd6eab98a0ad3a7cae071c650351ce36bf4379e338fb481d7534c7509ee</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?21f07fd6eab98a0ad3a7cae071c650351ce36bf4379e338fb481d7534c7509ee</guid>
+    </item>
+    <item>
+      <title>2013-04-12 (3.7.16.2)</title>
+      <link>https://sqlite.org/download.html?994f60e913598b6190bab792f3cc2c825003c5a0413401f19076c7348bf40b7d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?994f60e913598b6190bab792f3cc2c825003c5a0413401f19076c7348bf40b7d</guid>
+    </item>
+    <item>
+      <title>2013-05-20 (3.7.17)</title>
+      <link>https://sqlite.org/download.html?10fc9b34b94b6cc162f2802632e8796b55b9db0da226307a0c7c481992660e32</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?10fc9b34b94b6cc162f2802632e8796b55b9db0da226307a0c7c481992660e32</guid>
+    </item>
+    <item>
+      <title>2013-08-26 (3.8.0)</title>
+      <link>https://sqlite.org/download.html?88e898ce27ab0c8deae4ef1247f5863296582fcbfd101068d907b156577109b0</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?88e898ce27ab0c8deae4ef1247f5863296582fcbfd101068d907b156577109b0</guid>
+    </item>
+    <item>
+      <title>2013-08-29 (3.8.0.1)</title>
+      <link>https://sqlite.org/download.html?a7d94f9cc5298ec316470b13c4abad43fadeee1fb85bcbfe07a52d043176f16f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?a7d94f9cc5298ec316470b13c4abad43fadeee1fb85bcbfe07a52d043176f16f</guid>
+    </item>
+    <item>
+      <title>2013-09-03 (3.8.0.2)</title>
+      <link>https://sqlite.org/download.html?016d210ecc84048a52485373d06b47d01b2de8f9b5f7bc4d19844973217a6d79</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?016d210ecc84048a52485373d06b47d01b2de8f9b5f7bc4d19844973217a6d79</guid>
+    </item>
+    <item>
+      <title>2013-10-17 (3.8.1)</title>
+      <link>https://sqlite.org/download.html?4a92ff771779209d621ab001106e099739a1f99c688005a5e0ab84d3be79b788</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?4a92ff771779209d621ab001106e099739a1f99c688005a5e0ab84d3be79b788</guid>
+    </item>
+    <item>
+      <title>2013-12-06 (3.8.2)</title>
+      <link>https://sqlite.org/download.html?d8a185efe44f4ad3d465003e15a635511335f8b3399b6eeb01842be6cf671e67</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d8a185efe44f4ad3d465003e15a635511335f8b3399b6eeb01842be6cf671e67</guid>
+    </item>
+    <item>
+      <title>2014-02-03 (3.8.3)</title>
+      <link>https://sqlite.org/download.html?9bf2f5bde5f3fc749e4f8ca7f88cf1beac23998681c271c0d35738ccc7fe769d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?9bf2f5bde5f3fc749e4f8ca7f88cf1beac23998681c271c0d35738ccc7fe769d</guid>
+    </item>
+    <item>
+      <title>2014-02-11 (3.8.3.1)</title>
+      <link>https://sqlite.org/download.html?42868d4cc55fdeee3937ff0c297078911459277eda5a94dac0c63db24b0de2a8</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?42868d4cc55fdeee3937ff0c297078911459277eda5a94dac0c63db24b0de2a8</guid>
+    </item>
+    <item>
+      <title>2014-03-10 (3.8.4)</title>
+      <link>https://sqlite.org/download.html?33b991848bd7a5b8a325dffc00d14440aa4456d2a210c5c7c232fa35417e4b2e</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?33b991848bd7a5b8a325dffc00d14440aa4456d2a210c5c7c232fa35417e4b2e</guid>
+    </item>
+    <item>
+      <title>2014-03-11 (3.8.4.1)</title>
+      <link>https://sqlite.org/download.html?3e940fdfbd7f5ca7b7750815a2f6e084f8b92b22498bb29bae061f2ad4e97cce</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?3e940fdfbd7f5ca7b7750815a2f6e084f8b92b22498bb29bae061f2ad4e97cce</guid>
+    </item>
+    <item>
+      <title>2014-03-26 (3.8.4.2)</title>
+      <link>https://sqlite.org/download.html?e8150f025b71fff584566ad8aa868d2b62aedd7bc569910427f6e6082ecdf19e</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?e8150f025b71fff584566ad8aa868d2b62aedd7bc569910427f6e6082ecdf19e</guid>
+    </item>
+    <item>
+      <title>2014-04-03 (3.8.4.3)</title>
+      <link>https://sqlite.org/download.html?d88f2d132d54e542f0f06cd2811a1c5076d15b76a78167e4eb6c3fecb2936993</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d88f2d132d54e542f0f06cd2811a1c5076d15b76a78167e4eb6c3fecb2936993</guid>
+    </item>
+    <item>
+      <title>2014-06-04 (3.8.5)</title>
+      <link>https://sqlite.org/download.html?a366d7402e121d1fde35899b7b12bafb4a02c95e3736062c2ffa42eeff9a149f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?a366d7402e121d1fde35899b7b12bafb4a02c95e3736062c2ffa42eeff9a149f</guid>
+    </item>
+    <item>
+      <title>2014-08-15 (3.8.6)</title>
+      <link>https://sqlite.org/download.html?ace6598ec8cb229e23d3c5ca8a6a15792f2a996d7b24faa9c76d5a2216b2ecae</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?ace6598ec8cb229e23d3c5ca8a6a15792f2a996d7b24faa9c76d5a2216b2ecae</guid>
+    </item>
+    <item>
+      <title>2014-10-17 (3.8.7)</title>
+      <link>https://sqlite.org/download.html?100b88fa2c94d8c14328c638bed354fcb3bbc981bcd798b862d5ff01c76f5f51</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?100b88fa2c94d8c14328c638bed354fcb3bbc981bcd798b862d5ff01c76f5f51</guid>
+    </item>
+    <item>
+      <title>2014-10-29 (3.8.7.1)</title>
+      <link>https://sqlite.org/download.html?499d7dca213f04ad99d62a298702d5aa23d4b835f49594e3f9debd48ed617671</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?499d7dca213f04ad99d62a298702d5aa23d4b835f49594e3f9debd48ed617671</guid>
+    </item>
+    <item>
+      <title>2014-11-18 (3.8.7.2)</title>
+      <link>https://sqlite.org/download.html?c8987281575a8e9f31de57f33407d82402fb23d73b51887484acaebdd792bfb0</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?c8987281575a8e9f31de57f33407d82402fb23d73b51887484acaebdd792bfb0</guid>
+    </item>
+    <item>
+      <title>2014-12-05 (3.8.7.3)</title>
+      <link>https://sqlite.org/download.html?d790894efa03d9c83a436995b6260f7e573d14a392a975431cf73ed7632517d5</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d790894efa03d9c83a436995b6260f7e573d14a392a975431cf73ed7632517d5</guid>
+    </item>
+    <item>
+      <title>2014-12-09 (3.8.7.4)</title>
+      <link>https://sqlite.org/download.html?197e7a666c17474be9b205b672b7f35330d307510c59d936187838c590103452</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?197e7a666c17474be9b205b672b7f35330d307510c59d936187838c590103452</guid>
+    </item>
+    <item>
+      <title>2015-01-16 (3.8.8)</title>
+      <link>https://sqlite.org/download.html?ce82a15f31a4aaac7181d30f681a86e76838d27b66300090a190b665e2f01db4</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?ce82a15f31a4aaac7181d30f681a86e76838d27b66300090a190b665e2f01db4</guid>
+    </item>
+    <item>
+      <title>2015-01-20 (3.8.8.1)</title>
+      <link>https://sqlite.org/download.html?dd59908c26a6cd39e47b456211be309c3f2dc40e46b3e9f1a84a6131adfc598b</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?dd59908c26a6cd39e47b456211be309c3f2dc40e46b3e9f1a84a6131adfc598b</guid>
+    </item>
+    <item>
+      <title>2015-01-30 (3.8.8.2)</title>
+      <link>https://sqlite.org/download.html?032c31d8afa37be9249526569a7e19038742870489dfdae4297d7f9c461b6f85</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?032c31d8afa37be9249526569a7e19038742870489dfdae4297d7f9c461b6f85</guid>
+    </item>
+    <item>
+      <title>2015-02-25 (3.8.8.3)</title>
+      <link>https://sqlite.org/download.html?555b04db12f7a6a5333ecb41160c46150068606c38c4dd6069ef38abcfa0692d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?555b04db12f7a6a5333ecb41160c46150068606c38c4dd6069ef38abcfa0692d</guid>
+    </item>
+    <item>
+      <title>2015-04-08 (3.8.9)</title>
+      <link>https://sqlite.org/download.html?c2883da60d1688b1963c89bfb23998a3ce5ff758deace2009de639c885ce7e57</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?c2883da60d1688b1963c89bfb23998a3ce5ff758deace2009de639c885ce7e57</guid>
+    </item>
+    <item>
+      <title>2015-05-07 (3.8.10)</title>
+      <link>https://sqlite.org/download.html?0a2c2f66cf27a2095d9e2d5aa0ab5b061d08a712a57252e1a5e68cf78329a480</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?0a2c2f66cf27a2095d9e2d5aa0ab5b061d08a712a57252e1a5e68cf78329a480</guid>
+    </item>
+    <item>
+      <title>2015-05-09 (3.8.10.1)</title>
+      <link>https://sqlite.org/download.html?b0442ed907a7f1699c8a7ff92e8087568f4b625ecfaeb637701ad908d54263d1</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?b0442ed907a7f1699c8a7ff92e8087568f4b625ecfaeb637701ad908d54263d1</guid>
+    </item>
+    <item>
+      <title>2015-05-20 (3.8.10.2)</title>
+      <link>https://sqlite.org/download.html?458bd7a62a77ae28184e2f6f9b4b05b5c550eb237adb0616a8854e2fd51adbeb</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?458bd7a62a77ae28184e2f6f9b4b05b5c550eb237adb0616a8854e2fd51adbeb</guid>
+    </item>
+    <item>
+      <title>2015-07-27 (3.8.11)</title>
+      <link>https://sqlite.org/download.html?34169c85c57e928f49e2a6d65e3e69bd709d69e1b3378cc32e3c201663cf7bc9</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?34169c85c57e928f49e2a6d65e3e69bd709d69e1b3378cc32e3c201663cf7bc9</guid>
+    </item>
+    <item>
+      <title>2015-07-29 (3.8.11.1)</title>
+      <link>https://sqlite.org/download.html?9eef155f7a17735632753191e0cdbffbdb49abc73f1651982cc831a1593d7a50</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?9eef155f7a17735632753191e0cdbffbdb49abc73f1651982cc831a1593d7a50</guid>
+    </item>
+    <item>
+      <title>2015-10-14 (3.9.0)</title>
+      <link>https://sqlite.org/download.html?47931f5fec0baca5378732ddacfccc1ddd1d3546f34b8b478fd08442a4c12347</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?47931f5fec0baca5378732ddacfccc1ddd1d3546f34b8b478fd08442a4c12347</guid>
+    </item>
+    <item>
+      <title>2015-10-16 (3.9.1)</title>
+      <link>https://sqlite.org/download.html?cadf6d3a6b48a0a99486539b6ab32f4a8b3804b84e49915d7544f39616517903</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?cadf6d3a6b48a0a99486539b6ab32f4a8b3804b84e49915d7544f39616517903</guid>
+    </item>
+    <item>
+      <title>2015-11-02 (3.9.2)</title>
+      <link>https://sqlite.org/download.html?f3d8c5b934a9dc1a5f6c5ba61b0ff029e14e51e76c423596e8d3cfbd326bfa31</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?f3d8c5b934a9dc1a5f6c5ba61b0ff029e14e51e76c423596e8d3cfbd326bfa31</guid>
+    </item>
+    <item>
+      <title>2016-01-06 (3.10.0)</title>
+      <link>https://sqlite.org/download.html?332f4055e8932c322caa40de9d7f3ec33246910eb25a48cbc826a588fa9e34ea</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?332f4055e8932c322caa40de9d7f3ec33246910eb25a48cbc826a588fa9e34ea</guid>
+    </item>
+    <item>
+      <title>2016-01-14 (3.10.1)</title>
+      <link>https://sqlite.org/download.html?794acd84386eb8281c18e582b87dd31b6da1a969c171aaa36f44219d664ca3e2</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?794acd84386eb8281c18e582b87dd31b6da1a969c171aaa36f44219d664ca3e2</guid>
+    </item>
+    <item>
+      <title>2016-01-20 (3.10.2)</title>
+      <link>https://sqlite.org/download.html?c0049e3538acd91a768804d676393bf116aebf9dc63c008f69deb687186b8d3f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?c0049e3538acd91a768804d676393bf116aebf9dc63c008f69deb687186b8d3f</guid>
+    </item>
+    <item>
+      <title>2016-02-15 (3.11.0)</title>
+      <link>https://sqlite.org/download.html?d584d429a605430102277644047c2ada7aeb07bc29acc855c956fa3234d10fa1</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d584d429a605430102277644047c2ada7aeb07bc29acc855c956fa3234d10fa1</guid>
+    </item>
+    <item>
+      <title>2016-03-03 (3.11.1)</title>
+      <link>https://sqlite.org/download.html?7dc35ea9bc2545d734a5dd988ff34933e2945e55bc8f30610245d9e74f5c85b4</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?7dc35ea9bc2545d734a5dd988ff34933e2945e55bc8f30610245d9e74f5c85b4</guid>
+    </item>
+    <item>
+      <title>2016-03-29 (3.12.0)</title>
+      <link>https://sqlite.org/download.html?f0730144149d6dbe1a9eda0e9d0e66bbf2e8147c60a15d1fd351ad0ad850b0c3</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?f0730144149d6dbe1a9eda0e9d0e66bbf2e8147c60a15d1fd351ad0ad850b0c3</guid>
+    </item>
+    <item>
+      <title>2016-04-01 (3.9.3)</title>
+      <link>https://sqlite.org/download.html?d1cbb87bb3c752d34c664c06e26f25148a4f767b87eb8c2c64d2f201056d3ac3</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d1cbb87bb3c752d34c664c06e26f25148a4f767b87eb8c2c64d2f201056d3ac3</guid>
+    </item>
+    <item>
+      <title>2016-04-08 (3.12.1)</title>
+      <link>https://sqlite.org/download.html?8764bba95c369421056014fc83e2a02011b337b50ab83ed3432d2b630babced8</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?8764bba95c369421056014fc83e2a02011b337b50ab83ed3432d2b630babced8</guid>
+    </item>
+    <item>
+      <title>2016-04-18 (3.12.2)</title>
+      <link>https://sqlite.org/download.html?2fabaac7f9f611dce88554ad9ce2653266d650db8d78a05ab4da78a824b88d3f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?2fabaac7f9f611dce88554ad9ce2653266d650db8d78a05ab4da78a824b88d3f</guid>
+    </item>
+    <item>
+      <title>2016-05-18 (3.13.0)</title>
+      <link>https://sqlite.org/download.html?41b3258e58ee1b1e709fcccca9d101a167fafa5cdd36b9150eaf57f4cfd85ba9</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?41b3258e58ee1b1e709fcccca9d101a167fafa5cdd36b9150eaf57f4cfd85ba9</guid>
+    </item>
+    <item>
+      <title>2016-08-08 (3.14)</title>
+      <link>https://sqlite.org/download.html?dbf52c0bad1e95e036efc78917bceb4c5069b6d73eb2a8f872d697e8d3250301</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?dbf52c0bad1e95e036efc78917bceb4c5069b6d73eb2a8f872d697e8d3250301</guid>
+    </item>
+    <item>
+      <title>2016-08-11 (3.14.1)</title>
+      <link>https://sqlite.org/download.html?b51b8f04bbacdccd2eeea67df9550b22b8e12fc4ad11404f5e2a04d8e08fe939</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?b51b8f04bbacdccd2eeea67df9550b22b8e12fc4ad11404f5e2a04d8e08fe939</guid>
+    </item>
+    <item>
+      <title>2016-09-12 (3.14.2)</title>
+      <link>https://sqlite.org/download.html?c4ad15e78957e2f3fcde72a7772b61d7b34638990b5e97fa7c8f3b3cbe746454</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?c4ad15e78957e2f3fcde72a7772b61d7b34638990b5e97fa7c8f3b3cbe746454</guid>
+    </item>
+    <item>
+      <title>2016-10-14 (3.15.0)</title>
+      <link>https://sqlite.org/download.html?8d6f4fe5ca9d9590dbe650bc1b92de0571f4195ae80b7cf707302afd2285d20b</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?8d6f4fe5ca9d9590dbe650bc1b92de0571f4195ae80b7cf707302afd2285d20b</guid>
+    </item>
+    <item>
+      <title>2016-11-04 (3.15.1)</title>
+      <link>https://sqlite.org/download.html?5e219bf355b899b1cc7afb7d3ad6df753c2f63233d6d8238398397d55f3a8d3c</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?5e219bf355b899b1cc7afb7d3ad6df753c2f63233d6d8238398397d55f3a8d3c</guid>
+    </item>
+    <item>
+      <title>2016-11-28 (3.15.2)</title>
+      <link>https://sqlite.org/download.html?9d6e6e2b0ebbbe13d9f2d11046fcf75d00712cb3ecce308db076799f3109fe0e</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?9d6e6e2b0ebbbe13d9f2d11046fcf75d00712cb3ecce308db076799f3109fe0e</guid>
+    </item>
+    <item>
+      <title>2017-01-02 (3.16.0)</title>
+      <link>https://sqlite.org/download.html?4c23bb4dfc24f9ee4c888d9af776f2491e1452a6f6c4f4127c2382e3a15b0752</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?4c23bb4dfc24f9ee4c888d9af776f2491e1452a6f6c4f4127c2382e3a15b0752</guid>
+    </item>
+    <item>
+      <title>2017-01-03 (3.16.1)</title>
+      <link>https://sqlite.org/download.html?630f564b98a043ffb94ae24a1f2aa4adecbd20753f7369443f61c9ee73bd1dea</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?630f564b98a043ffb94ae24a1f2aa4adecbd20753f7369443f61c9ee73bd1dea</guid>
+    </item>
+    <item>
+      <title>2017-01-06 (3.16.2)</title>
+      <link>https://sqlite.org/download.html?f0b9540568a05c7c63669b123ec9344100f78a6e4b3617d1a144ab6f03b37808</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?f0b9540568a05c7c63669b123ec9344100f78a6e4b3617d1a144ab6f03b37808</guid>
+    </item>
+    <item>
+      <title>2017-02-13 (3.17.0)</title>
+      <link>https://sqlite.org/download.html?87bbefe878b49b92f981ab60ff5f9856b9e8c99798bae7989463e3271ac97f04</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?87bbefe878b49b92f981ab60ff5f9856b9e8c99798bae7989463e3271ac97f04</guid>
+    </item>
+    <item>
+      <title>2017-03-30 (3.18.0)</title>
+      <link>https://sqlite.org/download.html?7b2347aae1f3ddcfca91007d4b342e28ec14944ae2f2eca2cfb003ad10dbc913</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?7b2347aae1f3ddcfca91007d4b342e28ec14944ae2f2eca2cfb003ad10dbc913</guid>
+    </item>
+    <item>
+      <title>2017-05-22 (3.19.0)</title>
+      <link>https://sqlite.org/download.html?eb3f9be35ec8b8b71b789c4a36bce8007bd319861fa6e3dfa8a6d77e4867803d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?eb3f9be35ec8b8b71b789c4a36bce8007bd319861fa6e3dfa8a6d77e4867803d</guid>
+    </item>
+    <item>
+      <title>2017-05-24 (3.19.1)</title>
+      <link>https://sqlite.org/download.html?bb2c59fc9c3817c62ac2cd0772a8795d61842cf457c627fc1bb89aab5346a0a3</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?bb2c59fc9c3817c62ac2cd0772a8795d61842cf457c627fc1bb89aab5346a0a3</guid>
+    </item>
+    <item>
+      <title>2017-05-25 (3.19.2)</title>
+      <link>https://sqlite.org/download.html?dd5adc07883fa983df169b45e1add876c51f8550bfc513fe4766c969a9a471bb</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?dd5adc07883fa983df169b45e1add876c51f8550bfc513fe4766c969a9a471bb</guid>
+    </item>
+    <item>
+      <title>2017-06-08 (3.19.3)</title>
+      <link>https://sqlite.org/download.html?d2755cb4304859e023e36fdd8fe01b0a70245b1b2bbfb44e27d2e665a59ea375</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d2755cb4304859e023e36fdd8fe01b0a70245b1b2bbfb44e27d2e665a59ea375</guid>
+    </item>
+    <item>
+      <title>2017-06-16 (3.18.1)</title>
+      <link>https://sqlite.org/download.html?6a42713e56f440cdfe11ab2c4d2bc9495c50c1720feea44bf16e3fb368cf842e</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?6a42713e56f440cdfe11ab2c4d2bc9495c50c1720feea44bf16e3fb368cf842e</guid>
+    </item>
+    <item>
+      <title>2017-06-17 (3.18.2)</title>
+      <link>https://sqlite.org/download.html?0b24e1ffc7e38f3032287ba9dca0d4c89416bc9a1afff5226d29bc0a302b7698</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?0b24e1ffc7e38f3032287ba9dca0d4c89416bc9a1afff5226d29bc0a302b7698</guid>
+    </item>
+    <item>
+      <title>2017-08-01 (3.20.0)</title>
+      <link>https://sqlite.org/download.html?8b9687c485e25ed903c07d20450297baf52a724ce33284b1c92a34a1dedeed6a</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?8b9687c485e25ed903c07d20450297baf52a724ce33284b1c92a34a1dedeed6a</guid>
+    </item>
+    <item>
+      <title>2017-08-24 (3.20.1)</title>
+      <link>https://sqlite.org/download.html?fb14857d05f3d9fa3fa42cc3b41f2b65d40123b7507dae429e84ebb63b2c6d43</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?fb14857d05f3d9fa3fa42cc3b41f2b65d40123b7507dae429e84ebb63b2c6d43</guid>
+    </item>
+    <item>
+      <title>2017-10-24 (3.21.0)</title>
+      <link>https://sqlite.org/download.html?a72f8227af842160caddb48df9367fa8486086b24578607cfe228a1eeb90790d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?a72f8227af842160caddb48df9367fa8486086b24578607cfe228a1eeb90790d</guid>
+    </item>
+    <item>
+      <title>2018-01-22 (3.22.0)</title>
+      <link>https://sqlite.org/download.html?49454b5145b18caf24337fae3daedf0875d7e9cf521ecb4e1553765f05d7c1df</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?49454b5145b18caf24337fae3daedf0875d7e9cf521ecb4e1553765f05d7c1df</guid>
+    </item>
+    <item>
+      <title>2018-04-02 (3.23.0)</title>
+      <link>https://sqlite.org/download.html?47ff9e29e01638fe8259b12cc00c1de2861a2c3d3c0a9807b9a197b2c6a06007</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?47ff9e29e01638fe8259b12cc00c1de2861a2c3d3c0a9807b9a197b2c6a06007</guid>
+    </item>
+    <item>
+      <title>2018-04-10 (3.23.1)</title>
+      <link>https://sqlite.org/download.html?1f5d66127f0a6ef99e5514279ca35e29137f2aa2a5c69920e01c5e702575a79e</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?1f5d66127f0a6ef99e5514279ca35e29137f2aa2a5c69920e01c5e702575a79e</guid>
+    </item>
+    <item>
+      <title>2018-06-04 (3.24.0)</title>
+      <link>https://sqlite.org/download.html?b0a6bd9a9246629485ceeb0cb79164261ef3321e9689f6d3f52dc78f2232a1bb</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?b0a6bd9a9246629485ceeb0cb79164261ef3321e9689f6d3f52dc78f2232a1bb</guid>
+    </item>
+    <item>
+      <title>2018-09-15 (3.25.0)</title>
+      <link>https://sqlite.org/download.html?54c67817d2123902706fb537484a5fe9d7a8c626e672fc2f1b8bde2c6804038f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?54c67817d2123902706fb537484a5fe9d7a8c626e672fc2f1b8bde2c6804038f</guid>
+    </item>
+    <item>
+      <title>2018-09-18 (3.25.1)</title>
+      <link>https://sqlite.org/download.html?457060d2b37b641016e16f8738ec6355176abbb24267fff44ed43384b66fc0fb</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?457060d2b37b641016e16f8738ec6355176abbb24267fff44ed43384b66fc0fb</guid>
+    </item>
+    <item>
+      <title>2018-09-25 (3.25.2)</title>
+      <link>https://sqlite.org/download.html?cbf2a9b748d5fcf4290d95c3e3003c1ccebd8f0e019cd5cdc7913b72811febb9</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?cbf2a9b748d5fcf4290d95c3e3003c1ccebd8f0e019cd5cdc7913b72811febb9</guid>
+    </item>
+    <item>
+      <title>2018-11-05 (3.25.3)</title>
+      <link>https://sqlite.org/download.html?f3bc74d3c1d3041f781b1ab26ffb87217168761522751dc250c7e6244283db08</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?f3bc74d3c1d3041f781b1ab26ffb87217168761522751dc250c7e6244283db08</guid>
+    </item>
+    <item>
+      <title>2018-12-01 (3.26.0)</title>
+      <link>https://sqlite.org/download.html?9aa08924d78ab80ae3748a5248b94d2efecc543ea30bacd39bcd892770855b24</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?9aa08924d78ab80ae3748a5248b94d2efecc543ea30bacd39bcd892770855b24</guid>
+    </item>
+    <item>
+      <title>2019-02-07 (3.27.0)</title>
+      <link>https://sqlite.org/download.html?a6565447024750b024da62fd574e6aa2b1f304c00b0964424d5c16613db7241b</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?a6565447024750b024da62fd574e6aa2b1f304c00b0964424d5c16613db7241b</guid>
+    </item>
+    <item>
+      <title>2019-02-08 (3.27.1)</title>
+      <link>https://sqlite.org/download.html?6ceee59af324e3eae12cb2c9dbab468ea70a05f3512b4d9468986843d22f901d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?6ceee59af324e3eae12cb2c9dbab468ea70a05f3512b4d9468986843d22f901d</guid>
+    </item>
+    <item>
+      <title>2019-02-25 (3.27.2)</title>
+      <link>https://sqlite.org/download.html?c2a63fb07056a549f09e319b6944557ee9be741d8dfb52b6568ad2794fb54e64</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?c2a63fb07056a549f09e319b6944557ee9be741d8dfb52b6568ad2794fb54e64</guid>
+    </item>
+    <item>
+      <title>2019-04-16 (3.28.0)</title>
+      <link>https://sqlite.org/download.html?06a48802255effeb0736fcb244708f619f043c3e77a7c9782ade61e81c7237f4</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?06a48802255effeb0736fcb244708f619f043c3e77a7c9782ade61e81c7237f4</guid>
+    </item>
+    <item>
+      <title>2019-07-10 (3.29.0)</title>
+      <link>https://sqlite.org/download.html?e8318b5471f824ca77101b237c3fd00a394a8482c294daae0b47d2b0c06029dd</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?e8318b5471f824ca77101b237c3fd00a394a8482c294daae0b47d2b0c06029dd</guid>
+    </item>
+    <item>
+      <title>2019-10-04 (3.30.0)</title>
+      <link>https://sqlite.org/download.html?b2c608d2a9b2db81faeb3e2da2a7f2a9ae92a9099ae1a79867d76bfa0591e5c2</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?b2c608d2a9b2db81faeb3e2da2a7f2a9ae92a9099ae1a79867d76bfa0591e5c2</guid>
+    </item>
+    <item>
+      <title>2019-10-10 (3.30.1)</title>
+      <link>https://sqlite.org/download.html?f636900b6e5fbed41019d22d2557466eac592663c961fd434ddbc0f064645bb7</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?f636900b6e5fbed41019d22d2557466eac592663c961fd434ddbc0f064645bb7</guid>
+    </item>
+    <item>
+      <title>2020-01-22 (3.31.0)</title>
+      <link>https://sqlite.org/download.html?967bee3a750f9f28eee5341724e2c5ed3efbeca6658ffbb3ec1fe79ce7e6ea0d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?967bee3a750f9f28eee5341724e2c5ed3efbeca6658ffbb3ec1fe79ce7e6ea0d</guid>
+    </item>
+    <item>
+      <title>2020-01-27 (3.31.1)</title>
+      <link>https://sqlite.org/download.html?9d880fd476614aeb27832fd2832792a85fdc3feb0f8c1e020a73edf3ba0296a6</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?9d880fd476614aeb27832fd2832792a85fdc3feb0f8c1e020a73edf3ba0296a6</guid>
+    </item>
+    <item>
+      <title>2020-05-22 (3.32.0)</title>
+      <link>https://sqlite.org/download.html?65d24a4061e73fca2ccb13fa7915fec7406c2c88d9ef13215436cd80d81aa5e6</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?65d24a4061e73fca2ccb13fa7915fec7406c2c88d9ef13215436cd80d81aa5e6</guid>
+    </item>
+    <item>
+      <title>2020-05-25 (3.32.1)</title>
+      <link>https://sqlite.org/download.html?fdbc100159596f139a4fa7bc932d4e4cd0fde4af2e18c707c859d84d23cb3fd6</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?fdbc100159596f139a4fa7bc932d4e4cd0fde4af2e18c707c859d84d23cb3fd6</guid>
+    </item>
+    <item>
+      <title>2020-06-04 (3.32.2)</title>
+      <link>https://sqlite.org/download.html?3d6eb1522960f5bd5a0c70173479b5e4b39ba42e3ec46c9be7f5b417b7da8a77</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?3d6eb1522960f5bd5a0c70173479b5e4b39ba42e3ec46c9be7f5b417b7da8a77</guid>
+    </item>
+    <item>
+      <title>2020-06-18 (3.32.3)</title>
+      <link>https://sqlite.org/download.html?50e6c6d482422adf479ea67db4b5c30addf08fe8237dc2a082828f972a568cdd</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?50e6c6d482422adf479ea67db4b5c30addf08fe8237dc2a082828f972a568cdd</guid>
+    </item>
+    <item>
+      <title>2020-08-14 (3.33.0)</title>
+      <link>https://sqlite.org/download.html?97f1eb9b66d237f20ed271f8d66048e048931c3625442072b4734d80ed0c4ce6</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?97f1eb9b66d237f20ed271f8d66048e048931c3625442072b4734d80ed0c4ce6</guid>
+    </item>
+    <item>
+      <title>2020-12-01 (3.34.0)</title>
+      <link>https://sqlite.org/download.html?eefe1f6c012fc873d4efbe58c18ac64b914c037acbcbd270153c04d1c0d2ad93</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?eefe1f6c012fc873d4efbe58c18ac64b914c037acbcbd270153c04d1c0d2ad93</guid>
+    </item>
+    <item>
+      <title>2021-01-20 (3.34.1)</title>
+      <link>https://sqlite.org/download.html?bd9471158d9d6ef19076b17cc555d4292b2ffb02031aa7446e07ae43973be672</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?bd9471158d9d6ef19076b17cc555d4292b2ffb02031aa7446e07ae43973be672</guid>
+    </item>
+    <item>
+      <title>2021-03-12 (3.35.0)</title>
+      <link>https://sqlite.org/download.html?3307e62e26d214ee380c957a097032363503ad55e00f217b948190d543eed421</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?3307e62e26d214ee380c957a097032363503ad55e00f217b948190d543eed421</guid>
+    </item>
+    <item>
+      <title>2021-03-15 (3.35.1)</title>
+      <link>https://sqlite.org/download.html?165deb97a214b957a4d5b86c9cf0bf4be676c2d8663ed3ec0acd04caa02bef40</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?165deb97a214b957a4d5b86c9cf0bf4be676c2d8663ed3ec0acd04caa02bef40</guid>
+    </item>
+    <item>
+      <title>2021-03-17 (3.35.2)</title>
+      <link>https://sqlite.org/download.html?6d5046e9b27f83ea30d025e44120b1cdd827c33fad998b191404ffde33a4f951</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?6d5046e9b27f83ea30d025e44120b1cdd827c33fad998b191404ffde33a4f951</guid>
+    </item>
+    <item>
+      <title>2021-03-26 (3.35.3)</title>
+      <link>https://sqlite.org/download.html?2c0edea17adfcc70031aef1bb303bafeae6af18b84a09242f4512d9994587d2d</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?2c0edea17adfcc70031aef1bb303bafeae6af18b84a09242f4512d9994587d2d</guid>
+    </item>
+    <item>
+      <title>2021-04-02 (3.35.4)</title>
+      <link>https://sqlite.org/download.html?d677bbe003cb591d3ac641b1857853754648652dfd9c27fbf6d8ea060673b52a</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d677bbe003cb591d3ac641b1857853754648652dfd9c27fbf6d8ea060673b52a</guid>
+    </item>
+    <item>
+      <title>2021-04-19 (3.35.5)</title>
+      <link>https://sqlite.org/download.html?6bb6b8c327761fb9c2a274b25cfa543cdd176048f0f8037c0faa47cb2938a0d0</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?6bb6b8c327761fb9c2a274b25cfa543cdd176048f0f8037c0faa47cb2938a0d0</guid>
+    </item>
+    <item>
+      <title>2021-06-18 (3.36.0)</title>
+      <link>https://sqlite.org/download.html?7ff7b9ad8a56c1ace3862614929eda4c43ad28fa9fc7bc5df6eb4d397c3ca5da</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?7ff7b9ad8a56c1ace3862614929eda4c43ad28fa9fc7bc5df6eb4d397c3ca5da</guid>
+    </item>
+    <item>
+      <title>2021-11-27 (3.37.0)</title>
+      <link>https://sqlite.org/download.html?15cdf14c825d8285397cf5c5a030d84272e9e72d84302472b92aea281132c674</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?15cdf14c825d8285397cf5c5a030d84272e9e72d84302472b92aea281132c674</guid>
+    </item>
+    <item>
+      <title>2021-12-30 (3.37.1)</title>
+      <link>https://sqlite.org/download.html?557b8f32763024eeb8664e3652e41001e7164b269d911f4d97a6bda8a6df3828</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?557b8f32763024eeb8664e3652e41001e7164b269d911f4d97a6bda8a6df3828</guid>
+    </item>
+    <item>
+      <title>2022-01-06 (3.37.2)</title>
+      <link>https://sqlite.org/download.html?ea60d3b5c2b74b445135e36e407b1923e8023cd4aad78d0950e4f924f0208dc4</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?ea60d3b5c2b74b445135e36e407b1923e8023cd4aad78d0950e4f924f0208dc4</guid>
+    </item>
+    <item>
+      <title>2022-02-22 (3.38.0)</title>
+      <link>https://sqlite.org/download.html?09dbeb686c7c8e75c2548afef0d09e29bfd23f7e41aa51791deda7f86d39691c</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?09dbeb686c7c8e75c2548afef0d09e29bfd23f7e41aa51791deda7f86d39691c</guid>
+    </item>
+    <item>
+      <title>2022-03-12 (3.38.1)</title>
+      <link>https://sqlite.org/download.html?179ad76f5d8d2961c6a2c4739283e5f77e7903544ddf24199ab548a183083a52</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?179ad76f5d8d2961c6a2c4739283e5f77e7903544ddf24199ab548a183083a52</guid>
+    </item>
+    <item>
+      <title>2022-03-26 (3.38.2)</title>
+      <link>https://sqlite.org/download.html?7dd1dd9485d90410372f12002bcbfb00bdf024af8912219847098072a64dc082</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?7dd1dd9485d90410372f12002bcbfb00bdf024af8912219847098072a64dc082</guid>
+    </item>
+    <item>
+      <title>2022-04-27 (3.38.3)</title>
+      <link>https://sqlite.org/download.html?08b06880743c1b396c8cfee8134a096a861a50f6d36a59107919373c1b1ec0fc</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?08b06880743c1b396c8cfee8134a096a861a50f6d36a59107919373c1b1ec0fc</guid>
+    </item>
+    <item>
+      <title>2022-05-04 (3.38.4)</title>
+      <link>https://sqlite.org/download.html?b0d2ae8b1293c99bde763061ae69ad6e112750da5e8cbd7e9ba3c90cda283873</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?b0d2ae8b1293c99bde763061ae69ad6e112750da5e8cbd7e9ba3c90cda283873</guid>
+    </item>
+    <item>
+      <title>2022-05-06 (3.38.5)</title>
+      <link>https://sqlite.org/download.html?44fd9858ecee5421aeb4bccd41fd29b4da13005d401776327259263e77dcb513</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?44fd9858ecee5421aeb4bccd41fd29b4da13005d401776327259263e77dcb513</guid>
+    </item>
+    <item>
+      <title>2022-06-25 (3.39.0)</title>
+      <link>https://sqlite.org/download.html?d0429288768a5ec9179c9f58bcd80bb3c6d3eb9627330b24dd6024fff36a2332</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?d0429288768a5ec9179c9f58bcd80bb3c6d3eb9627330b24dd6024fff36a2332</guid>
+    </item>
+    <item>
+      <title>2022-07-13 (3.39.1)</title>
+      <link>https://sqlite.org/download.html?5a006cbd575ee791ca33002d0bef5299e9ec5955e9a32fb9d0290b673d97d046</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?5a006cbd575ee791ca33002d0bef5299e9ec5955e9a32fb9d0290b673d97d046</guid>
+    </item>
+    <item>
+      <title>2022-07-21 (3.39.2)</title>
+      <link>https://sqlite.org/download.html?86ac9ea7b93699ada8febb80af3e6fb6ce67a7d9a3a88f254a7b0e4c08df55e9</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?86ac9ea7b93699ada8febb80af3e6fb6ce67a7d9a3a88f254a7b0e4c08df55e9</guid>
+    </item>
+    <item>
+      <title>2022-09-05 (3.39.3)</title>
+      <link>https://sqlite.org/download.html?384b140cf567e2d8940d80e0eb2b5f9a59ec6c3977b89b481e9a5dfba88cddd5</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?384b140cf567e2d8940d80e0eb2b5f9a59ec6c3977b89b481e9a5dfba88cddd5</guid>
+    </item>
+    <item>
+      <title>2022-09-29 (3.39.4)</title>
+      <link>https://sqlite.org/download.html?68fa25bac327a3e333ed4cd9a57077db3193f4de20e6abf48a44536c99756795</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?68fa25bac327a3e333ed4cd9a57077db3193f4de20e6abf48a44536c99756795</guid>
+    </item>
+    <item>
+      <title>2022-11-16 (3.40.0)</title>
+      <link>https://sqlite.org/download.html?5a7e576be2f5454ad1e6b4c4eb6d9c232c16cb1f43b354d6397b6ab290790294</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?5a7e576be2f5454ad1e6b4c4eb6d9c232c16cb1f43b354d6397b6ab290790294</guid>
+    </item>
+    <item>
+      <title>2022-12-28 (3.40.1)</title>
+      <link>https://sqlite.org/download.html?376c83b884dea517b9375069e8177470e5c6a2ab979691223967081d34bb07b2</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?376c83b884dea517b9375069e8177470e5c6a2ab979691223967081d34bb07b2</guid>
+    </item>
+    <item>
+      <title>2023-02-21 (3.41.0)</title>
+      <link>https://sqlite.org/download.html?ab5e6bcdec98d918253b34b6a2e18696d9059064cc55be7fb5240c92e9489f3f</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?ab5e6bcdec98d918253b34b6a2e18696d9059064cc55be7fb5240c92e9489f3f</guid>
+    </item>
+    <item>
+      <title>2023-03-10 (3.41.1)</title>
+      <link>https://sqlite.org/download.html?2ba0843344e3176b0c08bfecfe10a600f2eef39fabcf8eed0fb22d6a2afd9738</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?2ba0843344e3176b0c08bfecfe10a600f2eef39fabcf8eed0fb22d6a2afd9738</guid>
+    </item>
+    <item>
+      <title>2023-03-22 (3.41.2)</title>
+      <link>https://sqlite.org/download.html?c1592bd76449e263308bbe0e2c8cc6e319128e53bbc0bdb6616f15919cdc4a67</link>
+      <guid isPermaLink="false">https://sqlite.org/download.html?c1592bd76449e263308bbe0e2c8cc6e319128e53bbc0bdb6616f15919cdc4a67</guid>
+    </item>
+  </channel>
+</rss>
