@@ -11,7 +11,7 @@ from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
 
 try:
-    __version__ = importlib.metadata.version(__package__ or __name__)
+    __version__ = "version " + importlib.metadata.version(__package__ or __name__)
 except importlib.metadata.PackageNotFoundError:  # pragma: no cover
     __version__ = "0.0.0"
 
@@ -27,13 +27,6 @@ class CheckJsonAction(argparse.Action):
     def __call__(self, parser, namespace, values, option_string=None):
         if not namespace.json:
             parser.error(f"{option_string} requires --json to be specified.")
-        setattr(namespace, self.dest, values)
-
-
-class CheckListAction(argparse.Action):
-    def __call__(self, parser, namespace, values, option_string=None):
-        if not namespace.list:
-            parser.error(f"{option_string} requires --list to be specified.")
         setattr(namespace, self.dest, values)
 
 
@@ -179,6 +172,8 @@ def extract_links_release(soup, arguments):
     for entry in soup.find_all(arguments.release_entries):
         try:
             title = entry.text.strip()
+            if title == "":
+                raise AttributeError
             title_bytes = title.encode("utf-8")
             title_hash = hashlib.sha256(title_bytes)
             title_sha256 = title_hash.hexdigest()
