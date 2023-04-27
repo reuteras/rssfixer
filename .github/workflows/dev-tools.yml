@@ -91,7 +91,7 @@ jobs:
       # yamllint enable
 
       - name: Push changes
-        if: env.commit_status == 'committed'
+        if: env.commit_status == 'committed' && github.actor != 'dependabot[bot]'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
