@@ -47,7 +47,8 @@ def test_extract_links_release_no_title_text():
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.extract_links_release(soup, arguments)
     assert pytest_wrapped_e.type == SystemExit
-    assert pytest_wrapped_e.value.code == 1   
+    assert pytest_wrapped_e.value.code == 1
+
 
 def test_extract_links_release_no_match():
     """Test extract_links_html where there are no matching release-entries - should fail"""
