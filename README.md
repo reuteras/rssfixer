@@ -97,7 +97,7 @@ rssfixer --title Tripwire --output tripwire.xml --quiet --html --base-url https:
 
 ### Release
 
-Check for one entity on release pages like SQLite (h3) and generate RSS feed with links to the download page (required argument `--release-url`). Easy way to get notified when a new version is released.
+Check for one entity on release pages like [SQLite][sql] (h3) and generate RSS feed with links to the download page (required argument `--release-url`). Easy way to get notified when a new version is released.
 
 ```bash
 rssfixer --release --output sqlite.xml --release-entries h3 --release-url https://sqlite.org/download.html https://sqlite.org/changes.html
@@ -180,23 +180,23 @@ options:
 
 ```bash
 # Apple Security Blog
-# Url: [https://security.apple.com/blog/][app]
+# Url: https://security.apple.com/blog/
 rssfixer --title "Apple Security" --output apple.xml --quiet --json --json-entries blogs --json-url slug --base-url https://security.apple.com/blog/ https://security.apple.com/blog
 
 # nccgroup
-# Url: [https://research.nccgroup.com/][ncc]
+# Url: https://research.nccgroup.com/
 rssfixer --title nccgroup --output nccgroup.xml --quiet --list https://research.nccgroup.com
 
 # Tripwire
-# Url: [https://www.tripwire.com/state-of-security][tri]
+# Url: https://www.tripwire.com/state-of-security
 rssfixer --title Tripwire --output tripwire.xml --quiet --html --base-url https://www.tripwire.com http://www.tripwire.com/state-of-security
 
 # TrueSec
-# Url: [https://www.truesec.com/hub/blog][tru]
+# Url: https://www.truesec.com/hub/blog
 rssfixer --title Truesec --output truesec.xml --quiet --json --json-description preamble https://www.truesec.com/hub/blog
 
 # SQLite
-# Url: [https://sqlite.org/changes.html][sql]
+# Url: https://sqlite.org/changes.html
 rssfixer --release --release-entries h3 --release-url https://sqlite.org/download.html https://sqlite.org/changes.html
 ```
 
