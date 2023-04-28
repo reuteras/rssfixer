@@ -16,7 +16,7 @@
 [![security: bandit](https://img.shields.io/badge/security-bandit-green.svg)](https://github.com/PyCQA/bandit)
 <!-- OUTPUT:END -->
 
-A tool to generate an [RSS][rss] feed from some [WordPress][wor] blogs and other sources that for some reason don't generate their own feeds. This tool uses [BeautifulSoup][bso] to parse the HTML and [feedgen][fge] to generate the feed. I created this tool to be to follow news from companies that have forgotten the usefulness of RSS. 
+A tool to generate an [RSS][rss] feed from some [WordPress][wor] blogs and other sources that for some reason don't generate their own feeds. This tool uses [BeautifulSoup][bso] to parse the HTML and [feedgen][fge] to generate the feed. I created this tool to be to follow news from companies that have forgotten the usefulness of RSS.
 
 ## Installation
 
@@ -74,7 +74,7 @@ An example for [Apple][app]:
 rssfixer --title "Apple Security" --output apple.xml --quiet --json --json-entries blogs --json-url slug --base-url https://security.apple.com/blog/ https://security.apple.com/blog
 ```
 
-In this example `--json-entries blogs`specifies that blog entries are located in a key called *blogs* and that URLs are availablie in a key called *slug*. Since the URL only includes the key (or slug) we specify the full url to the blog with `--base-url https://security.apple.com/blog/`.
+In this example `--json-entries blogs`specifies that blog entries are located in a key called __blogs__ and that URLs are availablie in a key called __slug__. Since the URL only includes the key (or slug) we specify the full URL to the blog with `--base-url https://security.apple.com/blog/`.
 
 An example for [truesec.com][tru]:
 
