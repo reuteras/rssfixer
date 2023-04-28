@@ -90,9 +90,11 @@ jobs:
           fi
       # yamllint enable
 
+      # yamllint disable rule:line-length
       - name: Push changes
         if: env.commit_status == 'committed' && github.actor != 'dependabot[bot]'
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: ${{ github.head_ref }}
+      # yamllint enable
