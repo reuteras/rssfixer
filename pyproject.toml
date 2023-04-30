@@ -33,7 +33,7 @@ build = ["build", "twine"]
 lint = ["black", "ruff"]
 test = ["pytest", "requests-mock", "coverage"]
 github = ["coverage-badge", "markdown-code-runner"]
-dev = ["rssfixer[audit, lint, test, build]"]
+dev = ["pre-commit", "rssfixer[audit, lint, test, build]"]
 
 [project.urls]
 "Homepage" = "https://github.com/reuteras/rssfixer"
