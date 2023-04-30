@@ -4,8 +4,8 @@ import re
 from rssfixer import rss
 
 
-def test_main_link(capsys, requests_mock):
-    """Test the main function."""
+def test_main_list(capsys, requests_mock):
+    """Test the main function with list arguments."""
     url = "https://research.nccgroup.com/"
     with open("src/tests/data/input/nccgroup.html", encoding="utf-8") as f:
         source = f.read()
