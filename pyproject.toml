@@ -30,7 +30,7 @@ build-backend = "setuptools.build_meta"
 [project.optional-dependencies]
 audit = ["bandit"]
 build = ["build", "twine"]
-lint = ["pylint", "black", "flake8", "isort"]
+lint = ["black", "ruff"]
 test = ["pytest", "requests-mock", "coverage"]
 github = ["coverage-badge", "markdown-code-runner"]
 dev = ["rssfixer[audit, lint, test, build]"]
@@ -41,3 +41,50 @@ dev = ["rssfixer[audit, lint, test, build]"]
 
 [project.scripts]
 rssfixer = "rssfixer:main"
+
+[tool.ruff]
+select = [
+  "BLE",  # flake8-blind-except
+  "C4",   # flake8-comprehensions
+  "COM",  # flake8-commas
+  "D",    # pydocstyle
+  "E",    # pycodestyle
+  "F",    # pyflakes
+  "I",    # isort
+  "ISC",  # flake8-implicit-str-concat
+  "N",    # pep8-naming
+  "PL",   # Pylint
+  "RUF",  # Ruff-specific rules
+  "S",    # flake8-bandit
+  "UP",   # pyupgrade
+  "W",    # Warning
+]
+ignore = [
+  "D203", # one-blank-line-before-class
+  "D213", # multi-line-summary-second-line
+  "S101", # Use of `assert` detected
+  "S301", # `pickle` and modules that wrap it can be unsafe when used to deserialize untrusted data, possible security issue
+]
+
+# Allow autofix for all enabled rules (when `--fix`) is provided.
+fixable = ["A", "B", "C", "D", "E", "F", "G", "I", "N", "Q", "S", "T", "W", "ANN", "ARG", "BLE", "COM", "DJ", "DTZ", "EM", "ERA", "EXE", "FBT", "ICN", "INP", "ISC", "NPY", "PD", "PGH", "PIE", "PL", "PT", "PTH", "PYI", "RET", "RSE", "RUF", "SIM", "SLF", "TCH", "TID", "TRY", "UP", "YTT"]
+unfixable = []
+
+# Exclude a variety of commonly ignored directories.
+exclude = [
+    ".git",
+    ".github",
+    ".pytest_cache",
+    ".venv",
+    "__pypackages__",
+    "build",
+    "dist",
+    ".venv",
+]
+
+# Same as Black.
+line-length = 120
+
+[tool.ruff.mccabe]
+# Unlike Flake8, default to a complexity level of 10.
+max-complexity = 10

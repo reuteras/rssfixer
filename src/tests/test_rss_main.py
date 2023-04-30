@@ -1,3 +1,4 @@
+"""Test main function for rssfixer."""
 import re
 
 from rssfixer import rss
@@ -6,9 +7,9 @@ from rssfixer import rss
 def test_main_link(capsys, requests_mock):
     """Test the main function."""
     url = "https://research.nccgroup.com/"
-    with open("src/tests/data/input/nccgroup.html", "r", encoding="utf-8") as f:
+    with open("src/tests/data/input/nccgroup.html", encoding="utf-8") as f:
         source = f.read()
-    with open("src/tests/data/output/nccgroup.xml", "r", encoding="utf-8") as f:
+    with open("src/tests/data/output/nccgroup.xml", encoding="utf-8") as f:
         result = f.read()
     requests_mock.get(url, text=source)
     args = [
@@ -31,9 +32,9 @@ def test_main_link(capsys, requests_mock):
 def test_main_json(capsys, requests_mock):
     """Test the main function with json arguments."""
     url = "https://www.truesec.com/hub/blog"
-    with open("src/tests/data/input/truesec.html", "r", encoding="utf-8") as f:
+    with open("src/tests/data/input/truesec.html", encoding="utf-8") as f:
         source = f.read()
-    with open("src/tests/data/output/truesec.xml", "r", encoding="utf-8") as f:
+    with open("src/tests/data/output/truesec.xml", encoding="utf-8") as f:
         result = f.read()
     requests_mock.get(url, text=source)
     arguments = [

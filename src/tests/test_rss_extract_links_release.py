@@ -1,3 +1,4 @@
+"""Test extract_links_release function."""
 import pickle
 
 import pytest
@@ -6,8 +7,8 @@ from rssfixer import rss
 
 
 def test_extract_links_release():
-    """Test extract_links_release - should return correct links"""
-    with open("src/tests/data/input/sqlite.html", "r", encoding="utf-8") as f:
+    """Test extract_links_release - should return correct links."""
+    with open("src/tests/data/input/sqlite.html", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
     arguments = rss.parse_arguments(
@@ -18,7 +19,7 @@ def test_extract_links_release():
             "--release-url",
             "https://sqlite.org/download.html",
             "https://sqlite.org/changes.html",
-        ]
+        ],
     )
     links = rss.extract_links_release(soup, arguments)
     with open("src/tests/data/output/sqlite", "rb") as f:
@@ -27,7 +28,7 @@ def test_extract_links_release():
 
 
 def test_extract_links_release_no_title_text():
-    """Test extract_links_html where there are no title texts - should fail"""
+    """Test extract_links_html where there are no title texts - should fail."""
     content = """<html>
     <body>
         <h3></h3>
@@ -42,7 +43,7 @@ def test_extract_links_release_no_title_text():
             "--release-url",
             "https://sqlite.org/download.html",
             "https://sqlite.org/changes.html",
-        ]
+        ],
     )
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.extract_links_release(soup, arguments)
@@ -51,7 +52,7 @@ def test_extract_links_release_no_title_text():
 
 
 def test_extract_links_release_no_match():
-    """Test extract_links_html where there are no matching release-entries - should fail"""
+    """Test extract_links_html where there are no matching release-entries - should fail."""
     content = """<html>
     <body>
         <p></p>
@@ -66,7 +67,7 @@ def test_extract_links_release_no_match():
             "--release-url",
             "https://sqlite.org/download.html",
             "https://sqlite.org/changes.html",
-        ]
+        ],
     )
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.extract_links_release(soup, arguments)

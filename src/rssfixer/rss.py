@@ -5,6 +5,7 @@ import importlib.metadata
 import json
 import re
 import sys
+from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
@@ -17,21 +18,30 @@ except importlib.metadata.PackageNotFoundError:  # pragma: no cover
 
 
 class CheckHtmlAction(argparse.Action):
+    """Class to validate argparse for --html options."""
+
     def __call__(self, parser, namespace, values, option_string=None):
+        """Validate the class."""
         if not namespace.html:
             parser.error(f"{option_string} requires --html to be specified.")
         setattr(namespace, self.dest, values)
 
 
 class CheckJsonAction(argparse.Action):
+    """Class to validate argparse for --json options."""
+
     def __call__(self, parser, namespace, values, option_string=None):
+        """Validate the class."""
         if not namespace.json:
             parser.error(f"{option_string} requires --json to be specified.")
         setattr(namespace, self.dest, values)
 
 
 class CheckReleaseAction(argparse.Action):
+    """Class to validate argparse for --release options."""
+
     def __call__(self, parser, namespace, values, option_string=None):
+        """Validate the class."""
         if not namespace.release:
             parser.error(f"{option_string} requires --release to be specified.")
         setattr(namespace, self.dest, values)
@@ -104,14 +114,16 @@ def extract_links_html(soup, arguments):
         try:
             url = entry.findNext(arguments.html_url)["href"]
             title = entry.find(
-                arguments.html_title, re.compile(arguments.html_title_class)
+                arguments.html_title,
+                re.compile(arguments.html_title_class),
             ).text.strip()
         except (KeyError, AttributeError):
             print("ERROR: Unable to find URL or title in HTML element")
             sys.exit(1)
         try:
             description = entry.find(
-                arguments.html_description, re.compile(arguments.html_description_class)
+                arguments.html_description,
+                re.compile(arguments.html_description_class),
             ).text.strip()
         except (KeyError, AttributeError):
             # Ignore description if it's not found
@@ -172,7 +184,7 @@ def extract_links_release(soup, arguments):
     for entry in soup.find_all(arguments.release_entries):
         try:
             title = entry.text.strip()
-            if title == "":
+            if not title:
                 raise AttributeError
             title_bytes = title.encode("utf-8")
             title_hash = hashlib.sha256(title_bytes)
@@ -205,12 +217,14 @@ def create_rss_feed(links, arguments):
 
     # Add entries to the RSS feed
     for url, title, description in links:
-        if arguments.base_url:
-            url = arguments.base_url + url
         fe = fg.add_entry()
-        fe.id(url)
+        if arguments.base_url:
+            fe.link(href=arguments.base_url + url)
+            fe.id(arguments.base_url + url)
+        else:
+            fe.link(href=url)
+            fe.id(url)
         fe.title(title)
-        fe.link(href=url)
         if vars(arguments).get("atom", False):
             fe.summary(description)
             fe.content(content=description, src=url)
@@ -227,14 +241,16 @@ def parse_arguments(arguments):
     parser = argparse.ArgumentParser(
         description="""Generate RSS feed for blog that don't publish a feed.
         Default is to find links in a simple <ul>-list.
-        Options are available to find links in other HTML elements or JSON strings."""
+        Options are available to find links in other HTML elements or JSON strings.""",
     )
 
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("--html", action="store_true", help="Find entries in HTML")
     group.add_argument("--json", action="store_true", help="Find entries in JSON")
     group.add_argument(
-        "--list", action="store_true", help="Find entries in HTML <ul>-list (default)"
+        "--list",
+        action="store_true",
+        help="Find entries in HTML <ul>-list (default)",
     )
     group.add_argument("--release", action="store_true", help="Find releases in HTML")
 
@@ -247,7 +263,9 @@ def parse_arguments(arguments):
     parser.add_argument("--atom", action="store_true", help="Generate Atom feed")
     parser.add_argument("--base-url", help="Base URL for the blog")
     parser.add_argument(
-        "--release-url", action=CheckReleaseAction, help="Release URL for downloads"
+        "--release-url",
+        action=CheckReleaseAction,
+        help="Release URL for downloads",
     )
     parser.add_argument(
         "--release-entries",
@@ -261,7 +279,10 @@ def parse_arguments(arguments):
         help="HTML selector for entries",
     )
     parser.add_argument(
-        "--html-url", action=CheckHtmlAction, default="a", help="HTML selector for URL"
+        "--html-url",
+        action=CheckHtmlAction,
+        default="a",
+        help="HTML selector for URL",
     )
     parser.add_argument(
         "--html-title",
@@ -330,9 +351,9 @@ def parse_arguments(arguments):
 def save_rss_feed(rss_feed, arguments):
     """Save the RSS feed to a file."""
     try:
-        with open(arguments.output, "w", encoding="utf-8") as f:
+        with Path.open(arguments.output, "w", encoding="utf-8") as f:
             f.write(rss_feed)
-    except IOError:
+    except OSError:
         print("ERROR: Unable to write to file")
         sys.exit(1)
 
@@ -344,7 +365,7 @@ def save_rss_feed(rss_feed, arguments):
 
 
 def main(args=None):
-    """Main function."""
+    """Handle program arguments."""
     if args is None:
         args = sys.argv[1:]
 

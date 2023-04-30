@@ -11,7 +11,7 @@ from rssfixer import rss
 
 @pytest.fixture(name="example_json_object")
 def fixture_example_json_object():
-    """Example JSON string."""
+    """JSON string for tests."""
     json_string = {
         "foo": "bar",
         "baz": {
@@ -29,7 +29,7 @@ def fixture_example_json_object():
 
 @pytest.fixture(name="example_html_string")
 def fixture_example_html_string():
-    """Example HTML string."""
+    """HTML string for tests."""
     html = """
     <html>
         <head>
@@ -49,7 +49,7 @@ def fixture_example_html_string():
 
 @pytest.fixture(name="example_html_string_no_match")
 def fixture_example_html_string_no_match():
-    """Example HTML string without list."""
+    """HTML string for tests."""
     html = """
     <html>
         <head>
@@ -63,6 +63,8 @@ def fixture_example_html_string_no_match():
     """
     return html
 
+
+EXIT_VALUE = 42
 
 json_data_1 = {
     "a": 1,
@@ -88,7 +90,7 @@ json_data_4 = {
     "a": [
         {"b": 1},
         {"entries_key": [{"id": 1, "value": "A"}, {"id": 2, "value": "B"}]},
-    ]
+    ],
 }
 
 json_data_5 = {
@@ -108,7 +110,7 @@ test_cases = [
 def test_fetch_html(requests_mock):
     """Test the fetch_html function."""
     url = "https://research.nccgroup.com/"
-    with open("src/tests/data/input/nccgroup.html", "r", encoding="utf-8") as f:
+    with open("src/tests/data/input/nccgroup.html", encoding="utf-8") as f:
         content = f.read()
     requests_mock.get(url, text=content)
     assert content == rss.fetch_html(url)
@@ -117,7 +119,7 @@ def test_fetch_html(requests_mock):
 def test_fetch_html_no_url(requests_mock):
     """Test the fetch_html function that should not work."""
     wrong_url = "https://not.nccgroup.com/"
-    with open("src/tests/data/input/nccgroup.html", "r", encoding="utf-8") as f:
+    with open("src/tests/data/input/nccgroup.html", encoding="utf-8") as f:
         content = f.read()
     requests_mock.get(wrong_url, text=content)
     assert NoMockAddress
@@ -143,6 +145,7 @@ def test_find_json_entries_not_found(example_json_object):
 
 @pytest.mark.parametrize("json_object,entries_key,expected", test_cases)
 def test_find_entries(json_object, entries_key, expected):
+    """Test test_find_entries when correct."""
     result = rss.find_entries(json_object, entries_key)
     assert result == expected
 
@@ -169,7 +172,7 @@ def test_extract_links_ul_simple_no_match(example_html_string_no_match):
 
 def test_extract_links_ul_standard():
     """Test extract_links_html() working."""
-    with open("src/tests/data/input/nccgroup.html", "r", encoding="utf-8") as f:
+    with open("src/tests/data/input/nccgroup.html", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
     links = rss.extract_links_ul(soup)
@@ -180,11 +183,11 @@ def test_extract_links_ul_standard():
 
 def test_extract_links_html():
     """Test extract_links_html() working."""
-    with open("src/tests/data/input/tripwire.html", "r", encoding="utf-8") as f:
+    with open("src/tests/data/input/tripwire.html", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
     arguments = rss.parse_arguments(
-        ["--html", "http://www.tripwire.com/state-of-security"]
+        ["--html", "http://www.tripwire.com/state-of-security"],
     )
     links = rss.extract_links_html(soup, arguments)
     with open("src/tests/data/output/tripwire", "rb") as f:
@@ -194,11 +197,11 @@ def test_extract_links_html():
 
 def test_extract_links_html_no_match_title():
     """Test extract_links_html() with no match for title."""
-    with open("src/tests/data/input/tripwire.html", "r", encoding="utf-8") as f:
+    with open("src/tests/data/input/tripwire.html", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
     arguments = rss.parse_arguments(
-        ["--html", "--html-title", "fail", "http://www.tripwire.com/state-of-security"]
+        ["--html", "--html-title", "fail", "http://www.tripwire.com/state-of-security"],
     )
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.extract_links_html(soup, arguments)
@@ -208,7 +211,7 @@ def test_extract_links_html_no_match_title():
 
 def test_extract_links_html_no_match_links():
     """Test extract_links_html() with no match for links."""
-    with open("src/tests/data/input/tripwire.html", "r", encoding="utf-8") as f:
+    with open("src/tests/data/input/tripwire.html", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
     arguments = rss.parse_arguments(
@@ -217,7 +220,7 @@ def test_extract_links_html_no_match_links():
             "--html-entries",
             "fail",
             "http://www.tripwire.com/state-of-security",
-        ]
+        ],
     )
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.extract_links_html(soup, arguments)
@@ -227,7 +230,7 @@ def test_extract_links_html_no_match_links():
 
 def test_extract_links_html_no_match_description():
     """Test extract_links_html() with no match for description."""
-    with open("src/tests/data/input/tripwire.html", "r", encoding="utf-8") as f:
+    with open("src/tests/data/input/tripwire.html", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
     arguments = rss.parse_arguments(
@@ -236,7 +239,7 @@ def test_extract_links_html_no_match_description():
             "--html-description",
             "fail",
             "http://www.tripwire.com/state-of-security",
-        ]
+        ],
     )
     links = rss.extract_links_html(soup, arguments)
     with open("src/tests/data/output/tripwire_no_description", "rb") as f:
@@ -246,7 +249,7 @@ def test_extract_links_html_no_match_description():
 
 def test_extract_links_json():
     """Test extract_links_json() working."""
-    with open("src/tests/data/input/truesec.html", "r", encoding="utf-8") as f:
+    with open("src/tests/data/input/truesec.html", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
     arguments = rss.parse_arguments(
@@ -255,7 +258,7 @@ def test_extract_links_json():
             "--json-description",
             "preamble",
             "https://www.truesec.com/hub/blog",
-        ]
+        ],
     )
     links = rss.extract_links_json(soup, arguments)
     with open("src/tests/data/output/truesec", "rb") as f:
@@ -265,7 +268,7 @@ def test_extract_links_json():
 
 def test_extract_links_json_no_match_description():
     """Test extract_links_json() working."""
-    with open("src/tests/data/input/truesec.html", "r", encoding="utf-8") as f:
+    with open("src/tests/data/input/truesec.html", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
     arguments = rss.parse_arguments(
@@ -274,7 +277,7 @@ def test_extract_links_json_no_match_description():
             "--json-description",
             "description",
             "https://www.truesec.com/hub/blog",
-        ]
+        ],
     )
     links = rss.extract_links_json(soup, arguments)
     with open("src/tests/data/output/truesec_no_desc", "rb") as f:
@@ -294,11 +297,11 @@ def test_extract_links_json_no_json(example_html_string):
 
 def test_extract_links_json_no_title():
     """Test extract_links_json() with no title."""
-    with open("src/tests/data/input/truesec.html", "r", encoding="utf-8") as f:
+    with open("src/tests/data/input/truesec.html", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
     arguments = rss.parse_arguments(
-        ["--json", "--json-title", "fail", "https://www.truesec.com/hub/blog"]
+        ["--json", "--json-title", "fail", "https://www.truesec.com/hub/blog"],
     )
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.extract_links_json(soup, arguments)
@@ -310,10 +313,10 @@ def test_create_rss_feed():
     """Test create_rss_feed() in RSS format working."""
     with open("src/tests/data/output/nccgroup", "rb") as f:
         links = pickle.load(f)
-    with open("src/tests/data/output/nccgroup.xml", "r", encoding="utf-8") as f:
+    with open("src/tests/data/output/nccgroup.xml", encoding="utf-8") as f:
         correct_rss_feed = f.read()
     arguments = rss.parse_arguments(
-        ["--title", "nccgroup", "--list", "https://research.nccgroup.com/"]
+        ["--title", "nccgroup", "--list", "https://research.nccgroup.com/"],
     )
     rss_feed = rss.create_rss_feed(links, arguments)
     rss_feed = re.sub(
@@ -326,7 +329,7 @@ def test_create_rss_feed():
 
 def test_create_rss_feed_atom():
     """Test create_rss_feed() with Atom output format."""
-    with open("src/tests/data/output/apple.xml", "r", encoding="utf-8") as f:
+    with open("src/tests/data/output/apple.xml", encoding="utf-8") as f:
         correct_rss_feed = f.read()
     arguments = rss.parse_arguments(
         [
@@ -341,7 +344,7 @@ def test_create_rss_feed_atom():
             "--base-url",
             "https://security.apple.com/blog/",
             "https://security.apple.com/blog",
-        ]
+        ],
     )
     with open("src/tests/data/output/apple", "rb") as f:
         links = pickle.load(f)
@@ -364,7 +367,7 @@ def test_create_rss_feed_with_base_url():
     """Test create_rss_feed() with base-url set."""
     with open("src/tests/data/output/tripwire", "rb") as f:
         links = pickle.load(f)
-    with open("src/tests/data/output/tripwire.xml", "r", encoding="utf-8") as f:
+    with open("src/tests/data/output/tripwire.xml", encoding="utf-8") as f:
         correct_rss_feed = f.read()
     arguments = rss.parse_arguments(
         [
@@ -374,7 +377,7 @@ def test_create_rss_feed_with_base_url():
             "--base-url",
             "https://www.tripwire.com",
             "http://www.tripwire.com/state-of-security",
-        ]
+        ],
     )
     rss_feed = rss.create_rss_feed(links, arguments)
     rss_feed = re.sub(
@@ -396,9 +399,9 @@ def test_save_rss_feed_working(tmpdir):
             "--base-url",
             "https://www.tripwire.com",
             "http://www.tripwire.com/state-of-security",
-        ]
+        ],
     )
-    with open("src/tests/data/output/tripwire.xml", "r", encoding="utf-8") as f:
+    with open("src/tests/data/output/tripwire.xml", encoding="utf-8") as f:
         rss_feed = f.read()
     rss.save_rss_feed(rss_feed, arguments)
 
@@ -423,9 +426,9 @@ def test_save_atom_feed_working(tmpdir):
             "--base-url",
             "https://security.apple.com/blog/",
             "https://security.apple.com/blog",
-        ]
+        ],
     )
-    with open("src/tests/data/output/apple.xml", "r", encoding="utf-8") as f:
+    with open("src/tests/data/output/apple.xml", encoding="utf-8") as f:
         rss_feed = f.read()
     rss.save_rss_feed(rss_feed, arguments)
 
@@ -443,9 +446,9 @@ def test_save_rss_feed_not_working():
             "--base-url",
             "https://www.tripwire.com",
             "http://www.tripwire.com/state-of-security",
-        ]
+        ],
     )
-    with open("src/tests/data/output/tripwire.xml", "r", encoding="utf-8") as f:
+    with open("src/tests/data/output/tripwire.xml", encoding="utf-8") as f:
         rss_feed = f.read()
 
     with pytest.raises(SystemExit) as pytest_wrapped_e:
@@ -456,8 +459,8 @@ def test_save_rss_feed_not_working():
 
 def test_init():
     """Test init() function."""
-    with patch.object(rss, "main", return_value=42):
+    with patch.object(rss, "main", return_value=EXIT_VALUE):
         with patch.object(rss, "__name__", "__main__"):
             with patch.object(rss.sys, "exit") as mock_exit:
                 rss.init()
-                assert mock_exit.call_args[0][0] == 42
+                assert mock_exit.call_args[0][0] == EXIT_VALUE
