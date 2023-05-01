@@ -29,8 +29,8 @@ jobs:
 
       - name: Install rssfixer and dev dependencies
         run: |
-          python -m pip install -e '.[dev]'
-          python -m pip install -e '.[github]'
+          python -m pip poetry
+          poetry install --with dev,github
 
       - name: Run bandit
         run: bandit -l -f json -o resources/bandit.json -r src/rssfixer

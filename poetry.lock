@@ -414,6 +414,21 @@ files = [
 toml = ["tomli"]
 
 [[package]]
+name = "coverage-badge"
+version = "1.1.0"
+description = "Generate coverage badges for Coverage.py."
+category = "dev"
+optional = false
+python-versions = "*"
+files = [
+    {file = "coverage-badge-1.1.0.tar.gz", hash = "sha256:c824a106503e981c02821e7d32f008fb3984b2338aa8c3800ec9357e33345b78"},
+    {file = "coverage_badge-1.1.0-py2.py3-none-any.whl", hash = "sha256:e365d56e5202e923d1b237f82defd628a02d1d645a147f867ac85c58c81d7997"},
+]
+
+[package.dependencies]
+coverage = "*"
+
+[[package]]
 name = "cryptography"
 version = "40.0.2"
 description = "cryptography is a package which provides cryptographic recipes and primitives to Python developers."
@@ -785,6 +800,21 @@ cssselect = ["cssselect (>=0.7)"]
 html5 = ["html5lib"]
 htmlsoup = ["BeautifulSoup4"]
 source = ["Cython (>=0.29.7)"]
+
+[[package]]
+name = "markdown-code-runner"
+version = "2.0.0"
+description = "Automatically execute code blocks within a Markdown file and update the output in-place"
+category = "dev"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "markdown-code-runner-2.0.0.tar.gz", hash = "sha256:35e8435d0c01ebaf2661261ec2079ee9edc52a4b3cc165fb5f2b674c0cdb1e98"},
+    {file = "markdown_code_runner-2.0.0-py3-none-any.whl", hash = "sha256:c5d66353a00174fae2d8302d0ed5715b5cab451d3c5639553ee145702d40e2fc"},
+]
+
+[package.extras]
+test = ["coverage", "pre-commit", "pytest", "pytest-cov"]
 
 [[package]]
 name = "markdown-it-py"
@@ -1445,4 +1475,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.8"
-content-hash = "a8d32e3b088ac56630c2019760a5ec4fb761d67e81501e4e952a7d15d6df92f9"
+content-hash = "93cf847692dc72d8e676daa7ed0f505d09f26033cca0dac350b2ccf870664c20"

@@ -21,8 +21,6 @@ classifiers = [
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
-#github = ["coverage-badge", "markdown-code-runner"]
-
 [project.urls]
 "Homepage" = "https://github.com/reuteras/rssfixer"
 "Bug Tracker" = "https://github.com/reuteras/rssfixer/issues"
@@ -100,6 +98,13 @@ pytest = "^7.3.1"
 requests-mock = "^1.10.0"
 coverage = "^7.2.5"
 pre-commit = "^3.2.2"
+
+[tool.poetry.group.github]
+optional = true
+
+[tool.poetry.group.github.dependencies]
+coverage-badge = "^1.1.0"
+markdown-code-runner = "^2.0.0"
 
 [tool.black]
 line-length = 120
