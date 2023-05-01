@@ -25,7 +25,7 @@ build-backend = "poetry.core.masonry.api"
 "Homepage" = "https://github.com/reuteras/rssfixer"
 "Bug Tracker" = "https://github.com/reuteras/rssfixer/issues"
 
-[project.scripts]
+[tool.poetry.scripts]
 rssfixer = "rssfixer:main"
 
 [tool.ruff]
