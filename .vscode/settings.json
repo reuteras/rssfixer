@@ -16,6 +16,7 @@
         "pyflakes",
         "Pylint",
         "pypackages",
+        "pypi",
         "pytest",
         "pyupgrade",
         "Reuterås",
