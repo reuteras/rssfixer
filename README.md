@@ -92,7 +92,6 @@ An example for [tripwire.com][tri]:
 
 ```bash
 rssfixer --title Tripwire --output tripwire.xml --quiet --html --base-url https://www.tripwire.com http://www.tripwire.com/state-of-security
-
 ```
 
 ### Release
@@ -109,7 +108,7 @@ Command-line options (updated on commit by [markdown-code-runner][mcr]):
 
 <!-- CODE:BASH:START -->
 <!-- echo '```Text' -->
-<!-- rssfixer --help -->
+<!-- poetry run rssfixer --help -->
 <!-- echo '```' -->
 <!-- CODE:END -->
 
