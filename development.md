@@ -27,5 +27,5 @@ poetry build
 ## Upload to pypi.org
 
 ```bash
-python3 -m twine upload dist/* --repository rssfixer
+poetry publish
 ```
