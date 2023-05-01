@@ -74,7 +74,7 @@ An example for [Apple][app]:
 rssfixer --title "Apple Security" --output apple.xml --quiet --json --json-entries blogs --json-url slug --base-url https://security.apple.com/blog/ https://security.apple.com/blog
 ```
 
-In this example `--json-entries blogs`specifies that blog entries are located in a key called __blogs__ and that URLs are availablie in a key called __slug__. Since the URL only includes the key (or slug) we specify the full URL to the blog with `--base-url https://security.apple.com/blog/`.
+In this example `--json-entries blogs`specifies that blog entries are located in a key called __blogs__ and that URLs are available in a key called __slug__. Since the URL only includes the key (or slug) we specify the full URL to the blog with `--base-url https://security.apple.com/blog/`.
 
 An example for [truesec.com][tru]:
 
