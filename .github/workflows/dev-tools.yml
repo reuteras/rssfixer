@@ -33,7 +33,9 @@ jobs:
           poetry install --with dev,github
 
       - name: Run bandit
-        run: bandit -l -f json -o resources/bandit.json -r src/rssfixer
+        run: |
+          poetry shell
+          bandit -l -f json -o resources/bandit.json -r src/rssfixer
 
       # yamllint disable rule:line-length
       - name: Commit updated bandit.json
@@ -71,6 +73,7 @@ jobs:
 
       - name: Run coverage and create badge
         run: |
+          poetry shell
           coverage run -m pytest
           coverage report -m > resources/coverage.txt
           coverage-badge -f -q -o resources/coverage.svg
