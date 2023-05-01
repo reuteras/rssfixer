@@ -52,7 +52,7 @@ jobs:
       # yamllint enable
 
       - name: Run update-readme.py
-        run: markdown-code-runner --verbose README.md
+        run: poetry run markdown-code-runner --verbose README.md
 
       # yamllint disable rule:line-length
       - name: Commit updated README.md
