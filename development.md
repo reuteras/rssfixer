@@ -2,19 +2,26 @@
 
 ## Test
 
-Do the following tests:
+Run the following tests and validations and make sure that they all pass before committing. The tests are also run by GitHub Actions and with `pre-commit` before committing.
 
-- Make sure tests works in Visual Studio Code
-- Run `bandit -r src/rssfixer` to check for security related bugs.
-- Check code test coverage: `coverage run -m pytest` and look at the report via `coverage report -m`
-- Generate badge for coverage: `coverage-badge -f -q -o resources/coverage.svg`
+```bash
+black .
+ruff .
+bandit -r src/rssfixer
+coverage run -m pytest
+coverage report -m
+```
 
 ## Build
 
-Update version number in _pyproject.toml_ before building with:
+Update the version number with the help of poetry.
 
 ```bash
-python3 -m build
+poetry version patch          # or minor or major
+```
+
+```bash
+poetry build
 ```
 
 ## Upload to pypi.org
