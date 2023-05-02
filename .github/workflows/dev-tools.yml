@@ -32,8 +32,10 @@ jobs:
           python -m pip install poetry
           poetry install --with dev,github --no-interaction
 
+      # yamllint disable rule:line-length
       - name: Run bandit
         run: poetry run bandit -l -f json -o resources/bandit.json -r src/rssfixer
+      # yamllint enable
 
       # yamllint disable rule:line-length
       - name: Commit updated bandit.json
