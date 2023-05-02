@@ -2,10 +2,12 @@
 # Run all dev tools and update README.md
 name: Run dev tools and update README.md
 
-on:
+on:  # yamllint disable-line rule:truthy
   push:
     branches:
       - main
+    paths:
+      - '**.py'
   pull_request:
 
 jobs:
