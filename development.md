@@ -2,7 +2,7 @@
 
 ## Setup
 
-Install needed dependencies (only macos example with brew).
+Install needed dependencies (only macOS example with brew).
 
 ```bash
 brew install poetry pre-commit
