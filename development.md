@@ -40,3 +40,9 @@ poetry build
 ```bash
 poetry publish
 ```
+
+## Update requirements.txt
+
+```bash
+poetry export -f requirements.txt --output requirements.txt --without-hashes
+```
