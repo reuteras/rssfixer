@@ -121,12 +121,15 @@ usage: rssfixer [-h] (--html | --json | --list | --release) [--version]
                 [--html-entries HTML_ENTRIES] [--html-url HTML_URL]
                 [--html-title HTML_TITLE]
                 [--html-title-class HTML_TITLE_CLASS]
+                [--title-filter TITLE_FILTER]
                 [--html-description HTML_DESCRIPTION]
                 [--html-description-class HTML_DESCRIPTION_CLASS]
                 [--json-entries JSON_ENTRIES] [--json-url JSON_URL]
                 [--json-title JSON_TITLE]
                 [--json-description JSON_DESCRIPTION] [--output OUTPUT]
-                [--title TITLE] [-q] [--stdout]
+                [--title TITLE] [--user-agent USER_AGENT]
+                [--filter-type FILTER_TYPE] [--filter-name FILTER_NAME] [-q]
+                [--stdout]
                 url
 
 Generate RSS feed for blog that don't publish a feed. Default is to find links
@@ -156,6 +159,8 @@ options:
                         HTML selector for title
   --html-title-class HTML_TITLE_CLASS
                         Flag to specify title class (regex)
+  --title-filter TITLE_FILTER
+                        Filter for title, ignore entries that don't match
   --html-description HTML_DESCRIPTION
                         HTML selector for description
   --html-description-class HTML_DESCRIPTION_CLASS
@@ -169,6 +174,12 @@ options:
                         JSON key for description
   --output OUTPUT       Name of the output file
   --title TITLE         Title of the RSS feed (default: "My RSS Feed")
+  --user-agent USER_AGENT
+                        User agent to use for HTTP requests
+  --filter-type FILTER_TYPE
+                        Filter web page
+  --filter-name FILTER_NAME
+                        Filter web page
   -q, --quiet           Suppress output
   --stdout              Print to stdout
 ```
