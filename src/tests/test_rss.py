@@ -109,11 +109,19 @@ test_cases = [
 
 def test_fetch_html(requests_mock):
     """Test the fetch_html function."""
-    url = "https://research.nccgroup.com/"
     with open("src/tests/data/input/nccgroup.html", encoding="utf-8") as f:
         content = f.read()
-    requests_mock.get(url, text=content)
-    assert content == rss.fetch_html(url)
+    arguments = [
+        "--title",
+        "nccgroup",
+        "--stdout",
+        "--release",
+        "https://research.nccgroup.com/",
+    ]
+    args = rss.parse_arguments(arguments)
+    assert args.release
+    requests_mock.get(args.url, text=content)
+    assert content == rss.fetch_html(args)
 
 
 def test_fetch_html_no_url(requests_mock):
