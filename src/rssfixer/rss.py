@@ -16,6 +16,10 @@ try:
 except importlib.metadata.PackageNotFoundError:  # pragma: no cover
     __version__ = "0.0.0"
 
+ua = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
+)
+
 
 class CheckHtmlAction(argparse.Action):
     """Class to validate argparse for --html options."""
@@ -47,10 +51,14 @@ class CheckReleaseAction(argparse.Action):
         setattr(namespace, self.dest, values)
 
 
-def fetch_html(url):
+def fetch_html(arguments):
     """Fetch HTML content from a URL."""
+    url = arguments.url
+    headers = {
+        "User-Agent": arguments.user_agent,
+    }
     try:
-        response = requests.get(url, timeout=10)
+        response = requests.get(url, headers=headers, timeout=10)
     except requests.exceptions.Timeout:  # pragma: no cover
         print("ERROR: Request timed out")
         sys.exit(1)
@@ -75,6 +83,16 @@ def find_entries(json_object, entries_key):
             if result is not None:
                 return result
     return None
+
+
+def filter_html(soup, filter_type, filter_name):
+    """Filter web page."""
+    filtersoup = soup.find_all(filter_type, filter_name)
+    if not filtersoup:
+        print("ERROR: No entries found")
+        sys.exit(1)
+    filtersoup = BeautifulSoup(str(filtersoup), "html.parser")
+    return filtersoup
 
 
 def extract_links_ul(soup):
@@ -118,8 +136,8 @@ def extract_links_html(soup, arguments):
                 re.compile(arguments.html_title_class),
             ).text.strip()
         except (KeyError, AttributeError):
-            print("ERROR: Unable to find URL or title in HTML element")
-            sys.exit(1)
+            # Continue if URL or title is not found to fins other entries
+            continue
         try:
             description = entry.find(
                 arguments.html_description,
@@ -129,8 +147,13 @@ def extract_links_html(soup, arguments):
             # Ignore description if it's not found
             description = ""
         if url not in unique_links:
-            unique_links.add(url)
-            links.append((url, title, description))
+            if arguments.title_filter:
+                if re.search(arguments.title_filter, title):
+                    unique_links.add(url)
+                    links.append((url, title, description))
+            else:
+                unique_links.add(url)
+                links.append((url, title, description))
 
     if not links:
         print("ERROR: No links found")
@@ -297,6 +320,10 @@ def parse_arguments(arguments):
         help="Flag to specify title class (regex)",
     )
     parser.add_argument(
+        "--title-filter",
+        help="Filter for title, ignore entries that don't match",
+    )
+    parser.add_argument(
         "--html-description",
         action=CheckHtmlAction,
         default="div",
@@ -342,6 +369,20 @@ def parse_arguments(arguments):
         default="My RSS Feed",
         help='Title of the RSS feed (default: "My RSS Feed")',
     )
+    parser.add_argument(
+        "--user-agent",
+        default=ua,
+        help="User agent to use for HTTP requests",
+    )
+    parser.add_argument(
+        "--filter-type",
+        help="Filter web page",
+    )
+    parser.add_argument(
+        "--filter-name",
+        help="Filter web page",
+    )
+
     parser.add_argument("-q", "--quiet", action="store_true", help="Suppress output")
     parser.add_argument("--stdout", action="store_true", help="Print to stdout")
 
@@ -376,8 +417,12 @@ def main(args=None):
         sys.exit(0)
 
     # Get HTML content from URL
-    html_content = fetch_html(args.url)
+    html_content = fetch_html(args)
     soup = BeautifulSoup(html_content, "html.parser")
+
+    # Filter web page
+    if args.filter_type and args.filter_name:
+        soup = filter_html(soup, args.filter_type, args.filter_name)
 
     # Select function to handle different types of blogs
     if args.json:
