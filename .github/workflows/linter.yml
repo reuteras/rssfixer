@@ -33,5 +33,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BRANCH: main
           VALIDATE_ALL_CODEBASE: true
+          LINTER_RULES_PATH: /
           PYTHON_BLACK_CONFIG_FILE: pyproject.toml
           FILTER_REGEX_EXCLUDE: .*/(apple|nccgroup|sqlite|tripwire|truesec)\.(xml|html)
