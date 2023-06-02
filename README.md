@@ -207,7 +207,11 @@ rssfixer --title Truesec --output truesec.xml --quiet --json --json-description 
 
 # SQLite
 # Url: https://sqlite.org/changes.html
-rssfixer --release --release-entries h3 --release-url https://sqlite.org/download.html https://sqlite.org/changes.html
+rssfixer --title SQLite --release --release-entries h3 --release-url https://sqlite.org/download.html https://sqlite.org/changes.html
+
+# Nucleus
+# https://nucleussec.com/category/cisa-kev
+rssfixer --title "Nucleus CISA KEV" --output nucleus.xml  --html --filter-type div --filter-name recent-post-widget --html-entries div --html-title div --html-title-class "post-desc" --title-filter KEV https://nucleussec.com/category/cisa-kev
 ```
 
 If you have other example use case please add them in [show usage examples][sue] in discussions.
