@@ -212,6 +212,10 @@ rssfixer --title SQLite --release --release-entries h3 --release-url https://sql
 # Nucleus
 # https://nucleussec.com/category/cisa-kev
 rssfixer --title "Nucleus CISA KEV" --output nucleus.xml  --html --filter-type div --filter-name recent-post-widget --html-entries div --html-title div --html-title-class "post-desc" --title-filter KEV https://nucleussec.com/category/cisa-kev
+
+# NCSC-SE
+# https://www.ncsc.se/publikationer/
+rssfixer --html --filter-type div --filter-name 'page-container' --html-entries div --html-entries-class "news-text" --html-title h2 --html-title-class "" --html-description p --html-url a --base-url https://www.ncsc.se --stdout  --atom --title "Feed for NCSC-SE" https://www.ncsc.se/publikationer/
 ```
 
 If you have other example use case please add them in [show usage examples][sue] in discussions.
