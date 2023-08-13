@@ -87,7 +87,10 @@ def find_entries(json_object, entries_key):
 
 def filter_html(soup, filter_type, filter_name):
     """Filter web page."""
-    filtersoup = soup.find_all(filter_type, filter_name)
+    if filter_name is None:
+        filtersoup = soup.find_all(filter_type)
+    else:
+        filtersoup = soup.find_all(filter_type, filter_name)
     if not filtersoup:
         print("ERROR: No entries found")
         sys.exit(1)
@@ -122,21 +125,30 @@ def extract_links_ul(soup):
     return links
 
 
+def get_html_title(entry, arguments):
+    """Get the title of an HTML page."""
+    if arguments.html_title_class:
+        title = entry.find(
+            arguments.html_title,
+            re.compile(arguments.html_title_class),
+        ).text.strip()
+    else:
+        title = entry.find(arguments.html_title).text.strip()
+    return title
+
+
 def extract_links_html(soup, arguments):
     """Extract links from an HTML page with links in selectable elements."""
     links = []
     unique_links = set()
 
     # Iterate through all the elements of type html_entries in the page
-    for entry in soup.find_all(arguments.html_entries):
+    for entry in soup.find_all(arguments.html_entries, arguments.html_entries_class):
         try:
-            url = entry.findNext(arguments.html_url)["href"]
-            title = entry.find(
-                arguments.html_title,
-                re.compile(arguments.html_title_class),
-            ).text.strip()
+            url = entry.find_all(arguments.html_url)[0]["href"]
+            title = get_html_title(entry, arguments)
         except (KeyError, AttributeError):
-            # Continue if URL or title is not found to fins other entries
+            # Continue if URL or title is not found to find other entries
             continue
         try:
             description = entry.find(
@@ -241,12 +253,12 @@ def create_rss_feed(links, arguments):
     # Add entries to the RSS feed
     for url, title, description in links:
         fe = fg.add_entry()
+        fe_url = url
         if arguments.base_url:
-            fe.link(href=arguments.base_url + url)
-            fe.id(arguments.base_url + url)
-        else:
-            fe.link(href=url)
-            fe.id(url)
+            if not url.startswith("http"):
+                fe_url = arguments.base_url + url
+        fe.link(href=fe_url)
+        fe.id(fe_url)
         fe.title(title)
         if vars(arguments).get("atom", False):
             fe.summary(description)
@@ -300,6 +312,12 @@ def parse_arguments(arguments):
         action=CheckHtmlAction,
         default="article",
         help="HTML selector for entries",
+    )
+    parser.add_argument(
+        "--html-entries-class",
+        action=CheckHtmlAction,
+        default="",
+        help="Class name for entries",
     )
     parser.add_argument(
         "--html-url",
@@ -384,6 +402,7 @@ def parse_arguments(arguments):
     )
 
     parser.add_argument("-q", "--quiet", action="store_true", help="Suppress output")
+    parser.add_argument("-d", "--debug", action="store_true", help="Debug selection")
     parser.add_argument("--stdout", action="store_true", help="Print to stdout")
 
     return parser.parse_args(arguments)
@@ -423,6 +442,9 @@ def main(args=None):
     # Filter web page
     if args.filter_type and args.filter_name:
         soup = filter_html(soup, args.filter_type, args.filter_name)
+    if args.debug:
+        print("DEBUG: Filtered HTML\n")
+        print(soup.prettify())
 
     # Select function to handle different types of blogs
     if args.json:
