@@ -13,7 +13,7 @@
 ![PyPI](https://img.shields.io/pypi/v/rssfixer?color=green)
 [![CodeQL](https://github.com/reuteras/rssfixer/workflows/CodeQL/badge.svg)](https://github.com/reuteras/rssfixer/actions?query=workflow%3ACodeQL)
 [![Coverage](https://raw.githubusercontent.com/reuteras/rssfixer/main/resources/coverage.svg)](https://github.com/reuteras/rssfixer/)
-[![security: bandit](https://img.shields.io/badge/security-bandit-green.svg)](https://github.com/PyCQA/bandit)
+
 <!-- OUTPUT:END -->
 
 A tool to generate an [RSS][rss] feed from some [WordPress][wor] blogs and other sources that for some reason don't generate their own feeds. This tool uses [BeautifulSoup][bso] to parse the HTML and [feedgen][fge] to generate the feed. I created this tool to be to follow news from companies that have forgotten the usefulness of RSS.
@@ -118,8 +118,9 @@ Command-line options (updated on commit by [markdown-code-runner][mcr]):
 usage: rssfixer [-h] (--html | --json | --list | --release) [--version]
                 [--atom] [--base-url BASE_URL] [--release-url RELEASE_URL]
                 [--release-entries RELEASE_ENTRIES]
-                [--html-entries HTML_ENTRIES] [--html-url HTML_URL]
-                [--html-title HTML_TITLE]
+                [--html-entries HTML_ENTRIES]
+                [--html-entries-class HTML_ENTRIES_CLASS]
+                [--html-url HTML_URL] [--html-title HTML_TITLE]
                 [--html-title-class HTML_TITLE_CLASS]
                 [--title-filter TITLE_FILTER]
                 [--html-description HTML_DESCRIPTION]
@@ -129,7 +130,7 @@ usage: rssfixer [-h] (--html | --json | --list | --release) [--version]
                 [--json-description JSON_DESCRIPTION] [--output OUTPUT]
                 [--title TITLE] [--user-agent USER_AGENT]
                 [--filter-type FILTER_TYPE] [--filter-name FILTER_NAME] [-q]
-                [--stdout]
+                [-d] [--stdout]
                 url
 
 Generate RSS feed for blog that don't publish a feed. Default is to find links
@@ -154,6 +155,8 @@ options:
                         Release selector for entries
   --html-entries HTML_ENTRIES
                         HTML selector for entries
+  --html-entries-class HTML_ENTRIES_CLASS
+                        Class name for entries
   --html-url HTML_URL   HTML selector for URL
   --html-title HTML_TITLE
                         HTML selector for title
@@ -181,6 +184,7 @@ options:
   --filter-name FILTER_NAME
                         Filter web page
   -q, --quiet           Suppress output
+  -d, --debug           Debug selection
   --stdout              Print to stdout
 ```
 
