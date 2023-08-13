@@ -1,10 +1,10 @@
 Name                                          Stmts   Miss  Cover   Missing
 ---------------------------------------------------------------------------
 src/rssfixer/__init__.py                          2      0   100%
-src/rssfixer/rss.py                             257     27    89%   90-98, 136, 163-165, 430, 435-436, 444, 446-447, 453, 456-463, 470
+src/rssfixer/rss.py                             259     28    89%   90-98, 136, 155, 166-168, 433, 438-439, 447, 449-450, 456, 459-466, 473
 src/tests/test_rss.py                           197      0   100%
 src/tests/test_rss_args.py                       61      0   100%
 src/tests/test_rss_extract_links_release.py      29      0   100%
 src/tests/test_rss_main.py                       32      0   100%
 ---------------------------------------------------------------------------
-TOTAL                                           578     27    95%
+TOTAL                                           580     28    95%
