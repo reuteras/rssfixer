@@ -219,7 +219,7 @@ rssfixer --title "Nucleus CISA KEV" --output nucleus.xml  --html --filter-type d
 
 # NCSC-SE
 # https://www.ncsc.se/publikationer/
-rssfixer --html --filter-type div --filter-name 'page-container' --html-entries div --html-entries-class "news-text" --html-title h2 --html-title-class "" --html-description p --html-url a --base-url https://www.ncsc.se --stdout  --atom --title "Feed for NCSC-SE" https://www.ncsc.se/publikationer/
+rssfixer --html --filter-type div --filter-name 'page-container' --html-entries div --html-entries-class "news-text" --html-title h2 --html-title-class "" --html-description p --html-description-class "" --html-url a --base-url https://www.ncsc.se --stdout  --atom --title "Feed for NCSC-SE" https://www.ncsc.se/publikationer/
 ```
 
 If you have other example use case please add them in [show usage examples][sue] in discussions.

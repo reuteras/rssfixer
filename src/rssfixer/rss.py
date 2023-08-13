@@ -151,10 +151,13 @@ def extract_links_html(soup, arguments):
             # Continue if URL or title is not found to find other entries
             continue
         try:
-            description = entry.find(
-                arguments.html_description,
-                re.compile(arguments.html_description_class),
-            ).text.strip()
+            if not arguments.html_description_class:
+                description = entry.find(arguments.html_description).text.strip()
+            else:
+                description = entry.find(
+                    arguments.html_description,
+                    re.compile(arguments.html_description_class),
+                ).text.strip()
         except (KeyError, AttributeError):
             # Ignore description if it's not found
             description = ""
