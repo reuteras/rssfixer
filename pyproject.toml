@@ -75,7 +75,7 @@ line-length = 120
 max-complexity = 10
 [tool.poetry]
 name = "rssfixer"
-version = "0.2.2"
+version = "0.2.3"
 description = "Generate RSS for blogs without a feed."
 authors = ["Peter Reuterås <peter@reuteras.net>"]
 license = "MIT"
