@@ -776,13 +776,13 @@ source = ["Cython (>=0.29.35)"]
 
 [[package]]
 name = "markdown-code-runner"
-version = "2.0.0"
+version = "2.1.0"
 description = "Automatically execute code blocks within a Markdown file and update the output in-place"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "markdown-code-runner-2.0.0.tar.gz", hash = "sha256:35e8435d0c01ebaf2661261ec2079ee9edc52a4b3cc165fb5f2b674c0cdb1e98"},
-    {file = "markdown_code_runner-2.0.0-py3-none-any.whl", hash = "sha256:c5d66353a00174fae2d8302d0ed5715b5cab451d3c5639553ee145702d40e2fc"},
+    {file = "markdown-code-runner-2.1.0.tar.gz", hash = "sha256:aecc56121ebeccb2a9a74ea818783486cb3a6457ec5da9ee2a64a4fc8833bcf9"},
+    {file = "markdown_code_runner-2.1.0-py3-none-any.whl", hash = "sha256:ff439a8c54a7e24d66657d68d342e8cea703ec56f21b31e7f08bbd7d9e241337"},
 ]
 
 [package.extras]
