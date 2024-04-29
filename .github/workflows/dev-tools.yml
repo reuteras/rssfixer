@@ -10,6 +10,8 @@ on:  # yamllint disable-line rule:truthy
       - '**.py'
   pull_request:
 
+permissions: read-all
+
 jobs:
   update_readme:
     runs-on: ubuntu-latest
@@ -42,6 +44,8 @@ jobs:
       # yamllint disable rule:line-length
       - name: Commit updated bandit.json
         id: commit_bandit
+        permissions:
+          contents: write
         run: |
           git add resources/bandit.json
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -61,6 +65,8 @@ jobs:
       # yamllint disable rule:line-length
       - name: Commit updated README.md
         id: commit_readme
+        permissions:
+          contents: write
         run: |
           git add README.md
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -82,6 +88,8 @@ jobs:
       # yamllint disable rule:line-length
       - name: Commit updated resources/coverage.txt resources/coverage.svg
         id: commit
+        permissions:
+          contents: write
         run: |
           git add resources/coverage.txt resources/coverage.svg
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
@@ -96,6 +104,8 @@ jobs:
 
       # yamllint disable rule:line-length
       - name: Push changes
+        permissions:
+          contents: write
         if: env.commit_status == 'committed' && github.actor != 'dependabot[bot]'
         uses: ad-m/github-push-action@master
         with:
