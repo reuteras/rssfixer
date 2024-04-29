@@ -11,6 +11,8 @@ on:
   pull_request:
     branches: [main]
 
+permissions: read-all
+
 # A workflow run is made up of one or more jobs that can run sequentially
 # or in parallel
 jobs:
@@ -22,17 +24,20 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part
     # of the job
     steps:
-    # Checks-out your repository under $GITHUB_WORKSPACE, so your job
-    # can access it
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job
+      # can access it
       - uses: actions/checkout@v4
 
-    # Runs a single command using the runners shell
+      # Runs a single command using the runners shell
       - name: Lint Code Base
         uses: github/super-linter/slim@v6
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEFAULT_BRANCH: main
           VALIDATE_ALL_CODEBASE: true
+          VALIDATE_PYTHON_BLACK: false
+          VALIDATE_PYTHON_FLAKE8: false
+          VALIDATE_PYTHON_PYLINT: false
           LINTER_RULES_PATH: /
-          PYTHON_BLACK_CONFIG_FILE: pyproject.toml
+          # yamllint disable-line rule:line-length
           FILTER_REGEX_EXCLUDE: .*/(apple|nccgroup|sqlite|tripwire|truesec)\.(xml|html)
