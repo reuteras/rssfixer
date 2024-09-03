@@ -38,6 +38,10 @@ jobs:
           VALIDATE_PYTHON_BLACK: false
           VALIDATE_PYTHON_FLAKE8: false
           VALIDATE_PYTHON_PYLINT: false
+          VALIDATE_PYTHON_PYINK: false
+          VALIDATE_JSON_PRETTIER: false
+          VALIDATE_MARKDOWN_PRETTIER: false
+          VALIDATE_YAML_PRETTIER: false
           LINTER_RULES_PATH: /
           # yamllint disable-line rule:line-length
           FILTER_REGEX_EXCLUDE: .*/(apple|nccgroup|sqlite|tripwire|truesec)\.(xml|html)
