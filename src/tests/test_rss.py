@@ -1,4 +1,5 @@
 """Tests for rss.py."""
+
 import pickle
 import re
 from unittest.mock import patch
@@ -6,6 +7,7 @@ from unittest.mock import patch
 import pytest
 from bs4 import BeautifulSoup
 from requests_mock import NoMockAddress
+
 from rssfixer import rss
 
 
@@ -174,7 +176,7 @@ def test_extract_links_ul_simple_no_match(example_html_string_no_match):
     soup = BeautifulSoup(example_html_string_no_match, "html.parser")
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.extract_links_ul(soup)
-    assert pytest_wrapped_e.type == SystemExit
+    assert pytest_wrapped_e.type is SystemExit
     assert pytest_wrapped_e.value.code == 1
 
 
@@ -213,7 +215,7 @@ def test_extract_links_html_no_match_title():
     )
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.extract_links_html(soup, arguments)
-    assert pytest_wrapped_e.type == SystemExit
+    assert pytest_wrapped_e.type is SystemExit
     assert pytest_wrapped_e.value.code == 1
 
 
@@ -232,7 +234,7 @@ def test_extract_links_html_no_match_links():
     )
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.extract_links_html(soup, arguments)
-    assert pytest_wrapped_e.type == SystemExit
+    assert pytest_wrapped_e.type is SystemExit
     assert pytest_wrapped_e.value.code == 1
 
 
@@ -299,7 +301,7 @@ def test_extract_links_json_no_json(example_html_string):
     arguments = rss.parse_arguments(["--json", "https://www.truesec.com/hub/blog"])
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.extract_links_json(soup, arguments)
-    assert pytest_wrapped_e.type == SystemExit
+    assert pytest_wrapped_e.type is SystemExit
     assert pytest_wrapped_e.value.code == 1
 
 
@@ -313,7 +315,7 @@ def test_extract_links_json_no_title():
     )
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.extract_links_json(soup, arguments)
-    assert pytest_wrapped_e.type == SystemExit
+    assert pytest_wrapped_e.type is SystemExit
     assert pytest_wrapped_e.value.code == 1
 
 
@@ -461,7 +463,7 @@ def test_save_rss_feed_not_working():
 
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.save_rss_feed(rss_feed, arguments)
-    assert pytest_wrapped_e.type == SystemExit
+    assert pytest_wrapped_e.type is SystemExit
     assert pytest_wrapped_e.value.code == 1
 
 

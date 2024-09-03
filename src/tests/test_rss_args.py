@@ -1,5 +1,7 @@
 """Test arguments to rssfixer."""
+
 import pytest
+
 from rssfixer import rss
 
 # Constants

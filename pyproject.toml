@@ -28,7 +28,7 @@ build-backend = "poetry.core.masonry.api"
 rssfixer = "rssfixer:main"
 
 [tool.ruff]
-select = [
+lint.select = [
   "BLE",  # flake8-blind-except
   "C4",   # flake8-comprehensions
   "COM",  # flake8-commas
@@ -44,7 +44,7 @@ select = [
   "UP",   # pyupgrade
   "W",    # Warning
 ]
-ignore = [
+lint.ignore = [
   "D203", # one-blank-line-before-class
   "D213", # multi-line-summary-second-line
   "S101", # Use of `assert` detected
@@ -52,11 +52,11 @@ ignore = [
 ]
 
 # Allow autofix for all enabled rules (when `--fix`) is provided.
-fixable = ["A", "B", "C", "D", "E", "F", "G", "I", "N", "Q", "S", "T", "W", "ANN", "ARG", "BLE", "COM", "DJ", "DTZ", "EM", "ERA", "EXE", "FBT", "ICN", "INP", "ISC", "NPY", "PD", "PGH", "PIE", "PL", "PT", "PTH", "PYI", "RET", "RSE", "RUF", "SIM", "SLF", "TCH", "TID", "TRY", "UP", "YTT"]
-unfixable = []
+lint.fixable = ["A", "B", "C", "D", "E", "F", "G", "I", "N", "Q", "S", "T", "W", "ANN", "ARG", "BLE", "COM", "DJ", "DTZ", "EM", "ERA", "EXE", "FBT", "ICN", "INP", "ISC", "NPY", "PD", "PGH", "PIE", "PL", "PT", "PTH", "PYI", "RET", "RSE", "RUF", "SIM", "SLF", "TCH", "TID", "TRY", "UP", "YTT"]
+lint.unfixable = []
 
 # Exclude a variety of commonly ignored directories.
-exclude = [
+lint.exclude = [
     ".git",
     ".github",
     ".pytest_cache",
@@ -70,7 +70,7 @@ exclude = [
 # Same as Black.
 line-length = 120
 
-[tool.ruff.mccabe]
+[tool.ruff.lint.mccabe]
 # Unlike Flake8, default to a complexity level of 10.
 max-complexity = 10
 [tool.poetry]

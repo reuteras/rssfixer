@@ -1,8 +1,10 @@
 """Test extract_links_release function."""
+
 import pickle
 
 import pytest
 from bs4 import BeautifulSoup
+
 from rssfixer import rss
 
 
@@ -47,7 +49,7 @@ def test_extract_links_release_no_title_text():
     )
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.extract_links_release(soup, arguments)
-    assert pytest_wrapped_e.type == SystemExit
+    assert pytest_wrapped_e.type is SystemExit
     assert pytest_wrapped_e.value.code == 1
 
 
@@ -71,5 +73,5 @@ def test_extract_links_release_no_match():
     )
     with pytest.raises(SystemExit) as pytest_wrapped_e:
         rss.extract_links_release(soup, arguments)
-    assert pytest_wrapped_e.type == SystemExit
+    assert pytest_wrapped_e.type is SystemExit
     assert pytest_wrapped_e.value.code == 1
