@@ -1,4 +1,5 @@
 """Generate rss feed for "blogs" without rss feed."""
+
 import argparse
 import hashlib
 import importlib.metadata

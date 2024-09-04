@@ -1,4 +1,5 @@
 """Test main function for rssfixer."""
+
 import re
 
 from rssfixer import rss
