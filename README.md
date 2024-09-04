@@ -33,7 +33,7 @@ python3 -m pip install rssfixer
 
 I've expanded the tools to blogs that I like to follow. If you have suggestions to add/change functionality please open an [issue][iss] or start a new [discussion][dis].
 
-The basic formats of web pages supported are:
+The basic formats of supported web pages are:
 
 - `--list` - links are in simple ul-list
 - `--json` - links, titles and sometimes description is accessible in a JSON structure
