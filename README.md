@@ -13,7 +13,6 @@
 ![PyPI](https://img.shields.io/pypi/v/rssfixer?color=green)
 [![CodeQL](https://github.com/reuteras/rssfixer/workflows/CodeQL/badge.svg)](https://github.com/reuteras/rssfixer/actions?query=workflow%3ACodeQL)
 [![Coverage](https://raw.githubusercontent.com/reuteras/rssfixer/main/resources/coverage.svg)](https://github.com/reuteras/rssfixer/)
-[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/reuteras/rssfixer/main.svg)](https://results.pre-commit.ci/latest/github/reuteras/rssfixer/main)
 
 <!-- OUTPUT:END -->
 
