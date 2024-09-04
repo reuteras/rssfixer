@@ -5,6 +5,7 @@
 <!-- echo '![PyPI](https://img.shields.io/pypi/v/rssfixer?color=green)' -->
 <!-- echo '[![CodeQL](https://github.com/reuteras/rssfixer/workflows/CodeQL/badge.svg)](https://github.com/reuteras/rssfixer/actions?query=workflow%3ACodeQL)' -->
 <!-- echo '[![Coverage](https://raw.githubusercontent.com/reuteras/rssfixer/main/resources/coverage.svg)](https://github.com/reuteras/rssfixer/)' -->
+<!-- echo '[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/reuteras/rssfixer/main.svg)](https://results.pre-commit.ci/latest/github/reuteras/rssfixer/main)' -->
 <!-- if jq '.metrics._totals | ."SEVERITY.HI"' resources/bandit.json|grep -vE '^0' > /dev/null;then cl='red';elif jq '.metrics._totals' resources/bandit.json|grep "SEVERITY"|grep -E ' 0,'|wc -l|grep -vE '4$' > /dev/null;then cl='yellow';else cl='green';fi echo -n '[![security: bandit](https://img.shields.io/badge/security-bandit-' + $cl + '.svg)](https://github.com/PyCQA/bandit)' -->
 <!-- CODE:END -->
 <!-- OUTPUT:START -->
