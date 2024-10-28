@@ -11,7 +11,8 @@ on:  # yamllint disable-line rule:truthy
       - 'README.md'
   pull_request:
 
-permissions: read-all
+permissions:
+  contents: read
 
 jobs:
   update_readme:
