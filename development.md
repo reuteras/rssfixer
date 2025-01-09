@@ -46,5 +46,4 @@ poetry publish
 ```bash
 poetry update
 poetry update --with dev
-poetry export -f requirements.txt --output requirements.txt --without-hashes
 ```

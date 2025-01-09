@@ -75,17 +75,18 @@ line-length = 120
 max-complexity = 10
 [tool.poetry]
 name = "rssfixer"
-version = "0.2.7"
+version = "0.2.8"
 description = "Generate RSS for blogs without a feed."
 authors = ["Peter Reuterås <peter@reuteras.net>"]
 license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.8"
-beautifulsoup4 = "4.12.3"
+python = "^3.11"
+beautifulsoup4 = ">=4.12.3"
 feedgen = "0.9.0"
-requests = "2.32.3"
+requests = ">=2.32.3"
+docutils = ">=0.21.2"
 
 [tool.poetry.group.dev]
 optional = true
