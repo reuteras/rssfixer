@@ -8,6 +8,7 @@
         "elif",
         "feedgen",
         "filtersoup",
+        "gitpython",
         "isort",
         "KHTML",
         "mccabe",
@@ -33,5 +34,7 @@
         "src/tests/"
     ],
     "python.testing.unittestEnabled": false,
-    "python.testing.pytestEnabled": true
+    "python.testing.pytestEnabled": true,
+    "github.copilot.editor.enableAutoCompletions": true,
+    "github.copilot.advanced": {}
 }
