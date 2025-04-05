@@ -11,10 +11,9 @@ from pathlib import Path
 import requests
 from bs4 import BeautifulSoup
 from feedgen.feed import FeedGenerator
-from test.test_hashlib import HASH
 
 try:
-    __version__: str = "version " + importlib.metadata.version(distribution_name=__package__ or __name__)
+    __version__ = "version " + importlib.metadata.version(__package__ or __name__)
 except importlib.metadata.PackageNotFoundError:  # pragma: no cover
     __version__ = "0.0.0"
 
@@ -29,38 +28,38 @@ class CheckHtmlAction(argparse.Action):
     def __call__(self, parser, namespace, values, option_string=None):
         """Validate the class."""
         if not namespace.html:
-            parser.error(message=f"{option_string} requires --html to be specified.")
+            parser.error(f"{option_string} requires --html to be specified.")
         setattr(namespace, self.dest, values)
 
 
 class CheckJsonAction(argparse.Action):
     """Class to validate argparse for --json options."""
 
-    def __call__(self, parser, namespace, values, option_string=None) -> None:
+    def __call__(self, parser, namespace, values, option_string=None):
         """Validate the class."""
         if not namespace.json:
-            parser.error(message=f"{option_string} requires --json to be specified.")
+            parser.error(f"{option_string} requires --json to be specified.")
         setattr(namespace, self.dest, values)
 
 
 class CheckReleaseAction(argparse.Action):
     """Class to validate argparse for --release options."""
 
-    def __call__(self, parser, namespace, values, option_string=None) -> None:
+    def __call__(self, parser, namespace, values, option_string=None):
         """Validate the class."""
         if not namespace.release:
-            parser.error(message=f"{option_string} requires --release to be specified.")
+            parser.error(f"{option_string} requires --release to be specified.")
         setattr(namespace, self.dest, values)
 
 
-def fetch_html(arguments) -> str:
+def fetch_html(arguments):
     """Fetch HTML content from a URL."""
     url = arguments.url
     headers = {
         "User-Agent": arguments.user_agent,
     }
     try:
-        response: requests.Response = requests.get(url=url, headers=headers, timeout=10)
+        response = requests.get(url, headers=headers, timeout=10)
     except requests.exceptions.Timeout:  # pragma: no cover
         print("ERROR: Request timed out")
         sys.exit(1)
@@ -76,18 +75,18 @@ def find_entries(json_object, entries_key):
         for key, value in json_object.items():
             if key == entries_key:
                 return value
-            result = find_entries(json_object=value, entries_key=entries_key)
+            result = find_entries(value, entries_key)
             if result is not None:
                 return result
     elif isinstance(json_object, list):
         for item in json_object:
-            result = find_entries(json_object=item, entries_key=entries_key)
+            result = find_entries(item, entries_key)
             if result is not None:
                 return result
     return None
 
 
-def filter_html(soup, filter_type, filter_name) -> BeautifulSoup:
+def filter_html(soup, filter_type, filter_name):
     """Filter web page."""
     if filter_name is None:
         filtersoup = soup.find_all(filter_type)
@@ -96,7 +95,7 @@ def filter_html(soup, filter_type, filter_name) -> BeautifulSoup:
     if not filtersoup:
         print("ERROR: No entries found")
         sys.exit(1)
-    filtersoup = BeautifulSoup(markup=str(object=filtersoup), features="html.parser")
+    filtersoup = BeautifulSoup(str(filtersoup), "html.parser")
     return filtersoup
 
 
@@ -110,15 +109,9 @@ def extract_links_ul(soup):
         for li in links_list.find_all("li"):
             link = li.find("a")
             if link:
-                try:
-                    url = link.get("href")
-                    if not url:
-                        url = ""
-                except KeyError:
-                    url = ""
-                    continue
-                title: str = link.text.strip()
-                description: str = link.text.strip()
+                url = link["href"]
+                title = link.text.strip()
+                description = link.text.strip()
 
                 # Exclude URLs containing "/category/" or "/author/"
                 if "/category/" not in url and "/author/" not in url:
@@ -138,7 +131,7 @@ def get_html_title(entry, arguments):
     if arguments.html_title_class:
         title = entry.find(
             arguments.html_title,
-            re.compile(pattern=arguments.html_title_class),
+            re.compile(arguments.html_title_class),
         ).text.strip()
     else:
         title = entry.find(arguments.html_title).text.strip()
@@ -154,7 +147,7 @@ def extract_links_html(soup, arguments):
     for entry in soup.find_all(arguments.html_entries, arguments.html_entries_class):
         try:
             url = entry.find_all(arguments.html_url)[0]["href"]
-            title = get_html_title(entry=entry, arguments=arguments)
+            title = get_html_title(entry, arguments)
         except (KeyError, AttributeError):
             # Continue if URL or title is not found to find other entries
             continue
@@ -164,7 +157,7 @@ def extract_links_html(soup, arguments):
             else:
                 description = entry.find(
                     arguments.html_description,
-                    re.compile(pattern=arguments.html_description_class),
+                    re.compile(arguments.html_description_class),
                 ).text.strip()
         except (KeyError, AttributeError):
             # Ignore description if it's not found
@@ -193,7 +186,7 @@ def extract_links_json(soup, arguments):
     # Find the JSON string in the page
     for json_text in soup.find_all("script", type="application/json"):
         json_object = json.loads(json_text.text)
-        entries = find_entries(json_object=json_object, entries_key=arguments.json_entries)
+        entries = find_entries(json_object, arguments.json_entries)
         if entries is not None:
             break
 
@@ -233,13 +226,13 @@ def extract_links_release(soup, arguments):
             if not title:
                 raise AttributeError
             title_bytes = title.encode("utf-8")
-            title_hash: HASH = hashlib.sha256(title_bytes)
-            title_sha256: str = title_hash.hexdigest()
+            title_hash = hashlib.sha256(title_bytes)
+            title_sha256 = title_hash.hexdigest()
             url = arguments.release_url + "?" + title_sha256
         except (KeyError, AttributeError):
             print("ERROR: Unable to title in HTML element")
             sys.exit(1)
-        description: str = ""
+        description = ""
         if title not in unique_titles:
             unique_titles.add(title)
             links.append((url, title, description))
@@ -250,108 +243,15 @@ def extract_links_release(soup, arguments):
     return links
 
 
-def detect_extraction_method(soup, url):  # noqa: PLR0912
-    """Auto-detect the best extraction method for a given page."""
-    # Check for JSON data
-    json_scripts = soup.find_all("script", type="application/json")
-    if json_scripts:
-        # Try to find common entry patterns in JSON
-        for script in json_scripts:
-            try:
-                data = json.loads(script.text)
-                entries = None
-
-                # Look for common JSON patterns
-                for key in ["entries", "posts", "items", "results", "data"]:
-                    entries = find_entries(json_object=data, entries_key=key)
-                    if entries and isinstance(entries, list) and len(entries) > 0:
-                        # Look for common URL and title keys
-                        url_keys: list[str] = ["url", "link", "href", "permalink"]
-                        title_keys: list[str] = ["title", "headline", "name"]
-
-                        # Check if entries have these keys
-                        sample = entries[0]
-                        found_url: str | None = None
-                        found_title: str | None = None
-
-                        for uk in url_keys:
-                            if uk in sample:
-                                found_url = uk
-                                break
-
-                        for tk in title_keys:
-                            if tk in sample:
-                                found_title = tk
-                                break
-
-                        if found_url and found_title:
-                            return {
-                                "method": "json",
-                                "json_entries": key,
-                                "json_url": found_url,
-                                "json_title": found_title,
-                            }
-            except (json.JSONDecodeError, AttributeError):
-                continue
-
-    # Check for common blog structures
-    # Look for article, div, or li elements with titles and links
-    for entry_tag in ["article", "div.post", "div.entry", "div.item", "li.post"]:
-        tag, *classes = entry_tag.split(sep=".")
-        if classes:
-            entries = soup.find_all(tag, class_=classes[0])
-        else:
-            entries = soup.find_all(tag)
-
-        if len(entries) >= 3:  # Require at least 3 entries to be confident  # noqa: PLR2004
-            # Check if these have titles and links
-            for entry in entries[:3]:  # Check just the first 3
-                title_tag = entry.find(["h1", "h2", "h3", "h4", "h5"])
-                link = entry.find("a")
-
-                if title_tag and link and link.get("href"):
-                    # We found a likely blog structure
-                    return {
-                        "method": "html",
-                        "html_entries": tag,
-                        "html_entries_class": classes[0] if classes else "",
-                        "html_url": "a",
-                        "html_title": title_tag.name,
-                    }
-
-    # Check for link lists
-    link_lists = []
-    for ul in soup.find_all("ul"):
-        links = ul.find_all("a")
-        if len(links) >= 5:  # Look for ULs with a significant number of links  # noqa: PLR2004
-            link_lists.append((ul, len(links)))
-
-    if link_lists:
-        # Sort by number of links, descending
-        link_lists.sort(key=lambda x: x[1], reverse=True)
-        return {
-            "method": "list",
-        }
-
-    # If all else fails, try to find any links on the page
-    all_links = soup.find_all("a")
-    if all_links:
-        return {
-            "method": "list",
-        }
-
-    return None  # Could not detect a suitable method
-
-
 def create_rss_feed(links, arguments):
     """Create an RSS feed from a list of links."""
     feed_description = f"RSS feed generated from the links at {arguments.url}"
 
     # Create the RSS feed
     fg = FeedGenerator()
-    fg.id(id=arguments.url)
-    fg.title(title=arguments.title)
-    fg.description(description=feed_description)
+    fg.id(arguments.url)
+    fg.title(arguments.title)
+    fg.description(feed_description)
     fg.link(href=arguments.url, rel="alternate")
 
     # Add entries to the RSS feed
@@ -375,127 +275,147 @@ def create_rss_feed(links, arguments):
     return fg.rss_str(pretty=True).decode("utf-8")
 
 
-def parse_arguments(arguments) -> argparse.Namespace:
+def parse_arguments(arguments):
     """Parse command line arguments."""
     parser = argparse.ArgumentParser(
-        description="""Generate RSS feed for websites that don't publish a feed.
-        Will attempt to auto-detect the appropriate extraction method if none is specified.""",
+        description="""Generate RSS feed for blog that don't publish a feed.
+        Default is to find links in a simple <ul>-list.
+        Options are available to find links in other HTML elements or JSON strings.""",
     )
 
-    # Mode selection (mutually exclusive)
-    mode_group: argparse._MutuallyExclusiveGroup = parser.add_mutually_exclusive_group()
-    mode_group.add_argument(
-        "--auto",
+    group = parser.add_mutually_exclusive_group(required=True)
+    group.add_argument("--html", action="store_true", help="Find entries in HTML")
+    group.add_argument("--json", action="store_true", help="Find entries in JSON")
+    group.add_argument(
+        "--list",
         action="store_true",
-        default=True,
-        help="Auto-detect the best extraction method (default)",
+        help="Find entries in HTML <ul>-list (default)",
     )
-    mode_group.add_argument("--html", action="store_true", help="Find entries in HTML elements")
-    mode_group.add_argument("--json", action="store_true", help="Find entries in JSON")
-    mode_group.add_argument("--list", action="store_true", help="Find entries in HTML <ul>-lists")
-    mode_group.add_argument("--release", action="store_true", help="Find software releases")
+    group.add_argument("--release", action="store_true", help="Find releases in HTML")
 
-    # Basic settings
-    parser.add_argument("url", help="URL of the website")
-    parser.add_argument("--output", default="rss_feed.xml", help="Output file (default: rss_feed.xml)")
-    parser.add_argument("--title", help="Title of the RSS feed (default: extracted from page)")
-    parser.add_argument("--base-url", help="Base URL for relative links")
-    parser.add_argument("--atom", action="store_true", help="Generate Atom feed instead of RSS")
-
-    # Site templates
     parser.add_argument(
-        "--site",
-        choices=["wordpress", "medium", "github", "custom"],
-        help="Use predefined settings for common site types",
+        "--version",
+        action="version",
+        version="%(prog)s " + __version__,
+    )
+    parser.add_argument("url", help="URL for the blog")
+    parser.add_argument("--atom", action="store_true", help="Generate Atom feed")
+    parser.add_argument("--base-url", help="Base URL for the blog")
+    parser.add_argument(
+        "--release-url",
+        action=CheckReleaseAction,
+        help="Release URL for downloads",
+    )
+    parser.add_argument(
+        "--release-entries",
+        action=CheckReleaseAction,
+        help="Release selector for entries",
+    )
+    parser.add_argument(
+        "--html-entries",
+        action=CheckHtmlAction,
+        default="article",
+        help="HTML selector for entries",
+    )
+    parser.add_argument(
+        "--html-entries-class",
+        action=CheckHtmlAction,
+        default="",
+        help="Class name for entries",
+    )
+    parser.add_argument(
+        "--html-url",
+        action=CheckHtmlAction,
+        default="a",
+        help="HTML selector for URL",
+    )
+    parser.add_argument(
+        "--html-title",
+        action=CheckHtmlAction,
+        default="h3",
+        help="HTML selector for title",
+    )
+    parser.add_argument(
+        "--html-title-class",
+        action=CheckHtmlAction,
+        default="title",
+        help="Flag to specify title class (regex)",
+    )
+    parser.add_argument(
+        "--title-filter",
+        help="Filter for title, ignore entries that don't match",
+    )
+    parser.add_argument(
+        "--html-description",
+        action=CheckHtmlAction,
+        default="div",
+        help="HTML selector for description",
+    )
+    parser.add_argument(
+        "--html-description-class",
+        action=CheckHtmlAction,
+        default="summary",
+        help="Flag to specify description class (regex)",
+    )
+    parser.add_argument(
+        "--json-entries",
+        action=CheckJsonAction,
+        default="entries",
+        help="JSON key for entries (default: 'entries')",
+    )
+    parser.add_argument(
+        "--json-url",
+        action=CheckJsonAction,
+        default="url",
+        help="JSON key for URL (default: 'url')",
+    )
+    parser.add_argument(
+        "--json-title",
+        action=CheckJsonAction,
+        default="title",
+        help="JSON key for title",
+    )
+    parser.add_argument(
+        "--json-description",
+        action=CheckJsonAction,
+        default="description",
+        help="JSON key for description",
+    )
+    parser.add_argument(
+        "--output",
+        default="rss_feed.xml",
+        help="Name of the output file",
+    )
+    parser.add_argument(
+        "--title",
+        default="My RSS Feed",
+        help='Title of the RSS feed (default: "My RSS Feed")',
+    )
+    parser.add_argument(
+        "--user-agent",
+        default=ua,
+        help="User agent to use for HTTP requests",
+    )
+    parser.add_argument(
+        "--filter-type",
+        help="Filter web page",
+    )
+    parser.add_argument(
+        "--filter-name",
+        help="Filter web page",
     )
 
-    # Advanced options group
-    advanced: argparse._ArgumentGroup = parser.add_argument_group(title="Advanced Options")
-
-    # HTML options
-    html_group: argparse._ArgumentGroup = advanced.add_argument_group(title="HTML Options")
-    html_group.add_argument("--html-entries", help="HTML selector for entries (default: article)")
-    html_group.add_argument("--html-entries-class", help="Class name for entries")
-    html_group.add_argument("--html-url", help="HTML selector for URL (default: a)")
-    html_group.add_argument("--html-title", help="HTML selector for title (default: h3)")
-    html_group.add_argument("--html-title-class", help="Title element class (regex)")
-    html_group.add_argument("--html-description", help="HTML selector for description (default: div)")
-    html_group.add_argument("--html-description-class", help="Description class (regex)")
-
-    # JSON options
-    json_group: argparse._ArgumentGroup = advanced.add_argument_group(title="JSON Options")
-    json_group.add_argument("--json-entries", help="JSON key for entries array (default: entries)")
-    json_group.add_argument("--json-url", help="JSON key for URL (default: url)")
-    json_group.add_argument("--json-title", help="JSON key for title (default: title)")
-    json_group.add_argument("--json-description", help="JSON key for description (default: description)")
-
-    # Release options
-    release_group: argparse._ArgumentGroup = advanced.add_argument_group(title="Release Options")
-    release_group.add_argument("--release-url", help="Base URL for releases")
-    release_group.add_argument("--release-entries", help="Selector for release entries")
-
-    # Filtering options
-    filter_group: argparse._ArgumentGroup = advanced.add_argument_group(title="Filtering Options")
-    filter_group.add_argument("--title-filter", help="Regex to filter entries by title")
-    filter_group.add_argument("--filter-type", help="Filter webpage by element type")
-    filter_group.add_argument("--filter-name", help="Filter webpage by element name/class")
-
-    # Other options
-    parser.add_argument("--user-agent", default=ua, help="User agent for HTTP requests")
     parser.add_argument("-q", "--quiet", action="store_true", help="Suppress output")
-    parser.add_argument("-d", "--debug", action="store_true", help="Debug mode")
-    parser.add_argument("--stdout", action="store_true", help="Output to stdout")
-    parser.add_argument("--version", action="version", version="%(prog)s " + __version__)
+    parser.add_argument("-d", "--debug", action="store_true", help="Debug selection")
+    parser.add_argument("--stdout", action="store_true", help="Print to stdout")
 
-    args: argparse.Namespace = parser.parse_args(args=arguments)
-
-    # Apply site-specific templates
-    if args.site:
-        apply_site_template(args)
-
-    return args
-
-
-def apply_site_template(args) -> None:
-    """Apply site-specific templates to simplify configuration."""
-    templates = {
-        "wordpress": {
-            "html": True,
-            "html_entries": "article",
-            "html_title": "h2",
-            "html_url": "a",
-            "html_description": "div",
-            "html_description_class": "entry-summary",
-        },
-        "medium": {
-            "html": True,
-            "html_entries": "article",
-            "html_title": "h3",
-            "html_url": "a",
-            "filter_type": "div",
-            "filter_name": "js-postsList",
-        },
-        "github": {
-            "release": True,
-            "html_entries": "div.release-entry",
-            "html_title": "a.Link--primary",
-            "html_url": "a.Link--primary",
-            "html_description": "div.markdown-body",
-        },
-    }
-
-    if args.site in templates:
-        # Apply template settings
-        template = templates[args.site]
-        for key, value in template.items():
-            if not getattr(args, key, None):  # Only set if not already set by user
-                setattr(args, key, value)
+    return parser.parse_args(arguments)
 
 
 def save_rss_feed(rss_feed, arguments):
     """Save the RSS feed to a file."""
     try:
-        with Path.open(arguments.output, mode="w", encoding="utf-8") as f:
+        with Path.open(arguments.output, "w", encoding="utf-8") as f:
             f.write(rss_feed)
     except OSError:
         print("ERROR: Unable to write to file")
@@ -508,234 +428,53 @@ def save_rss_feed(rss_feed, arguments):
             print(f"RSS feed created: {arguments.output}")
 
 
-def format_cli_command(args, detected_params=None) -> str:
-    """Format the command line arguments for reuse."""
-    cmd: list[str] = ["rssfixer"]
-
-    # Add the detected method flag
-    if args.html:
-        cmd.append("--html")
-    elif args.json:
-        cmd.append("--json")
-    elif args.list:
-        cmd.append("--list")
-    elif args.release:
-        cmd.append("--release")
-
-    # Add all relevant parameters
-    params_to_include = [
-        # HTML params
-        ("html_entries", "--html-entries"),
-        ("html_entries_class", "--html-entries-class"),
-        ("html_url", "--html-url"),
-        ("html_title", "--html-title"),
-        ("html_title_class", "--html-title-class"),
-        ("html_description", "--html-description"),
-        ("html_description_class", "--html-description-class"),
-        # JSON params
-        ("json_entries", "--json-entries"),
-        ("json_url", "--json-url"),
-        ("json_title", "--json-title"),
-        ("json_description", "--json-description"),
-        # Release params
-        ("release_url", "--release-url"),
-        ("release_entries", "--release-entries"),
-        # Filter params
-        ("filter_type", "--filter-type"),
-        ("filter_name", "--filter-name"),
-        ("title_filter", "--title-filter"),
-        # Other params - we'll handle base_url separately
-    ]
-
-    # Add detected parameters
-    for param_name, flag in params_to_include:
-        value = None
-        # Check detected params first (if provided)
-        if detected_params and param_name in detected_params:
-            value = detected_params[param_name]
-        # Otherwise check args
-        elif hasattr(args, param_name) and getattr(args, param_name):
-            value = getattr(args, param_name)
-
-        if value:
-            cmd.append(flag)
-            cmd.append(f'"{value}"')
-
-    # Add the title if specified
-    if args.title and args.title != f"RSS Feed for {args.url}":
-        cmd.append(f'--title "{args.title}"')
-
-    # Add other simple flags
-    if args.atom:
-        cmd.append("--atom")
-
-    # Add the URL at the end
-    cmd.append(args.url)
-
-    return " ".join(cmd)
-
-
-def print_preview(links, detection_result, args):  # noqa: PLR0912
-    """Print a preview of the feed and the detected settings."""
-    print("\n=== Feed Preview ===")
-    print(f"Extraction method: {detection_result.get('method', 'Unknown')}")
-
-    # Print the first 3 titles (or fewer if less available)
-    preview_count = min(3, len(links))
-
-    # Check if we need base_url for relative URLs
-    needs_base_url = False
-    for i in range(min(len(links), 10)):  # Check first 10 links
-        url, _, _ = links[i]
-        if not url.startswith(("http://", "https://")):
-            needs_base_url = True
-            break
-
-    # Add base URL suggestion if needed
-    if needs_base_url and not args.base_url:
-        base_url = args.url
-        if not base_url.endswith("/"):
-            # Extract domain part
-            from urllib.parse import urlparse
-
-            parsed_url = urlparse(base_url)
-            domain = f"{parsed_url.scheme}://{parsed_url.netloc}"
-            print(f'\nWARNING: Relative URLs detected. Consider adding --base-url "{domain}"')
-        else:
-            print(f'\nWARNING: Relative URLs detected. Consider adding --base-url "{base_url}"')
-
-    for i in range(preview_count):
-        url, title, description = links[i]
-        print(f"{i+1}. {title}")
-        if args.debug:
-            if not url.startswith(("http://", "https://")) and args.base_url:
-                full_url = args.base_url + url
-                print(f"   URL: {url} -> {full_url}")
-            else:
-                print(f"   URL: {url}")
-            if description:
-                print(f"   Description: {description[:50]}...")
-
-    # Print total number of entries
-    print(f"\nTotal entries found: {len(links)}")
-
-    # Print command to reproduce
-    print("\n=== Command to reproduce this feed ===")
-    command = format_cli_command(args, detection_result)
-
-    # Add base-url to command if needed and not already present
-    if needs_base_url and not args.base_url:
-        base_url = args.url
-        if not base_url.endswith("/"):
-            from urllib.parse import urlparse
-
-            parsed_url = urlparse(base_url)
-            domain = f"{parsed_url.scheme}://{parsed_url.netloc}"
-            command = command.replace(args.url, f'--base-url "{domain}" {args.url}')
-        else:
-            command = command.replace(args.url, f'--base-url "{base_url}" {args.url}')
-
-    print(command)
-    print("\n")
-
-
-def main(args=None):  # noqa: PLR0912, PLR0915
+def main(args=None):
     """Handle program arguments."""
     if args is None:
         args = sys.argv[1:]
 
-    args = parse_arguments(arguments=args)
+    args = parse_arguments(args)
 
-    # Track if auto-detection was used
-    auto_detection_used = False
-    detection_result = None
+    if vars(args).get("version"):
+        print(__version__)
+        sys.exit(0)
 
     # Get HTML content from URL
-    html_content: str = fetch_html(arguments=args)
-    soup = BeautifulSoup(markup=html_content, features="html.parser")
+    html_content = fetch_html(args)
+    soup = BeautifulSoup(html_content, "html.parser")
 
-    # Extract page title if not specified
-    if not args.title:
-        title_tag = soup.find(name="title")
-        if title_tag:
-            args.title = title_tag.text.strip()
-        else:
-            args.title = "RSS Feed for " + args.url
-
-    # Filter web page if requested
+    # Filter web page
     if args.filter_type and args.filter_name:
-        soup: BeautifulSoup = filter_html(soup=soup, filter_type=args.filter_type, filter_name=args.filter_name)
-
-    # Auto-detect extraction method if not explicitly specified
-    if args.auto and not (args.html or args.json or args.list or args.release):
-        if args.debug:
-            print("DEBUG: Auto-detecting extraction method...")
-
-        detection_result = detect_extraction_method(soup=soup, url=args.url)
-        auto_detection_used = True
-
-        if detection_result:
-            method = detection_result.pop("method")
-            if args.debug:
-                print(f"DEBUG: Detected method: {method}")
-                print(f"DEBUG: Detected parameters: {detection_result}")
-
-            # Set the detected method flag
-            setattr(args, method, True)
-
-            # Apply detected parameters
-            for key, value in detection_result.items():
-                if not getattr(args, key, None):  # Only set if not explicitly provided
-                    setattr(args, key, value)
-        else:
-            if not args.quiet:
-                print("WARNING: Could not auto-detect extraction method, falling back to list mode")
-            args.list = True
-            detection_result = {"method": "list"}
-
+        soup = filter_html(soup, args.filter_type, args.filter_name)
     if args.debug:
-        print("DEBUG: Using extraction method:")
-        if args.json:
-            print("DEBUG: JSON mode")
-        elif args.html:
-            print("DEBUG: HTML mode")
-        elif args.release:
-            print("DEBUG: Release mode")
-        else:
-            print("DEBUG: List mode")
+        print("DEBUG: Filtered HTML\n")
+        print(soup.prettify())
 
     # Select function to handle different types of blogs
     if args.json:
-        links = extract_links_json(soup=soup, arguments=args)
+        links = extract_links_json(soup, args)
     elif args.html:
-        links = extract_links_html(soup=soup, arguments=args)
+        links = extract_links_html(soup, args)
+    elif args.list:
+        links = extract_links_ul(soup)
     elif args.release:
-        if not getattr(args, "release_url", None):
+        if not vars(args).get("release_url", False):
             print("ERROR: Release URL not specified")
             sys.exit(1)
-        links = extract_links_release(soup=soup, arguments=args)
-    else:  # Default to list mode
-        links = extract_links_ul(soup=soup)
-
-    # When auto-detection was used, show a preview before creating the feed
-    if auto_detection_used and not args.quiet:
-        if detection_result is None:
-            detection_result = {"method": "list" if args.list else "unknown"}
-        print_preview(links=links, detection_result=detection_result, args=args)
-
-        # If only the preview is needed (no output file), exit here
-        if args.stdout and not args.quiet:
-            return
+        links = extract_links_release(soup, args)
+    else:
+        print("ERROR: No valid blog type specified")
+        sys.exit(1)
 
     # Create RSS feed and save to file
-    rss_feed = create_rss_feed(links=links, arguments=args)
+    rss_feed = create_rss_feed(links, args)
     if args.stdout:
         print(rss_feed)
     else:
-        save_rss_feed(rss_feed=rss_feed, arguments=args)
+        save_rss_feed(rss_feed, args)
 
 
-def init() -> None:
+def init():
     """Initialize the script."""
     if __name__ == "__main__":
         sys.exit(main())
