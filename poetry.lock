@@ -968,14 +968,14 @@ htmlsoup = ["BeautifulSoup4"]
 
 [[package]]
 name = "markdown-code-runner"
-version = "2.3.0"
+version = "2.4.0"
 description = "Automatically execute code blocks within a Markdown file and update the output in-place"
 optional = false
 python-versions = ">=3.9"
 groups = ["github"]
 files = [
-    {file = "markdown_code_runner-2.3.0-py3-none-any.whl", hash = "sha256:d6cdb7aba968fbe673a592f7f92efa56ced49dc8b1c009568b7cb4001d4cf2fd"},
-    {file = "markdown_code_runner-2.3.0.tar.gz", hash = "sha256:adbd60b3760cf7f37c1ad07e65ce6b62c92227e9e7e8db8fc1ed889ca30465cc"},
+    {file = "markdown_code_runner-2.4.0-py3-none-any.whl", hash = "sha256:5be62e75ab35188b37f2d440c19b6683df68615ea24bed4955d95a745e56b483"},
+    {file = "markdown_code_runner-2.4.0.tar.gz", hash = "sha256:7d6229c437f0c71e5c0442585663af4bfe4beacddf884a64ea8c09fd5dbc31dd"},
 ]
 
 [package.extras]
