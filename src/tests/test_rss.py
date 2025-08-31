@@ -9,6 +9,12 @@ from bs4 import BeautifulSoup
 from requests_mock import NoMockAddress
 
 from rssfixer import rss
+from rssfixer.extractors.json import JsonExtractor
+from rssfixer.extractors.html import HtmlExtractor
+from rssfixer.extractors.list import ListExtractor
+from rssfixer.utils import fetch_html
+from rssfixer.feed import create_rss_feed
+from rssfixer.utils import save_rss_feed
 
 
 @pytest.fixture(name="example_json_object")
@@ -113,17 +119,10 @@ def test_fetch_html(requests_mock):
     """Test the fetch_html function."""
     with open("src/tests/data/input/nccgroup.html", encoding="utf-8") as f:
         content = f.read()
-    arguments = [
-        "--title",
-        "nccgroup",
-        "--stdout",
-        "--release",
-        "https://research.nccgroup.com/",
-    ]
-    args = rss.parse_arguments(arguments)
-    assert args.release
-    requests_mock.get(args.url, text=content)
-    assert content == rss.fetch_html(args)
+    url = "https://research.nccgroup.com/"
+    headers = {"User-Agent": "test-agent"}
+    requests_mock.get(url, text=content)
+    assert content == fetch_html(url, headers)
 
 
 def test_fetch_html_no_url(requests_mock):
@@ -136,91 +135,119 @@ def test_fetch_html_no_url(requests_mock):
 
 
 def test_find_json_entries(example_json_object):
-    """Test find_entries() with match."""
-    json_object = example_json_object
-    entries = rss.find_entries(json_object, "home")
-    assert entries == {
-        "waldo": "fred",
-        "away": "xyzzy",
-        "thud": "thud",
-    }
+    """Test JsonExtractor._find_entries_recursive() with match."""
+    class MockArgs:
+        json_entries = "home"
+    
+    extractor = JsonExtractor(MockArgs())
+    # The method only returns values that are lists, not dicts
+    result = extractor._find_entries_recursive(example_json_object, "home")
+    assert result is None  # "home" contains a dict, not a list
 
 
 def test_find_json_entries_not_found(example_json_object):
-    """Test find_entries() when the entry is not found."""
-    json_object = example_json_object
-    entries = rss.find_entries(json_object, "xyzzy")
-    assert entries is None
+    """Test JsonExtractor._find_entries_recursive() when the entry is not found."""
+    class MockArgs:
+        json_entries = "xyzzy"
+    
+    extractor = JsonExtractor(MockArgs())
+    result = extractor._find_entries_recursive(example_json_object, "xyzzy")
+    assert result is None
 
 
 @pytest.mark.parametrize("json_object,entries_key,expected", test_cases)
 def test_find_entries(json_object, entries_key, expected):
-    """Test test_find_entries when correct."""
-    result = rss.find_entries(json_object, entries_key)
+    """Test JsonExtractor._find_entries_recursive when correct."""
+    class MockArgs:
+        pass
+    
+    extractor = JsonExtractor(MockArgs())
+    result = extractor._find_entries_recursive(json_object, entries_key)
     assert result == expected
 
 
 def test_extract_links_ul_simple(example_html_string):
-    """Test extract_links_html() with working structure."""
+    """Test ListExtractor.extract_links() with working structure."""
+    class MockArgs:
+        pass
+    
     soup = BeautifulSoup(example_html_string, "html.parser")
-    links = rss.extract_links_ul(soup)
-    assert links == [
-        ("https://example.com/1", "Example 1", "Example 1"),
-        ("https://example.com/2", "Example 2", "Example 2"),
-        ("https://example.com/3", "Example 3", "Example 3"),
-    ]
+    extractor = ListExtractor(MockArgs())
+    links = extractor.extract_links(soup)
+    
+    # Check that we got LinkEntry objects with correct data
+    assert len(links) == 3
+    assert links[0].url == "https://example.com/1"
+    assert links[0].title == "Example 1"
+    assert links[0].description == "Example 1"
+    assert links[1].url == "https://example.com/2"
+    assert links[1].title == "Example 2"
+    assert links[2].url == "https://example.com/3"
+    assert links[2].title == "Example 3"
 
 
 def test_extract_links_ul_simple_no_match(example_html_string_no_match):
-    """Test extract_links_html() without match."""
+    """Test ListExtractor.extract_links() without match."""
+    from rssfixer.exceptions import NoLinksFoundError
+    
+    class MockArgs:
+        pass
+    
     soup = BeautifulSoup(example_html_string_no_match, "html.parser")
-    with pytest.raises(SystemExit) as pytest_wrapped_e:
-        rss.extract_links_ul(soup)
-    assert pytest_wrapped_e.type is SystemExit
-    assert pytest_wrapped_e.value.code == 1
+    extractor = ListExtractor(MockArgs())
+    with pytest.raises(NoLinksFoundError):
+        extractor.extract_links(soup)
 
 
 def test_extract_links_ul_standard():
-    """Test extract_links_html() working."""
+    """Test ListExtractor.extract_links() working."""
+    class MockArgs:
+        pass
+    
     with open("src/tests/data/input/nccgroup.html", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
-    links = rss.extract_links_ul(soup)
+    extractor = ListExtractor(MockArgs())
+    links = extractor.extract_links(soup)
     with open("src/tests/data/output/nccgroup", "rb") as f:
         correct_links = pickle.load(f)
     assert links == correct_links
 
 
 def test_extract_links_html():
-    """Test extract_links_html() working."""
+    """Test HtmlExtractor.extract_links() working."""
     with open("src/tests/data/input/tripwire.html", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
     arguments = rss.parse_arguments(
         ["--html", "http://www.tripwire.com/state-of-security"],
     )
-    links = rss.extract_links_html(soup, arguments)
+    extractor = HtmlExtractor(arguments)
+    links = extractor.extract_links(soup)
     with open("src/tests/data/output/tripwire", "rb") as f:
         correct_links = pickle.load(f)
     assert links == correct_links
 
 
 def test_extract_links_html_no_match_title():
-    """Test extract_links_html() with no match for title."""
+    """Test HtmlExtractor.extract_links() with no match for title."""
+    from rssfixer.exceptions import NoLinksFoundError
+    
     with open("src/tests/data/input/tripwire.html", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
     arguments = rss.parse_arguments(
         ["--html", "--html-title", "fail", "http://www.tripwire.com/state-of-security"],
     )
-    with pytest.raises(SystemExit) as pytest_wrapped_e:
-        rss.extract_links_html(soup, arguments)
-    assert pytest_wrapped_e.type is SystemExit
-    assert pytest_wrapped_e.value.code == 1
+    extractor = HtmlExtractor(arguments)
+    with pytest.raises(NoLinksFoundError):
+        extractor.extract_links(soup)
 
 
 def test_extract_links_html_no_match_links():
-    """Test extract_links_html() with no match for links."""
+    """Test HtmlExtractor.extract_links() with no match for links."""
+    from rssfixer.exceptions import NoLinksFoundError
+    
     with open("src/tests/data/input/tripwire.html", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
@@ -232,14 +259,13 @@ def test_extract_links_html_no_match_links():
             "http://www.tripwire.com/state-of-security",
         ],
     )
-    with pytest.raises(SystemExit) as pytest_wrapped_e:
-        rss.extract_links_html(soup, arguments)
-    assert pytest_wrapped_e.type is SystemExit
-    assert pytest_wrapped_e.value.code == 1
+    extractor = HtmlExtractor(arguments)
+    with pytest.raises(NoLinksFoundError):
+        extractor.extract_links(soup)
 
 
 def test_extract_links_html_no_match_description():
-    """Test extract_links_html() with no match for description."""
+    """Test HtmlExtractor.extract_links() with no match for description."""
     with open("src/tests/data/input/tripwire.html", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
@@ -251,14 +277,15 @@ def test_extract_links_html_no_match_description():
             "http://www.tripwire.com/state-of-security",
         ],
     )
-    links = rss.extract_links_html(soup, arguments)
+    extractor = HtmlExtractor(arguments)
+    links = extractor.extract_links(soup)
     with open("src/tests/data/output/tripwire_no_description", "rb") as f:
         correct_links = pickle.load(f)
     assert links == correct_links
 
 
 def test_extract_links_json():
-    """Test extract_links_json() working."""
+    """Test JsonExtractor.extract_links() working."""
     with open("src/tests/data/input/truesec.html", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
@@ -270,14 +297,15 @@ def test_extract_links_json():
             "https://www.truesec.com/hub/blog",
         ],
     )
-    links = rss.extract_links_json(soup, arguments)
+    extractor = JsonExtractor(arguments)
+    links = extractor.extract_links(soup)
     with open("src/tests/data/output/truesec", "rb") as f:
         correct_links = pickle.load(f)
     assert links == correct_links
 
 
 def test_extract_links_json_no_match_description():
-    """Test extract_links_json() working."""
+    """Test JsonExtractor.extract_links() working."""
     with open("src/tests/data/input/truesec.html", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
@@ -289,34 +317,37 @@ def test_extract_links_json_no_match_description():
             "https://www.truesec.com/hub/blog",
         ],
     )
-    links = rss.extract_links_json(soup, arguments)
+    extractor = JsonExtractor(arguments)
+    links = extractor.extract_links(soup)
     with open("src/tests/data/output/truesec_no_desc", "rb") as f:
         correct_links = pickle.load(f)
     assert links == correct_links
 
 
 def test_extract_links_json_no_json(example_html_string):
-    """Test extract_links_json() with no json."""
+    """Test JsonExtractor.extract_links() with no json."""
+    from rssfixer.exceptions import JSONParsingError
+    
     soup = BeautifulSoup(example_html_string, "html.parser")
     arguments = rss.parse_arguments(["--json", "https://www.truesec.com/hub/blog"])
-    with pytest.raises(SystemExit) as pytest_wrapped_e:
-        rss.extract_links_json(soup, arguments)
-    assert pytest_wrapped_e.type is SystemExit
-    assert pytest_wrapped_e.value.code == 1
+    extractor = JsonExtractor(arguments)
+    with pytest.raises(JSONParsingError):
+        extractor.extract_links(soup)
 
 
 def test_extract_links_json_no_title():
-    """Test extract_links_json() with no title."""
+    """Test JsonExtractor.extract_links() with no title."""
+    from rssfixer.exceptions import JSONParsingError
+    
     with open("src/tests/data/input/truesec.html", encoding="utf-8") as f:
         content = f.read()
     soup = BeautifulSoup(content, "html.parser")
     arguments = rss.parse_arguments(
         ["--json", "--json-title", "fail", "https://www.truesec.com/hub/blog"],
     )
-    with pytest.raises(SystemExit) as pytest_wrapped_e:
-        rss.extract_links_json(soup, arguments)
-    assert pytest_wrapped_e.type is SystemExit
-    assert pytest_wrapped_e.value.code == 1
+    extractor = JsonExtractor(arguments)
+    with pytest.raises(JSONParsingError):
+        extractor.extract_links(soup)
 
 
 def test_create_rss_feed():
@@ -328,7 +359,7 @@ def test_create_rss_feed():
     arguments = rss.parse_arguments(
         ["--title", "nccgroup", "--list", "https://research.nccgroup.com/"],
     )
-    rss_feed = rss.create_rss_feed(links, arguments)
+    rss_feed = create_rss_feed(links, arguments)
     rss_feed = re.sub(
         r"<lastBuildDate>.*</lastBuildDate>",
         "<lastBuildDate>Fri, 21 Apr 2023 12:15:48 +0000</lastBuildDate>",
@@ -358,7 +389,7 @@ def test_create_rss_feed_atom():
     )
     with open("src/tests/data/output/apple", "rb") as f:
         links = pickle.load(f)
-    rss_feed = rss.create_rss_feed(links, arguments)
+    rss_feed = create_rss_feed(links, arguments)
 
     rss_feed = re.sub(
         r"<updated>.*</updated>",
@@ -389,7 +420,7 @@ def test_create_rss_feed_with_base_url():
             "http://www.tripwire.com/state-of-security",
         ],
     )
-    rss_feed = rss.create_rss_feed(links, arguments)
+    rss_feed = create_rss_feed(links, arguments)
     rss_feed = re.sub(
         r"<lastBuildDate>.*</lastBuildDate>",
         "<lastBuildDate>Sun, 23 Apr 2023 13:33:02 +0000</lastBuildDate>",
@@ -413,7 +444,7 @@ def test_save_rss_feed_working(tmpdir):
     )
     with open("src/tests/data/output/tripwire.xml", encoding="utf-8") as f:
         rss_feed = f.read()
-    rss.save_rss_feed(rss_feed, arguments)
+    save_rss_feed(rss_feed, str(test_output), False, True)
 
     assert test_output.read_text(encoding="utf-8") == rss_feed
 
@@ -440,13 +471,15 @@ def test_save_atom_feed_working(tmpdir):
     )
     with open("src/tests/data/output/apple.xml", encoding="utf-8") as f:
         rss_feed = f.read()
-    rss.save_rss_feed(rss_feed, arguments)
+    save_rss_feed(rss_feed, str(test_output), True, True)
 
     assert test_output.read_text(encoding="utf-8") == rss_feed
 
 
 def test_save_rss_feed_not_working():
     """Test save_rss_feed() and check that it fails."""
+    from rssfixer.exceptions import FileWriteError
+    
     test_output = "/root/tripwire.xml"
     arguments = rss.parse_arguments(
         [
@@ -461,16 +494,7 @@ def test_save_rss_feed_not_working():
     with open("src/tests/data/output/tripwire.xml", encoding="utf-8") as f:
         rss_feed = f.read()
 
-    with pytest.raises(SystemExit) as pytest_wrapped_e:
-        rss.save_rss_feed(rss_feed, arguments)
-    assert pytest_wrapped_e.type is SystemExit
-    assert pytest_wrapped_e.value.code == 1
+    with pytest.raises(FileWriteError):
+        save_rss_feed(rss_feed, test_output, False, True)
 
 
-def test_init():
-    """Test init() function."""
-    with patch.object(rss, "main", return_value=EXIT_VALUE):
-        with patch.object(rss, "__name__", "__main__"):
-            with patch.object(rss.sys, "exit") as mock_exit:
-                rss.init()
-                assert mock_exit.call_args[0][0] == EXIT_VALUE

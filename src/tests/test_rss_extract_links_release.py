@@ -6,6 +6,7 @@ import pytest
 from bs4 import BeautifulSoup
 
 from rssfixer import rss
+from rssfixer.extractors.release import ReleaseExtractor
 
 
 def test_extract_links_release():
@@ -23,7 +24,8 @@ def test_extract_links_release():
             "https://sqlite.org/changes.html",
         ],
     )
-    links = rss.extract_links_release(soup, arguments)
+    extractor = ReleaseExtractor(arguments)
+    links = extractor.extract_links(soup)
     with open("src/tests/data/output/sqlite", "rb") as f:
         correct_links = pickle.load(f)
     assert links == correct_links
@@ -31,6 +33,8 @@ def test_extract_links_release():
 
 def test_extract_links_release_no_title_text():
     """Test extract_links_html where there are no title texts - should fail."""
+    from rssfixer.exceptions import NoLinksFoundError
+    
     content = """<html>
     <body>
         <h3></h3>
@@ -47,14 +51,15 @@ def test_extract_links_release_no_title_text():
             "https://sqlite.org/changes.html",
         ],
     )
-    with pytest.raises(SystemExit) as pytest_wrapped_e:
-        rss.extract_links_release(soup, arguments)
-    assert pytest_wrapped_e.type is SystemExit
-    assert pytest_wrapped_e.value.code == 1
+    extractor = ReleaseExtractor(arguments)
+    with pytest.raises(NoLinksFoundError):
+        extractor.extract_links(soup)
 
 
 def test_extract_links_release_no_match():
     """Test extract_links_html where there are no matching release-entries - should fail."""
+    from rssfixer.exceptions import NoLinksFoundError
+    
     content = """<html>
     <body>
         <p></p>
@@ -71,7 +76,6 @@ def test_extract_links_release_no_match():
             "https://sqlite.org/changes.html",
         ],
     )
-    with pytest.raises(SystemExit) as pytest_wrapped_e:
-        rss.extract_links_release(soup, arguments)
-    assert pytest_wrapped_e.type is SystemExit
-    assert pytest_wrapped_e.value.code == 1
+    extractor = ReleaseExtractor(arguments)
+    with pytest.raises(NoLinksFoundError):
+        extractor.extract_links(soup)
