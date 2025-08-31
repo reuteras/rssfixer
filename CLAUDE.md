@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-rssfixer is a Python command-line tool that generates RSS/Atom feeds for WordPress blogs and other websites that don't provide their own feeds. It uses BeautifulSoup for HTML parsing and feedgen for RSS/Atom generation.
+rssfixer is a Python command-line tool that generates RSS/Atom feeds for WordPress blogs and other sites that don't provide their own feeds. It uses BeautifulSoup for HTML parsing and feedgen for RSS/Atom generation.
 
 ## Development Commands
 
