@@ -1,31 +1,6 @@
-[project]
-name = "rssfixer"
-authors = [
-  { name="Peter Reuterås", email="peter@reuteras.net" },
-]
-description = "Generate RSS feed for Wordpress blog without it."
-readme = "README.md"
-requires-python = ">=3.8"
-classifiers = [
-    "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
-    "Operating System :: OS Independent",
-    "Natural Language :: English",
-    "Intended Audience :: Information Technology",
-    "Development Status :: 4 - Beta",
-    "Environment :: Console",
-]
-
 [build-system]
-requires = ["poetry-core"]
-build-backend = "poetry.core.masonry.api"
-
-[project.urls]
-"Homepage" = "https://github.com/reuteras/rssfixer"
-"Bug Tracker" = "https://github.com/reuteras/rssfixer/issues"
-
-[tool.poetry.scripts]
-rssfixer = "rssfixer:main"
+requires = ["hatchling"]
+build-backend = "hatchling.build"
 
 [tool.ruff]
 lint.select = [
@@ -40,7 +15,7 @@ lint.select = [
   "N",    # pep8-naming
   "PL",   # Pylint
   "RUF",  # Ruff-specific rules
-  "S",    # flake8-bandit
+  "S",    # flake8-bandit (security)
   "UP",   # pyupgrade
   "W",    # Warning
 ]
@@ -67,49 +42,64 @@ lint.exclude = [
     ".venv",
 ]
 
-# Same as Black.
+# Enable formatting
+format.quote-style = "double"
+format.indent-style = "space"
+format.skip-source-first-line = false
+format.line-ending = "auto"
+
+# Target Python 3.11
+target-version = "py311"
+
+# Line length for both linting and formatting
 line-length = 120
 
 [tool.ruff.lint.mccabe]
 # Unlike Flake8, default to a complexity level of 10.
 max-complexity = 10
-[tool.poetry]
+[project]
 name = "rssfixer"
 version = "0.2.16"
 description = "Generate RSS for blogs without a feed."
-authors = ["Peter Reuterås <peter@reuteras.net>"]
-license = "MIT"
+authors = [{name = "Peter Reuterås", email = "peter@reuteras.net"}]
+license = {text = "MIT"}
 readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Natural Language :: English",
+    "Intended Audience :: Information Technology",
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+]
 
-[tool.poetry.dependencies]
-python = "^3.11"
-beautifulsoup4 = ">=4.12.3"
-feedgen = "0.9.0"
-requests = ">=2.32.3"
-docutils = ">=0.21.2"
+dependencies = [
+    "beautifulsoup4>=4.12.3",
+    "feedgen==0.9.0",
+    "requests>=2.32.3",
+    "docutils>=0.21.2",
+]
 
-[tool.poetry.group.dev]
-optional = true
+[project.optional-dependencies]
+dev = [
+    "build",
+    "twine",
+    "ruff",
+    "pytest",
+    "requests-mock",
+    "pre-commit",
+    "gitpython>=3.1.35",
+]
+github = [
+    "coverage-badge",
+    "markdown-code-runner",
+]
 
-[tool.poetry.group.dev.dependencies]
-bandit = "*"
-build = "*"
-twine = "*"
-black = "*"
-ruff = "*"
-pytest = "*"
-requests-mock = "*"
-pre-commit = "*"
-gitpython = ">=3.1.35"
+[project.scripts]
+rssfixer = "rssfixer:main"
 
-[tool.poetry.group.github]
-optional = true
-
-[tool.poetry.group.github.dependencies]
-coverage-badge = "*"
-markdown-code-runner = "*"
-
-[tool.black]
-line-length = 120
-target-version = ['py38']
-include = '\.pyi?$'
+[project.urls]
+Homepage = "https://github.com/reuteras/rssfixer"
+"Bug Tracker" = "https://github.com/reuteras/rssfixer/issues"
