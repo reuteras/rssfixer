@@ -40,7 +40,7 @@ def main(args=None):
         if args.stdout:
             print(rss_feed)
         else:
-            save_rss_feed(rss_feed, args.output, getattr(args, 'atom', False), args.quiet)
+            save_rss_feed(rss_feed, args.output, getattr(args, "atom", False), args.quiet)
 
     except RSSFixerError as e:
         print(f"ERROR: {e}")
@@ -48,7 +48,7 @@ def main(args=None):
     except KeyboardInterrupt:
         print("\nOperation cancelled by user")
         return 1
-    except Exception as e:
+    except Exception as e:  # noqa: BLE001
         print(f"UNEXPECTED ERROR: {e}")
         return 1
 

@@ -92,7 +92,7 @@ Tests are located in `src/tests/` and use pytest. Run tests without coverage tra
 
 The codebase uses custom exceptions instead of sys.exit() calls:
 - `RSSFixerError` - Base exception
-- `NoLinksFoundError` - When no links are extracted  
+- `NoLinksFoundError` - When no links are extracted
 - `NetworkError` - HTTP request failures
 - `JSONParsingError` - JSON parsing issues
 - `HTMLParsingError` - HTML filtering problems

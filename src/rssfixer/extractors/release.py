@@ -13,7 +13,7 @@ class ReleaseExtractor(LinkExtractor):
 
     def __init__(self, arguments):
         """Initialize extractor with arguments.
-        
+
         Args:
             arguments: Parsed command line arguments
 
@@ -23,13 +23,13 @@ class ReleaseExtractor(LinkExtractor):
 
     def extract_links(self, soup: BeautifulSoup) -> list[LinkEntry]:
         """Extract links from release page elements.
-        
+
         Args:
             soup: Parsed HTML content
-            
+
         Returns:
             List of LinkEntry objects for releases
-            
+
         Raises:
             NoLinksFoundError: If no links are found
 
@@ -61,13 +61,13 @@ class ReleaseExtractor(LinkExtractor):
 
     def _generate_release_url(self, title: str) -> str:
         """Generate a unique URL for a release title.
-        
+
         Args:
             title: Release title
-            
+
         Returns:
             URL with hash parameter for uniqueness
-            
+
         Raises:
             ValueError: If title cannot be encoded
 

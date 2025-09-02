@@ -15,13 +15,13 @@ class JsonExtractor(LinkExtractor):
 
     def extract_links(self, soup: BeautifulSoup) -> list[LinkEntry]:
         """Extract links from JSON data in HTML.
-        
+
         Args:
             soup: Parsed HTML content
-            
+
         Returns:
             List of LinkEntry objects from JSON data
-            
+
         Raises:
             JSONParsingError: If JSON parsing fails or required keys missing
             NoLinksFoundError: If no links are found
@@ -59,10 +59,10 @@ class JsonExtractor(LinkExtractor):
 
     def _find_json_entries(self, soup: BeautifulSoup) -> list[dict[str, Any]] | None:
         """Find JSON entries in script tags.
-        
+
         Args:
             soup: Parsed HTML content
-            
+
         Returns:
             List of entries from JSON data, or None if not found
 
@@ -84,11 +84,11 @@ class JsonExtractor(LinkExtractor):
 
     def _find_entries_recursive(self, json_object: Any, entries_key: str) -> list[dict[str, Any]] | None:
         """Recursively find entries in JSON object.
-        
+
         Args:
             json_object: JSON data structure to search
             entries_key: Key to search for
-            
+
         Returns:
             List of entries if found, None otherwise
 

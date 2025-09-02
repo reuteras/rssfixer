@@ -6,6 +6,7 @@ import pytest
 from bs4 import BeautifulSoup
 
 from rssfixer import rss
+from rssfixer.exceptions import NoLinksFoundError
 from rssfixer.extractors.release import ReleaseExtractor
 
 
@@ -33,8 +34,6 @@ def test_extract_links_release():
 
 def test_extract_links_release_no_title_text():
     """Test extract_links_html where there are no title texts - should fail."""
-    from rssfixer.exceptions import NoLinksFoundError
-    
     content = """<html>
     <body>
         <h3></h3>
@@ -58,8 +57,6 @@ def test_extract_links_release_no_title_text():
 
 def test_extract_links_release_no_match():
     """Test extract_links_html where there are no matching release-entries - should fail."""
-    from rssfixer.exceptions import NoLinksFoundError
-    
     content = """<html>
     <body>
         <p></p>

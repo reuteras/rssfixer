@@ -9,11 +9,11 @@ from .models import LinkEntry
 
 def create_rss_feed(links: list[LinkEntry], arguments: Any) -> str:
     """Create an RSS or Atom feed from a list of links.
-    
+
     Args:
         links: List of LinkEntry objects
         arguments: Parsed command line arguments
-        
+
     Returns:
         RSS or Atom feed as string
 

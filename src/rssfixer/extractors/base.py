@@ -13,7 +13,7 @@ class LinkExtractor(ABC):
 
     def __init__(self, arguments):
         """Initialize extractor with parsed command line arguments.
-        
+
         Args:
             arguments: Parsed command line arguments
 
@@ -24,13 +24,13 @@ class LinkExtractor(ABC):
     @abstractmethod
     def extract_links(self, soup: BeautifulSoup) -> list[LinkEntry]:
         """Extract links from parsed HTML.
-        
+
         Args:
             soup: Parsed HTML content using BeautifulSoup
-            
+
         Returns:
             List of LinkEntry objects
-            
+
         Raises:
             NoLinksFoundError: If no links are found or extraction fails
 
@@ -39,15 +39,15 @@ class LinkExtractor(ABC):
 
     def _add_unique_link(self, url: str, title: str, description: str = "") -> LinkEntry | None:
         """Add a link if it's unique.
-        
+
         Args:
             url: The link URL
             title: The link title
             description: Optional description
-            
+
         Returns:
             LinkEntry if added, None if duplicate
-            
+
         Raises:
             ValueError: If URL or title is invalid
 
@@ -60,13 +60,13 @@ class LinkExtractor(ABC):
 
     def _validate_links(self, links: list[LinkEntry]) -> list[LinkEntry]:
         """Validate that links were found.
-        
+
         Args:
             links: List of extracted links
-            
+
         Returns:
             The same list if valid
-            
+
         Raises:
             NoLinksFoundError: If no links found
 

@@ -14,13 +14,13 @@ class HtmlExtractor(LinkExtractor):
 
     def extract_links(self, soup: BeautifulSoup) -> list[LinkEntry]:
         """Extract links from specific HTML elements.
-        
+
         Args:
             soup: Parsed HTML content
-            
+
         Returns:
             List of LinkEntry objects from HTML elements
-            
+
         Raises:
             NoLinksFoundError: If no links are found
 
@@ -55,10 +55,10 @@ class HtmlExtractor(LinkExtractor):
 
     def _get_html_url(self, entry) -> str:
         """Extract URL from HTML entry.
-        
+
         Args:
             entry: BeautifulSoup element
-            
+
         Returns:
             URL string or empty string if not found
 
@@ -73,10 +73,10 @@ class HtmlExtractor(LinkExtractor):
 
     def _get_html_title(self, entry) -> str:
         """Extract title from HTML entry.
-        
+
         Args:
             entry: BeautifulSoup element
-            
+
         Returns:
             Title text or empty string if not found
 
@@ -84,24 +84,24 @@ class HtmlExtractor(LinkExtractor):
         return safe_find_text(
             entry,
             self.arguments.html_title,
-            self.arguments.html_title_class if hasattr(self.arguments, 'html_title_class') else None,
+            self.arguments.html_title_class if hasattr(self.arguments, "html_title_class") else None,
         )
 
     def _get_html_description(self, entry) -> str:
         """Extract description from HTML entry.
-        
+
         Args:
             entry: BeautifulSoup element
-            
+
         Returns:
             Description text or empty string if not found
 
         """
-        if not hasattr(self.arguments, 'html_description') or not self.arguments.html_description:
+        if not hasattr(self.arguments, "html_description") or not self.arguments.html_description:
             return ""
 
         return safe_find_text(
             entry,
             self.arguments.html_description,
-            self.arguments.html_description_class if hasattr(self.arguments, 'html_description_class') else None,
+            self.arguments.html_description_class if hasattr(self.arguments, "html_description_class") else None,
         )

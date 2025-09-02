@@ -13,8 +13,7 @@ except importlib.metadata.PackageNotFoundError:  # pragma: no cover
 
 
 DEFAULT_USER_AGENT = (
-    "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_4) AppleWebKit/537.36 "
-    "(KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 13_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
 )
 
 
@@ -187,13 +186,13 @@ def parse_arguments(arguments):
 
 def get_extractor(arguments) -> HtmlExtractor | JsonExtractor | ListExtractor | ReleaseExtractor:
     """Get appropriate extractor based on arguments.
-    
+
     Args:
         arguments: Parsed command line arguments
-        
+
     Returns:
         Appropriate LinkExtractor instance
-        
+
     Raises:
         RSSFixerError: If no valid extractor type specified or missing required arguments
 

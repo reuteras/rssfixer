@@ -1,5 +1,6 @@
 """List extractor for links in HTML <ul> elements."""
 
+from typing import ClassVar
 
 from bs4 import BeautifulSoup
 
@@ -10,17 +11,17 @@ from .base import LinkExtractor
 class ListExtractor(LinkExtractor):
     """Extractor for links in HTML <ul>-lists."""
 
-    EXCLUDED_URL_PATTERNS = ["/category/", "/author/"]
+    EXCLUDED_URL_PATTERNS: ClassVar[list[str]] = ["/category/", "/author/"]
 
     def extract_links(self, soup: BeautifulSoup) -> list[LinkEntry]:
         """Extract links from <ul> lists in HTML.
-        
+
         Args:
             soup: Parsed HTML content
-            
+
         Returns:
             List of LinkEntry objects from <ul> elements
-            
+
         Raises:
             NoLinksFoundError: If no links are found
 
