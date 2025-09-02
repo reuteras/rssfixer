@@ -31,38 +31,15 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Upgrade pip
-        run: |
-          python -m pip install --upgrade pip
+      - name: Install uv
+        uses: astral-sh/setup-uv@v3
 
       - name: Install rssfixer and dev dependencies
-        run: |
-          python -m pip install poetry
-          poetry install --with dev,github --no-interaction
+        run: uv sync --dev
 
-      # yamllint disable rule:line-length
-      - name: Run bandit
-        run: poetry run bandit -l -f json -o resources/bandit.json -r src/rssfixer
-      # yamllint enable
-
-      # yamllint disable rule:line-length
-      - name: Commit updated bandit.json
-        id: commit_bandit
-        run: |
-          git add resources/bandit.json
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          if git diff --quiet && git diff --staged --quiet; then
-            echo "No changes in bandit.json, skipping commit."
-            echo "commit_status=skipped" >> "$GITHUB_ENV"
-          else
-            git commit -m "Update bandit.json"
-            echo "commit_status=committed" >> "$GITHUB_ENV"
-          fi
-      # yamllint enable
 
       - name: Run update-readme.py
-        run: poetry run markdown-code-runner --verbose README.md
+        run: uv run markdown-code-runner --verbose README.md
 
       # yamllint disable rule:line-length
       - name: Commit updated README.md
@@ -73,6 +50,7 @@ jobs:
           git config --local user.name "github-actions[bot]"
           if git diff --quiet && git diff --staged --quiet; then
             echo "No changes in README.md, skipping commit."
+            echo "commit_status=skipped" >> "$GITHUB_ENV"
           else
             git commit -m "Update README.md"
             echo "commit_status=committed" >> "$GITHUB_ENV"
@@ -81,13 +59,13 @@ jobs:
 
       - name: Run coverage and create badge
         run: |
-          poetry run coverage run -m pytest
-          poetry run coverage report -m > resources/coverage.txt
-          poetry run coverage-badge -f -q -o resources/coverage.svg
+          uv run coverage run -m pytest
+          uv run coverage report -m > resources/coverage.txt
+          uv run coverage-badge -f -q -o resources/coverage.svg
 
       # yamllint disable rule:line-length
       - name: Commit updated resources/coverage.txt resources/coverage.svg
-        id: commit
+        id: commit_coverage
         run: |
           git add resources/coverage.txt resources/coverage.svg
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
