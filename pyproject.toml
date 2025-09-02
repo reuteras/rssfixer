@@ -45,7 +45,6 @@ lint.exclude = [
 # Enable formatting
 format.quote-style = "double"
 format.indent-style = "space"
-format.skip-source-first-line = false
 format.line-ending = "auto"
 
 # Target Python 3.11
@@ -103,3 +102,10 @@ rssfixer = "rssfixer:main"
 [project.urls]
 Homepage = "https://github.com/reuteras/rssfixer"
 "Bug Tracker" = "https://github.com/reuteras/rssfixer/issues"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "requests-mock>=1.12.1",
+    "ruff>=0.12.11",
+]

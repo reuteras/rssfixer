@@ -26,9 +26,8 @@ uv run ruff check .
 # Auto-fix issues where possible
 uv run ruff check --fix .
 
-# Run tests with coverage
-uv run coverage run -m pytest
-uv run coverage report -m
+# Run tests
+uv run pytest src/tests/
 
 # Run all pre-commit hooks
 uv run pre-commit run --all-files
@@ -55,9 +54,15 @@ uv publish
 ## Code Architecture
 
 ### Core Structure
-- `src/rssfixer/rss.py` - Main module containing all RSS generation logic, argument parsing, and web scraping functionality
+- `src/rssfixer/rss.py` - Main orchestration module (simplified from 480 to ~60 lines)
 - `src/rssfixer/__init__.py` - Entry point that imports and calls main()
-- `src/tests/` - Comprehensive test suite with pytest
+- `src/rssfixer/cli.py` - Command line interface and argument parsing
+- `src/rssfixer/models.py` - Data models using dataclasses
+- `src/rssfixer/feed.py` - RSS/Atom feed generation
+- `src/rssfixer/utils.py` - HTTP fetching and common utilities
+- `src/rssfixer/exceptions.py` - Custom exception classes
+- `src/rssfixer/extractors/` - Link extraction logic with inheritance hierarchy
+- `src/tests/` - Test suite using pytest
 
 ### Key Components
 - **Argument Parsing**: Custom argparse actions (`CheckHtmlAction`, `CheckJsonAction`, `CheckReleaseAction`) to validate command-line options
@@ -81,4 +86,14 @@ uv publish
 
 ## Testing
 
-Tests are located in `src/tests/` and use pytest. Run with coverage reporting to maintain code quality standards.
+Tests are located in `src/tests/` and use pytest. Run tests without coverage tracking since we focus on functionality over metrics.
+
+## Error Handling
+
+The codebase uses custom exceptions instead of sys.exit() calls:
+- `RSSFixerError` - Base exception
+- `NoLinksFoundError` - When no links are extracted
+- `NetworkError` - HTTP request failures
+- `JSONParsingError` - JSON parsing issues
+- `HTMLParsingError` - HTML filtering problems
+- `FileWriteError` - Output file writing failures
