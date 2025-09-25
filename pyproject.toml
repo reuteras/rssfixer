@@ -58,7 +58,7 @@ line-length = 120
 max-complexity = 10
 [project]
 name = "rssfixer"
-version = "0.2.16"
+version = "0.2.17"
 description = "Generate RSS for blogs without a feed."
 authors = [{name = "Peter Reuterås", email = "peter@reuteras.net"}]
 license = {text = "MIT"}
@@ -78,18 +78,6 @@ dependencies = [
     "beautifulsoup4>=4.12.3",
     "feedgen==0.9.0",
     "requests>=2.32.3",
-    "docutils>=0.21.2",
-]
-
-[project.optional-dependencies]
-dev = [
-    "build",
-    "twine",
-    "ruff",
-    "pytest",
-    "requests-mock",
-    "pre-commit",
-    "gitpython>=3.1.35",
 ]
 
 [project.scripts]
@@ -104,6 +92,5 @@ dev = [
     "pytest>=8.4.1",
     "requests-mock>=1.12.1",
     "ruff>=0.12.11",
-    "coverage-badge",
     "markdown-code-runner",
 ]
