@@ -88,13 +88,13 @@ wheels = [
 
 [[package]]
 name = "feedgen"
-version = "0.9.0"
+version = "1.0.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "lxml" },
     { name = "python-dateutil" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0b/60/7714c7f1339e063ad2e0964870797610c23191c180fc2713be100cc82d1a/feedgen-0.9.0.tar.gz", hash = "sha256:8e811bdbbed6570034950db23a4388453628a70e689a6e8303ccec430f5a804a", size = 217925, upload-time = "2020-01-28T17:12:58.861Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/6b/59/be0a6f852b5dfbf19e6c8e962c8f41407697f9f52a7902250ed98683ae89/feedgen-1.0.0.tar.gz", hash = "sha256:d9bd51c3b5e956a2a52998c3708c4d2c729f2fcc311188e1e5d3b9726393546a", size = 258496, upload-time = "2023-12-25T18:04:08.421Z" }
 
 [[package]]
 name = "idna"
@@ -328,7 +328,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "beautifulsoup4", specifier = ">=4.12.3" },
-    { name = "feedgen", specifier = "==0.9.0" },
+    { name = "feedgen", specifier = "==1.0.0" },
     { name = "requests", specifier = ">=2.32.3" },
 ]
 
