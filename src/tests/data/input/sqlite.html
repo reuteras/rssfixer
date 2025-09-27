@@ -158,7 +158,7 @@ See the <a href="chronology.html">chronology</a> a succinct listing of releases.
 <h3>2023-03-10 (3.41.1)</h3><p><ol class='lessindent'>
 <li> Provide compile-time options -DHAVE_LOG2=0 and -DHAVE_LOG10=0 to enable SQLite to be
      compiled on systems that omit the standard library functions log2() and log10(), repectively.
-<li> Ensure that the datatype for column t1.x in 
+<li> Ensure that the datatype for column t1.x in
      "<tt>CREATE TABLE t1 AS SELECT CAST(7 AS INT) AS x;</tt>" continues to be INT and is not NUM,
      for historical compatibility.
 <li> Enhance <a href="pragma.html#pragma_integrity_check">PRAGMA integrity_check</a> to detect when extra bytes appear at the end of an
@@ -166,7 +166,7 @@ See the <a href="chronology.html">chronology</a> a succinct listing of releases.
 <li> Fix various obscure bugs reported by the user community.  See the
      <a href="https://sqlite.org/src/timeline?from=version-3.41.0&to=version-3.41.1">timeline of changes</a>
      for details.
-     
+
 <p><b>Hashes:</b>
 <li>SQLITE_SOURCE_ID: 2023-03-10 12:13:52 20399f3eda5ec249d147ba9e48da6e87f969d7966a9a896764ca437ff7e737ff
 <li>SHA3-256 for sqlite3.c: d0d9db8425570f4a57def04fb8f4ac84f5c3e4e71d3d4d10472e3639c5fdf09f
@@ -3729,7 +3729,7 @@ with a UNIQUE or PRIMARY KEY constraint with more than four columns.
 <h3>2013-01-09 (3.7.15.2)</h3><p><ol class='lessindent'>
 <li>Fix a bug, introduced in <a href="#version_3_7_15">version 3.7.15</a>, that causes an ORDER BY clause
     to be optimized out of a three-way join when the ORDER BY is actually
-    required.	
+    required.
     Ticket <a href="http://www.sqlite.org/src/info/598f5f7596b055">598f5f7596b055</a>
 
 <li>SQLITE_SOURCE_ID:
@@ -6805,5 +6805,3 @@ files.</li>
 </ol></p>
 
 </dl>
-
-
