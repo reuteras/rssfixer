@@ -58,7 +58,7 @@ line-length = 120
 max-complexity = 10
 [project]
 name = "rssfixer"
-version = "0.2.17"
+version = "0.2.18"
 description = "Generate RSS for blogs without a feed."
 authors = [{name = "Peter Reuterås", email = "peter@reuteras.net"}]
 license = {text = "MIT"}
