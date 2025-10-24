@@ -1,5 +1,8 @@
 # rssfixer
 
+> **Note:**
+> 
+> This project is no longer maintainted. 
 <!-- CODE:BASH:START -->
 <!-- echo '[![GitHub Super-Linter](https://github.com/reuteras/rssfixer/actions/workflows/linter.yml/badge.svg)](https://github.com/marketplace/actions/super-linter)' -->
 <!-- echo '![PyPI](https://img.shields.io/pypi/v/rssfixer?color=green)' -->
