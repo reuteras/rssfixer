@@ -70,7 +70,7 @@ classifiers = [
     "Operating System :: OS Independent",
     "Natural Language :: English",
     "Intended Audience :: Information Technology",
-    "Development Status :: 4 - Beta",
+    "Development Status :: 7 - Inactive",
     "Environment :: Console",
 ]
 
